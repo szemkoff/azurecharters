@@ -57,32 +57,67 @@ To begin implementing this framework:
 ## Framework Map
 
 ```mermaid
-graph TD
-    A[Business Model] --> B[Website Architecture]
-    A --> C[Product Catalog]
-    A --> D[Client Funnel]
+%%{init: {'theme': 'neutral', 'securityLevel': 'loose'}}%%
+flowchart TD
+    A[Business Model]
     
-    B --> E[Tilda Integration]
-    B --> F[Site Structure]
-    B --> G[SEO Optimization]
+    subgraph core[Core Components]
+        direction TB
+        A --> B[Website Architecture]
+        A --> C[Product Catalog]
+        A --> D[Client Funnel]
+    end
     
-    C --> H[Yacht Data Structure]
-    C --> I[Tilda Products]
-    C --> J[Availability Management]
+    subgraph website[Website Structure]
+        direction TB
+        B --> E[Tilda Integration]
+        B --> F[Site Structure]
+        B --> G[SEO Optimization]
+    end
     
-    D --> K[Acquisition]
-    D --> L[Nurturing]
-    D --> M[Conversion]
-    D --> N[Retention]
+    subgraph catalog[Product Management]
+        direction TB
+        C --> H[Yacht Data Structure]
+        C --> I[Tilda Products]
+        C --> J[Availability Management]
+    end
     
-    O[Integration Systems] --> P[Tilda API]
-    O --> Q[Email Marketing]
-    O --> R[Social Media]
-    O --> S[Booking Systems]
+    subgraph funnel[Marketing Funnel]
+        direction TB
+        D --> K[Acquisition]
+        D --> L[Nurturing]
+        D --> M[Conversion]
+        D --> N[Retention]
+    end
     
-    T[Development Workflow] --> U[Cursor Integration]
-    T --> V[Code Samples]
-    T --> W[Deployment]
+    subgraph integrations[Systems Integration]
+        direction TB
+        O[Integration Systems]
+        O --> P[Tilda API]
+        O --> Q[Email Marketing]
+        O --> R[Social Media]
+        O --> S[Booking Systems]
+    end
+    
+    subgraph dev[Development]
+        direction TB
+        T[Development Workflow]
+        T --> U[Cursor Integration]
+        T --> V[Code Samples]
+        T --> W[Deployment]
+    end
+    
+    %% Style nodes and subgraphs
+    classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
+    classDef subNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef featureNode fill:#d4a017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef subgraphStyle fill:none,stroke:none;
+    
+    %% Apply styles
+    class A mainNode;
+    class B,C,D,O,T subNode;
+    class E,F,G,H,I,J,K,L,M,N,P,Q,R,S,U,V,W featureNode;
+    class core,website,catalog,funnel,integrations,dev subgraphStyle;
 ```
 
 ## Support and Updates
