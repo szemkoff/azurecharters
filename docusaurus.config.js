@@ -11,15 +11,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-documentation-url.com',
+  url: 'https://szemkoff.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/azurecharters/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'azureyachtgroup', // Usually your GitHub org/user name.
-  projectName: 'charter-framework', // Usually your repo name.
+  organizationName: 'szemkoff', // Usually your GitHub org/user name.
+  projectName: 'azurecharters', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/azureyachtgroup/charter-framework/tree/main/',
+            'https://github.com/szemkoff/azurecharters/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/azureyachtgroup/charter-framework/tree/main/',
+            'https://github.com/szemkoff/azurecharters/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -78,7 +78,7 @@ const config = {
           },
           {to: '/blog', label: 'Updates', position: 'left'},
           {
-            href: 'https://github.com/azureyachtgroup/charter-framework',
+            href: 'https://github.com/szemkoff/azurecharters',
             label: 'GitHub',
             position: 'right',
           },
@@ -130,7 +130,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/azureyachtgroup/charter-framework',
+                href: 'https://github.com/szemkoff/azurecharters',
               },
             ],
           },
