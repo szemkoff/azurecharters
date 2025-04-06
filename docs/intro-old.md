@@ -57,53 +57,32 @@ To begin implementing this framework:
 ## Framework Map
 
 ```mermaid
-%%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
 graph TD
-    A[Business Model]
+    A[Business Model] --> B[Website Architecture]
+    A --> C[Product Catalog]
+    A --> D[Client Funnel]
     
-    %% Force vertical layout with direct parent-child structure
-    A --> B[Website Architecture]
-    B --> C[Product Catalog]
-    C --> D[Client Funnel]
-    D --> O[Integration Systems]
-    O --> T[Development Workflow]
+    B --> E[Tilda Integration]
+    B --> F[Site Structure]
+    B --> G[SEO Optimization]
     
-    %% Website Architecture features
-    B --- E[Tilda Integration]
-    B --- F[Site Structure]
-    B --- G[SEO Optimization]
+    C --> H[Yacht Data Structure]
+    C --> I[Tilda Products]
+    C --> J[Availability Management]
     
-    %% Product Catalog features
-    C --- H[Yacht Data Structure]
-    C --- I[Tilda Products]
-    C --- J[Availability Management]
+    D --> K[Acquisition]
+    D --> L[Nurturing]
+    D --> M[Conversion]
+    D --> N[Retention]
     
-    %% Client Funnel features
-    D --- K[Acquisition]
-    D --- L[Nurturing]
-    D --- M[Conversion]
-    D --- N[Retention]
+    O[Integration Systems] --> P[Tilda API]
+    O --> Q[Email Marketing]
+    O --> R[Social Media]
+    O --> S[Booking Systems]
     
-    %% Integration Systems features
-    O --- P[Tilda API]
-    O --- Q[Email Marketing]
-    O --- R[Social Media]
-    O --- S[Booking Systems]
-    
-    %% Development Workflow features
-    T --- U[Cursor Integration]
-    T --- V[Code Samples]
-    T --- W[Deployment]
-    
-    %% Styling
-    classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
-    classDef subNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef featureNode fill:#d4a017,color:#ffffff,stroke:#333,stroke-width:1px;
-    
-    %% Apply styles
-    class A mainNode;
-    class B,C,D,O,T subNode;
-    class E,F,G,H,I,J,K,L,M,N,P,Q,R,S,U,V,W featureNode;
+    T[Development Workflow] --> U[Cursor Integration]
+    T --> V[Code Samples]
+    T --> W[Deployment]
 ```
 
 ## Support and Updates
