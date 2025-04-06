@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcharter_framework=self.webpackChunkcharter_framework||[]).push([[848],{1966:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
