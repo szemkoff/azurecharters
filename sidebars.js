@@ -30,6 +30,7 @@ const sidebars = {
       items: [
         'website-architecture/overview',
         'website-architecture/tilda-integration',
+        'website-architecture/yacht-data-import',
       ],
     },
     {
