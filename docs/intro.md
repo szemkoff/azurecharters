@@ -59,33 +59,41 @@ To begin implementing this framework:
 ```mermaid
 %%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
 graph TD
-    A[Business Model] --> B[Website Architecture]
-    A --> C[Product Catalog]
-    A --> D[Client Funnel]
-    A --> O[Integration Systems]
-    A --> T[Development Workflow]
+    A[Business Model]
     
-    B --> E[Tilda Integration]
-    B --> F[Site Structure]
-    B --> G[SEO Optimization]
+    %% Force vertical layout with direct parent-child structure
+    A --> B[Website Architecture]
+    B --> C[Product Catalog]
+    C --> D[Client Funnel]
+    D --> O[Integration Systems]
+    O --> T[Development Workflow]
     
-    C --> H[Yacht Data Structure]
-    C --> I[Tilda Products]
-    C --> J[Availability Management]
+    %% Website Architecture features
+    B --- E[Tilda Integration]
+    B --- F[Site Structure]
+    B --- G[SEO Optimization]
     
-    D --> K[Acquisition]
-    D --> L[Nurturing]
-    D --> M[Conversion]
-    D --> N[Retention]
+    %% Product Catalog features
+    C --- H[Yacht Data Structure]
+    C --- I[Tilda Products]
+    C --- J[Availability Management]
     
-    O --> P[Tilda API]
-    O --> Q[Email Marketing]
-    O --> R[Social Media]
-    O --> S[Booking Systems]
+    %% Client Funnel features
+    D --- K[Acquisition]
+    D --- L[Nurturing]
+    D --- M[Conversion]
+    D --- N[Retention]
     
-    T --> U[Cursor Integration]
-    T --> V[Code Samples]
-    T --> W[Deployment]
+    %% Integration Systems features
+    O --- P[Tilda API]
+    O --- Q[Email Marketing]
+    O --- R[Social Media]
+    O --- S[Booking Systems]
+    
+    %% Development Workflow features
+    T --- U[Cursor Integration]
+    T --- V[Code Samples]
+    T --- W[Deployment]
     
     %% Styling
     classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;

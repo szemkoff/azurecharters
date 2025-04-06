@@ -14,48 +14,57 @@ This document outlines the complete structure for implementing a yacht charter b
 ```mermaid
 %%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
 graph TD
-    root[AZURE YACHT GROUP WEBSITE] --> home[HOME]
-    root --> fleet[CHARTER FLEET] 
-    root --> destinations[DESTINATIONS]
-    root --> services[SERVICES]
+    %% Main structure in vertical layout
+    root[AZURE YACHT GROUP WEBSITE]
+    root --> home[HOME]
+    home --> fleet[CHARTER FLEET]
+    fleet --> destinations[DESTINATIONS]
+    destinations --> services[SERVICES]
     
-    home --> hero[Hero Banner - Seasonal Offers]
-    home --> featured[Featured Charters Carousel]
-    home --> destHighlights[Destinations Highlights]
-    home --> testimonials[Testimonials]
-    home --> newsletter[Newsletter Signup]
+    %% Home page elements
+    home -.- hero[Hero Banner - Seasonal Offers]
+    home -.- featured[Featured Charters Carousel]
+    home -.- destHighlights[Destinations Highlights]
+    home -.- testimonials[Testimonials]
+    home -.- newsletter[Newsletter Signup]
     
-    fleet --> fleetOverview[Fleet Overview]
-    fleet --> search[Advanced Search/Filter]
-    fleet --> yachtPages[Individual Yacht Pages]
-    fleet --> newArrivals[New Arrivals Section]
+    %% Fleet page elements
+    fleet -.- fleetOverview[Fleet Overview]
+    fleet -.- search[Advanced Search/Filter]
+    fleet -.- yachtPages[Individual Yacht Pages]
+    fleet -.- newArrivals[New Arrivals Section]
     
-    search --> bySize[By Size]
-    search --> byPrice[By Price]
-    search --> byLocation[By Location]
-    search --> byAvailability[By Availability]
+    %% Search options
+    search -.- bySize[By Size]
+    search -.- byPrice[By Price]
+    search -.- byLocation[By Location]
+    search -.- byAvailability[By Availability]
     
-    yachtPages --> gallery[Gallery]
-    yachtPages --> specs[Specifications]
-    yachtPages --> pricing[Pricing Calculator]
-    yachtPages --> crew[Crew Information]
-    yachtPages --> calendar[Calendar Availability]
-    yachtPages --> similar[Similar Yachts]
-    yachtPages --> booking[Booking Request Form]
+    %% Yacht page elements
+    yachtPages -.- gallery[Gallery]
+    yachtPages -.- specs[Specifications]
+    yachtPages -.- pricing[Pricing Calculator]
+    yachtPages -.- crew[Crew Information]
+    yachtPages -.- calendar[Calendar Availability]
+    yachtPages -.- similar[Similar Yachts]
+    yachtPages -.- booking[Booking Request Form]
     
-    destinations --> map[Interactive Map]
-    destinations --> guides[Destination Guides]
-    destinations --> seasonal[Seasonal Recommendations]
-    destinations --> attractions[Local Attractions]
+    %% Destinations page elements
+    destinations -.- map[Interactive Map]
+    destinations -.- guides[Destination Guides]
+    destinations -.- seasonal[Seasonal Recommendations]
+    destinations -.- attractions[Local Attractions]
     
-    guides --> caribbean[Caribbean]
-    guides --> mediterranean[Mediterranean]
-    guides --> southPacific[South Pacific]
-    guides --> otherRegions[Other Regions]
+    %% Destination guides
+    guides -.- caribbean[Caribbean]
+    guides -.- mediterranean[Mediterranean]
+    guides -.- southPacific[South Pacific]
+    guides -.- otherRegions[Other Regions]
     
-    services --> charterTypes[Charter Types]
-    charterTypes --> bareboat[Bareboat]
-    charterTypes --> crewed[Crewed]
+    %% Services
+    services -.- charterTypes[Charter Types]
+    charterTypes -.- bareboat[Bareboat]
+    charterTypes -.- crewed[Crewed]
     
     %% Style Classes
     classDef sectionClass fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
