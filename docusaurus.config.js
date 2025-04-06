@@ -21,7 +21,7 @@ const config = {
   organizationName: 'szemkoff', // Usually your GitHub org/user name.
   projectName: 'azurecharters', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -76,7 +76,6 @@ const config = {
             position: 'left',
             label: 'Framework',
           },
-          {to: '/blog', label: 'Updates', position: 'left'},
           {
             href: 'https://github.com/szemkoff/azurecharters',
             label: 'GitHub',
@@ -124,10 +123,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/szemkoff/azurecharters',
