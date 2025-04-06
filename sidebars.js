@@ -19,6 +19,7 @@ const sidebars = {
       label: 'Introduction',
       items: [
         'intro',
+        'framework-overview',
         'business-model',
         'technology-stack',
         'getting-started',
@@ -29,6 +30,8 @@ const sidebars = {
       label: 'Website Architecture',
       items: [
         'website-architecture/overview',
+        'website-architecture/site-structure',
+        'website-architecture/deployment-plan',
         'website-architecture/tilda-integration',
       ],
     },
