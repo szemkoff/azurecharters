@@ -61,28 +61,27 @@ To begin implementing this framework:
 flowchart TD
     A[Business Model]
     
-    subgraph core[Core Components]
-        direction TB
-        A --> B[Website Architecture]
-        A --> C[Product Catalog]
-        A --> D[Client Funnel]
-    end
+    A --> B[Website Architecture]
+    A --> C[Product Catalog]
+    A --> D[Client Funnel]
+    A --> O[Integration Systems]
+    A --> T[Development Workflow]
     
-    subgraph website[Website Structure]
+    subgraph web[" "]
         direction TB
         B --> E[Tilda Integration]
         B --> F[Site Structure]
         B --> G[SEO Optimization]
     end
     
-    subgraph catalog[Product Management]
+    subgraph catalog[" "]
         direction TB
         C --> H[Yacht Data Structure]
         C --> I[Tilda Products]
         C --> J[Availability Management]
     end
     
-    subgraph funnel[Marketing Funnel]
+    subgraph funnel[" "]
         direction TB
         D --> K[Acquisition]
         D --> L[Nurturing]
@@ -90,24 +89,22 @@ flowchart TD
         D --> N[Retention]
     end
     
-    subgraph integrations[Systems Integration]
+    subgraph integrations[" "]
         direction TB
-        O[Integration Systems]
         O --> P[Tilda API]
         O --> Q[Email Marketing]
         O --> R[Social Media]
         O --> S[Booking Systems]
     end
     
-    subgraph dev[Development]
+    subgraph dev[" "]
         direction TB
-        T[Development Workflow]
         T --> U[Cursor Integration]
         T --> V[Code Samples]
         T --> W[Deployment]
     end
     
-    %% Style nodes and subgraphs
+    %% Styles
     classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
     classDef subNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef featureNode fill:#d4a017,color:#ffffff,stroke:#333,stroke-width:1px;
@@ -117,7 +114,7 @@ flowchart TD
     class A mainNode;
     class B,C,D,O,T subNode;
     class E,F,G,H,I,J,K,L,M,N,P,Q,R,S,U,V,W featureNode;
-    class core,website,catalog,funnel,integrations,dev subgraphStyle;
+    class web,catalog,funnel,integrations,dev subgraphStyle;
 ```
 
 ## Support and Updates

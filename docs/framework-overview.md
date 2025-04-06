@@ -14,67 +14,49 @@ This page provides a comprehensive visual overview of the Azure Yacht Group Char
 ```mermaid
 %%{init: {'theme': 'neutral', 'securityLevel': 'loose'}}%%
 flowchart TD
-    %% Main Business Components
+    %% Main Business Components with explicit ranking to force vertical layout
     A[Business Model]
     
-    subgraph MainComponents[" "]
-        direction TB
-        A --> B[Website Architecture]
-        A --> C[Product Catalog]
-        A --> D[Client Funnel]
-    end
+    %% Create explicit vertical hierarchy
+    A --> B[Website Architecture]
+    A --> C[Product Catalog]
+    A --> D[Client Funnel]
+    A --> O[Integration Systems]
+    A --> T[Development Workflow]
     
-    %% Website Architecture Components
-    subgraph WebArch[" "]
-        direction TB
-        B --> E[Tilda Integration]
-        B --> F[Site Structure]
-        B --> G[SEO Optimization]
-    end
+    %% Website Architecture Components - forced below its parent
+    B --> E[Tilda Integration]
+    B --> F[Site Structure]
+    B --> G[SEO Optimization]
     
-    %% Product Catalog Components
-    subgraph ProductCat[" "]
-        direction TB
-        C --> H[Yacht Data Structure]
-        C --> I[Tilda Products]
-        C --> J[Availability Management]
-    end
+    %% Product Catalog Components - forced below its parent
+    C --> H[Yacht Data Structure]
+    C --> I[Tilda Products]
+    C --> J[Availability Management]
     
-    %% Client Funnel Components
-    subgraph ClientFunnel[" "]
-        direction TB
-        D --> K[Acquisition]
-        D --> L[Nurturing]
-        D --> M[Conversion]
-        D --> N[Retention]
-    end
+    %% Client Funnel Components - forced below its parent
+    D --> K[Acquisition]
+    D --> L[Nurturing]
+    D --> M[Conversion]
+    D --> N[Retention]
     
-    %% Integration Systems
-    subgraph IntegSys[" "]
-        direction TB
-        O[Integration Systems]
-        O --> P[Tilda API]
-        O --> Q[Email Marketing]
-        O --> R[Social Media]
-        O --> S[Booking Systems]
-    end
+    %% Integration Systems - forced below its parent
+    O --> P[Tilda API]
+    O --> Q[Email Marketing]
+    O --> R[Social Media]
+    O --> S[Booking Systems]
     
-    %% Development Workflow
-    subgraph DevFlow[" "]
-        direction TB
-        T[Development Workflow]
-        T --> U[Cursor Integration]
-        T --> V[Code Samples]
-        T --> W[Deployment]
-    end
+    %% Development Workflow - forced below its parent
+    T --> U[Cursor Integration]
+    T --> V[Code Samples]
+    T --> W[Deployment]
     
-    %% Styling Components
+    %% Styling with bold, distinct colors
     classDef primaryNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px
     classDef secondaryNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px
     classDef featureNode fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px
     classDef systemNode fill:#4285F4,color:#ffffff,stroke:#333,stroke-width:1px
     classDef workflowNode fill:#EA4335,color:#ffffff,stroke:#333,stroke-width:1px
-    classDef subgraphStyle fill:none,stroke:none
     
     %% Apply styles
     class A primaryNode
@@ -82,7 +64,6 @@ flowchart TD
     class E,F,G,H,I,J,K,L,M,N featureNode
     class O,P,Q,R,S systemNode
     class T,U,V,W workflowNode
-    class MainComponents,WebArch,ProductCat,ClientFunnel,IntegSys,DevFlow subgraphStyle
 ```
 
 ## Business Model Components

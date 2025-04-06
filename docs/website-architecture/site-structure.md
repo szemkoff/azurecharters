@@ -15,79 +15,68 @@ This document outlines the complete structure for implementing a yacht charter b
 %%{init: {'theme': 'neutral', 'securityLevel': 'loose'}}%%
 flowchart TD
     root[AZURE YACHT GROUP WEBSITE]
+    
+    %% Main navigation sections - vertical stack
     root --> home[HOME]
     root --> fleet[CHARTER FLEET] 
     root --> destinations[DESTINATIONS]
     root --> services[SERVICES]
     
-    %% Home Section
-    subgraph homeSection[" "]
-        direction TB
-        home --> hero[Hero Banner - Seasonal Offers]
-        home --> featured[Featured Charters Carousel]
-        home --> destHighlights[Destinations Highlights]
-        home --> testimonials[Testimonials]
-        home --> newsletter[Newsletter Signup]
-    end
+    %% Home Section - forced vertical
+    home --> hero[Hero Banner - Seasonal Offers]
+    home --> featured[Featured Charters Carousel]
+    home --> destHighlights[Destinations Highlights]
+    home --> testimonials[Testimonials]
+    home --> newsletter[Newsletter Signup]
     
-    %% Charter Fleet Section
-    subgraph fleetSection[" "]
-        direction TB
-        fleet --> fleetOverview[Fleet Overview]
-        fleet --> search[Advanced Search/Filter]
-        fleet --> yachtPages[Individual Yacht Pages]
-        fleet --> newArrivals[New Arrivals Section]
-        
-        %% Search Options (as subcategory)
-        search --> bySize[By Size]
-        search --> byPrice[By Price]
-        search --> byLocation[By Location]
-        search --> byAvailability[By Availability]
-        
-        %% Individual Yacht Pages (as subcategory)
-        yachtPages --> gallery[Gallery]
-        yachtPages --> specs[Specifications]
-        yachtPages --> pricing[Pricing Calculator]
-        yachtPages --> crew[Crew Information]
-        yachtPages --> calendar[Calendar Availability]
-        yachtPages --> similar[Similar Yachts]
-        yachtPages --> booking[Booking Request Form]
-    end
+    %% Charter Fleet Section - forced vertical
+    fleet --> fleetOverview[Fleet Overview]
+    fleet --> search[Advanced Search/Filter]
+    fleet --> yachtPages[Individual Yacht Pages]
+    fleet --> newArrivals[New Arrivals Section]
     
-    %% Destinations Section
-    subgraph destSection[" "]
-        direction TB
-        destinations --> map[Interactive Map]
-        destinations --> guides[Destination Guides]
-        destinations --> seasonal[Seasonal Recommendations]
-        destinations --> attractions[Local Attractions]
-        
-        %% Destination Guides
-        guides --> caribbean[Caribbean]
-        guides --> mediterranean[Mediterranean]
-        guides --> southPacific[South Pacific]
-        guides --> otherRegions[Other Regions]
-    end
+    %% Search Options - forced vertical below parent
+    search --> bySize[By Size]
+    search --> byPrice[By Price]
+    search --> byLocation[By Location]
+    search --> byAvailability[By Availability]
     
-    %% Services Section
-    subgraph servSection[" "]
-        direction TB
-        services --> charterTypes[Charter Types]
-        charterTypes --> bareboat[Bareboat]
-        charterTypes --> crewed[Crewed]
-    end
+    %% Individual Yacht Pages - forced vertical below parent
+    yachtPages --> gallery[Gallery]
+    yachtPages --> specs[Specifications]
+    yachtPages --> pricing[Pricing Calculator]
+    yachtPages --> crew[Crew Information]
+    yachtPages --> calendar[Calendar Availability]
+    yachtPages --> similar[Similar Yachts]
+    yachtPages --> booking[Booking Request Form]
+    
+    %% Destinations Section - forced vertical
+    destinations --> map[Interactive Map]
+    destinations --> guides[Destination Guides]
+    destinations --> seasonal[Seasonal Recommendations]
+    destinations --> attractions[Local Attractions]
+    
+    %% Destination Guides - forced vertical
+    guides --> caribbean[Caribbean]
+    guides --> mediterranean[Mediterranean]
+    guides --> southPacific[South Pacific]
+    guides --> otherRegions[Other Regions]
+    
+    %% Services Section - forced vertical
+    services --> charterTypes[Charter Types]
+    charterTypes --> bareboat[Bareboat]
+    charterTypes --> crewed[Crewed]
     
     %% Style Classes
     classDef sectionClass fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
     classDef subsectionClass fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef featureClass fill:#d4a017,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef subgraphClass fill:none,stroke:none;
     
     %% Apply Styles
-    class root,home,fleet,destinations,services sectionClass;
+    class root sectionClass;
+    class home,fleet,destinations,services sectionClass;
     class fleetOverview,search,yachtPages,newArrivals,hero,featured,destHighlights,testimonials,newsletter,map,guides,seasonal,attractions,charterTypes subsectionClass;
     class bySize,byPrice,byLocation,byAvailability,gallery,specs,pricing,crew,calendar,similar,booking,caribbean,mediterranean,southPacific,otherRegions,bareboat,crewed featureClass;
-    class homeSection,fleetSection,destSection,servSection subgraphClass;
 ```
 
 ## Implementation Notes
