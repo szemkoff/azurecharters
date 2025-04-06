@@ -19,12 +19,16 @@ const sidebars = {
       label: 'Introduction',
       items: [
         'intro',
+        'business-model',
+        'technology-stack',
+        'getting-started',
       ],
     },
     {
       type: 'category',
       label: 'Website Architecture',
       items: [
+        'website-architecture/overview',
         'website-architecture/tilda-integration',
       ],
     },
@@ -33,6 +37,8 @@ const sidebars = {
       label: 'Client Funnel',
       items: [
         'client-funnel/overview',
+        'client-funnel/acquisition-strategies',
+        'client-funnel/lead-magnets',
       ],
     },
     {
@@ -40,6 +46,14 @@ const sidebars = {
       label: 'Development Workflow',
       items: [
         'development/cursor-integration',
+        'development/code-samples',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      items: [
+        'resources/templates',
       ],
     },
   ],
