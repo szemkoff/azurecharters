@@ -12,60 +12,116 @@ This document outlines the complete structure for implementing a yacht charter b
 ## Main Website Architecture (Visual Map)
 
 ```mermaid
-%%{init: {'theme': 'neutral', 'securityLevel': 'loose'}}%%
-flowchart TD
+%%{init: {'theme': 'neutral', 'securityLevel': 'loose', 'flowchart': {'rankSpacing': 80, 'nodeSpacing': 100, 'rankdir': 'TB'}}}%%
+flowchart TB
+    %% Root node
     root[AZURE YACHT GROUP WEBSITE]
     
-    %% Main navigation sections - vertical stack
-    root --> home[HOME]
-    root --> fleet[CHARTER FLEET] 
-    root --> destinations[DESTINATIONS]
-    root --> services[SERVICES]
+    %% Main sections - rank 1
+    home[HOME]
+    fleet[CHARTER FLEET] 
+    destinations[DESTINATIONS]
+    services[SERVICES]
     
-    %% Home Section - forced vertical
-    home --> hero[Hero Banner - Seasonal Offers]
-    home --> featured[Featured Charters Carousel]
-    home --> destHighlights[Destinations Highlights]
-    home --> testimonials[Testimonials]
-    home --> newsletter[Newsletter Signup]
+    %% Main navigation connections
+    root --> home
+    root --> fleet
+    root --> destinations
+    root --> services
     
-    %% Charter Fleet Section - forced vertical
-    fleet --> fleetOverview[Fleet Overview]
-    fleet --> search[Advanced Search/Filter]
-    fleet --> yachtPages[Individual Yacht Pages]
-    fleet --> newArrivals[New Arrivals Section]
+    %% Home Section - rank 2
+    hero[Hero Banner - Seasonal Offers]
+    featured[Featured Charters Carousel]
+    destHighlights[Destinations Highlights]
+    testimonials[Testimonials]
+    newsletter[Newsletter Signup]
     
-    %% Search Options - forced vertical below parent
-    search --> bySize[By Size]
-    search --> byPrice[By Price]
-    search --> byLocation[By Location]
-    search --> byAvailability[By Availability]
+    %% Home connections
+    home --> hero
+    home --> featured
+    home --> destHighlights
+    home --> testimonials
+    home --> newsletter
     
-    %% Individual Yacht Pages - forced vertical below parent
-    yachtPages --> gallery[Gallery]
-    yachtPages --> specs[Specifications]
-    yachtPages --> pricing[Pricing Calculator]
-    yachtPages --> crew[Crew Information]
-    yachtPages --> calendar[Calendar Availability]
-    yachtPages --> similar[Similar Yachts]
-    yachtPages --> booking[Booking Request Form]
+    %% Charter Fleet Section - rank 3
+    fleetOverview[Fleet Overview]
+    search[Advanced Search/Filter]
+    yachtPages[Individual Yacht Pages]
+    newArrivals[New Arrivals Section]
     
-    %% Destinations Section - forced vertical
-    destinations --> map[Interactive Map]
-    destinations --> guides[Destination Guides]
-    destinations --> seasonal[Seasonal Recommendations]
-    destinations --> attractions[Local Attractions]
+    %% Fleet connections
+    fleet --> fleetOverview
+    fleet --> search
+    fleet --> yachtPages
+    fleet --> newArrivals
     
-    %% Destination Guides - forced vertical
-    guides --> caribbean[Caribbean]
-    guides --> mediterranean[Mediterranean]
-    guides --> southPacific[South Pacific]
-    guides --> otherRegions[Other Regions]
+    %% Search Options - rank 4
+    bySize[By Size]
+    byPrice[By Price]
+    byLocation[By Location]
+    byAvailability[By Availability]
     
-    %% Services Section - forced vertical
-    services --> charterTypes[Charter Types]
-    charterTypes --> bareboat[Bareboat]
-    charterTypes --> crewed[Crewed]
+    %% Search connections
+    search --> bySize
+    search --> byPrice
+    search --> byLocation
+    search --> byAvailability
+    
+    %% Individual Yacht Pages - rank 5
+    gallery[Gallery]
+    specs[Specifications]
+    pricing[Pricing Calculator]
+    crew[Crew Information]
+    calendar[Calendar Availability]
+    similar[Similar Yachts]
+    booking[Booking Request Form]
+    
+    %% Yacht page connections
+    yachtPages --> gallery
+    yachtPages --> specs
+    yachtPages --> pricing
+    yachtPages --> crew
+    yachtPages --> calendar
+    yachtPages --> similar
+    yachtPages --> booking
+    
+    %% Destinations Section - rank 6
+    map[Interactive Map]
+    guides[Destination Guides]
+    seasonal[Seasonal Recommendations]
+    attractions[Local Attractions]
+    
+    %% Destination connections
+    destinations --> map
+    destinations --> guides
+    destinations --> seasonal
+    destinations --> attractions
+    
+    %% Destination Guides - rank 7
+    caribbean[Caribbean]
+    mediterranean[Mediterranean]
+    southPacific[South Pacific]
+    otherRegions[Other Regions]
+    
+    %% Guide connections
+    guides --> caribbean
+    guides --> mediterranean
+    guides --> southPacific
+    guides --> otherRegions
+    
+    %% Services Section - rank 8
+    charterTypes[Charter Types]
+    
+    %% Services connections
+    services --> charterTypes
+    
+    %% Charter Types - rank 9
+    bareboat[Bareboat]
+    crewed[Crewed]
+    
+    %% Charter type connections
+    charterTypes --> bareboat
+    charterTypes --> crewed
     
     %% Style Classes
     classDef sectionClass fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;

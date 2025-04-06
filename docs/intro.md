@@ -57,64 +57,88 @@ To begin implementing this framework:
 ## Framework Map
 
 ```mermaid
-%%{init: {'theme': 'neutral', 'securityLevel': 'loose'}}%%
-flowchart TD
+%%{init: {'theme': 'neutral', 'securityLevel': 'loose', 'flowchart': {'rankSpacing': 100, 'nodeSpacing': 150, 'rankdir': 'TB'}}}%%
+flowchart TB
+    %% Force strict top-down rendering with explicit ranks
     A[Business Model]
     
-    A --> B[Website Architecture]
-    A --> C[Product Catalog]
-    A --> D[Client Funnel]
-    A --> O[Integration Systems]
-    A --> T[Development Workflow]
+    %% First rank level - main categories
+    B[Website Architecture]
+    C[Product Catalog]
+    D[Client Funnel]
+    O[Integration Systems]
+    T[Development Workflow]
     
-    subgraph web[" "]
-        direction TB
-        B --> E[Tilda Integration]
-        B --> F[Site Structure]
-        B --> G[SEO Optimization]
-    end
+    %% Connect to main node
+    A --> B
+    A --> C
+    A --> D
+    A --> O
+    A --> T
     
-    subgraph catalog[" "]
-        direction TB
-        C --> H[Yacht Data Structure]
-        C --> I[Tilda Products]
-        C --> J[Availability Management]
-    end
+    %% Second rank level - features under Website Architecture
+    E[Tilda Integration]
+    F[Site Structure]
+    G[SEO Optimization]
     
-    subgraph funnel[" "]
-        direction TB
-        D --> K[Acquisition]
-        D --> L[Nurturing]
-        D --> M[Conversion]
-        D --> N[Retention]
-    end
+    %% Connect to parent
+    B --> E
+    B --> F
+    B --> G
     
-    subgraph integrations[" "]
-        direction TB
-        O --> P[Tilda API]
-        O --> Q[Email Marketing]
-        O --> R[Social Media]
-        O --> S[Booking Systems]
-    end
+    %% Third rank level - features under Product Catalog
+    H[Yacht Data Structure]
+    I[Tilda Products]
+    J[Availability Management]
     
-    subgraph dev[" "]
-        direction TB
-        T --> U[Cursor Integration]
-        T --> V[Code Samples]
-        T --> W[Deployment]
-    end
+    %% Connect to parent
+    C --> H
+    C --> I
+    C --> J
     
-    %% Styles
+    %% Fourth rank level - features under Client Funnel
+    K[Acquisition]
+    L[Nurturing]
+    M[Conversion]
+    N[Retention]
+    
+    %% Connect to parent
+    D --> K
+    D --> L
+    D --> M
+    D --> N
+    
+    %% Fifth rank level - features under Integration Systems
+    P[Tilda API]
+    Q[Email Marketing]
+    R[Social Media]
+    S[Booking Systems]
+    
+    %% Connect to parent
+    O --> P
+    O --> Q
+    O --> R
+    O --> S
+    
+    %% Sixth rank level - features under Development Workflow
+    U[Cursor Integration]
+    V[Code Samples]
+    W[Deployment]
+    
+    %% Connect to parent
+    T --> U
+    T --> V
+    T --> W
+    
+    %% Styling
     classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
     classDef subNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef featureNode fill:#d4a017,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef subgraphStyle fill:none,stroke:none;
     
     %% Apply styles
     class A mainNode;
     class B,C,D,O,T subNode;
     class E,F,G,H,I,J,K,L,M,N,P,Q,R,S,U,V,W featureNode;
-    class web,catalog,funnel,integrations,dev subgraphStyle;
 ```
 
 ## Support and Updates
