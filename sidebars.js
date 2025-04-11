@@ -27,6 +27,15 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Project Status',
+      items: [
+        'DEVELOPMENT_STATUS',
+        'WEBSITE_STRUCTURE_ALIGNMENT',
+        'DOCUSAURUS_UPDATE_PLAN',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Website Architecture',
       items: [
         'website-architecture/overview',
