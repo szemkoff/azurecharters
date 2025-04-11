@@ -23,4 +23,7 @@ yarn-error.log*
 .idea
 .vscode
 *.sublime-project
-*.sublime-workspace 
+*.sublime-workspace
+
+# Ignore tilda-api directory (it's a separate git repository)
+tilda-api/ 
