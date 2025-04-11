@@ -1,7 +1,11 @@
 {
-  "name": "charter-framework",
+  "name": "azure-yacht-group",
   "version": "1.0.0",
-  "private": true,
+  "description": "Documentation for Azure Yacht Group's Tilda website implementation",
+  "main": "docusaurus.config.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
