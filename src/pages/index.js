@@ -119,6 +119,24 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="row">
+            <div className="col col--12 margin-bottom--lg">
+              <div className="card">
+                <div className="card__header">
+                  <h3>Tilda API Integration</h3>
+                </div>
+                <div className="card__body">
+                  <p>Connect your charter business systems with Tilda using our API integration tools and documentation.</p>
+                </div>
+                <div className="card__footer">
+                  <Link className="button button--primary" to="/docs/website-architecture/tilda-integration">Tilda Integration Guide</Link>
+                  <Link className="button button--secondary margin-left--md" to="/tilda-api/docs/API_SETUP_GUIDE.md">API Setup Guide</Link>
+                  <Link className="button button--secondary margin-left--md" to="/tilda-api/docs/IMPLEMENTATION_GUIDE.md">Implementation Guide</Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>

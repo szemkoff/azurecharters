@@ -64,6 +64,28 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Tilda API Integration',
+      items: [
+        'website-architecture/tilda-integration',
+        {
+          type: 'link',
+          label: 'API Setup Guide',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md',
+        },
+        {
+          type: 'link',
+          label: 'Implementation Guide',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/IMPLEMENTATION_GUIDE.md',
+        },
+        {
+          type: 'link',
+          label: 'Troubleshooting',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/TROUBLESHOOTING.md',
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Resources',
       items: [
         'resources/templates',
