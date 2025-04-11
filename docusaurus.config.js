@@ -57,7 +57,7 @@ const config = {
             'https://github.com/szemkoff/azurecharters/tree/main/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          // customCss: './src/css/custom.css',
         },
       }),
     ],
