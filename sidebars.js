@@ -34,6 +34,7 @@ const sidebars = {
         'marketing-strategy',
         'financial-projections',
         'risk-assessment',
+        'cap-table-azure-yacht-charters',
       ],
     },
     {
