@@ -1,7 +1,7 @@
 # Development Status
 
 ## Overview
-This document tracks the development status of all business stages and components of the Azure Yacht Group platform.
+This document tracks the development status of all business stages and components of the Azure Yacht Group platform. For a comprehensive project plan and roadmap, please refer to our [Project Plan & Roadmap](PROJECT_PLAN.md) document.
 
 ## Current Status
 

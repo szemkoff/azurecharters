@@ -29,6 +29,7 @@ const sidebars = {
       type: 'category',
       label: 'Project Status',
       items: [
+        'PROJECT_PLAN',
         'DEVELOPMENT_STATUS',
         'WEBSITE_STRUCTURE_ALIGNMENT',
         'DOCUSAURUS_UPDATE_PLAN',
