@@ -38,6 +38,20 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Legal Framework',
+      items: [
+        'legal-framework/index',
+        'legal-framework/contract-templates',
+        'legal-framework/insurance-requirements',
+        'legal-framework/regulatory-compliance',
+        'legal-framework/data-privacy-compliance',
+        'legal-framework/charter-contracts',
+        'legal-framework/broker-legal-framework',
+        'legal-framework/compliance-requirements',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Project Status',
       items: [
         'PROJECT_PLAN',
