@@ -82,6 +82,38 @@ Azure Yacht Group will carve out a distinctive position through:
 4. **Content Leadership**: Establishing authority through exceptional destination and experience content
 5. **Partnership Ecosystem**: Creating exclusive relationships with luxury partners outside the marine industry
 
+### Competitive Positioning Map: Service Integration vs. Luxury
+
+The following map positions Azure Yacht Group against competitors based on their level of service integration (yacht charters with events, concierge, etc.) and luxury positioning:
+
+```mermaid
+quadrantChart
+    title Competitive Positioning: Service Integration vs. Luxury Level
+    x-axis Low Integration --> High Integration
+    y-axis Budget --> Ultra-Luxury
+    quadrant-1 Premium Integrated Experience
+    quadrant-2 Luxury Specialists
+    quadrant-3 Budget Operators
+    quadrant-4 Mid-Market Generalists
+    "Azure Yacht Group": [0.85, 0.82]
+    "Traditional Charter X": [0.35, 0.78]
+    "Traditional Charter Y": [0.40, 0.85]
+    "Luxury Travel Agency Z": [0.65, 0.90]
+    "Digital Platform A": [0.75, 0.60]
+    "Digital Platform B": [0.80, 0.50]
+    "Event Specialist C": [0.82, 0.75]
+    "Independent Operator D": [0.25, 0.55]
+```
+
+In this positioning map:
+
+- **Premium Integrated Experience**: Azure Yacht Group leads with high integration of services and premium luxury positioning, alongside Event Specialist C
+- **Luxury Specialists**: Traditional operators (X and Y) and Luxury Travel Agency Z focus on high-end experiences but with less integrated services
+- **Mid-Market Generalists**: Digital Platform A and B offer more integrated booking and planning services but at a lower luxury tier
+- **Budget Operators**: Independent Operator D serves the more accessible segment with fewer integrated services
+
+Our strategic advantage lies in combining ultra-luxury experiences with highly integrated services, creating a distinctive position in the premium integrated quadrant that few competitors can match.
+
 ## Search Engine Optimization (SEO) Strategy
 
 ### Keyword Strategy: Long-Tail Precision
