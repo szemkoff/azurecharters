@@ -44,6 +44,7 @@ const sidebars = {
         'DEVELOPMENT_STATUS',
         'WEBSITE_STRUCTURE_ALIGNMENT',
         'DOCUSAURUS_UPDATE_PLAN',
+        'consolidated-implementation-plans',
       ],
     },
     {
