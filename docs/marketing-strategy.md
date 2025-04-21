@@ -96,21 +96,21 @@ quadrantChart
     quadrant-3 Budget Operators
     quadrant-4 Mid-Market Generalists
     "Azure Yacht Group": [0.85, 0.82]
-    "Traditional Charter X": [0.35, 0.78]
-    "Traditional Charter Y": [0.40, 0.85]
-    "Luxury Travel Agency Z": [0.65, 0.90]
-    "Digital Platform A": [0.75, 0.60]
-    "Digital Platform B": [0.80, 0.50]
-    "Event Specialist C": [0.82, 0.75]
-    "Independent Operator D": [0.25, 0.55]
+    "Burgess": [0.35, 0.88]
+    "Camper & Nicholsons": [0.40, 0.90]
+    "Abercrombie & Kent": [0.65, 0.92]
+    "YachtLife": [0.75, 0.60]
+    "GetMyBoat": [0.80, 0.45]
+    "Dream Yacht Charter": [0.82, 0.75]
+    "BoatBound": [0.25, 0.55]
 ```
 
 In this positioning map:
 
-- **Premium Integrated Experience**: Azure Yacht Group leads with high integration of services and premium luxury positioning, alongside Event Specialist C
-- **Luxury Specialists**: Traditional operators (X and Y) and Luxury Travel Agency Z focus on high-end experiences but with less integrated services
-- **Mid-Market Generalists**: Digital Platform A and B offer more integrated booking and planning services but at a lower luxury tier
-- **Budget Operators**: Independent Operator D serves the more accessible segment with fewer integrated services
+- **Premium Integrated Experience**: Azure Yacht Group leads with high integration of services and premium luxury positioning, alongside Dream Yacht Charter
+- **Luxury Specialists**: Traditional operators Burgess and Camper & Nicholsons, along with luxury travel company Abercrombie & Kent focus on high-end experiences but with less integrated services
+- **Mid-Market Generalists**: Digital platforms YachtLife and GetMyBoat offer more integrated booking and planning services but at a lower luxury tier
+- **Budget Operators**: Peer-to-peer platform BoatBound serves the more accessible segment with fewer integrated services
 
 Our strategic advantage lies in combining ultra-luxury experiences with highly integrated services, creating a distinctive position in the premium integrated quadrant that few competitors can match.
 
