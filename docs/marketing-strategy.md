@@ -37,6 +37,51 @@ mindmap
             ROI Measurement
 ```
 
+## Competitive Positioning Matrix
+
+This matrix maps Azure Yacht Group against key competitors in the luxury yacht charter industry based on price premium and service exclusivity.
+
+```mermaid
+quadrantChart
+    title Competitive Positioning Matrix
+    x-axis Low Price Premium --> High Price Premium
+    y-axis Limited Exclusivity --> High Exclusivity
+    quadrant-1 "Premium Niche"
+    quadrant-2 "Luxury Leaders"
+    quadrant-3 "Value Players"
+    quadrant-4 "Premium Volume"
+    "Azure Yacht Group": [0.65, 0.8]
+    "Burgess": [0.85, 0.9]
+    "Northrop & Johnson": [0.7, 0.75]
+    "Fraser Yachts": [0.8, 0.85]
+    "Camper & Nicholsons": [0.75, 0.8]
+    "Ocean Independence": [0.6, 0.7]
+    "Denison Yachting": [0.55, 0.65]
+    "IYC": [0.7, 0.8]
+    "Yachtzoo": [0.65, 0.7]
+    "Edmiston": [0.75, 0.85]
+```
+
+### Competitive Analysis
+
+| Competitor | Strengths | Weaknesses | Opportunity |
+|------------|-----------|------------|-------------|
+| **Burgess** | Global presence, heritage brand, extensive fleet | Less innovation in digital experience, higher pricing | Differentiate with superior digital tools and value-add services |
+| **Northrop & Johnson** | Strong brand recognition, traditional client base | Limited growth in new client demographics | Target emerging wealth with more accessible luxury positioning |
+| **Fraser Yachts** | Large international fleet, extensive broker network | Less personalized service model | Emphasize white-glove personalization and bespoke experiences |
+| **Camper & Nicholsons** | Historic brand with high credibility | Less modern marketing approach | Lead with cutting-edge digital presence and content marketing |
+| **IYC** | Well-established in Mediterranean and Caribbean | Less emphasis on experiential aspects | Focus on holistic travel experiences and event integration |
+
+### Differentiation Strategy
+
+Azure Yacht Group will carve out a distinctive position through:
+
+1. **Technology-Enhanced Experience**: Offering superior digital tools and virtual experiences 
+2. **Integrated Event Services**: Providing seamless yacht-to-shore event coordination
+3. **Personalization Excellence**: Implementing detailed preference tracking and anticipatory service
+4. **Content Leadership**: Establishing authority through exceptional destination and experience content
+5. **Partnership Ecosystem**: Creating exclusive relationships with luxury partners outside the marine industry
+
 ## Search Engine Optimization (SEO) Strategy
 
 ### Keyword Strategy: Long-Tail Precision
