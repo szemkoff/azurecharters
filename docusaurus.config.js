@@ -5,7 +5,7 @@
 const config = {
   title: 'Azure Yacht Group Framework',
   tagline: 'Complete Charter Business Framework',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/azure_corp_mark_black.png',
 
   // Set the production url of your site here
   url: 'https://szemkoff.github.io',
@@ -81,7 +81,7 @@ const config = {
         title: 'Azure Yacht Group',
         logo: {
           alt: 'Azure Yacht Group Logo',
-          src: 'img/logo.svg',
+          src: 'img/azure_corp_mark_black.png',
         },
         items: [
           {
