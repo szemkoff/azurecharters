@@ -243,12 +243,12 @@ gantt
 
 | KPI | Target | Measurement Frequency | Responsible Party |
 |-----|--------|----------------------|------------------|
-| Risk Event Frequency | <2 per quarter | Monthly | Operations Director |
-| Risk Response Time | <2 hours for high priority | Per event | Risk Officer |
+| Risk Event Frequency | &lt;2 per quarter | Monthly | Operations Director |
+| Risk Response Time | &lt;2 hours for high priority | Per event | Risk Officer |
 | Safety Incident Rate | 0 incidents | Monthly | Safety Manager |
 | Compliance Score | 100% | Quarterly | Compliance Officer |
-| Risk Mitigation Effectiveness | >90% | Quarterly | Risk Committee |
-| Risk Management Costs | <5% of operating expenses | Quarterly | Finance Director |
+| Risk Mitigation Effectiveness | &gt;90% | Quarterly | Risk Committee |
+| Risk Management Costs | &lt;5% of operating expenses | Quarterly | Finance Director |
 
 ## Conclusion
 
