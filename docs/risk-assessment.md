@@ -15,8 +15,8 @@ The following matrix evaluates key business risks by their potential impact and 
 ```mermaid
 xychart-beta
     title "Risk Assessment Matrix"
-    x-axis "Impact" 1 -> 10
-    y-axis "Probability" 1 -> 10
+    x-axis "Impact" 1 --> 10
+    y-axis "Probability" 1 --> 10
     bubble
         "Seasonal Demand Fluctuations" [7, 8, 5]
         "Regulatory Changes" [8, 5, 6]
