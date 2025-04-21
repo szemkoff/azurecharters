@@ -13,21 +13,21 @@ This document provides a thorough assessment of potential risks facing the Azure
 The following matrix evaluates key business risks by their potential impact and probability:
 
 ```mermaid
-xychart-beta
-    title "Risk Assessment Matrix"
-    x-axis "Impact" 1 --> 10
-    y-axis "Probability" 1 --> 10
-    bubble
-        "Seasonal Demand Fluctuations" [7, 8, 5]
-        "Regulatory Changes" [8, 5, 6]
-        "Economic Downturns" [9, 6, 8]
-        "Competition from Established Players" [6, 7, 5]
-        "Weather Events" [7, 7, 6]
-        "Technology Implementation Challenges" [5, 6, 4]
-        "Staffing Challenges" [6, 6, 5]
-        "Yacht Availability Issues" [8, 5, 6]
-        "Client Safety Incidents" [10, 3, 7]
-        "Data Security Breaches" [8, 4, 5]
+quadrantChart
+    title Risk Assessment Matrix
+    x-axis Low Impact --> High Impact
+    y-axis Low Probability --> High Probability
+    quadrant-1 High Risk - Critical Focus
+    quadrant-2 Medium Risk - Proactive Management
+    quadrant-3 Low Risk - Monitor
+    quadrant-4 Medium Risk - Contingency Planning
+    "Seasonal Demand Fluctuations": [0.7, 0.8]
+    "Regulatory Changes": [0.8, 0.5]
+    "Economic Downturns": [0.9, 0.6]
+    "Competition from Established Players": [0.6, 0.7]
+    "Weather Events": [0.7, 0.7]
+    "Technology Implementation Challenges": [0.5, 0.6]
+    "Staffing Challenges": [0.6, 0.6]
 ```
 
 ## Strategic Business Risks
