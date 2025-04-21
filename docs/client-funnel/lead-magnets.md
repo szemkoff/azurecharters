@@ -153,8 +153,8 @@ flowchart LR
 **Promotion Strategy**:
 - Feature on destination pages
 - Create social carousel previews
-   - Include testimonials from guests who followed itineraries
-   - Partner with local attractions mentioned in itineraries
+- Include testimonials from guests who followed itineraries
+- Partner with local attractions mentioned in itineraries
 
 ### 5. Charter Experience Guide for First-Timers
 
@@ -261,7 +261,7 @@ Track lead magnet performance using these key metrics:
 | Metric | Description | Target | Measurement Frequency |
 |--------|-------------|--------|----------------------|
 | Conversion Rate | % of visitors who download | 25%+ | Weekly |
-| Cost Per Lead | Marketing cost per acquisition | <$15 | Monthly |
+| Cost Per Lead | Marketing cost per acquisition | &lt;$15 | Monthly |
 | Lead Quality Score | Avg. score based on qualification criteria | 60+ | Weekly |
 | Nurture Engagement | % who engage with follow-up | 40%+ | Weekly |
 | Pipeline Contribution | % of leads entering sales process | 15%+ | Monthly |

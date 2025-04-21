@@ -264,10 +264,10 @@ journey
 
 | KPI Category | Metrics | Targets | Measurement Frequency |
 |--------------|---------|---------|----------------------|
-| **Acquisition** | - Qualified leads<br>- Channel conversion rates<br>- Cost per acquisition<br>- Lead-to-client conversion | - 240+ qualified leads (Y1)<br>- 15%+ avg. conversion rate<br>- &lt;$2,500 CPA<br>- 15% lead-to-client | Monthly |
-| **Engagement** | - Website engagement<br>- Content consumption<br>- Email engagement<br>- Social interaction | - 3:30+ avg. session duration<br>- 70%+ content completion<br>- 35%+ email open rate<br>- 5%+ social engagement | Weekly |
-| **Conversion** | - Inquiry-to-proposal rate<br>- Proposal acceptance<br>- Contract completion<br>- Upsell acceptance | - 40%+ inquiry-to-proposal<br>- 35%+ proposal acceptance<br>- 90%+ contract completion<br>- 25%+ upsell acceptance | Monthly |
-| **Retention** | - Client satisfaction<br>- Repeat booking rate<br>- Referral generation<br>- Lifetime value | - 90%+ satisfaction rating<br>- 40%+ repeat booking<br>- 1.5+ referrals per client<br>- $125,000+ avg. LTV | Quarterly |
+| **Acquisition** | - Qualified leads<br/>- Channel conversion rates<br/>- Cost per acquisition<br/>- Lead-to-client conversion | - 240+ qualified leads (Y1)<br/>- 15%+ avg. conversion rate<br/>- &lt;$2,500 CPA<br/>- 15% lead-to-client | Monthly |
+| **Engagement** | - Website engagement<br/>- Content consumption<br/>- Email engagement<br/>- Social interaction | - 3:30+ avg. session duration<br/>- 70%+ content completion<br/>- 35%+ email open rate<br/>- 5%+ social engagement | Weekly |
+| **Conversion** | - Inquiry-to-proposal rate<br/>- Proposal acceptance<br/>- Contract completion<br/>- Upsell acceptance | - 40%+ inquiry-to-proposal<br/>- 35%+ proposal acceptance<br/>- 90%+ contract completion<br/>- 25%+ upsell acceptance | Monthly |
+| **Retention** | - Client satisfaction<br/>- Repeat booking rate<br/>- Referral generation<br/>- Lifetime value | - 90%+ satisfaction rating<br/>- 40%+ repeat booking<br/>- 1.5+ referrals per client<br/>- $125,000+ avg. LTV | Quarterly |
 
 ### Attribution Modeling
 
@@ -323,12 +323,12 @@ pie
 
 | Category | Allocation | Key Investments |
 |----------|------------|----------------|
-| **Digital Marketing** | 30% | - SEO implementation<br>- Paid search campaigns<br>- Social media advertising<br>- Programmatic display |
-| **Content Development** | 20% | - Website content creation<br>- Visual asset development<br>- Video production<br>- Interactive tools |
-| **Partnership Development** | 15% | - Partnership program development<br>- Commission structures<br>- Familiarization experiences<br>- Co-marketing initiatives |
-| **Technology & Tools** | 15% | - CRM implementation<br>- Marketing automation<br>- Analytics infrastructure<br>- Proposal platform |
-| **Offline Marketing** | 10% | - Print advertising<br>- Event presence<br>- Direct mail campaigns<br>- Promotional materials |
-| **Client Experience** | 10% | - Welcome packages<br>- Loyalty program<br>- Custom gifts<br>- Experience enhancement |
+| **Digital Marketing** | 30% | - SEO implementation<br/>- Paid search campaigns<br/>- Social media advertising<br/>- Programmatic display |
+| **Content Development** | 20% | - Website content creation<br/>- Visual asset development<br/>- Video production<br/>- Interactive tools |
+| **Partnership Development** | 15% | - Partnership program development<br/>- Commission structures<br/>- Familiarization experiences<br/>- Co-marketing initiatives |
+| **Technology & Tools** | 15% | - CRM implementation<br/>- Marketing automation<br/>- Analytics infrastructure<br/>- Proposal platform |
+| **Offline Marketing** | 10% | - Print advertising<br/>- Event presence<br/>- Direct mail campaigns<br/>- Promotional materials |
+| **Client Experience** | 10% | - Welcome packages<br/>- Loyalty program<br/>- Custom gifts<br/>- Experience enhancement |
 
 ## Conclusion
 
