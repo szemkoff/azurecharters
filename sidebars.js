@@ -27,6 +27,17 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Business Strategy',
+      items: [
+        'business-plan-visual-elements',
+        'market-analysis',
+        'marketing-strategy',
+        'financial-projections',
+        'risk-assessment',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Project Status',
       items: [
         'PROJECT_PLAN',

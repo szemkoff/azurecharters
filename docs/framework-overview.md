@@ -1,164 +1,357 @@
 ---
-id: framework-overview
-title: Framework Visual Overview
 sidebar_position: 2
-description: Visual representation of the Charter Business Framework using enhanced diagrams
+title: Framework Overview
+description: Visual guide to the Charter Framework components
 ---
 
-# Framework Visual Overview
+# Framework Overview
 
-This page provides a comprehensive visual overview of the Azure Yacht Group Charter Business Framework using enhanced Mermaid v2 diagrams.
+This document provides a visual overview of the Charter Framework components and how they interact to create a comprehensive charter business system.
 
-## Complete Framework Map
+## Framework Architecture
 
-```mermaid
-%%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
-graph TD
-    A[Business Model]
-    
-    %% Force vertical layout with direct parent-child structure
-    A --> B[Website Architecture]
-    B --> C[Product Catalog]
-    C --> D[Client Funnel]
-    D --> O[Integration Systems]
-    O --> T[Development Workflow]
-    
-    %% Website Architecture features - use dashed lines for side connections
-    B -.- E[Tilda Integration]
-    B -.- F[Site Structure]
-    B -.- G[SEO Optimization]
-    
-    %% Product Catalog features
-    C -.- H[Yacht Data Structure]
-    C -.- I[Tilda Products]
-    C -.- J[Availability Management]
-    
-    %% Client Funnel features
-    D -.- K[Acquisition]
-    D -.- L[Nurturing]
-    D -.- M[Conversion]
-    D -.- N[Retention]
-    
-    %% Integration Systems features
-    O -.- P[Tilda API]
-    O -.- Q[Email Marketing]
-    O -.- R[Social Media]
-    O -.- S[Booking Systems]
-    
-    %% Development Workflow features
-    T -.- U[Cursor Integration]
-    T -.- V[Code Samples]
-    T -.- W[Deployment]
-    
-    %% Styling
-    classDef primaryNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
-    classDef secondaryNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef featureNode fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef systemNode fill:#4285F4,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef workflowNode fill:#EA4335,color:#ffffff,stroke:#333,stroke-width:1px;
-    
-    %% Apply styles
-    class A primaryNode;
-    class B,C,D secondaryNode;
-    class E,F,G,H,I,J,K,L,M,N featureNode;
-    class O,P,Q,R,S systemNode;
-    class T,U,V,W workflowNode;
-```
-
-## Business Model Components
+The Charter Framework architecture integrates three primary platforms with business processes to create a complete charter business solution:
 
 ```mermaid
-%%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
-graph TD
-    A[Business Model]
+%%{init: {'theme': 'neutral'}}%%
+flowchart TB
+    subgraph "Charter Framework"
     
-    %% Force vertical layout
-    A --> B[Revenue Streams]
-    B --> C[Cost Structure]
-    C --> D[Value Proposition]
-    D --> E[Key Partners]
+        subgraph "Customer-Facing"
+            Website["Website<br/><small>Tilda</small>"]
+            YachtListings["Yacht Listings"]
+            InquiryForms["Inquiry Forms"]
+            Galleries["Photo Galleries"]
+            
+            Website --> YachtListings
+            Website --> InquiryForms
+            Website --> Galleries
+        end
+        
+        subgraph "Business Operations"
+            CRM["CRM<br/><small>HubSpot</small>"]
+            Contacts["Contact Management"]
+            Deals["Deal Pipeline"]
+            Automation["Marketing Automation"]
+            Analytics["Analytics & Reporting"]
+            
+            CRM --> Contacts
+            CRM --> Deals
+            CRM --> Automation
+            CRM --> Analytics
+        end
+        
+        subgraph "Business Processes"
+            SalesProcess["Sales Process"]
+            CharterOps["Charter Operations"]
+            Communications["Client Communications"]
+            Contracts["Contracts & Documents"]
+            
+            SalesProcess --> CharterOps
+            SalesProcess --> Communications
+            SalesProcess --> Contracts
+        end
+        
+        InquiryForms --> Contacts
+        Contacts --> Communications
+        Deals --> Contracts
+        CharterOps --> Analytics
+    end
     
-    %% Revenue Streams details
-    B -.- B1[Charter Fees]
-    B -.- B2[Brokerage Commissions]
-    B -.- B3[Additional Services]
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef platform fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
     
-    %% Cost Structure details
-    C -.- C1[Yacht Acquisition]
-    C -.- C2[Maintenance]
-    C -.- C3[Marketing]
-    C -.- C4[Staffing]
-    
-    %% Value Proposition details
-    D -.- D1[Luxury Experience]
-    D -.- D2[Convenience]
-    D -.- D3[Expertise]
-    
-    %% Key Partners details
-    E -.- E1[Yacht Builders]
-    E -.- E2[Marinas]
-    E -.- E3[Service Providers]
-    
-    %% Styling
-    classDef mainNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
-    classDef componentNode fill:#4285F4,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef detailNode fill:#87CEFA,color:#333,stroke:#333,stroke-width:1px;
-    
-    %% Apply styles
-    class A mainNode;
-    class B,C,D,E componentNode;
-    class B1,B2,B3,C1,C2,C3,C4,D1,D2,D3,E1,E2,E3 detailNode;
+    class Website,CRM platform;
+    class YachtListings,InquiryForms,Galleries,Contacts,Deals,Automation,Analytics secondary;
+    class SalesProcess,CharterOps,Communications,Contracts tertiary;
 ```
 
-## Client Journey Flow
+## Customer Journey
+
+The Charter Framework supports the complete customer journey from discovery to booking completion:
 
 ```mermaid
-%%{init: {'securityLevel': 'loose', 'theme': 'neutral'}}%%
-graph TD
-    %% Create a linear journey flow
-    Start([Client Entry Point])
-    Start --> A{Website Visit Source}
-    A --> E[Listing Exploration]
-    E --> F{Client Action}
-    F --> J[Sales Followup]
-    J --> M{Booking Decision}
-    M --> N[Contract]
-    N --> Q[Charter Experience]
-    Q --> T[Post-Charter]
-
-    %% Entry points
-    A -.- A1[Direct]
-    A -.- A2[SEO] 
-    A -.- A3[Referral]
+%%{init: {'theme': 'neutral'}}%%
+flowchart LR
+    A[Discovery] --> B[Research]
+    B --> C[Inquiry]
+    C --> D[Quotation]
+    D --> E[Negotiation]
+    E --> F[Booking]
+    F --> G[Charter]
+    G --> H[Review]
     
-    %% Client actions
-    F -.- F1[Inquiry]
-    F -.- F2[Wishlist]
-    F -.- F3[Download]
+    A1[Website<br/>Browsing] --> A
+    A2[Social Media] --> A
+    A3[Referrals] --> A
     
-    %% Follow-up methods
-    J -.- J1[Contact Form]
-    J -.- J2[Targeted Email]
-    J -.- J3[Automated Sequence]
+    B1[Yacht<br/>Listings] --> B
+    B2[Price<br/>Comparison] --> B
     
-    %% Decision outcomes
-    M -.- M1[Yes] 
-    M -.- M2[No - Nurture]
-    M -.- M3[Later - Remind]
+    C1[Contact<br/>Form] --> C
+    C2[Email<br/>Inquiry] --> C
     
-    %% Post-charter actions
-    T -.- T1[Review Request]
-    T -.- T2[Rebooking Offer]
+    D1[CRM<br/>Automation] --> D
     
-    %% Styling
-    classDef entryNode fill:#0078D4,color:#ffffff,stroke:#333,stroke-width:2px;
-    classDef decisionNode fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
-    classDef successNode fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    E1[Sales<br/>Team] --> E
     
-    %% Apply styles
-    class Start,A,F,M entryNode;
-    class E,J,T,A1,A2,A3,F1,F2,F3,J1,J2,J3,M1,M2,M3 decisionNode;
-    class N,Q,T1,T2 successNode;
+    F1[Contract<br/>Signing] --> F
+    F2[Payment<br/>Processing] --> F
+    
+    G1[Charter<br/>Operations] --> G
+    
+    H1[Feedback<br/>Collection] --> H
+    H2[Repeat<br/>Business] --> A
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class A,B,C,D,E,F,G,H primary;
+    class A1,A2,A3,B1,B2,C1,C2,D1,E1,F1,F2,G1,H1,H2 tertiary;
 ```
 
-These enhanced diagrams provide a clear visual representation of how the different components of the Charter Business Framework connect and work together to create a comprehensive system for running a successful yacht charter business.
+## Website Structure
+
+The Tilda-based website structure organizes content for effective customer engagement:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart TB
+    Homepage --> Destinations
+    Homepage --> YachtFleet["Yacht Fleet"]
+    Homepage --> Services
+    Homepage --> AboutUs["About Us"]
+    Homepage --> Contact
+    
+    Destinations --> DestinationPages["Destination Detail Pages"]
+    YachtFleet --> YachtListings["Yacht Listing Pages"]
+    YachtListings --> YachtDetailPages["Yacht Detail Pages"]
+    YachtDetailPages --> BookingInquiry["Booking Inquiry Forms"]
+    
+    Services --> DayCharters["Day Charters"]
+    Services --> WeeklyCharters["Weekly Charters"]
+    Services --> CustomCharters["Custom Charters"]
+    
+    InquiryForm["Inquiry Forms"] --> CRM["HubSpot CRM"]
+    BookingInquiry --> CRM
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef external fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class Homepage primary;
+    class Destinations,YachtFleet,Services,AboutUs,Contact secondary;
+    class DestinationPages,YachtListings,YachtDetailPages,DayCharters,WeeklyCharters,CustomCharters,BookingInquiry,InquiryForm tertiary;
+    class CRM external;
+```
+
+## Yacht Listing Structure
+
+The yacht listings follow a parent-child product structure for flexible charter options:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart TB
+    ParentProduct["Parent Product<br/>(Yacht)"] --> Specifications["Specifications Tab"]
+    ParentProduct --> PricingTab["Pricing Tab"]
+    ParentProduct --> GalleryTab["Gallery Tab"]
+    
+    ParentProduct --> VariantA["Child Variant A<br/>(Day Charter)"]
+    ParentProduct --> VariantB["Child Variant B<br/>(Week Charter)"]
+    ParentProduct --> VariantC["Child Variant C<br/>(Custom Charter)"]
+    
+    Specifications --> TechnicalSpecs["Technical Specifications"]
+    Specifications --> Amenities["Amenities & Features"]
+    Specifications --> CrewDetails["Crew Details"]
+    
+    PricingTab --> SeasonalRates["Seasonal Rates"]
+    PricingTab --> IncludedItems["Included Items"]
+    PricingTab --> AdditionalCharges["Additional Charges"]
+    
+    GalleryTab --> ExteriorPhotos["Exterior Photos"]
+    GalleryTab --> InteriorPhotos["Interior Photos"]
+    GalleryTab --> LayoutPlans["Layout Plans"]
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef detail fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class ParentProduct primary;
+    class Specifications,PricingTab,GalleryTab,VariantA,VariantB,VariantC secondary;
+    class TechnicalSpecs,Amenities,CrewDetails,SeasonalRates,IncludedItems,AdditionalCharges,ExteriorPhotos,InteriorPhotos,LayoutPlans tertiary;
+```
+
+## CRM Process Flow
+
+The HubSpot CRM integration manages sales and marketing processes:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart TB
+    subgraph "HubSpot CRM"
+        InquiryCapture["Inquiry Capture"] --> LeadQualification["Lead Qualification"]
+        LeadQualification --> SalesProcess["Sales Process"]
+        SalesProcess --> BookingManagement["Booking Management"]
+        BookingManagement --> CustomerService["Customer Service"]
+        
+        subgraph "Contact Lifecycle"
+            Visitor["Visitor"] --> Subscriber["Subscriber"]
+            Subscriber --> Lead["Lead"]
+            Lead --> MQL["Marketing Qualified Lead"]
+            MQL --> SQL["Sales Qualified Lead"]
+            SQL --> Opportunity["Opportunity"]
+            Opportunity --> Customer["Customer"]
+            Customer --> Evangelist["Evangelist"]
+        end
+        
+        subgraph "Deal Pipeline"
+            NewInquiry["New Inquiry"] --> InitialContact["Initial Contact"]
+            InitialContact --> QuoteSent["Quote Sent"]
+            QuoteSent --> Negotiation["Negotiation"]
+            Negotiation --> ContractSent["Contract Sent"]
+            ContractSent --> Deposit["Deposit Received"]
+            Deposit --> Booked["Booked"]
+            Booked --> Completed["Completed"]
+        end
+        
+        subgraph "Automation"
+            FormSubmission["Form Submission"] --> |Trigger| WelcomeEmail["Welcome Email"]
+            LeadStatus["Lead Status Change"] --> |Trigger| FollowUpEmail["Follow-Up Email"]
+            InactiveTime["Inactive Time"] --> |Trigger| ReengagementEmail["Reengagement Email"]
+            CharterDate["Charter Date"] --> |Trigger| PreCharterInfo["Pre-Charter Info"]
+        end
+    end
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef automation fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class InquiryCapture,LeadQualification,SalesProcess,BookingManagement,CustomerService primary;
+    class Visitor,Subscriber,Lead,MQL,SQL,Opportunity,Customer,Evangelist secondary;
+    class NewInquiry,InitialContact,QuoteSent,Negotiation,ContractSent,Deposit,Booked,Completed secondary;
+    class FormSubmission,LeadStatus,InactiveTime,CharterDate,WelcomeEmail,FollowUpEmail,ReengagementEmail,PreCharterInfo automation;
+```
+
+## Data Flow Diagram
+
+The data flow between different components of the Charter Framework:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart LR
+    subgraph "Customer"
+        C["Website Visitor"]
+    end
+    
+    subgraph "Tilda Website"
+        W["Website"]
+        Forms["Inquiry Forms"]
+        Products["Yacht Listings"]
+    end
+    
+    subgraph "HubSpot CRM"
+        Contacts["Contacts"]
+        Deals["Deals"]
+        Marketing["Marketing Emails"]
+        Tasks["Tasks"]
+    end
+    
+    subgraph "Business Operations"
+        Staff["Charter Staff"]
+        Operations["Operations Team"]
+        Finance["Finance Department"]
+    end
+    
+    C --> |"Browses"| W
+    C --> |"Submits Inquiry"| Forms
+    Products --> |"Product Info"| C
+    
+    Forms --> |"Lead Data"| Contacts
+    Contacts --> |"Contact Info"| Deals
+    Contacts --> |"Contact List"| Marketing
+    Marketing --> |"Automated Emails"| C
+    
+    Deals --> |"Charter Details"| Tasks
+    Tasks --> |"Assignments"| Staff
+    Tasks --> |"Bookings"| Operations
+    Deals --> |"Financial Info"| Finance
+    
+    Staff --> |"Updates"| Deals
+    Operations --> |"Status Updates"| Deals
+    Finance --> |"Payment Status"| Deals
+    
+    classDef customer fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef website fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef crm fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef ops fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class C customer;
+    class W,Forms,Products website;
+    class Contacts,Deals,Marketing,Tasks crm;
+    class Staff,Operations,Finance ops;
+```
+
+## Implementation Workflow
+
+The implementation process for the Charter Framework:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart TB
+    P["Project Planning"] --> T["Technology Setup"]
+    T --> C["Content Creation"]
+    C --> I["Integration"]
+    I --> TE["Testing"]
+    TE --> TR["Training"]
+    TR --> L["Launch"]
+    L --> O["Optimization"]
+    
+    P1["Business Requirements"] --> P
+    P2["Yacht Selection"] --> P
+    P3["Timeline Planning"] --> P
+    
+    T1["Tilda Setup"] --> T
+    T2["HubSpot Setup"] --> T
+    T3["Domain & Email Setup"] --> T
+    
+    C1["Yacht Data Collection"] --> C
+    C2["Website Content Writing"] --> C
+    C3["Photo Preparation"] --> C
+    C4["Email Template Creation"] --> C
+    
+    I1["Form Integration"] --> I
+    I2["Automation Setup"] --> I
+    I3["Payment System"] --> I
+    
+    TE1["Website Testing"] --> TE
+    TE2["Process Testing"] --> TE
+    TE3["Mobile Optimization"] --> TE
+    
+    TR1["Staff Training"] --> TR
+    TR2["Process Documentation"] --> TR
+    
+    L1["Marketing Campaigns"] --> L
+    L2["Announcement"] --> L
+    
+    O1["Performance Monitoring"] --> O
+    O2["Customer Feedback"] --> O
+    O3["Continuous Improvement"] --> O
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class P,T,C,I,TE,TR,L,O primary;
+    class P1,P2,P3,T1,T2,T3,C1,C2,C3,C4,I1,I2,I3,TE1,TE2,TE3,TR1,TR2,L1,L2,O1,O2,O3 secondary;
+```
+
+---
+
+*Last Updated: April 30, 2025*  
+*Next Review: May 31, 2025*
