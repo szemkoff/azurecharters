@@ -204,7 +204,7 @@ Based on our [IP & Digital Asset Inventory](resources/ip-assets.md), we maintain
 - **Financial Metrics**:
   - Revenue growth (target: 20%+ annual)
   - Profit margin (target: 30-35%)
-  - Customer acquisition cost (target: <15% of first booking value)
+  - Customer acquisition cost (target: &lt;15% of first booking value)
   
 - **Operational Metrics**:
   - Fleet utilization rate (target: 65%+ annually)
