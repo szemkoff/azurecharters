@@ -89,6 +89,7 @@ const sidebars = {
       label: 'Resources',
       items: [
         'resources/templates',
+        'resources/ip-assets',
       ],
     },
   ],
