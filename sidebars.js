@@ -45,6 +45,7 @@ const sidebars = {
         'legal-framework/insurance-requirements',
         'legal-framework/regulatory-compliance',
         'legal-framework/data-privacy-compliance',
+        'legal-framework/financial-transaction-framework',
         'legal-framework/charter-contracts',
         'legal-framework/broker-legal-framework',
         'legal-framework/compliance-requirements',
