@@ -7,6 +7,7 @@ This document provides a centralized reference for all implementation plans, pro
 - [Website Development Plan](#website-development-plan)
 - [Marketing Implementation Plan](#marketing-implementation-plan)
 - [Technology & Documentation Plan](#technology--documentation-plan)
+- [Legal & Financial Framework Plan](#legal--financial-framework-plan)
 - [Online Presence Improvement Plan](#online-presence-improvement-plan)
 - [Risk Management Plan](#risk-management-plan)
 
@@ -28,6 +29,7 @@ This document provides a centralized reference for all implementation plans, pro
 | CRM Implementation | 🟡 50% Complete | High | July 30, 2025 | CRM Team |
 | Documentation Framework | 🟡 60% Complete | Medium | August 15, 2025 | Doc Team |
 | Initial SEO Implementation | 🟡 40% Complete | Medium | August 30, 2025 | Marketing |
+| Legal Framework Implementation | 🟡 25% Complete | High | August 30, 2025 | Legal Team |
 
 ### Phase 2: Enhancement (Q3-Q4 2025)
 
@@ -38,6 +40,7 @@ This document provides a centralized reference for all implementation plans, pro
 | Analytics Integration | 🟡 Planning | Medium | Oct 30, 2025 | Data Team |
 | Performance Optimization | 🔴 Not Started | Medium | Nov 15, 2025 | Web Team |
 | Asset Enhancement | 🟡 Initial Review | Medium | Nov 30, 2025 | Content Team |
+| Financial Transaction Framework | 🟡 Planning | High | Oct 30, 2025 | Finance Team |
 
 ### Phase 3: Expansion (Q1-Q2 2026)
 
@@ -283,6 +286,94 @@ gantt
     Team Training               :d2, after c3, 3d
     Go-Live                     :milestone, after d1, 0d
 ```
+
+## Legal & Financial Framework Plan
+
+### Current Status: 🟡 In Progress - 30% Complete
+
+```mermaid
+gantt
+    title Legal & Financial Framework Implementation
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+    
+    section Legal Foundation
+    Legal Entity Structure       :a1, 2025-05-01, 14d
+    Regulatory Compliance Review :a2, after a1, 21d
+    Insurance Requirements       :a3, 2025-05-15, 21d
+    
+    section Contracts Framework
+    IYBA Contract Templates      :b1, 2025-06-01, 21d
+    Charter Agreement Updates    :b2, after b1, 14d
+    Broker Agreement Development :b3, after b1, 14d
+    
+    section Financial Systems
+    Escrow Account Setup         :c1, 2025-07-01, 14d
+    Payment Processing Systems   :c2, after c1, 21d
+    Financial Compliance Controls:c3, after c2, 14d
+    
+    section Implementation
+    Team Training                :d1, 2025-08-15, 7d
+    Documentation Finalization   :d2, after d1, 7d
+    Full Compliance Review       :milestone, after d2, 0d
+```
+
+### Legal Framework Implementation
+**Status: 🟡 In Progress - 35% Complete**
+
+#### Regulatory Compliance
+- ✅ Initial legal structure assessment
+- ✅ Florida broker licensing requirements review
+- 🟡 USCG and maritime regulations documentation
+- 🟡 Insurance requirements documentation
+- 🔴 International regulatory mapping
+
+#### Contract Development
+- ✅ Initial framework for charter contracts
+- 🟡 IYBA-compliant charter agreement templates
+- 🟡 Charter party waiver and acknowledgment forms
+- 🔴 Crew employment and service agreements
+- 🔴 Partner and vendor contract templates
+
+#### Data Privacy & Compliance
+- ✅ Initial privacy policy development
+- 🟡 GDPR compliance assessment
+- 🔴 CCPA/US state law compliance
+- 🔴 Data handling procedures
+- 🔴 Breach notification protocols
+
+### Financial Transaction Framework
+**Status: 🟡 Planning - 25% Complete**
+
+#### Escrow Account Management
+- ✅ Escrow requirement assessment per IYBA
+- 🟡 Escrow service provider evaluation
+- 🟡 Account structure documentation
+- 🔴 Escrow SOP development
+- 🔴 Staff training on escrow procedures
+
+#### Payment Systems
+- ✅ Payment processor evaluation
+- 🟡 Merchant account setup
+- 🔴 PCI compliance implementation
+- 🔴 International payment solutions
+- 🔴 Fee structure documentation
+
+#### Financial Compliance
+- ✅ AML requirements documentation
+- 🟡 KYC procedure development
+- 🔴 Transaction monitoring procedures
+- 🔴 Suspicious activity reporting process
+- 🔴 Record-keeping system implementation
+
+#### Implementation Schedule
+| Task | Start Date | Duration | Dependencies | Owner |
+|------|------------|----------|--------------|-------|
+| IYBA Membership Application | June 1, 2025 | 2 weeks | Legal entity setup | Legal Counsel |
+| Escrow Account Setup | July 1, 2025 | 3 weeks | Banking relationship | Finance Director |
+| Contract Template Implementation | June 15, 2025 | 4 weeks | IYBA membership | Legal Counsel |
+| Staff IYBA Standards Training | August 15, 2025 | 2 weeks | All documentation | Operations Director |
+| Financial Compliance Audit | September 1, 2025 | 3 weeks | All systems operational | Compliance Officer |
 
 ## Online Presence Improvement Plan
 
