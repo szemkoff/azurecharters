@@ -96,6 +96,105 @@ flowchart TD
 - Tax compliance requirements
 - Damage and liability terms
 
+## IYBA Membership and Compliance
+
+### 1. IYBA Membership Requirements
+
+The International Yacht Brokers Association (IYBA, formerly FYBA) sets standards for professional yacht brokers that Azure Yacht Group adheres to.
+
+**Membership Qualifications:**
+- Minimum two years of yacht brokerage experience
+- Sponsorship by two active IYBA members
+- Completion of IYBA ethics course
+- Adherence to IYBA Code of Ethics
+- Maintenance of required insurance coverage
+- Payment of annual membership dues
+- Compliance with ongoing education requirements
+
+**Continuing Education:**
+- Minimum annual required hours of approved education
+- Participation in IYBA seminars and workshops
+- Legal and regulatory updates
+- Documentation of completed courses
+- Ethics training renewal
+
+### 2. IYBA Code of Ethics
+
+Azure Yacht Group adheres to the IYBA Code of Ethics in all charter operations:
+
+**Key Ethical Requirements:**
+1. **Duty to Clients**:
+   - Full disclosure of all material facts
+   - Highest level of honesty and integrity
+   - Protection of client interests
+   - Accurate representation of vessels
+
+2. **Duty to the Public**:
+   - Fair and honest advertising
+   - No misleading statements
+   - Transparency in all communications
+   - Qualified professional service
+
+3. **Duty to the Industry**:
+   - Cooperation with other brokers
+   - Fair competition practices
+   - Maintenance of professional standards
+   - Support of industry development
+
+4. **Duty to IYBA**:
+   - Compliance with all bylaws and rules
+   - Participation in association activities
+   - Promotion of IYBA standards
+   - Reporting of unethical conduct
+
+### 3. IYBA Standard Forms and Contracts
+
+Azure Yacht Group utilizes IYBA-approved documentation for all charter transactions:
+
+**IYBA Forms Utilized:**
+- IYBA Charter Agreement
+- IYBA Broker/Owner Agreement
+- IYBA Escrow Instructions
+- IYBA Offer Form
+- IYBA Deposit Receipt
+- IYBA Charter Preference Sheet
+- IYBA Broker Commission Agreement
+
+**Compliance Requirements:**
+- No unauthorized modification of standard forms
+- Proper execution and documentation
+- Accurate completion of all fields
+- Secure storage of executed agreements
+- Prompt submission of required documentation
+
+### 4. IYBA Dispute Resolution Process
+
+Azure Yacht Group follows IYBA's arbitration procedures for resolving disputes:
+
+**Arbitration Process:**
+1. **Initial Submission**:
+   - Filing of complaint with IYBA
+   - Payment of required fees
+   - Selection of arbitration panel
+
+2. **Documentation Phase**:
+   - Submission of all relevant documents
+   - Witness statements
+   - Evidence compilation
+   - Response from opposing party
+
+3. **Arbitration Hearing**:
+   - Presentation of case
+   - Witness testimony
+   - Panel deliberation
+   - Binding decision
+
+4. **Resolution Implementation**:
+   - Execution of panel decision
+   - Financial settlement if required
+   - Documentation of resolution
+   - Compliance verification
+
 ## Required Documentation Package
 
 1. **Master Broker Agreement** (Azure Yacht Group ↔ Owner/Manager)
@@ -108,79 +207,76 @@ flowchart TD
 8. **Charter Guest Information Form** (client details)
 9. **Florida Sales Tax Documentation**
 10. **Proof of Deposit & Payment** (receipts/transfers)
+11. **IYBA Membership Certification** (current year)
+12. **IYBA Compliance Attestation** (annual)
 
 ## Business Process Flow
 
 ```mermaid
 flowchart TD
-    Lead[Lead Generation] --> Inquiry[Client Inquiry]
-    Inquiry --> YachtSelection[Yacht Selection]
-    YachtSelection --> OwnerContact[Contact Owner/Manager]
-    OwnerContact --> Availability[Verify Availability]
-    Availability --> PricingTerms[Confirm Pricing & Terms]
-    PricingTerms --> ClientProposal[Submit Proposal to Client]
-    ClientProposal --> ClientApproval[Client Approval]
-    ClientApproval --> ContractPrep[Document Preparation]
-    ContractPrep --> ContractSign[Contract Signing]
-    ContractSign --> Deposit[Collect Deposit]
-    Deposit --> DepositHold[Hold in Escrow]
-    DepositHold --> OwnerConfirm[Owner Confirmation]
-    OwnerConfirm --> DepositTransfer[Transfer Deposit to Owner]
-    DepositTransfer --> Commission[Retain Commission]
-    Commission --> Charter[Charter Execution]
-    Charter --> PostCharter[Post-Charter Review]
-    PostCharter --> Feedback[Collect Feedback]
+    A[Client Inquiry] --> B{Qualified Lead?}
+    B -->|Yes| C[Yacht Selection]
+    B -->|No| D[Lead Nurturing]
+    
+    C --> E[Booking Form]
+    E --> F[Charter Agreement Preparation]
+    F --> G[Client Signature]
+    G --> H[Deposit Collection]
+    
+    H --> I[Owner Confirmation]
+    I --> J{Final Payment Due}
+    J -->|Received| K[Pre-Charter Preparation]
+    K --> L[Charter Execution]
+    L --> M[Post-Charter Settlement]
+    
+    subgraph "IYBA Compliant Process"
+    F
+    G
+    H
+    I
+    end
 ```
 
-## Risk Mitigation Strategies
+## IYBA-Specific Transaction Requirements
 
-### 1. Legal Structure Protection
+### 1. IYBA Marketing Standards
 
-- **LLC Formation**: Maintain Azure Yacht Group LLC as separate legal entity
-- **Insurance**: Dedicated broker E&O (Errors & Omissions) insurance
-- **Liability Limitations**: Clear contract language limiting broker liability
+When marketing charter yachts, Azure Yacht Group adheres to IYBA standards for accurate representation:
 
-### 2. Financial Risk Management
+**Marketing Requirements:**
+- Accurate specifications and photos
+- Clear disclosure of charter rates and terms
+- No misleading statements about availability
+- Proper attribution and permission for all content
+- Clear documentation of special features or limitations
+- Transparent disclosure of included/excluded items
+- Proper representation of crew qualifications
 
-- **Escrow Account**: Use dedicated escrow account for all client payments
-- **Deposit Protection**: Clear documentation of deposit terms
-- **Payment Timing**: Only release payment to owners after confirmation
-- **Commission Protection**: Anti-circumvention clauses with penalties
+### 2. IYBA Co-Brokerage Standards
 
-### 3. Service Quality Control
+When working with other brokers, Azure Yacht Group follows IYBA co-brokerage protocols:
 
-- **Yacht Inspection**: Pre-charter inspection protocols
-- **Specification Verification**: Independent verification process
-- **Client Feedback System**: Documented post-charter review
-- **Owner Rating System**: Internal quality tracking
+**Co-Brokerage Requirements:**
+- Written co-brokerage agreements
+- Clear commission split terms (typically 50/50)
+- Defined responsibilities for each broker
+- Communication protocols with clients
+- Agreement on marketing restrictions
+- Dispute resolution procedures
+- Client confidentiality protections
 
-### 4. Compliance Requirements
+### 3. IYBA Financial Transaction Standards
 
-- **USCG Compliance**: Documentation verification checklist
-- **Sales Tax**: Florida sales tax collection and remittance procedures
-- **Business Licensing**: Florida broker licensing requirements
-- **Maritime Regulations**: Compliance verification process
+All financial aspects of charter transactions adhere to IYBA requirements:
 
-## Implementation Timeline
-
-```mermaid
-gantt
-    title Legal Framework Implementation
-    dateFormat  YYYY-MM-DD
-    section Document Creation
-    Master Broker Agreement           :2025-05-01, 15d
-    Terms of Service                  :2025-05-01, 15d
-    Charter Agreement Template        :2025-05-10, 20d
-    section Legal Review
-    Attorney Review of Documents      :2025-05-25, 20d
-    Compliance Verification           :2025-05-25, 15d
-    section System Setup
-    Escrow Account Establishment      :2025-06-10, 10d
-    E&O Insurance Acquisition         :2025-06-10, 15d
-    section Implementation
-    Owner Onboarding Process          :2025-06-20, ongoing
-    Client Agreement Process          :2025-06-20, ongoing
-```
+**Financial Standards:**
+- Use of IYBA-approved escrow accounts
+- Proper deposit handling procedures
+- Clear documentation of all transactions
+- Transparent fee disclosure to clients
+- Prompt payment of commissions
+- Accurate accounting for all funds
+- Proper tax documentation and reporting
 
 ## Florida-Specific Regulatory Considerations
 
@@ -226,7 +322,52 @@ Charter operations must adhere to various local regulations:
 | **Regulatory Violations** | Non-compliance with USCG or maritime regulations | Comprehensive compliance checklist, verification procedures |
 | **Commission Bypassing** | Owner-client direct booking on future charters | Strong non-circumvention clauses with monetary penalties |
 | **Insurance Coverage Gaps** | Inadequate insurance for charter activities | Insurance verification process, coverage requirements in contracts |
+| **IYBA Standards Violation** | Non-compliance with IYBA requirements | Regular IYBA compliance audits, staff training, updated procedures |
+
+## IYBA Best Practices Implementation
+
+### Staff Training on IYBA Standards
+
+Azure Yacht Group maintains a comprehensive IYBA standards training program:
+
+**Training Components:**
+- IYBA Code of Ethics orientation
+- Contract documentation training
+- Escrow handling procedures
+- Anti-Money Laundering (AML) training
+- IYBA form completion workshop
+- Co-brokerage cooperation procedures
+- Client confidentiality requirements
+
+### IYBA Compliance Documentation
+
+Azure Yacht Group maintains documentation demonstrating IYBA compliance:
+
+**Compliance Documentation:**
+- Annual IYBA membership certification
+- Proof of required insurance coverage
+- Staff IYBA training records
+- IYBA continuing education certificates
+- Self-assessment compliance checklist
+- IYBA seminar attendance records
+- Ethics certification and renewal
+
+### IYBA Networking and Relationship Management
+
+Professional relationships within IYBA are cultivated to enhance service quality:
+
+**Relationship Development:**
+- Active participation in IYBA events
+- Committee participation when applicable
+- Contribution to IYBA publications
+- Cooperation with fellow IYBA members
+- Promotion of IYBA standards to clients
+- Support of IYBA legislative initiatives
+- Participation in IYBA educational opportunities
 
 ---
 
 *Note: This framework is intended as a guide. All final legal documents should be reviewed by qualified legal counsel specializing in maritime law in Florida before implementation.* 
+
+**Last Updated**: April 30, 2024  
+**Next Review**: May 31, 2024 
