@@ -4,14 +4,35 @@ title: Project Plan & Roadmap
 description: Comprehensive project plan and development roadmap for Azure Yacht Group
 ---
 
-# Project Plan: Charter Business Framework Implementation
+# Project Plan: Two-Website Business Framework Implementation
 
 ## Overview
-This document outlines the comprehensive implementation plan for the Azure Yacht Group charter business framework. It serves as the master roadmap for development, integration, and deployment. Last updated: May 1, 2025.
+This document outlines the comprehensive implementation plan for the Azure Yacht Group business framework, which now includes two separate websites to accommodate dedicated investment in the charter business. It serves as the master roadmap for development, integration, and deployment. Last updated: May 24, 2025.
+
+## Website Structure Strategy
+
+The Azure Yacht Group's online presence is strategically divided into two separate websites:
+
+1. **azureyachtgroup.com (Project ID: 4198911)**
+   - **Purpose**: Focuses on Yacht Brokerage and Yacht Design business pillars
+   - **Content**: Main Azure Yacht Group corporate presence, brokerage services, and design services
+   - **Target Audience**: Yacht buyers, sellers, and design clients
+
+2. **azurcharters.com (Project ID: 12993249)**
+   - **Purpose**: Dedicated to the Charter business pillar
+   - **Content**: Charter offerings, destinations, and charter-specific services
+   - **Target Audience**: Charter clients and charter investors
+   - **Note**: This separation is due to having a dedicated investor for the charter business only
+
+This separation allows for focused marketing, targeted client acquisition, and independent business operations while maintaining brand consistency across both properties.
 
 ## Current Phase: Phase 3 - Implementation Optimization
 
-The project is currently in Phase 3, focusing on optimization of key systems, enhancement of sales conversion processes, and integration of IYBA compliance standards across all business operations.
+The project is currently in Phase 3, focusing on optimization of key systems, enhancement of sales conversion processes, integration of IYBA compliance standards across all business operations, and the separation of charter operations into a dedicated website.
+
+## Recent Progress
+
+✅ **API Integration Fixed**: The Tilda API integration issue has been resolved. The API now works with the original key lengths, enabling live content from Tilda instead of mock data.
 
 ## Project Timeline
 
@@ -31,58 +52,58 @@ gantt
 
 ## Phase 3 Priority Implementation Tasks
 
-Based on our sales-optimized website structure, the following are the priority tasks for the current implementation phase:
+Based on our updated business structure with two websites, the following are the priority tasks for the current implementation phase:
 
 ### High Priority (Next 30 Days)
 
-1. **Brokerage Services Implementation**
+1. **Charter Website Implementation**
+   - **Status**: Planning Phase → Ready for Implementation
+   - **Dependencies**: ✅ API Integration (Resolved)
+   - **Success Metrics**: azurcharters.com live with all core pages
+   - **Implementation Lead**: Website Development Team
+   - **Deadline**: June 15, 2025
+
+2. **Brokerage Services Enhancement**
    - **Status**: Content Created, Awaiting Implementation
-   - **Dependencies**: Tilda development resources
-   - **Success Metrics**: Brokerage page live with all content sections
+   - **Dependencies**: ✅ API Integration (Resolved)
+   - **Success Metrics**: Enhanced brokerage pages on azureyachtgroup.com
    - **Implementation Lead**: Website Development Team
    - **Deadline**: May 31, 2025
 
-2. **IYBA Compliance Integration**
+3. **IYBA Compliance Integration**
    - **Status**: Content Created, Awaiting Implementation
    - **Dependencies**: Legal review completion
-   - **Success Metrics**: IYBA compliance section integrated into About page
+   - **Success Metrics**: IYBA compliance section integrated into About pages on both sites
    - **Implementation Lead**: Legal & Web Development Teams
    - **Deadline**: May 31, 2025
 
-3. **Resources Center Deployment**
-   - **Status**: Content Created, Awaiting Implementation
-   - **Dependencies**: Downloadable asset preparation
-   - **Success Metrics**: Resources page live with downloadable content
-   - **Implementation Lead**: Content & Web Development Teams
+4. **Yacht Design Section Launch**
+   - **Status**: Content Development In Progress
+   - **Dependencies**: Design portfolio assets
+   - **Success Metrics**: Design section live on azureyachtgroup.com
+   - **Implementation Lead**: Design & Web Development Teams
    - **Deadline**: June 7, 2025
-
-4. **Conversion Optimization**
-   - **Status**: Analysis Complete, Implementation In Progress
-   - **Dependencies**: CRM integration for lead capture
-   - **Success Metrics**: 25% increase in lead capture rate
-   - **Implementation Lead**: Marketing & Web Development Teams
-   - **Deadline**: June 15, 2025
 
 ### Medium Priority (60-90 Days)
 
-1. **Interactive Destination Map**
-   - **Status**: Planning Phase
-   - **Dependencies**: Destination data compilation
-   - **Success Metrics**: Interactive map deployed with all charter destinations
-   - **Implementation Lead**: Web Development Team
+1. **Resources Center Deployment**
+   - **Status**: Content Created, Awaiting Implementation
+   - **Dependencies**: Downloadable asset preparation
+   - **Success Metrics**: Resources pages live on both websites
+   - **Implementation Lead**: Content & Web Development Teams
    - **Deadline**: July 15, 2025
 
-2. **A/B Testing Implementation**
+2. **Cross-Site Analytics Implementation**
    - **Status**: Planning Phase
-   - **Dependencies**: Analytics setup completion
-   - **Success Metrics**: Testing framework deployed on key pages
+   - **Dependencies**: Analytics configuration for both domains
+   - **Success Metrics**: Cross-domain tracking deployed with unified reporting
    - **Implementation Lead**: Marketing Team
    - **Deadline**: July 31, 2025
 
 3. **Mobile Experience Enhancement**
    - **Status**: Analysis Complete
    - **Dependencies**: None
-   - **Success Metrics**: 100% mobile optimization score
+   - **Success Metrics**: 100% mobile optimization score on both sites
    - **Implementation Lead**: Web Development Team
    - **Deadline**: August 15, 2025
 
@@ -104,14 +125,16 @@ Based on our sales-optimized website structure, the following are the priority t
 
 ## Implementation Team & Responsibilities
 
-| Team Member | Role | Key Responsibilities |
-|-------------|------|----------------------|
-| Michael Chen | Project Lead | Overall project coordination, stakeholder reporting |
-| Sarah Johnson | Web Development Lead | Tilda implementation, technical integration |
-| David Williams | Content Strategist | Content creation, optimization, messaging consistency |
-| Emma Rodriguez | UX/UI Designer | User experience, conversion optimization, visual design |
-| James Thompson | Marketing Specialist | Analytics, CRM integration, lead generation |
-| Alexandra Lee | Legal Compliance | IYBA standards, contract templates, legal framework |
+| Team Member | Role | Key Responsibilities | Primary Website Focus |
+|-------------|------|----------------------|----------------------|
+| Michael Chen | Project Lead | Overall project coordination, stakeholder reporting | Both |
+| Sarah Johnson | Web Development Lead | Tilda implementation, technical integration | Both |
+| David Williams | Content Strategist | Content creation, optimization, messaging consistency | azureyachtgroup.com |
+| Emma Rodriguez | UX/UI Designer | User experience, conversion optimization, visual design | Both |
+| James Thompson | Marketing Specialist | Analytics, CRM integration, lead generation | Both |
+| Alexandra Lee | Legal Compliance | IYBA standards, contract templates, legal framework | Both |
+| Thomas Garcia | Charter Specialist | Charter content, pricing strategies, destination guides | azurcharters.com |
+| Rebecca Wilson | Investor Relations | Charter investor communications, business reporting | azurcharters.com |
 
 ## Key Performance Indicators (KPIs)
 
@@ -149,19 +172,28 @@ Based on our sales-optimized website structure, the following are the priority t
 | Content development delays | Low | Medium | Create templates, prioritize high-impact pages |
 | Mobile optimization challenges | Medium | High | Conduct early testing, address issues incrementally |
 | Legal compliance gaps | Low | High | Regular reviews with legal team, documentation audits |
+| Brand inconsistency between sites | Medium | High | Develop and enforce brand guidelines, regular design reviews |
+| SEO impact of site separation | Medium | Medium | Implement proper redirects, cross-linking strategy, shared sitemap |
 
 ## Dependencies & Critical Path
 
 ```mermaid
 flowchart TD
-    A[Content Creation] --> B[Legal Review]
-    B --> C[Tilda Implementation]
-    C --> D[Integration Testing]
-    D --> E[Deployment]
-    D --> F[Analytics Setup]
+    A[Content Strategy] --> B[Legal Review]
+    A --> C1[azureyachtgroup.com Content]
+    A --> C2[azurcharters.com Content]
+    B --> D1[azureyachtgroup.com Implementation]
+    B --> D2[azurcharters.com Implementation]
+    C1 --> D1
+    C2 --> D2
+    D1 --> E[Cross-Site Integration]
+    D2 --> E
+    E --> F[Analytics Setup]
     F --> G[Conversion Optimization]
-    E --> H[User Feedback Collection]
-    H --> I[Iterative Improvements]
+    D1 --> H1[azureyachtgroup.com Feedback]
+    D2 --> H2[azurcharters.com Feedback]
+    H1 --> I[Iterative Improvements]
+    H2 --> I
     G --> I
 ```
 
@@ -179,25 +211,38 @@ flowchart TD
 
 Phase 3 will be considered successfully completed when:
 
-1. All high-priority tasks are implemented and functioning correctly
-2. Conversion rate has increased by at least 50% from baseline
-3. Mobile optimization score reaches 95%+ on all key pages
-4. IYBA compliance integration is complete and verified
-5. Resources section is fully deployed with downloadable assets
-6. Brokerage services section is fully implemented and generating leads
+1. Both websites are fully implemented and functioning correctly
+2. All high-priority tasks are completed on both properties
+3. Conversion rates have increased by at least 50% from baseline on respective sites
+4. Mobile optimization score reaches 95%+ on all key pages for both sites
+5. IYBA compliance integration is complete and verified on both sites
+6. Cross-domain analytics are providing accurate unified reporting
+7. Charter business has successfully transitioned to dedicated website
 
-## Next Steps
+## Revised Next Steps
 
-1. Schedule immediate kick-off for high-priority implementations
-2. Finalize resource allocation for all Phase 3 tasks
-3. Set up weekly review meetings to track progress against KPIs
-4. Prepare contingency plans for any identified risks
-5. Begin preliminary planning for Phase 4 requirements
+1. **Charter Website Implementation** - Begin immediately now that API integration is resolved
+   - Set up project structure and pages in Tilda
+   - Implement basic navigation and template structure
+   - Prepare content migration plan from main site
+
+2. **Design Section Development** - Start concurrently with Charter Website
+   - Implement Yacht Design section on main site
+   - Create all planned subsections
+   - Add conversion elements and inquiry forms
+
+3. **IYBA Compliance Integration** - Complete for both sites
+   - Implement on About Us pages
+   - Ensure consistent implementation across both properties
+
+4. **Brokerage Enhancement** - Complete on main site
+   - Enhance current brokerage pages
+   - Implement content awaiting implementation
 
 ---
 
-*Last Updated: May 1, 2025*
-*Next Review: May 15, 2025*
+*Last Updated: May 24, 2025*
+*Next Review: June 5, 2025*
 
 ---
 
