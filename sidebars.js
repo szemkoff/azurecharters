@@ -82,6 +82,7 @@ const sidebars = {
         'website-content/legal-framework',
         'website-content/iyba-compliance',
         'website-content/resources',
+        'website-content/yacht-design',
       ],
     },
     {

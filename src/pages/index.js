@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
                 <div className="card__footer">
                   <Link className="button button--primary button--block" to="/docs/website-content/index">Content Overview</Link>
-                  <Link className="button button--secondary button--block" to="/docs/website-content/brokerage">Brokerage Page</Link>
+                  <Link className="button button--secondary button--block" to="/docs/website-content/yacht-design">Yacht Design</Link>
                 </div>
               </div>
             </div>

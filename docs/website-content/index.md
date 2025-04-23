@@ -19,6 +19,7 @@ The following content files are ready for implementation:
 | [Legal Framework](./legal-framework) | Client-facing legal framework page explaining contracts and IYBA standards | Ready for Implementation |
 | [IYBA Compliance](./iyba-compliance) | Section to be added to About page highlighting IYBA certification | Ready for Implementation |
 | [Resources Center](./resources) | Comprehensive resource library with downloadable content | Ready for Implementation |
+| [Yacht Design & Architecture](./yacht-design) | Showcase of yacht design principles, innovations, and expertise | Ready for Implementation |
 
 ## Implementation Guidelines
 
@@ -37,6 +38,7 @@ Based on our project plan, implement these pages in the following order:
 2. IYBA Compliance section on About page (Deadline: May 31, 2025)
 3. Resources Center (Deadline: June 7, 2025)
 4. Legal Framework (Deadline: June 15, 2025)
+5. Yacht Design & Architecture (Deadline: June 15, 2025)
 
 ## Additional Resources
 
