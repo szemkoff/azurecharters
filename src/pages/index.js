@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
                 <div className="card__footer">
                   <Link className="button button--primary button--block" to="/docs/website-architecture/overview">Architecture Overview</Link>
-                  <Link className="button button--secondary button--block" to="/docs/website-architecture/tilda-integration">Tilda Integration</Link>
+                  <Link className="button button--secondary button--block" to="/docs/website-architecture/site-structure">Site Structure</Link>
                 </div>
               </div>
             </div>
@@ -92,14 +92,14 @@ export default function Home() {
             <div className="col col--6 margin-bottom--lg">
               <div className="card">
                 <div className="card__header">
-                  <h3>Development Resources</h3>
+                  <h3>Website Content</h3>
                 </div>
                 <div className="card__body">
-                  <p>Development tools and code samples for implementing technical solutions.</p>
+                  <p>Ready-to-implement content for key website pages optimized for conversions and IYBA compliance.</p>
                 </div>
                 <div className="card__footer">
-                  <Link className="button button--primary button--block" to="/docs/development/cursor-integration">Cursor Integration</Link>
-                  <Link className="button button--secondary button--block" to="/docs/development/code-samples">Code Samples</Link>
+                  <Link className="button button--primary button--block" to="/docs/website-content/index">Content Overview</Link>
+                  <Link className="button button--secondary button--block" to="/docs/website-content/brokerage">Brokerage Page</Link>
                 </div>
               </div>
             </div>
