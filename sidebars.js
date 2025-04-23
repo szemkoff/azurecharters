@@ -75,6 +75,17 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Website Content',
+      items: [
+        'website-content/index',
+        'website-content/brokerage',
+        'website-content/legal-framework',
+        'website-content/iyba-compliance',
+        'website-content/resources',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Client Funnel',
       items: [
         'client-funnel/overview',
