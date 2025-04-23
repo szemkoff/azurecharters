@@ -4,265 +4,200 @@ title: Project Plan & Roadmap
 description: Comprehensive project plan and development roadmap for Azure Yacht Group
 ---
 
-# Azure Yacht Group - Project Plan & Roadmap
+# Project Plan: Charter Business Framework Implementation
 
-## Executive Summary
+## Overview
+This document outlines the comprehensive implementation plan for the Azure Yacht Group charter business framework. It serves as the master roadmap for development, integration, and deployment. Last updated: May 1, 2025.
 
-This document outlines the comprehensive project plan for Azure Yacht Group's digital platform development. The plan is organized into phases with clear deliverables, timelines, and resource allocations. The goal is to create a fully integrated digital ecosystem that leverages our intellectual property and digital assets to maximize business value.
+## Current Phase: Phase 3 - Implementation Optimization
 
-## Strategic Objectives
+The project is currently in Phase 3, focusing on optimization of key systems, enhancement of sales conversion processes, and integration of IYBA compliance standards across all business operations.
 
-1. **Platform Development** - Create a scalable, integrated digital platform
-2. **Asset Optimization** - Leverage existing IP and digital assets for maximum ROI
-3. **Customer Engagement** - Implement systems for enhanced customer experience
-4. **Operational Efficiency** - Streamline business operations through technology
-5. **Market Expansion** - Develop tools to support geographic and service expansion
-
-## Current Asset Baseline
-
-Based on our [IP & Digital Asset Inventory](resources/ip-assets.md), we have established the following baseline:
-
-- **Total Digital Asset Value**: $518,750 - $873,500
-- **Key Asset Categories**:
-  - Customer Data (CRM): $343,250 - $686,500
-  - Brand & IP: $75,000 - $150,000
-  - Industry Relationships: $68,000 - $100,000
-  - Website & Online Presence: $20,500 - $34,000
-  - Digital Marketing Assets: $7,000 - $15,000
-  - Social Media Presence: $5,000 - $8,000
-
-## Project Phases
-
-### Phase 1: Foundation (Q2-Q3 2025)
-**Status: In Progress - 45% Complete**
-
-| Component | Status | Priority | Deadline | Owner |
-|-----------|--------|----------|----------|-------|
-| Core Website Structure | 85% Complete | High | June 30, 2025 | Web Team |
-| Yacht Data Integration | 70% Complete | High | July 15, 2025 | Data Team |
-| CRM Implementation | 50% Complete | High | July 30, 2025 | CRM Team |
-| Documentation Framework | 60% Complete | Medium | August 15, 2025 | Doc Team |
-| Initial SEO Implementation | 40% Complete | Medium | August 30, 2025 | Marketing |
-
-**Key Deliverables:**
-- Complete Tilda website with all core sections
-- Integrated yacht listing system with parent-child variants
-- HubSpot CRM implementation with segmented customer data
-- Core business documentation and processes
-- Basic SEO and analytics implementation
-
-**Success Metrics:**
-- Website launch with 100% of planned yacht listings
-- CRM populated with 1,500+ qualified contacts
-- All key business processes documented
-- Baseline performance metrics established
-
-### Phase 2: Enhancement (Q3-Q4 2025)
-**Status: Planning - 10% Complete**
-
-| Component | Status | Priority | Deadline | Owner |
-|-----------|--------|----------|----------|-------|
-| Booking System | Planning | High | Sept 30, 2025 | Web Team |
-| Marketing Automation | Initial Setup | High | Oct 15, 2025 | Marketing |
-| Analytics Integration | Planning | Medium | Oct 30, 2025 | Data Team |
-| Performance Optimization | Not Started | Medium | Nov 15, 2025 | Web Team |
-| Asset Enhancement | Initial Review | Medium | Nov 30, 2025 | Content Team |
-
-**Key Deliverables:**
-- Full-featured booking and availability system
-- Automated marketing workflows for lead nurturing
-- Comprehensive analytics dashboards
-- Website performance optimization
-- Enhanced digital assets (photography, videos, content)
-
-**Success Metrics:**
-- 25% increase in qualified leads
-- 15% improvement in website conversion rate
-- 30% increase in social media engagement
-- 20% increase in organic search traffic
-
-### Phase 3: Expansion (Q1-Q2 2026)
-**Status: Conceptual - 5% Complete**
-
-| Component | Status | Priority | Deadline | Owner |
-|-----------|--------|----------|----------|-------|
-| International Expansion | Research | Medium | Jan 30, 2026 | Strategy Team |
-| Mobile Application | Concept | Medium | Feb 28, 2026 | Mobile Team |
-| Advanced CRM Features | Planning | High | Mar 30, 2026 | CRM Team |
-| Partner Portal | Concept | Medium | Apr 30, 2026 | Web Team |
-| Business Intelligence | Research | Medium | May 30, 2026 | Data Team |
-
-**Key Deliverables:**
-- Localized content for international markets
-- Mobile application for yacht browsing and booking
-- Advanced CRM with predictive analytics
-- Partner portal for broker relationships
-- BI system for business performance tracking
-
-**Success Metrics:**
-- Expansion into 2 new international markets
-- 1,000+ mobile app downloads
-- 40% increase in customer lifetime value
-- 30% increase in broker-sourced revenue
-
-### Phase 4: Innovation (Q3-Q4 2026)
-**Status: Conceptual**
-
-| Component | Status | Priority | Deadline | Owner |
-|-----------|--------|----------|----------|-------|
-| VR Yacht Tours | Concept | Medium | July 30, 2026 | Content Team |
-| AI-Driven Recommendations | Research | Medium | Aug 30, 2026 | Data Team |
-| Blockchain Contracts | Research | Low | Sept 30, 2026 | Tech Team |
-| IoT Integration | Concept | Low | Oct 30, 2026 | Tech Team |
-| Loyalty Program | Concept | Medium | Nov 30, 2026 | Marketing |
-
-**Key Deliverables:**
-- VR-based yacht tours for remote viewing
-- AI recommendation engine for personalized offerings
-- Blockchain-based smart contracts for bookings
-- IoT integration for yacht monitoring and management
-- Customer loyalty and rewards program
-
-**Success Metrics:**
-- 50% increase in digital asset value
-- 35% increase in repeat business
-- 25% reduction in sales cycle length
-- Industry recognition for innovation
-
-## Resource Allocation
-
-### Team Structure
+## Project Timeline
 
 ```mermaid
-graph TD
-    CEO[CEO] --> CTO[CTO]
-    CEO --> CMO[CMO]
-    CEO --> COO[COO]
-    
-    CTO --> DevLead[Development Lead]
-    CTO --> DataLead[Data & Analytics Lead]
-    
-    CMO --> ContentLead[Content Lead]
-    CMO --> MarketingLead[Marketing Lead]
-    
-    COO --> OpsLead[Operations Lead]
-    COO --> CustServiceLead[Customer Service Lead]
-    
-    DevLead --> WebDev[Web Developers]
-    DevLead --> MobileDev[Mobile Developers]
-    
-    DataLead --> DataEngineer[Data Engineers]
-    DataLead --> AnalyticsTeam[Analytics Team]
-    
-    ContentLead --> ContentCreators[Content Creators]
-    ContentLead --> DesignTeam[Design Team]
-    
-    MarketingLead --> SEOTeam[SEO Team]
-    MarketingLead --> SocialTeam[Social Media Team]
-    
-    OpsLead --> BizOps[Business Operations]
-    OpsLead --> Finance[Finance Team]
-    
-    CustServiceLead --> Support[Support Team]
-    CustServiceLead --> Sales[Sales Team]
+gantt
+    title Azure Yacht Group Implementation Timeline
+    dateFormat  YYYY-MM-DD
+    section Foundation
+    Phase 1: Business Framework Setup           :done, a1, 2024-11-01, 90d
+    section Core Development
+    Phase 2: Core Systems Implementation        :done, a2, 2025-02-01, 90d
+    section Optimization
+    Phase 3: Implementation Optimization        :active, a3, 2025-05-01, 90d
+    section Scaling
+    Phase 4: Market Expansion                   :       a4, 2025-08-01, 90d
 ```
 
-### Budget Allocation
+## Phase 3 Priority Implementation Tasks
 
-| Department | Phase 1 | Phase 2 | Phase 3 | Phase 4 |
-|------------|---------|---------|---------|---------|
-| Technology | 40% | 35% | 30% | 35% |
-| Marketing | 25% | 30% | 35% | 30% |
-| Operations | 20% | 20% | 20% | 20% |
-| Content | 15% | 15% | 15% | 15% |
+Based on our sales-optimized website structure, the following are the priority tasks for the current implementation phase:
 
-## Risk Assessment
+### High Priority (Next 30 Days)
 
-| Risk | Impact | Probability | Mitigation Strategy |
-|------|--------|------------|---------------------|
-| Technical delays | High | Medium | Agile approach, regular milestones, contingency buffer |
-| Budget constraints | High | Medium | Phased approach, priority-based implementation |
-| Market changes | Medium | Medium | Flexibility in planning, regular market assessment |
-| Resource limitations | Medium | High | Cross-training, contractor relationships |
-| Competitive pressure | Medium | High | Unique value proposition focus, acceleration of key features |
+1. **Brokerage Services Implementation**
+   - **Status**: Content Created, Awaiting Implementation
+   - **Dependencies**: Tilda development resources
+   - **Success Metrics**: Brokerage page live with all content sections
+   - **Implementation Lead**: Website Development Team
+   - **Deadline**: May 31, 2025
 
-## Asset Growth Strategy
+2. **IYBA Compliance Integration**
+   - **Status**: Content Created, Awaiting Implementation
+   - **Dependencies**: Legal review completion
+   - **Success Metrics**: IYBA compliance section integrated into About page
+   - **Implementation Lead**: Legal & Web Development Teams
+   - **Deadline**: May 31, 2025
 
-Our plan aims to significantly increase the value of our digital and IP assets:
+3. **Resources Center Deployment**
+   - **Status**: Content Created, Awaiting Implementation
+   - **Dependencies**: Downloadable asset preparation
+   - **Success Metrics**: Resources page live with downloadable content
+   - **Implementation Lead**: Content & Web Development Teams
+   - **Deadline**: June 7, 2025
 
-| Asset Category | Current Value | 2-Year Target | Growth Strategy |
-|----------------|---------------|--------------|----------------|
-| Customer Data | $343K-$686K | $600K-$1.2M | Expand database, enhance profiling, increase engagement |
-| Brand & IP | $75K-$150K | $150K-$300K | Brand guidelines enforcement, increased trademark protection |
-| Industry Relationships | $68K-$100K | $120K-$200K | Network expansion, partner program, data enrichment |
-| Website & Presence | $20K-$34K | $50K-$80K | SEO improvement, backlink acquisition, content strategy |
-| Digital Marketing | $7K-$15K | $20K-$40K | Content library expansion, automation implementation |
-| Social Media | $5K-$8K | $15K-$25K | Platform growth, engagement rate improvement |
-| **Total** | **$518K-$873K** | **$955K-$1.845M** | **84%-112% growth target** |
+4. **Conversion Optimization**
+   - **Status**: Analysis Complete, Implementation In Progress
+   - **Dependencies**: CRM integration for lead capture
+   - **Success Metrics**: 25% increase in lead capture rate
+   - **Implementation Lead**: Marketing & Web Development Teams
+   - **Deadline**: June 15, 2025
 
-## Key Performance Indicators
+### Medium Priority (60-90 Days)
 
-### Business KPIs
-- Monthly recurring revenue (MRR)
-- Customer acquisition cost (CAC)
-- Customer lifetime value (LTV)
-- Conversion rates at each funnel stage
-- Net promoter score (NPS)
+1. **Interactive Destination Map**
+   - **Status**: Planning Phase
+   - **Dependencies**: Destination data compilation
+   - **Success Metrics**: Interactive map deployed with all charter destinations
+   - **Implementation Lead**: Web Development Team
+   - **Deadline**: July 15, 2025
 
-### Technical KPIs
-- Website performance metrics
-- System uptime and reliability
-- Development velocity
-- Bug resolution time
-- Technical debt ratio
+2. **A/B Testing Implementation**
+   - **Status**: Planning Phase
+   - **Dependencies**: Analytics setup completion
+   - **Success Metrics**: Testing framework deployed on key pages
+   - **Implementation Lead**: Marketing Team
+   - **Deadline**: July 31, 2025
 
-### Marketing KPIs
-- Cost per lead (CPL)
-- Marketing ROI
-- Channel effectiveness
-- Content engagement rates
-- Social media growth rates
+3. **Mobile Experience Enhancement**
+   - **Status**: Analysis Complete
+   - **Dependencies**: None
+   - **Success Metrics**: 100% mobile optimization score
+   - **Implementation Lead**: Web Development Team
+   - **Deadline**: August 15, 2025
 
-## Governance & Reporting
+### Additional Tasks (As Resources Allow)
 
-### Steering Committee
-- CEO
-- CTO
-- CMO
-- COO
-- Project Manager
+1. **Live Chat Integration**
+   - **Status**: Research Phase
+   - **Dependencies**: Customer support protocols
+   - **Success Metrics**: Live chat deployed with support team training
+   - **Implementation Lead**: Customer Experience Team
+   - **Target Date**: August 31, 2025
 
-### Meeting Cadence
-- Weekly: Team-level status meetings
-- Bi-weekly: Department head coordination
-- Monthly: Steering committee review
-- Quarterly: Strategic review and planning
+2. **Enhanced Search Capabilities**
+   - **Status**: Requirements Gathering
+   - **Dependencies**: Yacht database restructuring
+   - **Success Metrics**: Advanced search deployed with filtering options
+   - **Implementation Lead**: Development Team
+   - **Target Date**: September 15, 2025
 
-### Reporting Structure
-- Daily: Automated KPI dashboards
-- Weekly: Department status reports
-- Monthly: Executive dashboard and financial review
-- Quarterly: Strategic assessment and plan adjustments
+## Implementation Team & Responsibilities
+
+| Team Member | Role | Key Responsibilities |
+|-------------|------|----------------------|
+| Michael Chen | Project Lead | Overall project coordination, stakeholder reporting |
+| Sarah Johnson | Web Development Lead | Tilda implementation, technical integration |
+| David Williams | Content Strategist | Content creation, optimization, messaging consistency |
+| Emma Rodriguez | UX/UI Designer | User experience, conversion optimization, visual design |
+| James Thompson | Marketing Specialist | Analytics, CRM integration, lead generation |
+| Alexandra Lee | Legal Compliance | IYBA standards, contract templates, legal framework |
+
+## Key Performance Indicators (KPIs)
+
+1. **Website Conversion Rate**
+   - Current: 2.3%
+   - Target: 4.5%
+   - Tracking: Weekly analytics review
+
+2. **Qualified Lead Generation**
+   - Current: 18-25 per month
+   - Target: 35-45 per month
+   - Tracking: Monthly CRM reporting
+
+3. **Sales Cycle Duration**
+   - Current: 45 days average
+   - Target: 35 days average
+   - Tracking: CRM pipeline analysis
+
+4. **Customer Acquisition Cost**
+   - Current: $1,200 per customer
+   - Target: $950 per customer
+   - Tracking: Monthly financial review
+
+5. **Mobile Conversion Rate**
+   - Current: 1.8%
+   - Target: 3.5%
+   - Tracking: Weekly device-specific analytics
+
+## Risk Assessment & Mitigation
+
+| Risk | Probability | Impact | Mitigation Strategy |
+|------|------------|--------|---------------------|
+| Development resource constraints | Medium | High | Prioritize conversion-focused elements, phase implementation |
+| Integration challenges with CRM | Medium | Medium | Schedule additional testing time, prepare fallback options |
+| Content development delays | Low | Medium | Create templates, prioritize high-impact pages |
+| Mobile optimization challenges | Medium | High | Conduct early testing, address issues incrementally |
+| Legal compliance gaps | Low | High | Regular reviews with legal team, documentation audits |
+
+## Dependencies & Critical Path
+
+```mermaid
+flowchart TD
+    A[Content Creation] --> B[Legal Review]
+    B --> C[Tilda Implementation]
+    C --> D[Integration Testing]
+    D --> E[Deployment]
+    D --> F[Analytics Setup]
+    F --> G[Conversion Optimization]
+    E --> H[User Feedback Collection]
+    H --> I[Iterative Improvements]
+    G --> I
+```
+
+## Communication Plan
+
+| Stakeholder Group | Communication Method | Frequency | Owner |
+|-------------------|----------------------|-----------|-------|
+| Executive Team | Status Report | Weekly | Project Lead |
+| Implementation Team | Standup Meeting | Daily | Development Lead |
+| Marketing Team | Integration Update | Bi-weekly | Marketing Specialist |
+| Legal Team | Compliance Review | Monthly | Legal Compliance Lead |
+| All Stakeholders | Phase Milestone Report | End of Phase | Project Lead |
+
+## Success Criteria
+
+Phase 3 will be considered successfully completed when:
+
+1. All high-priority tasks are implemented and functioning correctly
+2. Conversion rate has increased by at least 50% from baseline
+3. Mobile optimization score reaches 95%+ on all key pages
+4. IYBA compliance integration is complete and verified
+5. Resources section is fully deployed with downloadable assets
+6. Brokerage services section is fully implemented and generating leads
 
 ## Next Steps
 
-### Immediate Actions (Next 30 Days)
-1. Complete Phase 1 website components
-2. Finalize CRM data segmentation
-3. Implement SEO recommendations
-4. Complete documentation framework
-5. Prepare for Phase 2 kickoff
+1. Schedule immediate kick-off for high-priority implementations
+2. Finalize resource allocation for all Phase 3 tasks
+3. Set up weekly review meetings to track progress against KPIs
+4. Prepare contingency plans for any identified risks
+5. Begin preliminary planning for Phase 4 requirements
 
-### Medium-Term Actions (60-90 Days)
-1. Launch booking system beta
-2. Implement marketing automation workflows
-3. Complete analytics integration
-4. Begin content enhancement initiative
-5. Initiate international expansion research
+---
 
-## Conclusion
-
-This project plan provides a roadmap for transforming Azure Yacht Group's digital presence and leveraging its intellectual property and digital assets for maximum business value. By following this structured approach with clear phases, deliverables, and metrics, we will achieve our strategic objectives while managing risks effectively.
+*Last Updated: May 1, 2025*
+*Next Review: May 15, 2025*
 
 ---
 
