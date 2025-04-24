@@ -34,7 +34,11 @@ This document provides the detailed block-by-block implementation guide for the 
 | Primary H1 | "Luxury Yacht Charter Destinations" |
 | Schema Markup | Place schema for each featured destination |
 | Canonical URL | `https://azurcharters.com/destinations/` |
-| Open Graph Tags | Title: "Luxury Yacht Charter Destinations \| Azure Yacht Group"<br>Description: [same as meta]<br>Image: [high-quality destination map or hero image]<br>URL: [canonical URL]<br>Type: website |
+| Open Graph Tags | Title: "Luxury Yacht Charter Destinations \| Azure Yacht Group"  
+Description: [same as meta]  
+Image: [high-quality image of yacht at destination]  
+URL: [canonical URL]  
+Type: article |
 | Breadcrumbs | Home > Destinations |
 
 ## Block Implementation

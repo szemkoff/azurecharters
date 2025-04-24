@@ -45,7 +45,11 @@ This document provides the detailed block-by-block implementation guide for the 
 | Primary H1 | "South Pacific Yacht Charter" |
 | Schema Markup | TouristAttraction and TouristDestination schema |
 | Canonical URL | `https://azurcharters.com/destinations/south-pacific/` |
-| Open Graph Tags | Title: "South Pacific Yacht Charter \| Azure Yacht Group"<br>Description: [same as meta]<br>Image: [high-quality image of yacht in South Pacific]<br>URL: [canonical URL]<br>Type: article |
+| Open Graph Tags | Title: "South Pacific Yacht Charter \| Azure Yacht Group"  
+Description: [same as meta]  
+Image: [high-quality image of yacht in South Pacific]  
+URL: [canonical URL]  
+Type: article |
 | Breadcrumbs | Home > Destinations > South Pacific |
 
 ## Block Implementation
