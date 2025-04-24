@@ -86,7 +86,7 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'frameworkSidebar',
+            sidebarId: 'docsidebar',
             position: 'left',
             label: 'Framework',
           },
