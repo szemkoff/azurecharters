@@ -61,7 +61,7 @@ const sidebars = {
           type: 'category',
           label: 'Destinations',
           items: [
-            'website-content/destinations/index',
+            'website-content/destinations/destinations-index',
             'website-content/destinations/mediterranean',
             'website-content/destinations/caribbean',
             'website-content/destinations/south-pacific'
