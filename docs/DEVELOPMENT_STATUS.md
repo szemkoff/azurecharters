@@ -14,26 +14,51 @@ This document tracks the development status of all business stages and component
 - [ ] Security implementation
 - [ ] Backup systems
 
-### 2. Website Development
-- [x] Main website structure on Tilda platform
-- [x] Basic content implementation
-- [x] Yacht detail pages (e.g., Eternal Spark yacht options)
-- [ ] Booking system
-- [ ] User authentication
-- [ ] Payment processing
-- [x] Initial mobile responsiveness
-- [ ] Advanced mobile optimization
+### 2. Two-Website Architecture Implementation
+- [x] Main website structure on Tilda platform (azureyachtgroup.com, Project ID: 4198911)
+- [x] Basic content implementation on main site
+- [ ] Charter website setup (azurcharters.com, Project ID: 12993249)
+- [ ] Charter content migration from main site to charter site
+- [ ] Cross-site navigation implementation
+- [ ] Multi-site analytics configuration
 
-### 3. Documentation
+### 3. Tilda API Integration
+- [x] API client development
+- [x] Mock data system implementation
+- [ ] API key validation resolution (issues with key length)
+- [ ] Cross-site content synchronization
+- [ ] Webhook implementation for real-time updates
+- [ ] Production API deployment
+
+### 4. Main Website (azureyachtgroup.com) Implementation
+- [x] Home page with charter services section
+- [x] Brokerage section basic implementation
+- [x] New Construction section
+- [ ] Yacht Design section
+- [ ] Resources section
+- [ ] IYBA compliance integration
+- [ ] Enhanced mobile optimization
+
+### 5. Charter Website (azurcharters.com) Implementation
+- [ ] Home page setup
+- [ ] Charter fleet implementation
+- [ ] Destinations section
+- [ ] Charter experience section
+- [ ] Resources section specific to charter
+- [ ] Charter-specific SEO optimization
+- [ ] Mobile responsiveness for charter site
+
+### 6. Documentation
 - [x] Initial documentation framework (Docusaurus)
-- [x] Website structure documentation
+- [x] Two-website structure documentation
 - [x] Tilda integration guide
-- [ ] Complete API documentation
-- [ ] User guides
-- [ ] Deployment guides
+- [x] API documentation 
+- [x] Charter website implementation guide
+- [ ] Complete user guides
+- [ ] Deployment guides for both sites
 - [ ] Maintenance procedures
 
-### 4. Business Operations
+### 7. Business Operations
 - [x] Basic yacht inventory management
 - [ ] Advanced inventory features
 - [ ] Booking management system
@@ -41,15 +66,15 @@ This document tracks the development status of all business stages and component
 - [ ] Financial systems
 - [ ] Reporting tools
 
-### 5. Marketing & Sales
+### 8. Marketing & Sales
 - [x] Basic website content
 - [x] Initial SEO implementation (meta tags, structured data)
-- [ ] Advanced SEO optimization
+- [ ] Advanced SEO optimization for both sites
 - [ ] Social media integration
 - [ ] Email marketing
 - [ ] Analytics implementation
 
-### 6. Integration Systems
+### 9. Integration Systems
 - [ ] Payment gateways
 - [ ] Email services
 - [ ] SMS notifications
@@ -57,70 +82,20 @@ This document tracks the development status of all business stages and component
 - [ ] Navigation systems
 - [ ] HubSpot CRM integration (planned)
 
-## Website Structure Implementation Status
-
-### Core Business Pillars
-- [x] Yacht Brokerage section structure
-- [x] New Construction section structure
-- [x] Yacht Charters section structure
-
-### Home Page Elements
-- [x] Hero Banner with seasonal offers
-- [x] Featured Charters Carousel
-- [ ] Destinations Highlights
-- [ ] Testimonials integration
-- [ ] Newsletter Signup
-
-### Yacht Pages Features
-- [x] Yacht specifications
-- [x] Yacht gallery
-- [x] Crew information 
-- [x] Package options (Basic/Premium)
-- [ ] Calendar Availability
-- [ ] Booking Request Form
-- [ ] Pricing Calculator
-
-### Destinations Features
-- [ ] Interactive Map
-- [ ] Destination Guides
-- [ ] Seasonal Recommendations
-- [ ] Local Attractions
-
-## Development Timeline
-
-### Phase 1: Foundation (Current - In Progress)
-- [x] Core website structure on Tilda
-- [x] Basic content implementation
-- [x] Initial documentation
-- [ ] Basic server infrastructure
-- [ ] Basic business operations
-
-### Phase 2: Enhancement (Next)
-- [ ] Advanced features implementation
-- [ ] Marketing systems
-- [ ] Integration systems
-- [ ] Performance optimization
-
-### Phase 3: Growth (Future)
-- [ ] Scalability improvements
-- [ ] Advanced analytics
-- [ ] International expansion
-- [ ] New service offerings
-
 ## Priority Items
 
 ### High Priority
-1. Complete Tilda website structure implementation
-2. Implement booking system
-3. Set up HubSpot CRM integration
-4. Complete yacht inventory
-5. Security implementation
+1. Resolve Tilda API key validation issues
+2. Set up charter website (azurcharters.com)
+3. Implement charter content migration
+4. Create Design section on main site
+5. Update CRM integration for both sites
 
 ### Medium Priority
-1. Advanced mobile optimization
-2. Advanced SEO features
-3. Analytics implementation
-4. Comprehensive documentation
+1. Implement cross-site navigation
+2. Advanced mobile optimization
+3. Analytics implementation for both sites
+4. Comprehensive documentation for two-site architecture
 5. Email marketing integration
 
 ### Low Priority
@@ -133,7 +108,7 @@ This document tracks the development status of all business stages and component
 ## Issues & Blockers
 
 ### Technical Issues
-- [x] Tilda platform limitations for advanced features
+- [x] Tilda API key length validation issue - Current keys don't match required format
 - [ ] API integration complexity
 - [ ] Database optimization
 - [ ] Security vulnerabilities
@@ -149,18 +124,18 @@ This document tracks the development status of all business stages and component
 ## Next Steps
 
 ### Immediate Actions
-1. Complete remaining yacht detail pages
-2. Implement booking system
-3. Set up CRM integration
-4. Enhance mobile responsiveness
-5. Implement core security measures
+1. Fix Tilda API key validation issues
+2. Set up the charter website project in Tilda
+3. Create plan for charter content migration
+4. Implement Design section on main site
+5. Add cross-site navigation elements
 
 ### Short-term Goals
-1. Launch beta version of booking system
-2. Gather user feedback on website
-3. Optimize website performance
-4. Complete core documentation
-5. Implement basic marketing strategy
+1. Complete basic implementation of both websites
+2. Gather user feedback on two-site structure
+3. Optimize website performance for both sites
+4. Complete core documentation for two-site architecture
+5. Implement basic marketing strategy for both sites
 
 ### Long-term Goals
 1. Full platform launch with all features
@@ -178,5 +153,5 @@ For development status questions:
 
 ---
 
-*Last Updated: June 15, 2023*
-*Next Review: June 22, 2023* 
+*Last Updated: May 7, 2025*
+*Next Review: June 15, 2025* 
