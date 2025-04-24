@@ -111,6 +111,394 @@ URL: [canonical URL]
 Type: article |
 | Breadcrumbs | Home > Destinations > Mediterranean |
 
+## Block Implementation
+
+### Block 1: Hero Section
+
+**Block Type**: Cover Block (t-cover)
+
+**Content Elements**:
+- Full-width hero image of yacht in Mediterranean setting (French Riviera or Amalfi Coast)
+- H1 Heading: "Mediterranean Yacht Charter"
+- Subheading: "Discover Luxury: Crystal Waters and Historic Coastlines"
+- Brief introduction (2-3 sentences)
+- Key statistics overlay: "2,300+ miles of Italian coastline, 300+ days of sunshine, 6,000+ Greek islands"
+
+**Design Specifications**:
+- High-impact, horizontally-oriented hero image
+- Text overlay with appropriate contrast ratio (suggest white text with semi-transparent dark overlay)
+- Subtle gradient overlay for text readability
+- Optional motion effect (parallax or slow zoom)
+- Statistical callouts with elegant styling
+
+**Technical Implementation**:
+```html
+<div class="destination-hero mediterranean">
+  <div class="hero-content">
+    <h1>Mediterranean Yacht Charter</h1>
+    <div class="subheading">Discover Luxury: Crystal Waters and Historic Coastlines</div>
+    <p>Experience the perfect blend of culture, cuisine, and natural beauty in the world's premier yachting destination. From Monaco's glamorous harbors to Greece's hidden coves, the Mediterranean offers unmatched charter experiences.</p>
+    <div class="destination-stats">
+      <div class="stat-item"><span class="stat-number">2,300+</span> miles of Italian coastline</div>
+      <div class="stat-item"><span class="stat-number">300+</span> days of sunshine</div>
+      <div class="stat-item"><span class="stat-number">6,000+</span> Greek islands</div>
+    </div>
+  </div>
+</div>
+```
+
+### Block 2: Destination Overview
+
+**Block Type**: Text Block (t-text)
+
+**Content Elements**:
+- Section heading (H2): "The Mediterranean Experience"
+- Rich descriptive content about Mediterranean charter experience
+- Key highlights and unique selling points
+- Charter statistics and client preferences
+- Brief mention of primary regions
+
+**Enhanced Content Elements**:
+- **Charter Demographics**: 55% of Mediterranean charters are families, 30% couples, 15% groups/corporate
+- **Average Duration**: 10-14 days (58% extend by 2+ days)
+- **Popular Periods**: 74% of bookings are for June-September, 18% for shoulder seasons, 8% for winter
+- **Repeat Booking Rate**: 83% of clients book another Mediterranean charter within 24 months
+- **Most Requested Experiences**: 
+  1. Exclusive beach clubs (82%)
+  2. Fine dining ashore (79%)
+  3. Historic site visits (68%)
+  4. Water sports (65%)
+  5. Wine tasting excursions (52%)
+
+**Technical Implementation**:
+- Use semantic HTML with proper heading hierarchy
+- Include relevant keywords naturally
+- Add 2-3 supporting images with proper alt text
+- Incorporate structured data for destinations
+- Add visual data presentation for statistics
+
+**Example Enhanced Content Excerpt**:
+> The Mediterranean encompasses over 10 countries and 46,000 kilometers of coastline, offering an unparalleled diversity of experiences for luxury yacht charters. From the celebrity-studded harbors of the French Riviera to the ancient ruins of the Greek Islands, the Mediterranean delivers a perfect blend of culture, cuisine, and natural beauty.
+>
+> Azure's Mediterranean fleet includes vessels specifically positioned for maximum flexibility, with crews selected for their local knowledge of hidden coves, premier restaurants, and exclusive beach clubs that aren't listed in standard guides. Our partnerships with 92% of Michelin-starred coastal restaurants ensure preferential reservations even during peak season, while our berth reservation system secures prime positions in otherwise fully-booked marinas.
+
+### Block 3: Mediterranean Regions Grid
+
+**Block Type**: Grid Block (t-tile)
+
+**Content Elements**:
+- Section heading (H2): "Mediterranean Regions"
+- Featured regions with:
+  - High-quality regional image
+  - Region name (H3)
+  - Brief description
+  - Key attractions/highlights
+  - Protected anchorages
+  - Elite experiences
+  - Essential information for visitors
+
+**Regions to Include with Enhanced Information**:
+
+**1. French Riviera**
+- **Key Ports**: Monaco, Cannes, St. Tropez, Antibes
+- **Not-to-Miss**: Monaco Grand Prix, Cannes Film Festival, Nikki Beach St. Tropez
+- **Signature Anchorages**: Cap Ferrat, Villefranche-sur-Mer, Iles de Lérins
+- **Elite Experiences**: Private vineyard tours in Provence, helicopter transfer to Gorges du Verdon, invitation-only events during festival weeks
+- **Local Expert Tip**: "Book berths in St. Tropez at least 8 months in advance for July-August, and consider Golfe-Juan as a more accessible alternative with similar charm"
+
+**2. Amalfi Coast & Sicily**
+- **Key Ports**: Capri, Positano, Amalfi, Taormina
+- **Not-to-Miss**: Blue Grotto, Positano beach, Ravello concerts, Mount Etna
+- **Signature Anchorages**: Marina Piccola (Capri), Li Galli Islands, Giardini Naxos
+- **Elite Experiences**: Private after-hours tours of archaeological sites, dinner in lemon groves, custom sandal making in Capri
+- **Local Expert Tip**: "The Blue Grotto is magnificent but crowded - our captains know the best early morning window for private access before official tours begin"
+
+**3. Greek Islands**
+- **Key Ports**: Mykonos, Santorini, Rhodes, Corfu
+- **Not-to-Miss**: Volcanic caldera of Santorini, Little Venice in Mykonos, Palace of the Grand Master in Rhodes
+- **Signature Anchorages**: Despotiko (near Antiparos), Kleftiko (Milos), Navagío Beach (Zakynthos)
+- **Elite Experiences**: Private island rentals in the Ionian Sea, helicopter archaeological tours, chef-guided market visits
+- **Local Expert Tip**: "The winds in the Cyclades can reach force 7-8 in July-August (Meltemi). Our vessels are selected for stability, and our captains expertly navigate alternative routes when needed"
+
+**Design Specifications**:
+- 3-column grid on desktop, 2-column on tablet, 1-column on mobile
+- Equal card heights with consistent styling
+- Subtle hover effects with image zoom
+- Clear visual separation between cards
+- Regional flag or icon indicator
+
+**Technical Implementation**:
+```html
+<div class="region-card">
+  <div class="region-image">
+    <img src="[image-path]" alt="French Riviera yacht charter - luxury yacht moored off Cap Ferrat with Monaco in the background">
+    <div class="exclusivity-badge premium">Premium Destination</div>
+  </div>
+  <div class="region-content">
+    <h3>French Riviera</h3>
+    <p>The legendary Côte d'Azur delivers glamour, beauty, and exceptional yachting infrastructure. From Monaco's superyacht showcase to St. Tropez's exclusive beach clubs, the French Riviera remains the world's premier luxury charter destination.</p>
+    <div class="key-ports">
+      <h4>Key Ports</h4>
+      <span class="port">Monaco</span>
+      <span class="port">Cannes</span>
+      <span class="port">St. Tropez</span>
+      <span class="port">Antibes</span>
+    </div>
+    <ul class="highlights">
+      <li><strong>Monaco Grand Prix</strong> - The most prestigious Formula 1 race, best viewed from your yacht</li>
+      <li><strong>Cannes Film Festival</strong> - Celebrity spotting and exclusive parties</li>
+      <li><strong>Beach Clubs</strong> - Nikki Beach, Club 55, Anjuna Beach</li>
+      <li><strong>Iles de Lérins</strong> - Tranquil monastery island and crystal waters</li>
+    </ul>
+    <div class="insider-tips">
+      <h4>Local Expert Tip</h4>
+      <p>"Book berths in St. Tropez at least 8 months in advance for July-August, and consider Golfe-Juan as a more accessible alternative with similar charm."</p>
+    </div>
+    <a href="/destinations/mediterranean/french-riviera/" class="explore-button">Explore French Riviera</a>
+  </div>
+</div>
+```
+
+### Block 4: Itinerary Suggestions
+
+**Block Type**: Timeline Block (t-timeline)
+
+**Content Elements**:
+- Section heading (H2): "Sample Mediterranean Yacht Charter Itinerary"
+- Featured 10-day itinerary with:
+  - Day-by-day breakdown
+  - Location for each day
+  - Key activities and experiences
+  - Distance/cruising time between stops
+  - Berthing/anchoring recommendations
+  - Exclusive dining suggestions
+- Map visualization showing the route
+
+**Amalfi Coast Sample Itinerary with Enhanced Details**:
+
+**Day 1: Naples → Ischia (15 nm)**
+- **Morning**: Arrival at Naples Airport, private transfer to marina
+- **Boarding**: Welcome aboard with Prosecco and Italian appetizers
+- **Afternoon**: Cruise to Ischia, visit thermal spas
+- **Evening**: Dinner aboard while anchored in San Montano Bay
+- **Berthing/Anchoring**: Anchor at San Montano Bay or berth at Porto d'Ischia
+- **VIP Access**: After-hours private access to Negombo Thermal Gardens
+
+**Day 2: Ischia → Procida (7 nm)**
+- **Morning**: Exploration of Aragonese Castle
+- **Afternoon**: Short cruise to colorful Procida
+- **Evening**: Dinner at La Lampara with exclusive bay view table
+- **Berthing/Anchoring**: Anchor off Chiaiolella Beach
+- **VIP Access**: Private tour of Terra Murata with local historian
+
+**Day 3: Procida → Capri (15 nm)**
+- **Morning**: 2-hour scenic cruise to Capri
+- **Afternoon**: Blue Grotto visit before crowds
+- **Evening**: Sunset cocktails at La Fontelina Beach Club
+- **Berthing/Anchoring**: Marina Grande (€1,000-€2,000/night high season)
+- **VIP Access**: Priority access to Blue Grotto with private guide
+
+**Day 4: Capri**
+- **Morning**: Chairlift to Monte Solaro
+- **Afternoon**: Shopping in Capri Town, optional hike to Villa Jovis
+- **Evening**: Dinner at Michelin-starred Il Riccio
+- **Berthing/Anchoring**: Remain at Marina Grande
+- **VIP Access**: After-hours shopping at luxury boutiques
+
+**Day 5: Capri → Positano (10 nm)**
+- **Morning**: Cruise around Capri's Faraglioni rocks
+- **Afternoon**: Arrive Positano, beach and town exploration
+- **Evening**: Dinner at La Sponda with Azure's reserved table
+- **Berthing/Anchoring**: Anchor off Positano beach
+- **VIP Access**: Private tender service to shore avoiding water taxi queues
+
+**Design Specifications**:
+- Timeline layout with connecting elements
+- Day numbers in circular elements
+- Route map with yacht position markers
+- High quality destination imagery
+- Clearly outlined VIP benefits
+- Mobile responsive design
+
+**Technical Implementation**:
+- Use t-timeline block with custom styling
+- Implement interactive map if desired
+- Ensure mobile responsiveness with scrollable timeline
+- Highlight exclusive experiences
+- Include downloadable PDF option of itinerary
+
+### Block 5: Seasonal Information
+
+**Block Type**: Table Block (t-table) with visual elements
+
+**Content Elements**:
+- Detailed breakdown of Mediterranean seasons
+- Visual month-by-month calendar with color-coding
+- Weather patterns and sea conditions
+- Special events calendar
+- Charter pricing trends
+- Recommended areas by month
+
+**Design Specifications**:
+- Clean, scannable table design
+- Color-coding for optimal/good/challenging conditions
+- Icon system for weather, events, and pricing
+- Mobile-responsive table with horizontal scroll
+- Print-friendly formatting
+
+**Technical Implementation**:
+```html
+<div class="seasonal-table-container">
+  <h2>Mediterranean Season Planner</h2>
+  <div class="season-legend">
+    <span class="optimal-season">■</span> Optimal Conditions
+    <span class="good-season">■</span> Good Conditions
+    <span class="variable-season">■</span> Variable Conditions
+  </div>
+  
+  <div class="table-responsive">
+    <table class="seasonal-table">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+          <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>French Riviera</td>
+          <td class="variable-season">8°C</td>
+          <td class="variable-season">9°C</td>
+          <td class="variable-season">11°C</td>
+          <td class="good-season">14°C</td>
+          <td class="good-season"><span class="event">🎬</span>18°C</td>
+          <td class="optimal-season">22°C</td>
+          <td class="optimal-season">26°C</td>
+          <td class="optimal-season">26°C</td>
+          <td class="optimal-season">23°C</td>
+          <td class="good-season">18°C</td>
+          <td class="variable-season">13°C</td>
+          <td class="variable-season">9°C</td>
+        </tr>
+        <!-- Additional rows for other regions -->
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="event-legend">
+    <h4>Event Key</h4>
+    <div class="event-item"><span class="event-icon">🎬</span> Cannes Film Festival (May)</div>
+    <div class="event-item"><span class="event-icon">🏎️</span> Monaco Grand Prix (May)</div>
+    <div class="event-item"><span class="event-icon">⛵</span> Sailing Regattas</div>
+    <div class="event-item"><span class="event-icon">🎭</span> Cultural Festivals</div>
+  </div>
+</div>
+```
+
+### Block 6: Yacht Selection for Mediterranean
+
+**Block Type**: Product Showcase Block (t-store)
+
+**Content Elements**:
+- Section heading (H2): "Recommended Yachts for Mediterranean Charter"
+- Featured Mediterranean-optimized yachts with:
+  - Yacht images (exterior and interior)
+  - Yacht name and category
+  - Key specifications
+  - Special Mediterranean features
+  - Rate information
+  - Availability highlights
+  - Reviews from past Mediterranean charters
+
+**Design Specifications**:
+- Gallery-style layout with large images
+- Specification highlights with icons
+- Clear pricing and availability indicators
+- "Request" and "More Details" CTAs
+- Yacht comparison capability
+- Filter options for size, style, and budget
+
+**Technical Implementation**:
+- Implement as t-store block with custom styling
+- Include quick-view features
+- Enable filtering and sorting
+- Connect to live availability calendar if possible
+- Ensure mobile responsiveness with card-style layout on small screens
+
+**Example Yacht Card Structure**:
+```html
+<div class="med-yacht-card">
+  <div class="yacht-images">
+    <div class="main-image">
+      <img src="[image-path]" alt="Motor Yacht Azure Star cruising off Portofino">
+    </div>
+    <div class="thumbnail-row">
+      <img src="[image-path]" alt="Azure Star salon">
+      <img src="[image-path]" alt="Azure Star master cabin">
+      <img src="[image-path]" alt="Azure Star sundeck">
+    </div>
+  </div>
+  <div class="yacht-details">
+    <h3 class="yacht-name">M/Y AZURE STAR</h3>
+    <div class="yacht-specs">
+      <span class="spec"><i class="icon-length"></i> 45m (148ft)</span>
+      <span class="spec"><i class="icon-guests"></i> 12 guests</span>
+      <span class="spec"><i class="icon-cabins"></i> 6 cabins</span>
+      <span class="spec"><i class="icon-crew"></i> 9 crew</span>
+      <span class="spec"><i class="icon-builder"></i> Benetti</span>
+    </div>
+    <div class="med-features">
+      <h4>Mediterranean Advantages</h4>
+      <ul>
+        <li>Shallow draft for Sardinian coves</li>
+        <li>Extended range for island hopping</li>
+        <li>Stabilizers for ultimate comfort</li>
+        <li>Expansive deck space for entertaining</li>
+      </ul>
+    </div>
+    <div class="rate-availability">
+      <div class="rate">From €175,000 per week + expenses</div>
+      <div class="availability">Available: June 15 - September 30</div>
+    </div>
+    <div class="yacht-actions">
+      <a href="#" class="btn-details">Full Specifications</a>
+      <a href="#" class="btn-request">Request This Yacht</a>
+    </div>
+  </div>
+</div>
+```
+
+### Block 7: Mediterranean Yachting FAQ
+
+**Block Type**: Accordion Block (t-accordion)
+
+**Content Elements**:
+- Section heading (H2): "Mediterranean Charter FAQ"
+- Frequently asked questions about Mediterranean yacht charters:
+  - Best times to visit different regions
+  - Berthing and anchoring information
+  - Visa and entry requirements
+  - Currency and payment customs
+  - Dress codes and cultural considerations
+  - Language information
+  - Tipping customs for crew and service staff
+  - Weather patterns and sailing conditions
+
+**Design Specifications**:
+- Clean accordion design with expand/collapse
+- Section grouping for different topics
+- Search functionality if possible
+- Related question suggestions
+- Print option for planning
+
+**Technical Implementation**:
+- Implement using t-accordion block
+- Add custom styling for Mediterranean theme
+- Ensure proper heading structure for SEO
+- Include anchor links for direct navigation to specific questions
+- Add schema markup for FAQ rich results
+
 ---
 
 *Last Updated: May 8, 2025*  
