@@ -4,12 +4,14 @@ This documentation outlines the comprehensive framework for building and operati
 
 ## Recent Updates
 
+- **Destination Pages Added**: Mediterranean, Caribbean, and South Pacific destination documentation completed
 - **API Integration Fixed**: The Tilda API integration now works with the original key lengths
 - **Implementation Priorities Updated**: See [Project Plan](docs/PROJECT_PLAN.md) and [Website Page Status](docs/WEBSITE_PAGE_STATUS.md)
 - **Next Steps**:
-  1. Begin Azure Charters website implementation
-  2. Start Yacht Design section development
-  3. Complete IYBA compliance integration
+  1. Implement destination pages in Tilda using the completed documentation
+  2. Begin Azure Charters website implementation
+  3. Start Yacht Design section development
+  4. Complete IYBA compliance integration
 
 ## Getting Started
 
@@ -27,6 +29,10 @@ This documentation outlines the comprehensive framework for building and operati
 - **Integration Systems**: APIs, tools, and services integration
 - **Documentation System**: Knowledge base and documentation strategy
 - **Development Workflow**: Using Cursor IDE and other tools effectively
+- **Destination Guides**: Comprehensive implementation guides for yacht charter destinations:
+  - [Mediterranean](docs/website-content/destinations/mediterranean.md)
+  - [Caribbean](docs/website-content/destinations/caribbean.md)
+  - [South Pacific](docs/website-content/destinations/south-pacific.md)
 
 ## Contributing
 

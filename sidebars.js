@@ -90,7 +90,8 @@ const sidebars = {
           items: [
             'website-content/destinations/index',
             'website-content/destinations/mediterranean',
-            'website-content/destinations/caribbean'
+            'website-content/destinations/caribbean',
+            'website-content/destinations/south-pacific'
           ]
         }
       ],
