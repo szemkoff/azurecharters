@@ -84,6 +84,15 @@ const sidebars = {
         'website-content/resources',
         'website-content/yacht-design',
         'website-content/charter-website',
+        {
+          type: 'category',
+          label: 'Destinations',
+          items: [
+            'website-content/destinations/index',
+            'website-content/destinations/mediterranean',
+            'website-content/destinations/caribbean'
+          ]
+        }
       ],
     },
     {
