@@ -13,27 +13,22 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  frameworkSidebar: [
+  // Using the document IDs exactly as they appear in the error message
+  docsidebar: [
+    'getting-started',
+    'intro',
+    'framework-overview',
+    'business-model',
+    'technology-stack',
     {
       type: 'category',
-      label: 'Introduction',
+      label: 'Website Architecture',
       items: [
-        'intro',
-        'framework-overview',
-        'business-model',
-        'technology-stack',
-        'getting-started',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Business Strategy',
-      items: [
-        'business-plan-visual-elements',
-        'market-analysis',
-        'marketing-strategy',
-        'financial-projections',
-        'risk-assessment',
+        'website-architecture/overview',
+        'website-architecture/site-structure',
+        'website-architecture/tilda-integration',
+        'website-architecture/deployment-plan',
+        'website-architecture/yacht-data-import',
       ],
     },
     {
@@ -41,36 +36,14 @@ const sidebars = {
       label: 'Legal Framework',
       items: [
         'legal-framework/index',
+        'legal-framework/broker-legal-framework',
+        'legal-framework/charter-contracts',
+        'legal-framework/compliance-requirements',
         'legal-framework/contract-templates',
-        'legal-framework/insurance-requirements',
-        'legal-framework/regulatory-compliance',
         'legal-framework/data-privacy-compliance',
         'legal-framework/financial-transaction-framework',
-        'legal-framework/charter-contracts',
-        'legal-framework/broker-legal-framework',
-        'legal-framework/compliance-requirements',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Project Status',
-      items: [
-        'PROJECT_PLAN',
-        'DEVELOPMENT_STATUS',
-        'WEBSITE_STRUCTURE_ALIGNMENT',
-        'DOCUSAURUS_UPDATE_PLAN',
-        'consolidated-implementation-plans',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Website Architecture',
-      items: [
-        'website-architecture/overview',
-        'website-architecture/site-structure',
-        'website-architecture/deployment-plan',
-        'website-architecture/tilda-integration',
-        'website-architecture/yacht-data-import',
+        'legal-framework/insurance-requirements',
+        'legal-framework/regulatory-compliance',
       ],
     },
     {
@@ -79,21 +52,29 @@ const sidebars = {
       items: [
         'website-content/index',
         'website-content/brokerage',
-        'website-content/legal-framework',
+        'website-content/charter-website',
         'website-content/iyba-compliance',
+        'website-content/legal-framework',
         'website-content/resources',
         'website-content/yacht-design',
-        'website-content/charter-website',
         {
           type: 'category',
           label: 'Destinations',
           items: [
-            'website-content/destinations/index',
+            'website-content/destinations/destinations-index',
             'website-content/destinations/mediterranean',
             'website-content/destinations/caribbean',
             'website-content/destinations/south-pacific'
-          ]
-        }
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Development',
+      items: [
+        'development/cursor-integration',
+        'development/code-samples',
       ],
     },
     {
@@ -107,40 +88,43 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Development Workflow',
-      items: [
-        'development/cursor-integration',
-        'development/code-samples',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Tilda API Integration',
-      items: [
-        'website-architecture/tilda-integration',
-        {
-          type: 'link',
-          label: 'API Setup Guide',
-          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md',
-        },
-        {
-          type: 'link',
-          label: 'Implementation Guide',
-          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/IMPLEMENTATION_GUIDE.md',
-        },
-        {
-          type: 'link',
-          label: 'Troubleshooting',
-          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/TROUBLESHOOTING.md',
-        },
-      ],
-    },
-    {
-      type: 'category',
       label: 'Resources',
       items: [
         'resources/templates',
         'resources/ip-assets',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Project Status',
+      items: [
+        'PROJECT_PLAN',
+        'DEVELOPMENT_STATUS',
+        'WEBSITE_PAGE_STATUS',
+        'WEBSITE_STRUCTURE_ALIGNMENT',
+        'DOCUSAURUS_UPDATE_PLAN',
+        'consolidated-implementation-plans',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'External Documentation',
+      items: [
+        {
+          type: 'link',
+          label: 'Tilda API Setup Guide',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md',
+        },
+        {
+          type: 'link',
+          label: 'Tilda Implementation Guide',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/IMPLEMENTATION_GUIDE.md',
+        },
+        {
+          type: 'link',
+          label: 'Tilda Troubleshooting',
+          href: 'https://szemkoff.github.io/azurecharters/tilda-api/docs/TROUBLESHOOTING.md',
+        },
       ],
     },
   ],
