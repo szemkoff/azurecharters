@@ -90,6 +90,8 @@ const sidebars = {
       type: 'category',
       label: 'Integration & Automation',
       items: [
+        'integration/free-referral-system',
+        'integration/free-referral-google-sheets-template',
         'integration/hubspot-referral-system',
         'integration/hubspot-referral-setup-guide',
         'integration/hubspot-referral-progress-tracking',
