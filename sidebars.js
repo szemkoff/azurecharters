@@ -93,6 +93,8 @@ const sidebars = {
         'integration/hubspot-referral-system',
         'integration/hubspot-referral-setup-guide',
         'integration/hubspot-referral-progress-tracking',
+        'integration/trello-business-integration',
+        'integration/trello-implementation-checklist',
       ],
     },
     {
