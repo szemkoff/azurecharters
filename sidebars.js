@@ -88,6 +88,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Integration & Automation',
+      items: [
+        'integration/hubspot-referral-system',
+        'integration/hubspot-referral-setup-guide',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Resources',
       items: [
         'resources/templates',
