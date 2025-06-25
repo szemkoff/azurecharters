@@ -698,6 +698,104 @@ Display Order: 23
 Property Group: Quality Metrics
 ```
 
+#### Progress Tracking Properties
+
+**Property 24: Progress Percentage**
+```yaml
+Internal Name: progress_percentage
+Field Type: Number
+Required: Yes (for referral deals)
+Number Format: Percentage
+Min Value: 0
+Max Value: 100
+Default Value: 10
+Description: Current progress through referral pipeline
+Display Order: 24
+Property Group: Progress Tracking
+Auto-Calculate: Yes (via workflow)
+Show in Deal Summary: Yes
+```
+
+**Property 25: Current Stage Description**
+```yaml
+Internal Name: current_stage_description
+Field Type: Multi-line text
+Required: No
+Description: Detailed description of current stage activities
+Display Order: 25
+Property Group: Progress Tracking
+Auto-Populate: Yes (via workflow)
+```
+
+**Property 26: Stage Color Code**
+```yaml
+Internal Name: stage_color_code
+Field Type: Single-line text
+Required: No
+Format: Hex color code (#XXXXXX)
+Description: Color code for visual progress indicators
+Display Order: 26
+Property Group: Progress Tracking
+Auto-Populate: Yes (via workflow)
+```
+
+**Property 27: Stage Icon**
+```yaml
+Internal Name: stage_icon
+Field Type: Single-line text
+Required: No
+Description: Emoji icon for current stage
+Display Order: 27
+Property Group: Progress Tracking
+Auto-Populate: Yes (via workflow)
+```
+
+**Property 28: Days in Current Stage**
+```yaml
+Internal Name: days_in_current_stage
+Field Type: Number
+Required: No
+Number Format: Unformatted number
+Min Value: 0
+Description: Number of days in current stage
+Display Order: 28
+Property Group: Progress Tracking
+Auto-Calculate: Yes (via workflow)
+```
+
+**Property 29: Estimated Completion Date**
+```yaml
+Internal Name: estimated_completion_date
+Field Type: Date picker
+Required: No
+Description: Estimated date for deal closure
+Display Order: 29
+Property Group: Progress Tracking
+Auto-Calculate: Yes (based on stage averages)
+```
+
+**Property 30: Next Action Required**
+```yaml
+Internal Name: next_action_required
+Field Type: Multi-line text
+Required: No
+Description: Next specific action needed to advance
+Display Order: 30
+Property Group: Progress Tracking
+Auto-Populate: Yes (via workflow)
+```
+
+**Property 31: Stage Entry Date**
+```yaml
+Internal Name: stage_entry_date
+Field Type: Date picker
+Required: No
+Description: Date when deal entered current stage
+Display Order: 31
+Property Group: Progress Tracking
+Auto-Set: Yes (when stage changes)
+```
+
 ### Step 1.3: Create Custom Objects for Advanced Tracking
 
 **Navigate to:** Settings → Objects → Create Custom Object
@@ -1173,8 +1271,154 @@ Actions Sequence:
    - Delay: None
 
 5. Internal Notification
-   - Notify: Partner management team
-   - Subject: "Partner tier upgrade: {Contact Name} to {Referral Tier}"
+     - Notify: Partner management team
+     - Subject: "Partner tier upgrade: {Contact Name} to {Referral Tier}"
+     - Delay: None
+ ```
+
+### Step 2.4: Progress Tracking Workflow
+
+**Navigate to:** Automation → Workflows → Create Workflow
+
+**Workflow Name:** "Referral Progress Tracker"
+
+**Configuration:**
+```yaml
+Trigger Type: Deal-based
+Enrollment Trigger:
+  - Deal stage changes
+  - AND Deal pipeline is "Partner Referral Tracking"
+  - Re-enrollment: Yes
+
+Actions Sequence:
+1. Branch Logic - Progress Calculation
+   - IF Deal Stage = "Referral Received"
+     - Set progress_percentage: 10
+     - Set stage_color_code: #E3F2FD
+     - Set stage_icon: 🎯
+     - Set current_stage_description: "Referral received and partner attributed. Awaiting initial contact."
+     - Set next_action_required: "Make first contact within 24 hours"
+   
+   - IF Deal Stage = "Initial Contact"
+     - Set progress_percentage: 25
+     - Set stage_color_code: #FFF3E0
+     - Set stage_icon: 📞
+     - Set current_stage_description: "First contact made. Qualifying lead and gathering requirements."
+     - Set next_action_required: "Complete needs assessment and prepare proposal"
+   
+   - IF Deal Stage = "Proposal Sent"
+     - Set progress_percentage: 50
+     - Set stage_color_code: #F3E5F5
+     - Set stage_icon: 📋
+     - Set current_stage_description: "Custom proposal sent. Awaiting client review and feedback."
+     - Set next_action_required: "Follow up on proposal within 3 days"
+   
+   - IF Deal Stage = "Negotiation"
+     - Set progress_percentage: 75
+     - Set stage_color_code: #E8F5E8
+     - Set stage_icon: 🤝
+     - Set current_stage_description: "Active negotiation. Finalizing terms and conditions."
+     - Set next_action_required: "Address client concerns and finalize contract"
+   
+   - IF Deal Stage = "Closed Won"
+     - Set progress_percentage: 100
+     - Set stage_color_code: #4CAF50
+     - Set stage_icon: ✅
+     - Set current_stage_description: "Charter booked successfully! Commission earned."
+     - Set next_action_required: "Send booking confirmation and process commission"
+   
+   - IF Deal Stage = "Closed Lost"
+     - Set progress_percentage: 0
+     - Set stage_color_code: #FFEBEE
+     - Set stage_icon: ❌
+     - Set current_stage_description: "Referral did not convert. Reason documented."
+     - Set next_action_required: "Provide feedback to partner and identify improvements"
+
+2. Set Stage Entry Date
+   - Property: stage_entry_date
+   - Value: Today's date
+   - Delay: None
+
+3. Calculate Days in Stage
+   - Custom Code Action: Calculate difference between today and stage_entry_date
+   - Set days_in_current_stage property
+   - Delay: None
+
+4. Calculate Estimated Completion
+   - Branch Logic based on historical stage durations:
+     - Referral Received: +2 days
+     - Initial Contact: +5 days
+     - Proposal Sent: +7 days
+     - Negotiation: +3 days
+   - Set estimated_completion_date
+   - Delay: None
+
+5. Send Progress Notification to Partner
+   - Email Template: Partner Progress Update
+   - Include: Progress percentage, stage description, next steps
+   - Delay: None
+
+6. Create Internal Task (if stalled)
+   - IF days_in_current_stage > expected duration
+   - Task Title: "Follow up on stalled referral: {Deal Name}"
+   - Assign to: Deal Owner
+   - Priority: High
+   - Delay: None
+
+7. Update Dashboard Properties
+   - Refresh visual indicators
+   - Update progress charts
+   - Trigger notification badges
+   - Delay: None
+```
+
+### Step 2.5: Progress Alert Workflow
+
+**Navigate to:** Automation → Workflows → Create Workflow
+
+**Workflow Name:** "Referral Progress Alerts"
+
+**Configuration:**
+```yaml
+Trigger Type: Deal-based
+Enrollment Trigger:
+  - Daily at 9:00 AM
+  - Deal pipeline is "Partner Referral Tracking"
+  - Deal stage is not "Closed Won" or "Closed Lost"
+  - Re-enrollment: Yes
+
+Actions Sequence:
+1. Calculate Stage Duration
+   - Custom Code: Calculate days since stage_entry_date
+   - Update days_in_current_stage property
+
+2. Branch Logic - Alert Triggers
+   - IF days_in_current_stage >= 3 AND stage = "Referral Received"
+     - Send Alert: "Referral not contacted within 3 days"
+     - Assign urgent task to sales team
+   
+   - IF days_in_current_stage >= 7 AND stage = "Initial Contact"
+     - Send Alert: "Lead qualification taking too long"
+     - Escalate to sales manager
+   
+   - IF days_in_current_stage >= 10 AND stage = "Proposal Sent"
+     - Send Alert: "Proposal follow-up needed"
+     - Create follow-up task
+   
+   - IF days_in_current_stage >= 5 AND stage = "Negotiation"
+     - Send Alert: "Negotiation stalled"
+     - Manager intervention required
+
+3. Partner Communication
+   - IF days_in_current_stage >= 14 (any stage)
+   - Send email to partner with update
+   - Explain current status and timeline
+   - Delay: None
+
+4. Update Risk Indicators
+   - Set deal property: at_risk_flag = true
+   - Add to "Stalled Deals" list
+   - Create escalation task
    - Delay: None
 ```
 

@@ -92,6 +92,7 @@ const sidebars = {
       items: [
         'integration/hubspot-referral-system',
         'integration/hubspot-referral-setup-guide',
+        'integration/hubspot-referral-progress-tracking',
       ],
     },
     {
