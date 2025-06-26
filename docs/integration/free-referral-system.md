@@ -5,254 +5,337 @@ sidebar_position: 13
 description: Complete free referral system using Google Sheets, free HubSpot, and basic tracking
 ---
 
-# Complete Free Referral System Integration
+# Complete Free Referral System Architecture
 
-## System Overview
+## 🎯 System Overview
 
-**Revenue Calculation:** Revenue = Retail Price - Yacht Owner's Cut  
-**Trigger Stage:** "Proposal" (when moving from New Lead → Proposal)  
-**Payment Method:** Zelle (recorded as "Cash Payment" in QuickBooks)  
+**100% Free Solution - Zero Monthly Costs**
+- Google Sheets for tracking and commission calculations
+- Trello webhook automation (free tier)
+- Gmail notifications (free tier)
+- Manual QuickBooks entry (no paid integrations)
+- Zelle payments (free transfers)
 
-### Current Trello Workflow
-1. **New Lead** → 2. **Proposal** → 3. **Review** → 4. **Scheduled** → 5. **Follow up** → 6. **Completed** / **Failed**
+**Setup Time:** 45 minutes  
+**Monthly Maintenance:** 30 minutes  
+**System Capacity:** 100+ partners, 500+ referrals/month
 
-## Commission Structure (Hybrid Model)
+---
 
-| Your Revenue | Commission | Retail Booking Value |
+## 💰 Commission Structure (Hybrid Model)
+
+Based on your actual revenue after yacht owner's cut:
+
+| Your Revenue | Commission | Typical Retail Value |
 |-------------|-----------|---------------------|
-| $300 | $100 | ~$5,000 |
-| $500 | $150 | ~$7,500 |
-| $800 | $200 | ~$10,000+ |
-| $1000+ | $300 | ~$15,000+ |
+| $300 | **$100** | ~$5,000 |
+| $500 | **$150** | ~$7,500 |
+| $800 | **$200** | ~$10,000+ |
+| $1000+ | **$300** | ~$15,000+ |
 
-## Complete System Components
+**Revenue Calculation:** Your Revenue = Retail Price - Yacht Owner's Cut  
+**Trigger Stage:** "Proposal" (when moving from New Lead)  
+**Payment Method:** Zelle (recorded as "Cash Payment" in QuickBooks)
 
-### 1. Google Sheets Template
+---
 
-**Sheet 1: Partner Database**
-- Partner ID, Name, Email, Phone
-- Referral Code, Join Date, Status
-- Payment Method (Zelle info)
-- Total Referrals, Total Commissions
+## 🏗️ System Architecture
 
-**Sheet 2: Referral Tracking**
-- Referral ID, Partner Code, Customer Name
-- Retail Price, Your Revenue, Commission Amount
-- Booking Date, Status, Payment Status
-- Trello Card Link
+### Current Trello Workflow Integration
+1. **New Lead** → 2. **Proposal** ⚡*Auto-trigger* → 3. **Review** → 4. **Scheduled** → 5. **Follow up** → 6. **Completed** / **Failed**
 
-**Sheet 3: Commission Calculator**
+### Google Sheets Structure
+
+**Sheet 1: Partners**
 ```
-=IF(B2<=300,100,IF(B2<=500,150,IF(B2<=800,200,300)))
+Partner ID | Name | Email | Phone | Referral Code | Status | Join Date | Zelle Info | Total Referrals | Total Earned
 ```
 
-### 2. Trello Integration (Free Method)
-
-**Card Description Format:**
+**Sheet 2: Tracking**
 ```
-Yacht: [Yacht Name]
-Product: [Charter Type]
-Date: [Charter Date]
-Retail Price: $[Amount]
-Your Revenue: $[Amount] 
-Referral Partner: [Partner Name/Code]
-Commission Due: $[Amount]
-
-Client: [Name]
-Email: [Email]
-Phone: [Phone]
+Referral ID | Date | Customer Name | Customer Email | Partner Code | Retail Price | Your Revenue | Commission | Status | Charter Date | Payment Date | Payment Ref | Notes
 ```
 
-**When Moving to "Proposal" Stage:**
-1. Copy card details to Google Sheets
-2. Calculate commission automatically
-3. Send email notification to partner
-4. Create QuickBooks invoice (manual entry)
+**Sheet 3: Monthly Summary**
+```
+Month | Total Referrals | Total Revenue | Total Commissions | Partners Paid | Outstanding
+```
 
-### 3. Automation Setup (Free Tools)
+**Sheet 4: Settings**
+```
+Trello Board ID | Webhook URL | Email Template | Your Email
+```
 
-**Google Apps Script (Free):**
+### Automated Commission Formula
+```excel
+=IF(G2="","",IF(G2<=300,100,IF(G2<=500,150,IF(G2<=800,200,300))))
+```
+
+---
+
+## 🔧 Technical Implementation
+
+### Google Apps Script Automation
+
+**Webhook Handler:**
 ```javascript
-// Trello Webhook Handler
-function handleTrelloWebhook(e) {
-  const data = JSON.parse(e.postData.contents);
-  
-  if (data.action.type === 'updateCard' && 
-      data.action.data.listAfter.name === 'Proposal') {
+function doPost(e) {
+  try {
+    const data = JSON.parse(e.postData.contents);
     
-    // Extract card data
-    const card = data.action.data.card;
-    const description = card.desc;
-    
-    // Parse referral info
-    if (description.includes('Referral Partner:')) {
-      processReferral(card);
+    // Only process when card moves TO "Proposal" list
+    if (data.action && data.action.type === 'updateCard' && 
+        data.action.data && data.action.data.listAfter && 
+        data.action.data.listAfter.name === 'Proposal') {
+      
+      processReferral(data.action.data.card);
     }
+    
+    return ContentService.createTextOutput('OK');
+  } catch (error) {
+    console.log('Error:', error);
+    return ContentService.createTextOutput('Error: ' + error.toString());
   }
 }
+```
 
+**Data Processing:**
+```javascript
 function processReferral(card) {
-  // Add to tracking sheet
-  // Calculate commission
-  // Send notifications
-  // Log for QuickBooks
+  const sheet = SpreadsheetApp.getActiveSpreadsheet();
+  const trackingSheet = sheet.getSheetByName('Tracking');
+  
+  // Parse card description for referral data
+  const description = card.desc || '';
+  const referralData = parseReferralData(description);
+  
+  if (referralData && referralData.partnerCode) {
+    // Add to tracking sheet with auto-calculated commission
+    // Send email notification
+    // Log for monthly processing
+  }
 }
 ```
 
-### 4. QuickBooks Categories
+### Trello Card Format (Required)
 
-**Revenue Categories:**
-- "Charter Revenue - Direct"
-- "Charter Revenue - Referral"
+**Exact format for automation:**
+```
+[Charter Type] - [Customer Name]
+
+Yacht: [Yacht Name]
+Product: [Charter Package]
+Date: [Charter Date]
+Retail Price: $[What Customer Pays]
+Your Revenue: $[Your Profit After Owner Cut]
+Referral Partner: [Partner Code from Partners sheet]
+
+Client: [Full Customer Name]
+Email: [Customer Email]
+Phone: [Customer Phone]
+```
+
+### Email Automation
+
+**New Referral Notification:**
+```
+Subject: New Referral Logged - REF-001
+
+New referral has been automatically logged:
+
+Referral ID: REF-001
+Partner: AZURE-JOHN
+Customer: John Smith
+Revenue: $300
+Commission: $100
+
+View details in your Google Sheet.
+
+Azure Yacht Group Referral System
+```
+
+---
+
+## 💳 QuickBooks Integration (Manual)
+
+### Categories Setup
+
+**Income Categories:**
+- Charter Revenue - Direct Booking
+- Charter Revenue - Referral Booking
 
 **Expense Categories:**
-- "Referral Commissions"
-- "Partner Payments"
+- Referral Partner Commissions
+- Marketing - Partner Payments
+
+### Monthly Process
+
+1. **Export Data:** Download commission data from Google Sheets
+2. **Create Entries:** Manual entry in QuickBooks for partner payments
+3. **Categorize Revenue:** Mark referral vs direct bookings
+4. **Track Expenses:** Log all commission payments with partner details
 
 **Sample Entries:**
 ```
 INCOME:
-Charter Revenue - Referral: $2,000 (Retail Price)
+Charter Revenue - Referral Booking: $5,000
+Description: Yacht charter via AZURE-JOHN referral
 
 EXPENSES:
-Yacht Owner Payment: $1,500
-Referral Commission: $150
+Referral Partner Commissions: $100
+Description: Commission payment to John Smith - Zelle
 ```
 
-### 5. HubSpot Integration
+---
 
-**Partner Contact Properties:**
-- Partner Status: "Active Referral Partner"
-- Referral Code: [Unique Code]
-- Commission Tier: [Based on volume]
-- Payment Method: "Zelle"
-- Total Referrals: [Count]
-- Total Commissions: [Amount]
+## 📧 Communication Templates
 
-**Deal Properties for Referral Bookings:**
-- Referral Source: [Partner Name]
-- Commission Amount: [Calculated]
-- Commission Status: "Pending/Paid"
-
-### 6. Email Templates
-
-**Partner Notification (New Referral):**
+### Partner Onboarding Email
 ```
-Subject: New Referral Confirmed - Commission $[Amount]
+Subject: Welcome to Azure Yacht Group Referral Program
 
 Hi [Partner Name],
 
-Great news! Your referral has moved to proposal stage:
+Welcome to our referral program! Here are your details:
 
-Customer: [Name]
-Charter Date: [Date]
-Your Commission: $[Amount]
-Status: Pending Confirmation
+Referral Code: [AZURE-PARTNERNAME]
+Commission Structure: $100-300 per booking
+Payment Method: Monthly via Zelle
 
-We'll process payment via Zelle once the booking is completed.
+Your Partner Booklet: [Link to partner materials]
+Track Your Performance: [Link to dashboard]
+
+Start promoting and earning today!
+
+Best regards,
+Azure Yacht Group Team
+```
+
+### Monthly Commission Report
+```
+Subject: Monthly Commission Report - [Month Year]
+
+Hi [Partner Name],
+
+Your referral performance for [Month]:
+- Referrals Generated: [Count]
+- Total Commission Earned: $[Amount]
+- Payment Sent: $[Amount] via Zelle
+- Confirmation Number: [Zelle Ref]
+
+Thank you for your continued partnership!
+
+Next month's goal: [Suggested target]
 
 Best regards,
 Azure Yacht Group
 ```
 
-**Commission Payment Notification:**
-```
-Subject: Commission Payment Sent - $[Amount]
+---
 
-Hi [Partner Name],
+## 📊 Operational Workflow
 
-Your commission has been sent via Zelle:
+### Daily Operations
 
-Amount: $[Amount]
-Transaction: [Reference]
-Booking: [Customer Name - Date]
+**When Referral Lead Arrives:**
+1. Create Trello card with exact format
+2. Process through normal workflow
+3. Move to "Proposal" → **Auto-logging triggers**
+4. System handles tracking and notifications
 
-Thank you for the referral!
-```
+**Manual Tasks:**
+- Verify customer details
+- Confirm charter logistics
+- Process booking payments
+- Update Trello status
 
-### 7. Implementation Steps
+### Monthly Commission Process
 
-**Week 1: Setup**
-1. Create Google Sheets template
-2. Set up Trello webhook
-3. Configure email templates
-4. Create QuickBooks categories
+**1st of Each Month:**
+1. **Review:** Filter Tracking sheet for "Pending" commissions
+2. **Verify:** Confirm all completed charters
+3. **Pay:** Send Zelle payments to partners
+4. **Update:** Mark payments as "Paid" with reference numbers
+5. **Report:** Send monthly performance emails
 
-**Week 2: Testing**
-1. Test with sample referral
-2. Verify commission calculation
-3. Test email notifications
-4. Check QuickBooks integration
+### Quarterly Review
 
-**Week 3: Partner Onboarding**
-1. Add existing partners to system
-2. Generate referral codes
-3. Send tracking links
-4. Train team on process
+**Business Analysis:**
+- Partner performance rankings
+- Commission structure optimization
+- System capacity planning
+- ROI analysis on referral program
 
-**Week 4: Go Live**
-1. Activate automation
-2. Monitor first referrals
-3. Process first payments
-4. Gather feedback
+---
 
-### 8. Daily Workflow
+## 🔍 Quality Control
 
-**When Lead Comes In:**
-1. Create Trello card in "New Lead"
-2. Add referral partner info if applicable
-3. Include retail price and revenue calculation
+### Data Validation
 
-**When Moving to "Proposal":**
-1. System automatically logs referral
-2. Calculates commission
-3. Sends partner notification
-4. Adds to QuickBooks queue
+**Automated Checks:**
+- Commission calculations verify against revenue
+- Partner codes validate against Partners sheet
+- Email notifications confirm successful logging
+- Monthly totals reconcile with individual entries
 
-**When Booking Confirmed:**
-1. Create customer invoice
-2. Record yacht owner payment
-3. Process partner commission via Zelle
-4. Update all tracking systems
+**Manual Verification:**
+- Spot-check 10% of referrals monthly
+- Verify Zelle payment confirmations
+- Cross-reference QuickBooks entries
+- Partner feedback on payment accuracy
 
-### 9. Reporting Dashboard
+### Error Prevention
 
-**Monthly Partner Report:**
-- Total referrals by partner
-- Commission amounts
-- Payment status
-- Top performing partners
+**Common Issues & Solutions:**
+- **Wrong commission calculation:** Check revenue entry format
+- **Missing referral data:** Verify Trello card format
+- **Email not sent:** Check Gmail quota and permissions
+- **Webhook failure:** Test Google Apps Script logs
 
-**Business Analytics:**
-- Referral vs direct bookings
-- Average commission per referral
-- Partner acquisition costs
-- Revenue attribution
+---
 
-### 10. Quality Control
+## 📈 System Scaling
 
-**Monthly Reviews:**
-- Verify commission calculations
-- Check payment records
-- Update partner performance
-- Review system accuracy
+### Current Capacity (Free Tiers)
+- **Google Sheets:** 10 million cells (unlimited practical use)
+- **Gmail:** 100 emails/day (sufficient for notifications)
+- **Apps Script:** 6 minutes runtime per execution
+- **Trello:** Unlimited webhooks
 
-**Partner Communication:**
-- Monthly performance reports
-- Quarterly strategy calls
-- Annual partner appreciation events
-- Ongoing training and support
+### Growth Planning
 
-## Cost Breakdown
+**Month 1-3:** 5-15 partners, $500-1,500 monthly commissions
+**Month 4-6:** 15-30 partners, $1,500-3,000 monthly commissions  
+**Month 7-12:** 30-50 partners, $3,000-5,000 monthly commissions
 
-**Monthly Costs: $0**
-- Google Workspace: Free tier
-- Trello: Free tier
-- Email: Gmail free
-- Tracking: Google Sheets free
-- Automation: Google Apps Script free
+**Scaling Indicators:**
+- Gmail quota approaching limit (80+ emails/day)
+- Google Sheets response time slowing
+- Manual payment processing taking >2 hours monthly
 
-**One-time Setup: ~8 hours**
-**Monthly Maintenance: ~2 hours**
+---
 
-This system scales to handle 50+ partners with zero monthly costs while providing professional tracking and automation. 
+## 🎯 Success Metrics
+
+### Performance Tracking
+
+**Partner Metrics:**
+- Referral conversion rate (leads to bookings)
+- Average commission per partner per month
+- Partner retention rate
+- Time from referral to booking
+
+**Business Metrics:**
+- Referral revenue as % of total revenue
+- Cost per acquisition via referrals
+- Partner program ROI
+- Monthly growth in referral bookings
+
+### Target Benchmarks
+
+**Month 1:** 5 partners, 2 bookings, $15K referral revenue
+**Month 3:** 15 partners, 8 bookings, $50K referral revenue
+**Month 6:** 25 partners, 15 bookings, $100K referral revenue
+**Year 1:** 50 partners, 30 monthly bookings, $200K+ referral revenue
+
+This system provides professional-grade referral tracking and management while maintaining zero monthly costs and requiring minimal maintenance time. 

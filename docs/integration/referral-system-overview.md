@@ -113,11 +113,12 @@ Our hybrid commission model rewards partners based on the revenue we generate fr
 
 ## Documentation Structure
 
-- **[Implementation Guide](implementation-checklist)** - Technical setup instructions
-- **[Google Sheets Template](google-sheets-referral-template)** - Complete tracking system
-- **[Free Referral System](free-referral-system)** - Detailed system architecture
-- **[Partner Booklet](partner-booklet)** - Materials for partners
-- **[Partner Agreement](partner-agreement)** - Legal framework for partnerships
+- **[Implementation Guide](implementation-checklist)** - Complete 45-minute setup process
+- **[Google Sheets Template](google-sheets-referral-template)** - Ready-to-use tracking system
+- **[System Architecture](free-referral-system)** - Technical details and automation
+- **[Partner Application](partner-application)** - Application form template
+- **[Partner Booklet](partner-booklet)** - Professional materials for partners  
+- **[Partner Agreement](partner-agreement)** - Legal framework and terms
 
 ## Success Metrics
 
