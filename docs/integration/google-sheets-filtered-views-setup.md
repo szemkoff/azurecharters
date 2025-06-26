@@ -181,58 +181,7 @@ Pending Payments: $350
 ## Step 9: Automation Setup (Optional)
 
 ### Email Notifications
-Add this Google Apps Script to send notifications:
-
-```javascript
-function onEdit(e) {
-  const sheet = e.source.getActiveSheet();
-  const range = e.range;
-  
-  // Check if status column was updated
-  if (sheet.getName() === 'Tracking' && range.getColumn() === 9) {
-    const row = range.getRow();
-    const partnerCode = sheet.getRange(row, 5).getValue();
-    const customerName = sheet.getRange(row, 3).getValue();
-    const status = range.getValue();
-    const commission = sheet.getRange(row, 8).getValue();
-    
-    // Send notification to partner
-    sendPartnerNotification(partnerCode, customerName, status, commission);
-  }
-}
-
-function sendPartnerNotification(partnerCode, customerName, status, commission) {
-  // Get partner email from Partners tab
-  const partnersSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Partners');
-  const partnerData = partnersSheet.getDataRange().getValues();
-  
-  let partnerEmail = '';
-  for (let i = 1; i < partnerData.length; i++) {
-    if (partnerData[i][0] === partnerCode) {
-      partnerEmail = partnerData[i][2];
-      break;
-    }
-  }
-  
-  if (partnerEmail) {
-    const subject = `Referral Update: ${customerName}`;
-    const body = `
-Hi there!
-
-Update on your referral for ${customerName}:
-Status: ${status}
-${commission ? `Commission: $${commission}` : ''}
-
-View your dashboard: [Your filtered view URL here]
-
-Best regards,
-Azure Yacht Group
-    `;
-    
-    GmailApp.sendEmail(partnerEmail, subject, body);
-  }
-}
-```
+For automated notifications, use the Zapier integration described in the implementation guide. This provides reliable, code-free email automation that integrates seamlessly with your Trello workflow.
 
 ## Step 10: Partner Onboarding Process
 

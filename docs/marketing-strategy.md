@@ -324,10 +324,11 @@ journey
 ### Client Referral System
 
 1. **Referral Program Structure**
-   - Implement structured referral tracking system
+   - Implement structured referral tracking system via [HubSpot integration](/docs/integration/hubspot-referral-integration)
    - Create value-based incentives for successful referrals
    - Develop recognition program for top referrers
    - Train team on appropriate referral solicitation timing
+   - Automated lead scoring and follow-up sequences for referred clients
 
 2. **Client Advocacy Development**
    - Create content featuring client experiences (with permission)

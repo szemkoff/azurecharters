@@ -34,21 +34,18 @@ Our hybrid commission model based on your actual revenue:
 
 ## 🏗️ System Architecture
 
-### Technology Stack Options
+### Technology Stack
 
-**Option 1: Zapier Free (Recommended for Beginners)**
-- **Zapier Free** - 3 automations, 100 tasks/month
+**Complete System Components:**
+- **Zapier** - 5 automations, 100 tasks/month
 - **Google Sheets** - Partner dashboards, filtered views & financial tracking
 - **Trello** - Lead management integration
+- **HubSpot** - CRM integration, lead scoring, automated follow-up sequences
 - **Gmail** - Automated partner notifications
 - **Zelle** - Commission payments
 
-**Option 2: Google Apps Script (Unlimited Capacity)**
-- **Google Apps Script** - Custom automation code
-- **Google Sheets** - Partner dashboards, filtered views & financial tracking
-- **Trello** - Lead management with webhooks
-- **Gmail** - Partner notifications
-- **Zelle** - Commission payments
+**System Integration:**
+Partner referrals automatically integrate with your existing HubSpot CRM for unified contact management and professional client follow-up. See [HubSpot Integration Guide](/docs/integration/hubspot-referral-integration) for setup details.
 
 ### How Partners Track Commissions
 
@@ -83,28 +80,23 @@ Date      Customer      Status       Revenue   Commission   Payment
 
 ```mermaid
 graph TD
-    A["🎯 Partner Submits Referral<br/>Email/Phone/Form"] --> B["📝 You Create Trello Card<br/>Format: PARTNER: CODE<br/>RETAIL: Amount<br/>REVENUE: Your Cut"]
+    A["🎯 Partner Submits Referral"] --> B["📝 Create Trello Card<br/>PARTNER: CODE<br/>RETAIL: Amount<br/>REVENUE: Your Cut"]
     
-    B --> C["📋 Move Card to 'Proposal'"]
-    C --> D["⚡ Zap 1: Trello → Sheets<br/>Logs referral data<br/>Calculates commission"]
+    B --> C["📋 Move to 'Proposal'"]
+    C --> D["⚡ Zapier: Log to Sheets<br/>Calculate commission"]
+    C --> E["⚡ Zapier: Create HubSpot contact<br/>CRM integration"]
     
-    D --> E["📊 Google Sheets<br/>- Partners tab<br/>- Referrals tab<br/>- Monthly Summary<br/>- Financial Records"]
+    D --> F["📊 Google Sheets Dashboard<br/>Real-time partner tracking"]
+    E --> G["🤖 HubSpot: Lead scoring<br/>Automated client follow-up"]
     
-    E --> F["⚡ Zap 2: Sheets → Gmail<br/>Notify partner:<br/>'Referral logged!'<br/>Commission amount"]
+    F --> H["📧 Partner notification<br/>'Referral logged - $X commission'"]
     
-    B --> G["📋 Move Card to 'Completed'<br/>When charter confirmed"]
-    G --> H["⚡ Zap 3: Trello → Sheets<br/>Log revenue in<br/>Financial Records"]
-    
-    E --> I["💰 You Pay Partner<br/>Via Zelle monthly<br/>Update payment status"]
-    
-    E --> J["📱 Partner Dashboard<br/>Filtered Google Sheets view<br/>Real-time commission tracking"]
+    B --> I["📋 Move to 'Completed'"]
+    I --> J["💰 Monthly Zelle payment<br/>Update payment status"]
     
     style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style J fill:#e8f5e8
-    style D fill:#fff3e0
-    style F fill:#fff3e0
-    style H fill:#fff3e0
+    style F fill:#f3e5f5
+    style G fill:#fff3e0
 ```
 
 ### Current Trello Process
@@ -112,12 +104,16 @@ Your existing workflow remains unchanged:
 **New Lead** → **Proposal** ⚡*Auto-trigger* → **Review** → **Scheduled** → **Follow up** → **Completed**
 
 ### Automated Processing
-1. **Referral received** - Partner submits via email template
-2. **You create Trello card** with referral data in description
-3. **Move to "Proposal"** - System automatically logs referral
-4. **Partner notified** - Instant email with tracking details
-5. **Commission calculated** - Based on your revenue amount
-6. **Monthly payment** - Processed via Zelle with confirmation
+1. **Partner submits referral** - Via email template or direct contact
+2. **Create Trello card** - Add referral data (PARTNER: CODE, RETAIL: Amount, REVENUE: Your Cut)
+3. **Move to "Proposal"** - Triggers dual automation:
+   - **Zapier → Google Sheets**: Logs referral data, calculates commission
+   - **Zapier → HubSpot**: Creates contact record, triggers lead scoring
+4. **Google Sheets Dashboard** - Real-time partner tracking updates
+5. **HubSpot Automation** - Professional client follow-up sequences begin
+6. **Partner notification** - Instant email: "Referral logged - $X commission"
+7. **Move to "Completed"** - When charter confirmed
+8. **Monthly payment** - Zelle transfer with payment status update
 
 ## 📊 Partner Benefits
 
@@ -137,16 +133,12 @@ Your existing workflow remains unchanged:
 
 ## 📋 Implementation Process
 
-### Quick Start Options
+### Quick Start Setup
 
-**Option A: Zapier Setup (25 minutes total)**
-1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (15 minutes)
-2. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
-
-**Option B: Google Apps Script (45 minutes total)**
-1. **[Set up Google Sheets](/docs/integration/google-sheets-filtered-views-setup)** (15 minutes)
-2. **[Configure Trello integration](/docs/integration/implementation-checklist)** (20 minutes)
-3. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
+**Complete Implementation (45 minutes total):**
+1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (25 minutes) - Partner tracking system
+2. **[HubSpot Integration Guide](/docs/integration/hubspot-referral-integration)** (20 minutes) - CRM integration
+3. **[Create partner materials](/docs/integration/partner-application)** (10 minutes) - Partner onboarding
 
 ### Partner Onboarding
 1. **Partner applies** using application form
@@ -172,12 +164,14 @@ Your existing workflow remains unchanged:
 ## 📚 Documentation Guide
 
 ### Essential Setup Guides
-- **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** - No-code automation setup (Recommended)
-- **[Partner Dashboard Setup](/docs/integration/google-sheets-filtered-views-setup)** - Complete Google Sheets configuration
-- **[Implementation Checklist](/docs/integration/implementation-checklist)** - Google Apps Script system setup
+- **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** - Complete automation setup
+- **[Partner Dashboard Setup](/docs/integration/google-sheets-filtered-views-setup)** - Google Sheets configuration
 - **[Partner Application](/docs/integration/partner-application)** - Partner onboarding form
 - **[Partner Agreement](/docs/integration/partner-agreement)** - Legal framework and terms
 - **[Partner Booklet](/docs/integration/partner-booklet)** - Marketing materials for partners
+
+### System Integration Guides
+- **[HubSpot Integration](/docs/integration/hubspot-referral-integration)** - Connect referral system to your existing HubSpot CRM
 
 ### System Management
 - Monthly commission processing workflow

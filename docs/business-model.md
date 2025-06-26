@@ -45,6 +45,12 @@ Azure Yacht Group operates a premium yacht charter and brokerage business model 
   - Dining and entertainment (10-15% commission)
   - Specialty insurance (15-25% commission)
 
+- **Partner Referral Network**: Commission-based lead generation system
+  - [Automated partner tracking](/docs/integration/referral-system-overview) via Zapier + Google Sheets
+  - Real-time commission calculations ($100-300 per booking)
+  - Professional partner dashboards and payments via Zelle
+  - Zero monthly costs using free platform tiers
+
 ## Operational Structure
 
 ### Fleet Management
@@ -101,7 +107,7 @@ Azure Yacht Group operates a premium yacht charter and brokerage business model 
 - **Consideration Phase**: Sales process and proposal development
 - **Experience Phase**: Charter execution and service delivery
 - **Retention Phase**: Post-charter follow-up and relationship management
-- **Advocacy Phase**: Referral programs and testimonial collection
+- **Advocacy Phase**: [Automated referral tracking system](/docs/integration/referral-system-overview) and testimonial collection
 
 ## Financial Model
 

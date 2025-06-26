@@ -13,25 +13,28 @@ sidebar_label: Zapier Setup Guide
 **Cost:** \$0/month - completely free solution
 
 **What You'll Build:**
-- 3 automated Zapier workflows (using only 3 of 5 free automations)
+- 3 automated Zapier workflows for partner tracking
 - Google Sheets partner dashboards & financial tracking
 - Automated email notifications
 - Monthly payment processing
+- **Note:** [HubSpot CRM integration](/docs/integration/hubspot-referral-integration) uses 2 additional automations (separate setup guide)
 
 ---
 
 ## 🔧 Technology Stack
 
-### Core Components (100% Free)
-- **Zapier Free** - 5 automations available, 100 tasks/month (we use 3)
+### Core Components
+- **Zapier** - 5 automations available, 100 tasks/month (3 for partner tracking + 2 for HubSpot)
 - **Google Sheets** - Partner tracking, dashboards & financial records
 - **Trello** - Lead management system
 - **Gmail** - Email notifications
 - **Zelle** - Payment processing
 
+### CRM Integration
+- **HubSpot** - Your existing CRM with lead scoring and automated follow-up (uses 2 additional Zapier automations - see separate setup guide)
+
 ### Upgrade Path
-- **Zapier Starter** (\$19.99/month) - 20 Zaps, 750 tasks/month
-- **Google Apps Script** - Unlimited capacity alternative
+- **Zapier Starter** (\$19.99/month) - 20 Zaps, 750 tasks/month for higher volume
 
 ---
 
@@ -229,15 +232,10 @@ High-end client
 - **Zapier Starter:** \$19.99/month, 750 tasks
 - **Zapier Professional:** \$49/month, 2,000 tasks
 
-**Option 2: Switch to Google Apps Script**
-- **Unlimited tasks** for free
-- **More complex logic** possible
-- **Requires coding** knowledge
-
-**Option 3: Hybrid Approach**
-- **Keep Zapier** for simple automations
-- **Add Apps Script** for complex calculations
-- **Best of both worlds**
+**Option 2: Optimize Current System**
+- **Improve card format** to reduce task usage
+- **Combine multiple actions** in single Zaps where possible
+- **Review automation frequency** settings
 
 ---
 
@@ -282,7 +280,7 @@ High-end client
 
 ### Growth Indicators
 - **Task usage trending up:** Consider Zapier upgrade
-- **20+ referrals/month:** Evaluate Apps Script migration
+- **20+ referrals/month:** Evaluate Zapier Professional plan
 - **Partner complaints:** Review automation accuracy
 - **Manual work increasing:** Optimize workflows
 

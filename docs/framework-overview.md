@@ -28,17 +28,28 @@ flowchart TB
             Website --> Galleries
         end
         
+        subgraph "Partner Network"
+            Referrals["Partner Referrals"]
+            PartnerDashboards["Partner Dashboards<br/><small>Google Sheets</small>"]
+            Automation2["Automation<br/><small>Zapier</small>"]
+            Payments["Commission Payments<br/><small>Zelle</small>"]
+            
+            Referrals --> Automation2
+            Automation2 --> PartnerDashboards
+            PartnerDashboards --> Payments
+        end
+        
         subgraph "Business Operations"
             CRM["CRM<br/><small>HubSpot</small>"]
+            LeadPipeline["Lead Pipeline<br/><small>Trello</small>"]
             Contacts["Contact Management"]
             Deals["Deal Pipeline"]
-            Automation["Marketing Automation"]
             Analytics["Analytics & Reporting"]
             
             CRM --> Contacts
             CRM --> Deals
-            CRM --> Automation
-            CRM --> Analytics
+            LeadPipeline --> Automation2
+            LeadPipeline --> Analytics
         end
         
         subgraph "Business Processes"
@@ -53,19 +64,23 @@ flowchart TB
         end
         
         InquiryForms --> Contacts
+        Referrals --> LeadPipeline
         Contacts --> Communications
         Deals --> Contracts
         CharterOps --> Analytics
+        Automation2 --> CRM
     end
     
     classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef secondary fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef tertiary fill:#D4A017,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef platform fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef partner fill:#FF6B6B,color:#ffffff,stroke:#333,stroke-width:1px;
     
-    class Website,CRM platform;
-    class YachtListings,InquiryForms,Galleries,Contacts,Deals,Automation,Analytics secondary;
+    class Website,CRM,LeadPipeline platform;
+    class YachtListings,InquiryForms,Galleries,Contacts,Deals,Analytics secondary;
     class SalesProcess,CharterOps,Communications,Contracts tertiary;
+    class Referrals,PartnerDashboards,Automation2,Payments partner;
 ```
 
 ## Customer Journey
@@ -185,6 +200,55 @@ flowchart TB
     class Specifications,PricingTab,GalleryTab,VariantA,VariantB,VariantC secondary;
     class TechnicalSpecs,Amenities,CrewDetails,SeasonalRates,IncludedItems,AdditionalCharges,ExteriorPhotos,InteriorPhotos,LayoutPlans tertiary;
 ```
+
+## Partner Network Architecture
+
+The partner/referral system creates scalable lead generation through commission-based partnerships:
+
+```mermaid
+%%{init: {'theme': 'neutral'}}%%
+flowchart TD
+    A["Partner Submits Referral"] --> B["Trello Card Created"]
+    B --> C["Move to 'Proposal' Stage"]
+    C --> D1["Zapier: Log to Google Sheets"]
+    C --> D2["Zapier: Create HubSpot Contact"]
+    
+    D1 --> E["Google Sheets Calculates Commission"]
+    E --> F["Automated Partner Notification"]
+    
+    B --> G["Move to 'Completed' Stage"]
+    G --> H["Zapier: Log Revenue"]
+    H --> I["Monthly Commission Payment"]
+    
+    J["Partner Dashboard"] --> K["Real-time Tracking"]
+    K --> L["Commission History"]
+    K --> M["Payment Status"]
+    
+    E --> J
+    
+    classDef primary fill:#007FFF,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef automation fill:#FF6B6B,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef data fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef partner fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class A,B,G primary;
+    class C,D1,D2,F,H automation;
+    class E,J,K,L,M data;
+    class I partner;
+```
+
+**Key Components:**
+- **Trello**: Lead management and stage tracking
+- **Zapier**: Automated workflow triggers and data synchronization
+- **Google Sheets**: Commission calculations and partner dashboards
+- **HubSpot**: Professional lead scoring and follow-up (optional)
+- **Zelle**: Instant commission payments
+
+**Commission Structure:**
+- $100-300 per booking based on revenue
+- Real-time tracking for complete transparency
+- Monthly payment processing
+- Zero monthly costs using free platform tiers
 
 ## CRM Process Flow
 
