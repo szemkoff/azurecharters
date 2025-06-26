@@ -258,11 +258,11 @@ function sendReferralNotification(data, referralId) {
   const body = `
 New referral has been automatically logged:
 
-Referral ID: ${referralId}
-Partner: ${data.partnerCode}
-Customer: ${data.customerName}
-Revenue: $${data.yourRevenue}
-Commission: $${calculateCommission(data.yourRevenue)}
+Referral ID: ` + referralId + `
+Partner: ` + data.partnerCode + `
+Customer: ` + data.customerName + `
+Revenue: $` + data.yourRevenue + `
+Commission: $` + calculateCommission(data.yourRevenue) + `
 
 View details in your Google Sheet.
 

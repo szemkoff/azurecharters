@@ -22,7 +22,7 @@ This Google Sheets template provides the complete tracking system for your Azure
 | A | B | C | D | E | F | G | H | I | J | K | L | M |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Referral ID | Date | Customer Name | Customer Email | Partner Code | Retail Price | Your Revenue | Commission | Status | Charter Date | Payment Date | Payment Ref | Notes |
-| REF-001 | =TODAY() | Test Customer | customer@email.com | AZURE-JOHN | 5000 | 300 | =IF(G2="","",IF(G2<=300,100,IF(G2<=500,150,IF(G2<=800,200,300)))) | Pending | 2/15/2025 | | | Test referral |
+| REF-001 | [TODAY()] | Test Customer | customer@email.com | AZURE-JOHN | 5000 | 300 | [Formula] | Pending | 2/15/2025 | | | Test referral |
 
 **Commission Formula (Column H):**
 ```excel
@@ -40,7 +40,7 @@ This Google Sheets template provides the complete tracking system for your Azure
 | A | B | C | D | E | F |
 |---|---|---|---|---|---|
 | Month | Total Referrals | Total Revenue | Total Commissions | Partners Paid | Outstanding |
-| January 2025 | =COUNTIFS(Tracking!B:B,">="&DATE(2025,1,1),Tracking!B:B,"<"&DATE(2025,2,1)) | =SUMIFS(Tracking!G:G,Tracking!B:B,">="&DATE(2025,1,1),Tracking!B:B,"<"&DATE(2025,2,1)) | =SUMIFS(Tracking!H:H,Tracking!B:B,">="&DATE(2025,1,1),Tracking!B:B,"<"&DATE(2025,2,1)) | =SUMIFS(Tracking!H:H,Tracking!B:B,">="&DATE(2025,1,1),Tracking!B:B,"<"&DATE(2025,2,1),Tracking!I:I,"Paid") | =D2-E2 |
+| January 2025 | [Formula] | [Formula] | [Formula] | [Formula] | [Formula] |
 
 **Monthly Summary Formulas:**
 - **Total Referrals:** `=COUNTIFS(Tracking!B:B,">="&DATE(2025,1,1),Tracking!B:B,"<"&DATE(2025,2,1))`
@@ -162,11 +162,11 @@ function sendReferralNotification(data, referralId) {
   const body = `
 New referral has been automatically logged:
 
-Referral ID: ${referralId}
-Partner: ${data.partnerCode}
-Customer: ${data.customerName}
-Revenue: $${data.yourRevenue}
-Commission: $${calculateCommission(data.yourRevenue)}
+Referral ID: ` + referralId + `
+Partner: ` + data.partnerCode + `
+Customer: ` + data.customerName + `
+Revenue: $` + data.yourRevenue + `
+Commission: $` + calculateCommission(data.yourRevenue) + `
 
 View details in your Google Sheet.
 
