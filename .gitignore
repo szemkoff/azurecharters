@@ -27,3 +27,8 @@ yarn-error.log*
 
 # Ignore tilda-api directory (it's a separate git repository)
 tilda-api/ 
+
+# Google Cloud credentials and other sensitive files
+google-sheets-api/*-credentials.json
+google-sheets-api/upheld-world-*.json
+*service-account*.json
