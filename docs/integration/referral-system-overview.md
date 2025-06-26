@@ -102,9 +102,9 @@ Your existing workflow remains unchanged:
 ## 📋 Implementation Process
 
 ### Quick Start (45 minutes total)
-1. **[Set up Google Sheets](google-sheets-filtered-views-setup)** (15 minutes)
-2. **[Configure Trello integration](implementation-checklist)** (20 minutes)
-3. **[Create partner materials](partner-application)** (10 minutes)
+1. **[Set up Google Sheets](/docs/integration/google-sheets-filtered-views-setup)** (15 minutes)
+2. **[Configure Trello integration](/docs/integration/implementation-checklist)** (20 minutes)
+3. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
 
 ### Partner Onboarding
 1. **Partner applies** using application form
@@ -130,11 +130,11 @@ Your existing workflow remains unchanged:
 ## 📚 Documentation Guide
 
 ### Essential Setup Guides
-- **[Partner Dashboard Setup](google-sheets-filtered-views-setup)** - Complete Google Sheets configuration
-- **[Implementation Checklist](implementation-checklist)** - Step-by-step system setup
-- **[Partner Application](partner-application)** - Partner onboarding form
-- **[Partner Agreement](partner-agreement)** - Legal framework and terms
-- **[Partner Booklet](partner-booklet)** - Marketing materials for partners
+- **[Partner Dashboard Setup](/docs/integration/google-sheets-filtered-views-setup)** - Complete Google Sheets configuration
+- **[Implementation Checklist](/docs/integration/implementation-checklist)** - Step-by-step system setup
+- **[Partner Application](/docs/integration/partner-application)** - Partner onboarding form
+- **[Partner Agreement](/docs/integration/partner-agreement)** - Legal framework and terms
+- **[Partner Booklet](/docs/integration/partner-booklet)** - Marketing materials for partners
 
 ### System Management
 - Monthly commission processing workflow
