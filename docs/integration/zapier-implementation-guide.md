@@ -129,14 +129,14 @@ D1: Revenue       H1: Status             L1: Year
 - **Subject:** "New Referral Logged - \{\{Customer Name\}\}"
 - **Body:**
 ```
-Hi {{Partner Name}},
+Hi \{\{Partner Name\}\},
 
 Great news! Your referral has been logged in our system.
 
 🎯 REFERRAL DETAILS
-Customer: {{Customer Name}}
-Referral ID: {{Referral ID}}
-Commission: ${{Commission}}
+Customer: \{\{Customer Name\}\}
+Referral ID: \{\{Referral ID\}\}
+Commission: $\{\{Commission\}\}
 Status: Pending
 
 📊 TRACK YOUR PROGRESS
@@ -161,12 +161,12 @@ Azure Yacht Group
 ```
 Payment Due Alert
 
-Partner: {{Partner Name}}
-Amount: ${{Commission}}
-Referral: {{Customer Name}}
-Date Completed: {{Updated Date}}
+Partner: \{\{Partner Name\}\}
+Amount: $\{\{Commission\}\}
+Referral: \{\{Customer Name\}\}
+Date Completed: \{\{Updated Date\}\}
 
-Process payment via Zelle to: {{Partner Zelle Info}}
+Process payment via Zelle to: \{\{Partner Zelle Info\}\}
 ```
 
 ### Zap 3: Trello → Google Sheets (Log Revenue)
