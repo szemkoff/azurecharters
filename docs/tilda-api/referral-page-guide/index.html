@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tilda-api/referral-page-guide" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">Tilda Referral Partner Page - Build Guide | Azure Yacht Group Framework</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurecharters/docs/tilda-api/referral-page-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Tilda Referral Partner Page - Build Guide | Azure Yacht Group Framework"><meta data-rh="true" name="description" content="Page Structure Overview"><meta data-rh="true" property="og:description" content="Page Structure Overview"><link data-rh="true" rel="icon" href="/azurecharters/img/azure_corp_mark_black.png"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurecharters/docs/tilda-api/referral-page-guide"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/tilda-api/referral-page-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/tilda-api/referral-page-guide" hreflang="x-default"><link rel="stylesheet" href="/azurecharters/assets/css/styles.4de2acbe.css">
+<script src="/azurecharters/assets/js/runtime~main.9198ec5d.js" defer="defer"></script>
+<script src="/azurecharters/assets/js/main.2f90be0c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/azurecharters/"><div class="navbar__logo"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Azure Yacht Group</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurecharters/docs/getting-started">Framework</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/intro">Introduction to the Charter Framework</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/framework-overview">Framework Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/business-model">Business Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/technology-stack">Technology Stack</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/website-architecture/overview">Website Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/legal-framework/">Legal Framework</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/website-content/">Website Content</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/development/cursor-integration">Development</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/azurecharters/docs/tilda-api/overview">Tilda API</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/tilda-api/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/tilda-api/implementation-guide">Implementation Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurecharters/docs/tilda-api/referral-page-guide">Referral Page Guide</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/integration/referral-system-overview">Referral System</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/resources/templates">Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/PROJECT_PLAN">Project Status</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a href="https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md" target="_blank" rel="noopener noreferrer" class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false">External Documentation</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurecharters/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Tilda API</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Referral Page Guide</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Tilda Referral Partner Page - Build Guide</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="page-structure-overview">Page Structure Overview<a href="#page-structure-overview" class="hash-link" aria-label="Direct link to Page Structure Overview" title="Direct link to Page Structure Overview">​</a></h2>
+<p><strong>Page URL:</strong> <code>/referral-partners</code><br>
+<strong>Page Title:</strong> Partner with Azure Yacht Group - Referral Program<br>
+<strong>Meta Description:</strong> Join Azure Yacht Group&#x27;s exclusive referral partner network. Earn rewards by connecting clients with luxury yacht charters in the Caribbean and Mediterranean.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-1-header-shared">Block 1: Header (Shared)<a href="#block-1-header-shared" class="hash-link" aria-label="Direct link to Block 1: Header (Shared)" title="Direct link to Block 1: Header (Shared)">​</a></h2>
+<p><strong>Block Type:</strong> Use existing shared header<br>
+<strong>Settings:</strong> Standard navigation with &quot;Partner Program&quot; highlighted</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-2-hero-section">Block 2: Hero Section<a href="#block-2-hero-section" class="hash-link" aria-label="Direct link to Block 2: Hero Section" title="Direct link to Block 2: Hero Section">​</a></h2>
+<p><strong>Block Type:</strong> T104 - Cover with text and button<br>
+<strong>Background:</strong> Luxury yacht image (use existing yacht photos)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content">Content:<a href="#content" class="hash-link" aria-label="Direct link to Content:" title="Direct link to Content:">​</a></h3>
+<p><strong>Headline:</strong> Partner with Azure Yacht Group<br>
+<strong>Subheadline:</strong> Join our exclusive referral network and connect your clients with unforgettable luxury yacht experiences</p>
+<p><strong>Button Text:</strong> Become a Partner<br>
+<strong>Button Link:</strong> #partner-application (anchor to form section)</p>
+<p><strong>Background Image:</strong> Use one of the yacht images from <code>/images/</code> folder</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-3-introduction-section">Block 3: Introduction Section<a href="#block-3-introduction-section" class="hash-link" aria-label="Direct link to Block 3: Introduction Section" title="Direct link to Block 3: Introduction Section">​</a></h2>
+<p><strong>Block Type:</strong> T030 - Text block with title</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content-1">Content:<a href="#content-1" class="hash-link" aria-label="Direct link to Content:" title="Direct link to Content:">​</a></h3>
+<p><strong>Title:</strong> Expand Your Service Offerings</p>
+<p><strong>Text:</strong>
+Are you a travel advisor, concierge service, or luxury lifestyle professional? Partner with Azure Yacht Group to offer your clients access to premium yacht charter experiences in the world&#x27;s most exclusive destinations.</p>
+<p>Our referral partner program is designed for professionals who value quality, reliability, and exceptional service for their discerning clientele.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-4-benefits-grid">Block 4: Benefits Grid<a href="#block-4-benefits-grid" class="hash-link" aria-label="Direct link to Block 4: Benefits Grid" title="Direct link to Block 4: Benefits Grid">​</a></h2>
+<p><strong>Block Type:</strong> T396 - Three columns with icons and text</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="column-1">Column 1:<a href="#column-1" class="hash-link" aria-label="Direct link to Column 1:" title="Direct link to Column 1:">​</a></h3>
+<p><strong>Icon:</strong> 🏆 (Trophy)
+<strong>Title:</strong> Premium Rewards
+<strong>Text:</strong> Earn attractive rewards for every successful referral that results in a confirmed charter booking.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="column-2">Column 2:<a href="#column-2" class="hash-link" aria-label="Direct link to Column 2:" title="Direct link to Column 2:">​</a></h3>
+<p><strong>Icon:</strong> 🤝 (Handshake)
+<strong>Title:</strong> Trusted Partnership
+<strong>Text:</strong> Work with a fully licensed and insured yacht charter company with years of industry experience.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="column-3">Column 3:<a href="#column-3" class="hash-link" aria-label="Direct link to Column 3:" title="Direct link to Column 3:">​</a></h3>
+<p><strong>Icon:</strong> ⚡ (Lightning)
+<strong>Title:</strong> Fast Processing
+<strong>Text:</strong> Quick application review and immediate access to partner resources once approved.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-5-how-it-works">Block 5: How It Works<a href="#block-5-how-it-works" class="hash-link" aria-label="Direct link to Block 5: How It Works" title="Direct link to Block 5: How It Works">​</a></h2>
+<p><strong>Block Type:</strong> T512 - Steps with numbers</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1">Step 1:<a href="#step-1" class="hash-link" aria-label="Direct link to Step 1:" title="Direct link to Step 1:">​</a></h3>
+<p><strong>Number:</strong> 01
+<strong>Title:</strong> Apply to Join
+<strong>Text:</strong> Complete our simple partner application form with your professional details and client focus areas.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2">Step 2:<a href="#step-2" class="hash-link" aria-label="Direct link to Step 2:" title="Direct link to Step 2:">​</a></h3>
+<p><strong>Number:</strong> 02
+<strong>Title:</strong> Get Approved
+<strong>Text:</strong> Our team reviews your application and provides access to partner materials and booking systems.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3">Step 3:<a href="#step-3" class="hash-link" aria-label="Direct link to Step 3:" title="Direct link to Step 3:">​</a></h3>
+<p><strong>Number:</strong> 03
+<strong>Title:</strong> Refer Clients
+<strong>Text:</strong> Connect your clients with our charter specialists using your unique partner identification.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4">Step 4:<a href="#step-4" class="hash-link" aria-label="Direct link to Step 4:" title="Direct link to Step 4:">​</a></h3>
+<p><strong>Number:</strong> 04
+<strong>Title:</strong> Earn Rewards
+<strong>Text:</strong> Receive attractive compensation for every successful charter booking from your referrals.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-6-partner-types">Block 6: Partner Types<a href="#block-6-partner-types" class="hash-link" aria-label="Direct link to Block 6: Partner Types" title="Direct link to Block 6: Partner Types">​</a></h2>
+<p><strong>Block Type:</strong> T702 - Two columns with images</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="column-1-1">Column 1:<a href="#column-1-1" class="hash-link" aria-label="Direct link to Column 1:" title="Direct link to Column 1:">​</a></h3>
+<p><strong>Image:</strong> Professional meeting/office setting
+<strong>Title:</strong> Travel &amp; Hospitality Professionals
+<strong>Text:</strong></p>
+<ul>
+<li>Travel Advisors &amp; Agencies</li>
+<li>Luxury Hotel Concierges</li>
+<li>Event Planners</li>
+<li>Corporate Travel Managers</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="column-2-1">Column 2:<a href="#column-2-1" class="hash-link" aria-label="Direct link to Column 2:" title="Direct link to Column 2:">​</a></h3>
+<p><strong>Image:</strong> Luxury lifestyle/networking
+<strong>Title:</strong> Lifestyle &amp; Service Providers
+<strong>Text:</strong></p>
+<ul>
+<li>Wealth Management Advisors</li>
+<li>Real Estate Professionals</li>
+<li>Luxury Car Dealerships</li>
+<li>Private Club Managers</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-7-destinations-highlight">Block 7: Destinations Highlight<a href="#block-7-destinations-highlight" class="hash-link" aria-label="Direct link to Block 7: Destinations Highlight" title="Direct link to Block 7: Destinations Highlight">​</a></h2>
+<p><strong>Block Type:</strong> T199 - Gallery with text overlay</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content-2">Content:<a href="#content-2" class="hash-link" aria-label="Direct link to Content:" title="Direct link to Content:">​</a></h3>
+<p><strong>Title:</strong> Charter Destinations We Cover</p>
+<p><strong>Images:</strong> Use existing destination photos</p>
+<ul>
+<li>Caribbean islands</li>
+<li>Mediterranean coastline</li>
+<li>Luxury marina shots</li>
+</ul>
+<p><strong>Text Overlay:</strong></p>
+<ul>
+<li>Caribbean Islands</li>
+<li>Mediterranean Coast</li>
+<li>Exclusive Marinas</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-8-partner-application-form">Block 8: Partner Application Form<a href="#block-8-partner-application-form" class="hash-link" aria-label="Direct link to Block 8: Partner Application Form" title="Direct link to Block 8: Partner Application Form">​</a></h2>
+<p><strong>Block Type:</strong> T123 - Form with fields</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="form-fields">Form Fields:<a href="#form-fields" class="hash-link" aria-label="Direct link to Form Fields:" title="Direct link to Form Fields:">​</a></h3>
+<p><strong>Company Information:</strong></p>
+<ul>
+<li>Company/Organization Name*</li>
+<li>Your Name*</li>
+<li>Title/Position*</li>
+<li>Business Email*</li>
+<li>Phone Number*</li>
+<li>Website URL</li>
+</ul>
+<p><strong>Business Details:</strong></p>
+<ul>
+<li>Industry/Business Type* (dropdown)</li>
+<li>Years in Business*</li>
+<li>Average Client Charter Budget Range (dropdown)</li>
+<li>Primary Client Demographics (text area)</li>
+</ul>
+<p><strong>Partnership Interest:</strong></p>
+<ul>
+<li>How did you hear about us? (dropdown)</li>
+<li>Expected referrals per year (dropdown)</li>
+<li>Additional comments (text area)</li>
+</ul>
+<p><strong>Submit Button:</strong> Submit Partner Application</p>
+<p><strong>Form Action:</strong> Link to Google Form or HubSpot form</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-9-faq-section">Block 9: FAQ Section<a href="#block-9-faq-section" class="hash-link" aria-label="Direct link to Block 9: FAQ Section" title="Direct link to Block 9: FAQ Section">​</a></h2>
+<p><strong>Block Type:</strong> T111 - FAQ accordion</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="faq-items">FAQ Items:<a href="#faq-items" class="hash-link" aria-label="Direct link to FAQ Items:" title="Direct link to FAQ Items:">​</a></h3>
+<p><strong>Q: What are the requirements to become a partner?</strong>
+A: We partner with established businesses and professionals who serve high-net-worth clients. You should have relevant industry experience and a client base interested in luxury travel experiences.</p>
+<p><strong>Q: How long does the application process take?</strong>
+A: Most applications are reviewed within 2-3 business days. Once approved, you&#x27;ll receive immediate access to partner materials and booking systems.</p>
+<p><strong>Q: What support do you provide to partners?</strong>
+A: Partners receive dedicated support, marketing materials, detailed yacht information, and direct access to our charter specialists for client inquiries.</p>
+<p><strong>Q: Do you work with international partners?</strong>
+A: Yes, we welcome partners worldwide. Our charter destinations are popular with international clients, and we have experience working across different time zones.</p>
+<p><strong>Q: What information do I need to provide for a referral?</strong>
+A: Basic client contact information, preferred charter dates, group size, and any specific requirements. Our team handles all detailed planning and coordination.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-10-contact-section">Block 10: Contact Section<a href="#block-10-contact-section" class="hash-link" aria-label="Direct link to Block 10: Contact Section" title="Direct link to Block 10: Contact Section">​</a></h2>
+<p><strong>Block Type:</strong> T118 - Contact info with map</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content-3">Content:<a href="#content-3" class="hash-link" aria-label="Direct link to Content:" title="Direct link to Content:">​</a></h3>
+<p><strong>Title:</strong> Questions About Our Partner Program?</p>
+<p><strong>Contact Info:</strong>
+Email: <a href="mailto:partners@azureyachtgroup.com" target="_blank" rel="noopener noreferrer">partners@azureyachtgroup.com</a><br>
+<!-- -->Phone: [Your phone number]<br>
+<!-- -->Hours: Monday-Friday, 9 AM - 6 PM EST</p>
+<p><strong>Text:</strong> Our partnership team is here to answer any questions about joining our referral network or supporting your client referrals.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="block-11-footer-shared">Block 11: Footer (Shared)<a href="#block-11-footer-shared" class="hash-link" aria-label="Direct link to Block 11: Footer (Shared)" title="Direct link to Block 11: Footer (Shared)">​</a></h2>
+<p><strong>Block Type:</strong> Use existing shared footer<br>
+<strong>Settings:</strong> Standard footer with all company links</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-tilda-settings">Additional Tilda Settings<a href="#additional-tilda-settings" class="hash-link" aria-label="Direct link to Additional Tilda Settings" title="Direct link to Additional Tilda Settings">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="seo-settings">SEO Settings:<a href="#seo-settings" class="hash-link" aria-label="Direct link to SEO Settings:" title="Direct link to SEO Settings:">​</a></h3>
+<ul>
+<li><strong>Page Title:</strong> Partner with Azure Yacht Group - Luxury Yacht Charter Referrals</li>
+<li><strong>Meta Description:</strong> Join our exclusive referral partner network. Connect your clients with premium yacht charters and earn attractive rewards. Apply today.</li>
+<li><strong>Keywords:</strong> yacht charter referrals, luxury travel partners, yacht booking partners</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="social-media">Social Media:<a href="#social-media" class="hash-link" aria-label="Direct link to Social Media:" title="Direct link to Social Media:">​</a></h3>
+<ul>
+<li><strong>OG Title:</strong> Partner with Azure Yacht Group</li>
+<li><strong>OG Description:</strong> Join our exclusive referral partner network for luxury yacht charters</li>
+<li><strong>OG Image:</strong> Use hero section yacht image</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analytics">Analytics:<a href="#analytics" class="hash-link" aria-label="Direct link to Analytics:" title="Direct link to Analytics:">​</a></h3>
+<ul>
+<li>Add Google Analytics tracking</li>
+<li>Set up conversion tracking for form submissions</li>
+<li>Add Facebook Pixel if using social media advertising</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="form-integration-options">Form Integration Options<a href="#form-integration-options" class="hash-link" aria-label="Direct link to Form Integration Options" title="Direct link to Form Integration Options">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-1-google-forms">Option 1: Google Forms<a href="#option-1-google-forms" class="hash-link" aria-label="Direct link to Option 1: Google Forms" title="Direct link to Option 1: Google Forms">​</a></h3>
+<p>Create a Google Form with the same fields and embed the link</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-2-hubspot-forms">Option 2: HubSpot Forms<a href="#option-2-hubspot-forms" class="hash-link" aria-label="Direct link to Option 2: HubSpot Forms" title="Direct link to Option 2: HubSpot Forms">​</a></h3>
+<p>Use HubSpot form builder and embed the form code</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-3-tilda-native-forms">Option 3: Tilda Native Forms<a href="#option-3-tilda-native-forms" class="hash-link" aria-label="Direct link to Option 3: Tilda Native Forms" title="Direct link to Option 3: Tilda Native Forms">​</a></h3>
+<p>Use Tilda&#x27;s built-in form functionality with email notifications</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mobile-optimization-notes">Mobile Optimization Notes<a href="#mobile-optimization-notes" class="hash-link" aria-label="Direct link to Mobile Optimization Notes" title="Direct link to Mobile Optimization Notes">​</a></h2>
+<ul>
+<li>Ensure all images are optimized for mobile viewing</li>
+<li>Test form functionality on mobile devices</li>
+<li>Verify button sizes are touch-friendly</li>
+<li>Check text readability on smaller screens</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="launch-checklist">Launch Checklist<a href="#launch-checklist" class="hash-link" aria-label="Direct link to Launch Checklist" title="Direct link to Launch Checklist">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All blocks configured with content</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Form testing completed</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Mobile responsiveness verified</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->SEO settings applied</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Analytics tracking active</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Partner application process documented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Email notifications set up for form submissions</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Page linked from main navigation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Social media sharing tested</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/tilda-api/referral-page-guide.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/tilda-api/implementation-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Implementation Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/referral-system-overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Referral System Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#page-structure-overview" class="table-of-contents__link toc-highlight">Page Structure Overview</a></li><li><a href="#block-1-header-shared" class="table-of-contents__link toc-highlight">Block 1: Header (Shared)</a></li><li><a href="#block-2-hero-section" class="table-of-contents__link toc-highlight">Block 2: Hero Section</a><ul><li><a href="#content" class="table-of-contents__link toc-highlight">Content:</a></li></ul></li><li><a href="#block-3-introduction-section" class="table-of-contents__link toc-highlight">Block 3: Introduction Section</a><ul><li><a href="#content-1" class="table-of-contents__link toc-highlight">Content:</a></li></ul></li><li><a href="#block-4-benefits-grid" class="table-of-contents__link toc-highlight">Block 4: Benefits Grid</a><ul><li><a href="#column-1" class="table-of-contents__link toc-highlight">Column 1:</a></li><li><a href="#column-2" class="table-of-contents__link toc-highlight">Column 2:</a></li><li><a href="#column-3" class="table-of-contents__link toc-highlight">Column 3:</a></li></ul></li><li><a href="#block-5-how-it-works" class="table-of-contents__link toc-highlight">Block 5: How It Works</a><ul><li><a href="#step-1" class="table-of-contents__link toc-highlight">Step 1:</a></li><li><a href="#step-2" class="table-of-contents__link toc-highlight">Step 2:</a></li><li><a href="#step-3" class="table-of-contents__link toc-highlight">Step 3:</a></li><li><a href="#step-4" class="table-of-contents__link toc-highlight">Step 4:</a></li></ul></li><li><a href="#block-6-partner-types" class="table-of-contents__link toc-highlight">Block 6: Partner Types</a><ul><li><a href="#column-1-1" class="table-of-contents__link toc-highlight">Column 1:</a></li><li><a href="#column-2-1" class="table-of-contents__link toc-highlight">Column 2:</a></li></ul></li><li><a href="#block-7-destinations-highlight" class="table-of-contents__link toc-highlight">Block 7: Destinations Highlight</a><ul><li><a href="#content-2" class="table-of-contents__link toc-highlight">Content:</a></li></ul></li><li><a href="#block-8-partner-application-form" class="table-of-contents__link toc-highlight">Block 8: Partner Application Form</a><ul><li><a href="#form-fields" class="table-of-contents__link toc-highlight">Form Fields:</a></li></ul></li><li><a href="#block-9-faq-section" class="table-of-contents__link toc-highlight">Block 9: FAQ Section</a><ul><li><a href="#faq-items" class="table-of-contents__link toc-highlight">FAQ Items:</a></li></ul></li><li><a href="#block-10-contact-section" class="table-of-contents__link toc-highlight">Block 10: Contact Section</a><ul><li><a href="#content-3" class="table-of-contents__link toc-highlight">Content:</a></li></ul></li><li><a href="#block-11-footer-shared" class="table-of-contents__link toc-highlight">Block 11: Footer (Shared)</a></li><li><a href="#additional-tilda-settings" class="table-of-contents__link toc-highlight">Additional Tilda Settings</a><ul><li><a href="#seo-settings" class="table-of-contents__link toc-highlight">SEO Settings:</a></li><li><a href="#social-media" class="table-of-contents__link toc-highlight">Social Media:</a></li><li><a href="#analytics" class="table-of-contents__link toc-highlight">Analytics:</a></li></ul></li><li><a href="#form-integration-options" class="table-of-contents__link toc-highlight">Form Integration Options</a><ul><li><a href="#option-1-google-forms" class="table-of-contents__link toc-highlight">Option 1: Google Forms</a></li><li><a href="#option-2-hubspot-forms" class="table-of-contents__link toc-highlight">Option 2: HubSpot Forms</a></li><li><a href="#option-3-tilda-native-forms" class="table-of-contents__link toc-highlight">Option 3: Tilda Native Forms</a></li></ul></li><li><a href="#mobile-optimization-notes" class="table-of-contents__link toc-highlight">Mobile Optimization Notes</a></li><li><a href="#launch-checklist" class="table-of-contents__link toc-highlight">Launch Checklist</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
