@@ -106,14 +106,14 @@ D1: Revenue       H1: Status             L1: Year
 - **Spreadsheet:** Azure Yacht Group - Referral System
 - **Worksheet:** Referrals
 - **Mapping:**
-  - Referral ID: `REF-{{zap_meta_human_now_date}}`
-  - Date: `{{date}}`
-  - Customer: `{{card_name}}`
+  - Referral ID: `REF-\{\{zap_meta_human_now_date\}\}`
+  - Date: `\{\{date\}\}`
+  - Customer: `\{\{card_name\}\}`
   - Partner Code: Extract from card description
   - Retail Price: Extract from card description  
   - Your Revenue: Extract from card description
   - Status: "Pending"
-  - Trello Card ID: `{{card_id}}`
+  - Trello Card ID: `\{\{card_id\}\}`
   - Created By: "Zapier"
 
 **Filter:** Only if card description contains "PARTNER:"
@@ -126,7 +126,7 @@ D1: Revenue       H1: Status             L1: Year
 
 **Action:** Gmail - Send Email
 - **To:** Partner email (lookup from Partners tab)
-- **Subject:** "New Referral Logged - {{Customer Name}}"
+- **Subject:** "New Referral Logged - \{\{Customer Name\}\}"
 - **Body:**
 ```
 Hi {{Partner Name}},
@@ -156,7 +156,7 @@ Azure Yacht Group
 
 **Action:** Gmail - Send Email (to you)
 - **To:** Your email
-- **Subject:** "Commission Payment Due - {{Partner Name}}"
+- **Subject:** "Commission Payment Due - \{\{Partner Name\}\}"
 - **Body:**
 ```
 Payment Due Alert
@@ -179,13 +179,13 @@ Process payment via Zelle to: {{Partner Zelle Info}}
 - **Spreadsheet:** Azure Yacht Group - Referral System
 - **Worksheet:** Financial Records
 - **Mapping:**
-  - Date: `{{date}}`
+  - Date: `\{\{date\}\}`
   - Type: "Charter Revenue"
-  - Customer: `{{card_name}}`
+  - Customer: `\{\{card_name\}\}`
   - Revenue: Extract from card description
   - Status: "Completed"
   - Tax Category: "Business Income"
-  - Year: `{{date__year}}`
+  - Year: `\{\{date__year\}\}`
 
 ---
 
