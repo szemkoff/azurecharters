@@ -102,6 +102,7 @@ const sidebars = {
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
+        'integration/zapier-implementation-guide',
         'integration/implementation-checklist',
         'integration/google-sheets-filtered-views-setup',
         'integration/partner-application',

@@ -34,10 +34,20 @@ Our hybrid commission model based on your actual revenue:
 
 ## 🏗️ System Architecture
 
-### Technology Stack (100% Free)
+### Technology Stack Options
+
+**Option 1: Zapier Free (Recommended for Beginners)**
+- **Zapier Free** - 5 automations, 100 tasks/month
 - **Google Sheets** - Partner dashboards with filtered views
-- **Trello** - Lead management with webhook automation
-- **Google Apps Script** - Automated referral processing
+- **Trello** - Lead management integration
+- **Gmail** - Automated partner notifications
+- **QuickBooks** - Automated financial tracking
+- **Zelle** - Commission payments
+
+**Option 2: Google Apps Script (Unlimited Capacity)**
+- **Google Apps Script** - Custom automation code
+- **Google Sheets** - Partner dashboards with filtered views
+- **Trello** - Lead management with webhooks
 - **Gmail** - Partner notifications
 - **QuickBooks** - Manual financial tracking
 - **Zelle** - Commission payments
@@ -101,7 +111,13 @@ Your existing workflow remains unchanged:
 
 ## 📋 Implementation Process
 
-### Quick Start (45 minutes total)
+### Quick Start Options
+
+**Option A: Zapier Setup (30 minutes total)**
+1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (20 minutes)
+2. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
+
+**Option B: Google Apps Script (45 minutes total)**
 1. **[Set up Google Sheets](/docs/integration/google-sheets-filtered-views-setup)** (15 minutes)
 2. **[Configure Trello integration](/docs/integration/implementation-checklist)** (20 minutes)
 3. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
@@ -130,8 +146,9 @@ Your existing workflow remains unchanged:
 ## 📚 Documentation Guide
 
 ### Essential Setup Guides
+- **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** - No-code automation setup (Recommended)
 - **[Partner Dashboard Setup](/docs/integration/google-sheets-filtered-views-setup)** - Complete Google Sheets configuration
-- **[Implementation Checklist](/docs/integration/implementation-checklist)** - Step-by-step system setup
+- **[Implementation Checklist](/docs/integration/implementation-checklist)** - Google Apps Script system setup
 - **[Partner Application](/docs/integration/partner-application)** - Partner onboarding form
 - **[Partner Agreement](/docs/integration/partner-agreement)** - Legal framework and terms
 - **[Partner Booklet](/docs/integration/partner-booklet)** - Marketing materials for partners
