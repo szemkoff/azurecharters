@@ -1,137 +1,145 @@
-# Referral System Overview
+---
+title: Referral System Overview
+sidebar_label: System Overview
+---
 
-## System Architecture
+# Azure Yacht Group Referral System
 
-Azure Yacht Group's referral system is designed to reward partners for bringing quality yacht charter leads while maintaining complete transparency and automated tracking.
+## 🎯 System Overview
 
-## How It Works
+Our referral system rewards partners for bringing quality yacht charter leads with complete transparency and automated tracking. Built entirely on free tools with zero monthly costs.
 
-### 1. Partner Onboarding
-- Partners apply through our simple application form
-- We review and approve qualified partners
-- Partners receive unique referral codes and tracking materials
+**Key Features:**
+- ✅ **$100-300 commission per booking**
+- ✅ **Real-time partner dashboards** via Google Sheets filtered views
+- ✅ **Automated tracking** integrated with your Trello workflow
+- ✅ **Monthly Zelle payments** with full transparency
+- ✅ **Zero monthly costs** - scales to 100+ partners
 
-### 2. Lead Generation
-- Partners promote yacht charters using their unique codes
-- Customers mention the referral code when booking
-- System automatically tracks and attributes referrals
+## 💰 Commission Structure
 
-### 3. Commission Processing
-- Commissions calculated when bookings move to "Proposal" stage
-- Automatic notifications sent to partners
-- Monthly payments processed via Zelle
+Our hybrid commission model based on your actual revenue:
 
-### 4. Performance Tracking
-- Real-time tracking in Google Sheets
-- Monthly performance reports for partners
-- Complete transparency on earnings and payments
+| Your Revenue | Partner Commission | Typical Booking Value |
+|-------------|-------------------|----------------------|
+| $300 | **$100** | ~$5,000 |
+| $500 | **$150** | ~$7,500 |
+| $800 | **$200** | ~$10,000+ |
+| $1000+ | **$300** | ~$15,000+ |
 
-## Commission Structure
+**How it works:**
+- Revenue = Retail Price - Yacht Owner's Cut
+- Commission triggers when booking moves to "Proposal" stage in Trello
+- Payments processed monthly via Zelle
 
-Our hybrid commission model rewards partners based on the revenue we generate from each booking:
+## 🏗️ System Architecture
 
-| Our Revenue | Your Commission | Typical Booking Value |
-|-------------|----------------|----------------------|
-| $300 | $100 | ~$5,000 |
-| $500 | $150 | ~$7,500 |
-| $800 | $200 | ~$10,000+ |
-| $1000+ | $300 | ~$15,000+ |
+### Technology Stack (100% Free)
+- **Google Sheets** - Partner dashboards with filtered views
+- **Trello** - Lead management with webhook automation
+- **Google Apps Script** - Automated referral processing
+- **Gmail** - Partner notifications
+- **QuickBooks** - Manual financial tracking
+- **Zelle** - Commission payments
 
-## Technology Stack
+### How Partners Track Commissions
 
-### Free Tools Used
-- **Google Sheets** - Referral tracking and commission calculations
-- **Trello** - Lead management and workflow automation
-- **Gmail** - Automated notifications and communications
-- **Google Apps Script** - Webhook automation and integrations
-- **QuickBooks** - Financial tracking and payment processing
+**Personal Dashboard Access:**
+Each partner gets a personalized Google Sheets link showing only their data:
+- Real-time referral status updates
+- Commission calculations and payment tracking
+- Performance metrics and history
+- Mobile-friendly access from any device
 
-### Integration Flow
-1. **Trello Webhook** → Triggers when lead moves to "Proposal"
-2. **Google Apps Script** → Processes referral data and calculates commission
-3. **Google Sheets** → Logs referral and tracks partner performance
-4. **Gmail** → Sends automatic notifications to partners
-5. **QuickBooks** → Records revenue and commission expenses
+**Sample Partner View:**
+```
+John's Referral Dashboard
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-## Partner Benefits
+📈 PERFORMANCE SUMMARY
+Total Referrals: 8
+Total Earned: $1,250
+This Month: $450
+Pending Payments: $350
 
-### Competitive Commissions
-- $100-300 per successful referral
-- No caps on earnings potential
-- Performance-based tier system
+📋 RECENT REFERRALS
+Date      Customer      Status       Revenue   Commission   Payment
+1/28/25   Mike Smith    Qualified    $800      $200         Pending
+1/22/25   Jane Doe      Active       $500      $150         Pending  
+1/15/25   Bob Wilson    Paid         $300      $100         ✅ 2/1/25
+```
 
-### Marketing Support
-- Professional marketing materials
-- Social media content templates
-- Branded referral links
+## 🔄 Workflow Integration
 
-### Real-Time Tracking
-- Live dashboard access
-- Instant booking notifications
-- Monthly performance reports
+### Current Trello Process
+Your existing workflow remains unchanged:
+**New Lead** → **Proposal** ⚡*Auto-trigger* → **Review** → **Scheduled** → **Follow up** → **Completed**
 
-### Reliable Payments
-- Monthly payment schedule
-- Zelle instant transfers
-- Complete payment transparency
+### Automated Processing
+1. **Referral received** - Partner submits via email template
+2. **You create Trello card** with referral data in description
+3. **Move to "Proposal"** - System automatically logs referral
+4. **Partner notified** - Instant email with tracking details
+5. **Commission calculated** - Based on your revenue amount
+6. **Monthly payment** - Processed via Zelle with confirmation
 
-## Business Benefits
-
-### Zero Monthly Costs
-- Built entirely on free platform tiers
-- No subscription fees or hidden costs
-- Scales to 100+ partners at $0/month
-
-### Complete Automation
-- Automatic referral detection and logging
-- Instant partner notifications
-- Automated commission calculations
-
-### Financial Integration
-- QuickBooks integration for accounting
-- Proper expense categorization
-- Tax-ready reporting
-
-### Quality Control
-- Partner application review process
-- Performance monitoring and feedback
-- Fraud prevention measures
-
-## Getting Started
+## 📊 Partner Benefits
 
 ### For Partners
-1. Complete the [Partner Application Form](partner-application)
-2. Receive approval and onboarding materials
-3. Start promoting with your unique referral code
-4. Earn commissions on successful bookings
+- **Competitive commissions** - $100-300 per successful booking
+- **Real-time tracking** - Live dashboard with instant updates
+- **Professional materials** - Marketing booklet and agreement
+- **Reliable payments** - Monthly Zelle transfers
+- **Complete transparency** - See every step of the process
 
-### For Business Operations
-1. Follow the [30-minute setup guide](implementation-checklist)
-2. Configure Google Sheets and automation
-3. Set up Trello webhook integration
-4. Begin onboarding partners
+### For Your Business
+- **Zero monthly costs** - Built on free platform tiers
+- **Minimal maintenance** - 30 minutes monthly management
+- **Automated tracking** - No manual spreadsheet updates
+- **Quality control** - Partner application and review process
+- **Scalable system** - Handles 100+ partners easily
 
-## Documentation Structure
+## 📋 Implementation Process
 
-- **[Implementation Guide](implementation-checklist)** - Complete 45-minute setup process
-- **[Google Sheets Template](google-sheets-referral-template)** - Ready-to-use tracking system
-- **[System Architecture](free-referral-system)** - Technical details and automation
-- **[Partner Application](partner-application)** - Application form template
-- **[Partner Booklet](partner-booklet)** - Professional materials for partners  
+### Quick Start (45 minutes total)
+1. **[Set up Google Sheets](google-sheets-filtered-views-setup)** (15 minutes)
+2. **[Configure Trello integration](implementation-checklist)** (20 minutes)
+3. **[Create partner materials](partner-application)** (10 minutes)
+
+### Partner Onboarding
+1. **Partner applies** using application form
+2. **You review and approve** qualified partners
+3. **Create filtered view** for new partner (2 minutes)
+4. **Send welcome package** with dashboard link and materials
+5. **Partner starts promoting** and earning commissions
+
+## 🎯 Success Metrics
+
+### Target Performance
+- **Month 1:** 5 partners, 2 bookings, $15K referral revenue
+- **Month 3:** 15 partners, 8 bookings, $50K referral revenue
+- **Month 6:** 25 partners, 15 bookings, $100K referral revenue
+- **Year 1:** 50 partners, 30 monthly bookings, $200K+ referral revenue
+
+### Key Metrics Tracked
+- Partner conversion rates (referrals to bookings)
+- Average commission per partner per month
+- Referral revenue as percentage of total revenue
+- Partner retention and satisfaction rates
+
+## 📚 Documentation Guide
+
+### Essential Setup Guides
+- **[Partner Dashboard Setup](google-sheets-filtered-views-setup)** - Complete Google Sheets configuration
+- **[Implementation Checklist](implementation-checklist)** - Step-by-step system setup
+- **[Partner Application](partner-application)** - Partner onboarding form
 - **[Partner Agreement](partner-agreement)** - Legal framework and terms
+- **[Partner Booklet](partner-booklet)** - Marketing materials for partners
 
-## Success Metrics
+### System Management
+- Monthly commission processing workflow
+- Partner performance review procedures
+- Quality control and fraud prevention
+- System scaling and growth planning
 
-### Month 1 Targets
-- 5-10 active partners
-- 2-3 referral bookings
-- $15,000+ referral revenue
-- $300-500 commission payouts
-
-### Quarter 1 Targets
-- 20-30 active partners
-- 10-15 monthly referrals
-- $75,000+ quarterly referral revenue
-- $2,500+ monthly commission payouts
-
-This system provides a professional, scalable referral program that benefits both partners and the business while maintaining operational efficiency and cost-effectiveness. 
+This referral system provides professional-grade partner management while maintaining zero monthly costs and requiring minimal maintenance time. The filtered views approach ensures partners have complete transparency while keeping your data secure and centralized. 

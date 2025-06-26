@@ -102,10 +102,8 @@ const sidebars = {
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
-        'integration/partner-referral-simple-solutions',
         'integration/implementation-checklist',
-        'integration/google-sheets-referral-template',
-        'integration/free-referral-system',
+        'integration/google-sheets-filtered-views-setup',
         'integration/partner-application',
         'integration/partner-booklet',
         'integration/partner-agreement',
