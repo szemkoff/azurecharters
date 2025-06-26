@@ -1,3 +1,8 @@
+---
+title: Tilda API Setup Guide
+sidebar_label: Setup Guide
+---
+
 # Tilda API Setup Guide
 
 This guide provides detailed instructions for setting up the Tilda API integration for both our websites.

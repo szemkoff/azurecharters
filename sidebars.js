@@ -91,8 +91,10 @@ const sidebars = {
       label: 'Tilda API',
       items: [
         'tilda-api/overview',
+        'tilda-api/setup-guide',
         'tilda-api/implementation-guide',
         'tilda-api/referral-page-guide',
+        'tilda-api/troubleshooting',
       ],
     },
     {

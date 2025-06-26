@@ -1,3 +1,8 @@
+---
+title: Tilda API Troubleshooting Guide
+sidebar_label: Troubleshooting
+---
+
 # Tilda API Troubleshooting Guide
 
 This guide provides solutions for common issues encountered with the Tilda API integration.
