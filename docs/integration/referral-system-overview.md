@@ -80,6 +80,34 @@ Date      Customer      Status       Revenue   Commission   Payment
 
 ## 🔄 Workflow Integration
 
+### System Flow Diagram
+
+```mermaid
+graph TD
+    A["🎯 Partner Submits Referral<br/>Email/Phone/Form"] --> B["📝 You Create Trello Card<br/>Format: PARTNER: CODE<br/>RETAIL: Amount<br/>REVENUE: Your Cut"]
+    
+    B --> C["📋 Move Card to 'Proposal'"]
+    C --> D["⚡ Zap 1: Trello → Sheets<br/>Logs referral data<br/>Calculates commission"]
+    
+    D --> E["📊 Google Sheets<br/>- Partners tab<br/>- Referrals tab<br/>- Monthly Summary<br/>- Financial Records"]
+    
+    E --> F["⚡ Zap 2: Sheets → Gmail<br/>Notify partner:<br/>'Referral logged!'<br/>Commission amount"]
+    
+    B --> G["📋 Move Card to 'Completed'<br/>When charter confirmed"]
+    G --> H["⚡ Zap 3: Trello → Sheets<br/>Log revenue in<br/>Financial Records"]
+    
+    E --> I["💰 You Pay Partner<br/>Via Zelle monthly<br/>Update payment status"]
+    
+    E --> J["📱 Partner Dashboard<br/>Filtered Google Sheets view<br/>Real-time commission tracking"]
+    
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style J fill:#e8f5e8
+    style D fill:#fff3e0
+    style F fill:#fff3e0
+    style H fill:#fff3e0
+```
+
 ### Current Trello Process
 Your existing workflow remains unchanged:
 **New Lead** → **Proposal** ⚡*Auto-trigger* → **Review** → **Scheduled** → **Follow up** → **Completed**
