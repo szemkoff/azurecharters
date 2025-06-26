@@ -37,11 +37,10 @@ Our hybrid commission model based on your actual revenue:
 ### Technology Stack Options
 
 **Option 1: Zapier Free (Recommended for Beginners)**
-- **Zapier Free** - 5 automations, 100 tasks/month
-- **Google Sheets** - Partner dashboards with filtered views
+- **Zapier Free** - 3 automations, 100 tasks/month
+- **Google Sheets** - Partner dashboards, filtered views & financial tracking
 - **Trello** - Lead management integration
 - **Gmail** - Automated partner notifications
-- **QuickBooks** - Automated financial tracking
 - **Zelle** - Commission payments
 
 **Option 2: Google Apps Script (Unlimited Capacity)**
@@ -113,8 +112,8 @@ Your existing workflow remains unchanged:
 
 ### Quick Start Options
 
-**Option A: Zapier Setup (30 minutes total)**
-1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (20 minutes)
+**Option A: Zapier Setup (25 minutes total)**
+1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (15 minutes)
 2. **[Create partner materials](/docs/integration/partner-application)** (10 minutes)
 
 **Option B: Google Apps Script (45 minutes total)**

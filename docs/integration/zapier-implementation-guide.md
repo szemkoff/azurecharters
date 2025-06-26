@@ -7,16 +7,15 @@ sidebar_label: Zapier Setup Guide
 
 ## 🎯 Overview
 
-**Total Setup Time:** 30 minutes  
-**Monthly Maintenance:** 15 minutes  
-**System Capacity:** 100 tasks/month (≈20 referrals)  
-**Cost:** $0/month using Zapier Free plan
+**Total Setup Time:** 25 minutes  
+**Monthly Maintenance:** 20 minutes  
+**System Capacity:** 100 tasks/month (≈30 referrals)  
+**Cost:** $0/month - completely free solution
 
 **What You'll Build:**
-- 5 automated Zapier workflows
-- Google Sheets partner dashboards
+- 3 automated Zapier workflows (using only 3 of 5 free automations)
+- Google Sheets partner dashboards & financial tracking
 - Automated email notifications
-- QuickBooks integration
 - Monthly payment processing
 
 ---
@@ -25,10 +24,9 @@ sidebar_label: Zapier Setup Guide
 
 ### Core Components (100% Free)
 - **Zapier Free** - 5 automations, 100 tasks/month
-- **Google Sheets** - Partner tracking and dashboards
+- **Google Sheets** - Partner tracking, dashboards & financial records
 - **Trello** - Lead management system
 - **Gmail** - Email notifications
-- **QuickBooks** - Financial tracking
 - **Zelle** - Payment processing
 
 ### Upgrade Path
@@ -78,13 +76,25 @@ F1: Retail Price  L1: Payment Ref     R1: Updated Date
 ### Step 5: Monthly Summary Tab
 
 ```
-A1: Month         C1: Total Revenue    E1: Avg Commission
-B1: Referrals     D1: Total Paid       F1: Pending Amount
+A1: Month         C1: Total Revenue    E1: Avg Commission    G1: Tax Year Summary
+B1: Referrals     D1: Total Paid       F1: Pending Amount    H1: Total Expenses
+```
+
+### Step 6: Financial Tracking Tab
+
+**Add a 5th tab called "Financial Records" with headers:**
+```
+A1: Date          E1: Commission Paid    I1: Tax Category
+B1: Type          F1: Partner Name       J1: Receipt/Ref
+C1: Customer      G1: Payment Method     K1: Notes
+D1: Revenue       H1: Status             L1: Year
 ```
 
 ---
 
-## ⚡ Phase 2: Zapier Automations (15 minutes)
+## ⚡ Phase 2: Zapier Automations (10 minutes)
+
+**Using only 3 of your 5 free Zapier automations:**
 
 ### Zap 1: Trello → Google Sheets (Log Referrals)
 
@@ -159,32 +169,23 @@ Date Completed: {{Updated Date}}
 Process payment via Zelle to: {{Partner Zelle Info}}
 ```
 
-### Zap 4: Trello → QuickBooks (Create Invoices)
+### Zap 3: Trello → Google Sheets (Log Revenue)
 
 **Trigger:** Trello - Card Moved to List
 - **Board:** Your Trello board
 - **List:** "Completed"
 
-**Action:** QuickBooks - Create Invoice
-- **Customer:** Extract from card name
-- **Amount:** Extract retail price from description
-- **Description:** "Yacht Charter - {{Card Name}}"
-- **Due Date:** Today + 30 days
-
-### Zap 5: Google Sheets → QuickBooks (Log Commission Expenses)
-
-**Trigger:** Google Sheets - New or Updated Spreadsheet Row
+**Action:** Google Sheets - Create Spreadsheet Row
 - **Spreadsheet:** Azure Yacht Group - Referral System
-- **Worksheet:** Referrals
-
-**Filter:** Payment Status = "Paid"
-
-**Action:** QuickBooks - Create Expense
-- **Vendor:** Partner name
-- **Amount:** Commission amount
-- **Category:** "Referral Commissions"
-- **Description:** "Commission - {{Referral ID}}"
-- **Date:** Payment date
+- **Worksheet:** Financial Records
+- **Mapping:**
+  - Date: `{{date}}`
+  - Type: "Charter Revenue"
+  - Customer: `{{card_name}}`
+  - Revenue: Extract from card description
+  - Status: "Completed"
+  - Tax Category: "Business Income"
+  - Year: `{{date__year}}`
 
 ---
 
@@ -229,15 +230,16 @@ High-end client
 2. **Move to "Proposal"** → **Zap 1** logs referral in Sheets
 3. **Google Sheets calculates** commission automatically
 4. **Zap 2** emails partner with notification
-5. **Move to "Completed"** → **Zap 4** creates QuickBooks invoice
-6. **You pay partner** → Update payment status in Sheets
-7. **Zap 5** logs expense in QuickBooks
-8. **Zap 3** sends you monthly payment alerts
+5. **Move to "Completed"** → **Zap 3** logs revenue in Financial Records
+6. **You pay partner** → Manually update payment status in Sheets
+7. **Google Sheets tracks** all financial data for tax purposes
 
 ### Manual Tasks (Monthly)
 - Process Zelle payments to partners
 - Update payment status in Google Sheets
+- Log commission expenses in Financial Records tab
 - Review partner performance
+- Export financial data for tax purposes (if needed)
 - Add new partners to system
 
 ---
@@ -268,28 +270,28 @@ High-end client
 - [ ] Google account with Sheets access
 - [ ] Zapier free account
 - [ ] Trello board with "Proposal" and "Completed" lists
-- [ ] QuickBooks account
 - [ ] Gmail account
+- [ ] Zelle account for payments
 
 ### Implementation Steps
-- [ ] Create Google Sheets with 4 tabs
+- [ ] Create Google Sheets with 5 tabs (including Financial Records)
 - [ ] Add column headers and formulas
-- [ ] Set up Zap 1: Trello → Sheets
-- [ ] Set up Zap 2: Sheets → Gmail (partners)
-- [ ] Set up Zap 3: Sheets → Gmail (payments)
-- [ ] Set up Zap 4: Trello → QuickBooks
-- [ ] Set up Zap 5: Sheets → QuickBooks
+- [ ] Set up Zap 1: Trello → Sheets (referral logging)
+- [ ] Set up Zap 2: Sheets → Gmail (partner notifications)
+- [ ] Set up Zap 3: Trello → Sheets (revenue tracking)
 - [ ] Test with sample referral
 - [ ] Create partner filtered views
 - [ ] Document card description format
+- [ ] Set up manual payment workflow
 
 ### Go-Live Checklist
-- [ ] All Zaps tested and working
+- [ ] All 3 Zaps tested and working
 - [ ] Sample referral processed successfully
 - [ ] Partner notifications working
 - [ ] Commission calculations correct
-- [ ] QuickBooks integration tested
+- [ ] Financial tracking working
 - [ ] Payment workflow documented
+- [ ] Tax record keeping system ready
 
 ---
 
