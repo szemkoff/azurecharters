@@ -10,7 +10,7 @@ sidebar_label: Zapier Setup Guide
 **Total Setup Time:** 25 minutes  
 **Monthly Maintenance:** 20 minutes  
 **System Capacity:** 100 tasks/month (≈30 referrals)  
-**Cost:** $0/month - completely free solution
+**Cost:** \$0/month - completely free solution
 
 **What You'll Build:**
 - 3 automated Zapier workflows (using only 3 of 5 free automations)
@@ -30,7 +30,7 @@ sidebar_label: Zapier Setup Guide
 - **Zelle** - Payment processing
 
 ### Upgrade Path
-- **Zapier Starter** ($19.99/month) - 20 Zaps, 750 tasks/month
+- **Zapier Starter** (\$19.99/month) - 20 Zaps, 750 tasks/month
 - **Google Apps Script** - Unlimited capacity alternative
 
 ---
@@ -249,8 +249,8 @@ High-end client
 ### When You Hit 100 Tasks/Month
 
 **Option 1: Upgrade Zapier**
-- **Zapier Starter:** $19.99/month, 750 tasks
-- **Zapier Professional:** $49/month, 2,000 tasks
+- **Zapier Starter:** \$19.99/month, 750 tasks
+- **Zapier Professional:** \$49/month, 2,000 tasks
 
 **Option 2: Switch to Google Apps Script**
 - **Unlimited tasks** for free
@@ -301,7 +301,7 @@ High-end client
 - **Referrals processed:** Target 15-20/month
 - **Zapier tasks used:** Monitor to stay under 100
 - **Partner satisfaction:** Email response rates
-- **Payment processing time:** Target <48 hours
+- **Payment processing time:** Target &lt;48 hours
 
 ### Growth Indicators
 - **Task usage trending up:** Consider Zapier upgrade
