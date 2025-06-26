@@ -182,7 +182,7 @@ For implementation assistance, refer to:
 - [Tilda Help Center](https://help.tilda.cc/)
 - [HubSpot Knowledge Base](https://knowledge.hubspot.com/)
 - [Docusaurus Documentation](https://docusaurus.io/docs)
-- [Charter Framework Support](/docs/support)
+- [Charter Framework Support](/docs/getting-started)
 
 ---
 

@@ -88,9 +88,19 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Tilda API',
+      items: [
+        'tilda-api/overview',
+        'tilda-api/implementation-guide',
+        'tilda-api/referral-page-guide',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
+        'integration/partner-referral-simple-solutions',
         'integration/implementation-checklist',
         'integration/google-sheets-referral-template',
         'integration/free-referral-system',

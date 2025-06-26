@@ -131,8 +131,8 @@ export default function Home() {
                 </div>
                 <div className="card__footer">
                   <Link className="button button--primary" to="/docs/website-architecture/tilda-integration">Tilda Integration Guide</Link>
-                  <Link className="button button--secondary margin-left--md" to="/tilda-api/docs/API_SETUP_GUIDE.md">API Setup Guide</Link>
-                  <Link className="button button--secondary margin-left--md" to="/tilda-api/docs/IMPLEMENTATION_GUIDE.md">Implementation Guide</Link>
+                              <Link className="button button--secondary margin-left--md" to="/docs/tilda-api/overview">API Setup Guide</Link>
+            <Link className="button button--secondary margin-left--md" to="/docs/tilda-api/implementation-guide">Implementation Guide</Link>
                 </div>
               </div>
             </div>
