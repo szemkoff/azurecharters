@@ -45,10 +45,9 @@ Our hybrid commission model based on your actual revenue:
 
 **Option 2: Google Apps Script (Unlimited Capacity)**
 - **Google Apps Script** - Custom automation code
-- **Google Sheets** - Partner dashboards with filtered views
+- **Google Sheets** - Partner dashboards, filtered views & financial tracking
 - **Trello** - Lead management with webhooks
 - **Gmail** - Partner notifications
-- **QuickBooks** - Manual financial tracking
 - **Zelle** - Commission payments
 
 ### How Partners Track Commissions

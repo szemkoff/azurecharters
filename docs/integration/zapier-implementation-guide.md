@@ -23,7 +23,7 @@ sidebar_label: Zapier Setup Guide
 ## 🔧 Technology Stack
 
 ### Core Components (100% Free)
-- **Zapier Free** - 5 automations, 100 tasks/month
+- **Zapier Free** - 5 automations available, 100 tasks/month (we use 3)
 - **Google Sheets** - Partner tracking, dashboards & financial records
 - **Trello** - Lead management system
 - **Gmail** - Email notifications
@@ -144,29 +144,6 @@ View your dashboard: [Your filtered view link]
 
 Thanks for your partnership!
 Azure Yacht Group
-```
-
-### Zap 3: Google Sheets → Gmail (Monthly Payment Alert)
-
-**Trigger:** Google Sheets - New or Updated Spreadsheet Row
-- **Spreadsheet:** Azure Yacht Group - Referral System
-- **Worksheet:** Referrals
-
-**Filter:** Status = "Completed" AND Payment Date is empty
-
-**Action:** Gmail - Send Email (to you)
-- **To:** Your email
-- **Subject:** "Commission Payment Due - \{\{Partner Name\}\}"
-- **Body:**
-```
-Payment Due Alert
-
-Partner: \{\{Partner Name\}\}
-Amount: $\{\{Commission\}\}
-Referral: \{\{Customer Name\}\}
-Date Completed: \{\{Updated Date\}\}
-
-Process payment via Zelle to: \{\{Partner Zelle Info\}\}
 ```
 
 ### Zap 3: Trello → Google Sheets (Log Revenue)
