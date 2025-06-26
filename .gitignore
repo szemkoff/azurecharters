@@ -25,8 +25,8 @@ yarn-error.log*
 *.sublime-project
 *.sublime-workspace
 
-# Ignore tilda-api directory (it's a separate git repository)
-tilda-api/ 
+# Ignore root tilda-api directory (it's a separate git repository)
+/tilda-api/ 
 
 # Google Cloud credentials and other sensitive files
 google-sheets-api/*-credentials.json
