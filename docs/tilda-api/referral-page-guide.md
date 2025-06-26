@@ -9,7 +9,7 @@ sidebar_label: Referral Page Guide
 
 **Page URL:** `/referral-partners`  
 **Page Title:** Partner with Azure Yacht Group - Referral Program  
-**Meta Description:** Join Azure Yacht Group's exclusive referral partner network. Earn rewards by connecting clients with luxury yacht charters in the Caribbean and Mediterranean.
+**Meta Description:** Join Azure Yacht Group's exclusive referral partner network. Connect your clients with luxury yacht charters in the Caribbean and Mediterranean.
 
 ---
 
@@ -52,18 +52,18 @@ Our referral partner program is designed for professionals who value quality, re
 
 ### Column 1:
 **Icon:** 🏆 (Trophy)
-**Title:** Premium Rewards
-**Text:** Earn attractive rewards for every successful referral that results in a confirmed charter booking.
+**Title:** Exclusive Rewards
+**Text:** Earn attractive compensation for every successful referral that results in a confirmed charter booking.
 
 ### Column 2:
 **Icon:** 🤝 (Handshake)
 **Title:** Trusted Partnership
-**Text:** Work with a fully licensed and insured yacht charter company with years of industry experience.
+**Text:** Work with a fully licensed and insured yacht charter company with years of industry experience and IYBA compliance.
 
 ### Column 3:
-**Icon:** ⚡ (Lightning)
-**Title:** Fast Processing
-**Text:** Quick application review and immediate access to partner resources once approved.
+**Icon:** 📊 (Chart)
+**Title:** Real-Time Tracking
+**Text:** Access your personalized dashboard to track referrals, status updates, and performance metrics in real-time.
 
 ---
 
@@ -78,17 +78,17 @@ Our referral partner program is designed for professionals who value quality, re
 ### Step 2:
 **Number:** 02
 **Title:** Get Approved
-**Text:** Our team reviews your application and provides access to partner materials and booking systems.
+**Text:** Our team reviews your application and provides access to partner materials and your personal tracking dashboard.
 
 ### Step 3:
 **Number:** 03
 **Title:** Refer Clients
-**Text:** Connect your clients with our charter specialists using your unique partner identification.
+**Text:** Connect your clients with our charter specialists using your unique partner identification code.
 
 ### Step 4:
 **Number:** 04
-**Title:** Earn Rewards
-**Text:** Receive attractive compensation for every successful charter booking from your referrals.
+**Title:** Track & Earn
+**Text:** Monitor your referrals through your personal dashboard and receive monthly payments for successful bookings.
 
 ---
 
@@ -115,7 +115,27 @@ Our referral partner program is designed for professionals who value quality, re
 
 ---
 
-## Block 7: Destinations Highlight
+## Block 7: Partner Benefits
+**Block Type:** T199 - Three columns with icons
+
+### Column 1:
+**Icon:** 💰 (Money)
+**Title:** Competitive Compensation
+**Text:** Attractive reward structure based on successful charter bookings with monthly payment processing.
+
+### Column 2:
+**Icon:** 📱 (Mobile)
+**Title:** Professional Dashboard
+**Text:** Personal tracking system showing all your referrals, their status, and performance metrics updated in real-time.
+
+### Column 3:
+**Icon:** 🎯 (Target)
+**Title:** Marketing Support
+**Text:** Professional marketing materials, yacht information, and dedicated support to help you succeed.
+
+---
+
+## Block 8: Destinations Highlight
 **Block Type:** T199 - Gallery with text overlay
 
 ### Content:
@@ -133,7 +153,7 @@ Our referral partner program is designed for professionals who value quality, re
 
 ---
 
-## Block 8: Partner Application Form
+## Block 9: Partner Application Form
 **Block Type:** T123 - Form with fields
 
 ### Form Fields:
@@ -147,22 +167,41 @@ Our referral partner program is designed for professionals who value quality, re
 
 **Business Details:**
 - Industry/Business Type* (dropdown)
+  - Travel Agency
+  - Hotel/Resort Concierge
+  - Event Planning
+  - Wealth Management
+  - Real Estate
+  - Other Professional Service
 - Years in Business*
-- Average Client Charter Budget Range (dropdown)
+- Average Client Budget Range* (dropdown)
+  - $5,000 - $10,000
+  - $10,000 - $25,000
+  - $25,000 - $50,000
+  - $50,000+
 - Primary Client Demographics (text area)
 
 **Partnership Interest:**
 - How did you hear about us? (dropdown)
-- Expected referrals per year (dropdown)
+  - Google Search
+  - Social Media
+  - Industry Referral
+  - Existing Client
+  - Other
+- Expected referrals per year* (dropdown)
+  - 1-5
+  - 6-10
+  - 11-25
+  - 25+
 - Additional comments (text area)
 
 **Submit Button:** Submit Partner Application
 
-**Form Action:** Link to Google Form or HubSpot form
+**Form Action:** Integrates with your referral system application process
 
 ---
 
-## Block 9: FAQ Section
+## Block 10: FAQ Section
 **Block Type:** T111 - FAQ accordion
 
 ### FAQ Items:
@@ -171,20 +210,26 @@ Our referral partner program is designed for professionals who value quality, re
 A: We partner with established businesses and professionals who serve high-net-worth clients. You should have relevant industry experience and a client base interested in luxury travel experiences.
 
 **Q: How long does the application process take?**
-A: Most applications are reviewed within 2-3 business days. Once approved, you'll receive immediate access to partner materials and booking systems.
+A: Most applications are reviewed within 2-3 business days. Once approved, you'll receive immediate access to your partner dashboard and marketing materials.
+
+**Q: How do I track my referrals?**
+A: Each partner receives a personalized dashboard where you can view all your referrals, their current status, and performance metrics in real-time.
+
+**Q: When and how are payments processed?**
+A: Payments are processed monthly via Zelle for all confirmed bookings from the previous month. You'll receive detailed reports with each payment.
 
 **Q: What support do you provide to partners?**
-A: Partners receive dedicated support, marketing materials, detailed yacht information, and direct access to our charter specialists for client inquiries.
+A: Partners receive dedicated support, marketing materials, detailed yacht information, access to their tracking dashboard, and direct access to our charter specialists for client inquiries.
 
 **Q: Do you work with international partners?**
 A: Yes, we welcome partners worldwide. Our charter destinations are popular with international clients, and we have experience working across different time zones.
 
 **Q: What information do I need to provide for a referral?**
-A: Basic client contact information, preferred charter dates, group size, and any specific requirements. Our team handles all detailed planning and coordination.
+A: Basic client contact information, preferred charter dates, group size, budget range, and any specific requirements. Our team handles all detailed planning and coordination.
 
 ---
 
-## Block 10: Contact Section
+## Block 11: Contact Section
 **Block Type:** T118 - Contact info with map
 
 ### Content:
@@ -199,61 +244,121 @@ Hours: Monday-Friday, 9 AM - 6 PM EST
 
 ---
 
-## Block 11: Footer (Shared)
+## Block 12: Footer (Shared)
 **Block Type:** Use existing shared footer  
 **Settings:** Standard footer with all company links
 
 ---
 
-## Additional Tilda Settings
+## Form Integration Setup
 
-### SEO Settings:
+### Integration with Referral System
+
+**Form Processing Flow:**
+1. Partner submits application via Tilda form
+2. Form data captured and processed
+3. Application review and approval process
+4. Partner dashboard access provisioned
+5. Welcome package sent with materials
+
+### Technical Integration Options:
+
+**Option 1: Google Forms Integration**
+```html
+<!-- Embed Google Form -->
+<iframe src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true" 
+        width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+</iframe>
+```
+
+**Option 2: Direct Form Processing**
+```javascript
+// Tilda form submission handler
+window.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('#partner-application-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Collect form data
+        const formData = new FormData(form);
+        
+        // Send to your processing endpoint
+        fetch('/api/partner-application', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Show success message
+            showSuccessMessage();
+        })
+        .catch(error => {
+            // Handle error
+            showErrorMessage();
+        });
+    });
+});
+```
+
+---
+
+## SEO & Analytics Settings
+
+### SEO Configuration:
 - **Page Title:** Partner with Azure Yacht Group - Luxury Yacht Charter Referrals
 - **Meta Description:** Join our exclusive referral partner network. Connect your clients with premium yacht charters and earn attractive rewards. Apply today.
-- **Keywords:** yacht charter referrals, luxury travel partners, yacht booking partners
+- **Keywords:** yacht charter referrals, luxury travel partners, yacht booking partners, travel agent partnerships
 
-### Social Media:
+### Social Media Settings:
 - **OG Title:** Partner with Azure Yacht Group
 - **OG Description:** Join our exclusive referral partner network for luxury yacht charters
 - **OG Image:** Use hero section yacht image
 
-### Analytics:
-- Add Google Analytics tracking
-- Set up conversion tracking for form submissions
-- Add Facebook Pixel if using social media advertising
+### Analytics Tracking:
+- Google Analytics goal tracking for form submissions
+- Conversion tracking for partner applications
+- Partner page engagement metrics
 
 ---
 
-## Form Integration Options
+## Mobile Optimization
 
-### Option 1: Google Forms
-Create a Google Form with the same fields and embed the link
+### Mobile-Specific Considerations:
+- Optimize form fields for mobile input
+- Ensure images load quickly on mobile connections
+- Test touch interactions for all buttons and links
+- Verify form submission works on mobile devices
+- Check readability of all text on smaller screens
 
-### Option 2: HubSpot Forms
-Use HubSpot form builder and embed the form code
-
-### Option 3: Tilda Native Forms
-Use Tilda's built-in form functionality with email notifications
-
----
-
-## Mobile Optimization Notes
-
-- Ensure all images are optimized for mobile viewing
-- Test form functionality on mobile devices
-- Verify button sizes are touch-friendly
-- Check text readability on smaller screens
+### Mobile Testing Checklist:
+- [ ] Form functionality tested on iOS and Android
+- [ ] Images properly scaled for mobile viewing
+- [ ] Navigation works smoothly on touch devices
+- [ ] Page loading speed optimized for mobile
+- [ ] Contact information easily accessible
 
 ---
 
 ## Launch Checklist
 
-- [ ] All blocks configured with content
-- [ ] Form testing completed
-- [ ] Mobile responsiveness verified
-- [ ] SEO settings applied
-- [ ] Analytics tracking active
-- [ ] Partner application process documented
+### Pre-Launch:
+- [ ] All content blocks configured and tested
+- [ ] Form integration working and tested
+- [ ] Mobile responsiveness verified across devices
+- [ ] SEO settings applied and verified
+- [ ] Analytics tracking active and tested
+
+### Post-Launch:
+- [ ] Partner application workflow documented
 - [ ] Email notifications set up for form submissions
-- [ ] Page linked from main navigation
-- [ ] Social media sharing tested 
+- [ ] Page linked from main navigation menu
+- [ ] Social media sharing functionality tested
+- [ ] Partner onboarding process ready
+
+### Integration Verification:
+- [ ] Form submissions properly processed
+- [ ] Partner dashboard access system ready
+- [ ] Welcome email automation configured
+- [ ] Marketing materials prepared for new partners
+
+This Tilda referral page serves as the entry point for potential partners and integrates seamlessly with your filtered views referral system for complete partner management. 
