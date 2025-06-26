@@ -1,0 +1,3 @@
+Tilda UID,Brand,SKU,Mark,Category,Title,Description,Text,Photo,Price,Quantity,Price Old,Editions,Modifications,External ID,Parent UID,Weight,Length,Width,Height,Unit,Portion,Url
+AZ64-DEON,Azimut,AZ64-DEON,,Motor Yachts,Azimut 64 'Deon',Length: 64ft | Guests: 10 | Cabins: 3,,,,1,,,,NewAzimut64Parent,,0,0,0,0,,0,
+AZ64-DEON-4H,Azimut,AZ64-DEON-4H,,Motor Yachts,Azimut 64 'Deon' - 4 Hours,,,,2800,1,,"Charter Duration:Half-Day (4h);Package Type:Standard",,NewAzimut64Child1,AZ64-DEON,0,0,0,0,,, 

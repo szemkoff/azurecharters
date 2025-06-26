@@ -88,15 +88,15 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Integration & Automation',
+      label: 'Referral System',
       items: [
+        'integration/referral-system-overview',
+        'integration/implementation-checklist',
+        'integration/google-sheets-referral-template',
         'integration/free-referral-system',
-        'integration/free-referral-google-sheets-template',
-        'integration/hubspot-referral-system',
-        'integration/hubspot-referral-setup-guide',
-        'integration/hubspot-referral-progress-tracking',
-        'integration/trello-business-integration',
-        'integration/trello-implementation-checklist',
+        'integration/partner-application',
+        'integration/partner-booklet',
+        'integration/partner-agreement',
       ],
     },
     {

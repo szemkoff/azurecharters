@@ -1,0 +1,28 @@
+Stakeholder,Class of Shares,Number of Shares,Percentage Ownership,Fully Diluted Percentage,Ownership Type
+Art of Coating LLC,Class A Common,500000,50%,50%,Corporate Entity
+Azure Yacht Group LLC,Class A Common,250000,25%,25%,Corporate Entity
+Dmitry Wolf,Class A Common,250000,25%,25%,Individual
+Total,,1000000,100%,100%,
+
+Additional Information:
+Company Name,Azure Yacht Charters
+Total Authorized Shares,1500000
+Issued Shares,1000000
+Reserved for Option Pool,150000 (10% of fully diluted)
+Date of Capitalization,June 1 2025
+
+Board Representation:
+Entity,Board Seats
+Art of Coating LLC,2
+Azure Yacht Group LLC / Dmitry Wolf,1
+Total,3
+
+Voting Rights:
+Entity,Voting Shares,Voting Percentage
+Art of Coating LLC,500000,50%
+Azure Yacht Group LLC,250000,25%
+Dmitry Wolf,250000,25%
+Total,1000000,100%
+
+Governance:
+Major Decisions Threshold,75% ownership approval 

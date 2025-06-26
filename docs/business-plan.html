@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Plan | Azure Yacht Group</title>
+    <meta name="description" content="Azure Yacht Group business plan outlining our strategy for luxury yacht charter services and market approach.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .business-plan-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .plan-section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #1a365d;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .executive-summary {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        
+        .executive-summary h2 {
+            margin-top: 0;
+        }
+        
+        .plan-content p {
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .key-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .metric-box {
+            flex: 1;
+            min-width: 200px;
+            background-color: #1a365d;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .metric-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .metric-box .value {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        
+        .metric-box p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        
+        .service-table th, 
+        .service-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .service-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #1a365d;
+        }
+        
+        .service-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .financial-projections {
+            margin: 30px 0;
+        }
+        
+        .chart-container {
+            height: 400px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .chart-placeholder {
+            color: #999;
+            font-style: italic;
+        }
+        
+        .timeline {
+            margin: 30px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-date {
+            width: 150px;
+            flex-shrink: 0;
+            padding-right: 20px;
+            font-weight: 600;
+            color: #1a365d;
+        }
+        
+        .timeline-content {
+            flex-grow: 1;
+            border-left: 3px solid #1a365d;
+            padding-left: 20px;
+            padding-bottom: 15px;
+        }
+        
+        .timeline-content h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content p {
+            margin-bottom: 0;
+        }
+        
+        .swot-analysis {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .swot-box {
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .swot-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .swot-box h3 i {
+            margin-right: 10px;
+        }
+        
+        .swot-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .swot-box li {
+            margin-bottom: 8px;
+        }
+        
+        .strengths {
+            background-color: rgba(40, 167, 69, 0.1);
+        }
+        
+        .weaknesses {
+            background-color: rgba(220, 53, 69, 0.1);
+        }
+        
+        .opportunities {
+            background-color: rgba(255, 193, 7, 0.1);
+        }
+        
+        .threats {
+            background-color: rgba(108, 117, 125, 0.1);
+        }
+        
+        .key-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-box {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #1a365d;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-box h3 i {
+            margin-right: 10px;
+            color: #1a365d;
+        }
+        
+        .feature-box p {
+            margin-bottom: 0;
+        }
+        
+        .investment-opportunity {
+            background-color: #1a365d;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            margin: 40px 0;
+        }
+        
+        .investment-opportunity h2 {
+            color: white;
+            margin-top: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 15px;
+        }
+        
+        .investment-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        .investment-cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .investment-cta .btn {
+            background-color: white;
+            color: #1a365d;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .investment-cta .btn:hover {
+            background-color: #f8f9fa;
+        }
+        
+        /* Floating language switcher */
+        .floating-language-switch {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #1a365d;
+            color: white;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-language-switch:hover {
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        
+        .floating-language-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .floating-language-switch a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .floating-language-switch .lang-separator {
+            width: 1px;
+            height: 20px;
+            background-color: rgba(255,255,255,0.3);
+            margin: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .swot-analysis {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .timeline-date {
+                width: 100%;
+                padding-right: 0;
+                padding-bottom: 10px;
+            }
+            
+            .timeline-content {
+                padding-left: 15px;
+            }
+            
+            .investment-stats {
+                gap: 20px;
+            }
+            
+            .stat-item {
+                min-width: 150px;
+            }
+        }
+        
+        .language-toggle {
+            text-align: right;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .language-toggle a {
+            color: #1a365d;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .language-toggle a:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle" style="text-align: right; padding: 10px 20px; background-color: #f8f9fa;">
+        <a href="business-plan-ru.html" style="color: #1a365d; text-decoration: none; font-weight: 500; padding: 5px 10px; border-radius: 3px;">Русская версия</a>
+    </div>
+    
+    <div class="business-plan-container">
+        <!-- Page Banner -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('images/yacht-business.jpg');">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1>Azure Yacht Group Business Plan</h1>
+                    <p style="color: white;">Strategic vision for luxury yacht charter excellence</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Plan Content -->
+        <div class="business-plan-container">
+            <!-- Executive Summary -->
+            <div class="executive-summary">
+                <h2 class="section-title">1. Executive Summary</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group is positioned to become a premier provider of luxury yacht charters and exclusive event services in the global market, with an initial focus on the South Florida region. Our mission is to deliver exceptional yacht charter experiences and expertly curated events both on land and sea, combining personalized service, innovative technology, and deep industry expertise.</p>
+                    
+                    <p>Based on market analysis and financial projections, Azure Yacht Group aims to achieve $5.8 million in annual revenue by the end of year three, with an anticipated 22% profit margin. Our integrated business model combines yacht charter services (60% of revenue) with luxury event planning and management (40% of revenue). We begin with an initial investment of $120,000 for the foundation phase, with additional funding rounds planned as the business scales. Our realistic implementation plan includes a one-month establishment period before generating initial revenue, with headquarters strategically located in the Miami/Fort Lauderdale area to leverage the robust South Florida yachting and luxury event market. We project a return on investment within five years of operation.</p>
+                    
+                    <p>Our competitive advantage lies in our dual expertise in both yacht charters and luxury event planning, our commitment to exceptional client service, and our innovative approach to creating seamless experiences across both water and land venues. By offering integrated services that span the entire spectrum of luxury experiences, we can capture multiple revenue streams while delivering higher value to our clients.</p>
+                    
+                    <p>We are revolutionizing the charter industry through two groundbreaking initiatives: (1) a Membership Subscription Model offering tiered packages with guaranteed yacht availability, projected to generate $3M in predictable annual revenue by Year 3; and (2) an AI-Powered Dynamic Pricing System that optimizes rates based on real-time variables, estimated to increase revenue per available charter day by 18-23%. These innovations create powerful market differentiation while establishing a stable financial foundation with higher-than-industry-average profit margins.</p>
+                </div>
+            </div>
+
+            <!-- Company Overview -->
+            <div class="plan-section">
+                <h2 class="section-title">2. Company Overview</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group is a luxury experience company specializing in high-end yacht charters and premium event services. Headquartered in Fort Lauderdale, Florida, with planned satellite offices in Newport (Rhode Island), Antigua, and St. Thomas, we are strategically positioned to serve the most lucrative markets in the yacht charter and luxury event industry.</p>
+                    
+                    <h3>Vision</h3>
+                    <p>To become the most trusted name in luxury experiences, known for delivering exceptional service across both yacht charters and exclusive events.</p>
+                    
+                    <h3>Mission</h3>
+                    <p>To create unforgettable experiences that exceed client expectations through personalized service, attention to detail, and seamless execution whether on sea or land.</p>
+                    
+                    <h3>Core Services</h3>
+                    <ul>
+                        <li><strong>Yacht Charter Services:</strong> Luxury crewed charters, bareboat charters, day charters, and corporate event charters</li>
+                        <li><strong>Yacht Management:</strong> Marketing, maintenance, and operational management for yacht owners</li>
+                        <li><strong>Luxury Event Services:</strong> Full-service event planning and execution for exclusive gatherings on land and sea</li>
+                        <li><strong>Concierge Services:</strong> Personalized itinerary planning, provisioning, and exclusive experiences</li>
+                        <li><strong>Yacht Sales:</strong> Brokerage services for clients looking to purchase or sell yachts</li>
+                    </ul>
+                    
+                    <h3>Company Structure</h3>
+                    <p>Azure Yacht Group will be established as a Limited Liability Company (LLC) with an initial team of 6 full-time staff, including experienced yacht charter specialists, event planning professionals, and operations support. The company will be led by an experienced management team with extensive backgrounds in the luxury yacht charter industry, event management, and hospitality services. As operations expand, we will grow to approximately 35 staff members by year three, with specialized teams for yacht charters, event services, marketing, and operations.</p>
+                </div>
+            </div>
+
+            <!-- Market Analysis -->
+            <div class="plan-section">
+                <h2 class="section-title">3. Market Analysis</h2>
+                <div class="plan-content">
+                    <h3>Target Market</h3>
+                    <p>Azure Yacht Group targets high-net-worth individuals and corporations seeking premium yacht charter experiences and exclusive event services. Our primary market segments include:</p>
+                    
+                    <h4>Yacht Charter Clients</h4>
+                    <ul>
+                        <li><strong>Luxury Vacation Seekers:</strong> High-net-worth individuals and families looking for exclusive vacation experiences (45% of charter clients)</li>
+                        <li><strong>Celebration Groups:</strong> Clients organizing special occasions such as anniversaries, birthdays, and reunions (25% of charter clients)</li>
+                        <li><strong>Corporate Clients:</strong> Companies seeking unique venues for team building, client entertainment, and corporate retreats (20% of charter clients)</li>
+                        <li><strong>Wedding Parties:</strong> Couples looking for distinctive wedding venues and honeymoon experiences (10% of charter clients)</li>
+                    </ul>
+                    
+                    <h4>Event Services Clients</h4>
+                    <ul>
+                        <li><strong>Corporate Event Planners:</strong> Organizations seeking turnkey solutions for high-profile corporate events (35% of event clients)</li>
+                        <li><strong>Luxury Private Events:</strong> Individuals planning exclusive social gatherings in premium venues (30% of event clients)</li>
+                        <li><strong>Destination Celebrations:</strong> Clients organizing milestone events in scenic locations (25% of event clients)</li>
+                        <li><strong>Luxury Brand Activations:</strong> Premium brands looking for unique event concepts and venues (10% of event clients)</li>
+                    </ul>
+                    
+                    <h3>Market Size & Growth</h3>
+                    <p>The global yacht charter market was valued at $6.5 billion in 2021 and is projected to reach $9.33 billion by 2027, growing at a CAGR of 5.2%. The luxury event planning market is valued at approximately $4.8 billion and growing at 7.1% annually. The combined addressable market represents a significant opportunity, particularly in our initial focus area of South Florida, which accounts for approximately 15% of the U.S. yacht charter market and hosts over 5,000 luxury events annually.</p>
+                    
+                    <h3>Customer Needs & Pain Points</h3>
+                    <ul>
+                        <li><strong>Fragmented Services:</strong> Clients currently must work with multiple vendors for yacht charters and event planning, creating coordination challenges</li>
+                        <li><strong>Inconsistent Quality:</strong> Service quality varies widely across providers in both industries</li>
+                        <li><strong>Lack of Transparency:</strong> Pricing and offerings are often unclear, particularly for first-time charterers</li>
+                        <li><strong>Booking Complexity:</strong> The booking process can be cumbersome and time-consuming</li>
+                        <li><strong>Limited Customization:</strong> Many providers offer standardized packages with limited personalization options</li>
+                    </ul>
+                    
+                    <h3>Market Trends</h3>
+                    <ul>
+                        <li><strong>Experience Economy:</strong> Growing preference for unique, memorable experiences over material possessions</li>
+                        <li><strong>Integrated Luxury Services:</strong> Increasing demand for seamless, end-to-end luxury experiences</li>
+                        <li><strong>Digital Booking Platforms:</strong> Shift toward online research and booking for luxury services</li>
+                        <li><strong>Sustainable Luxury:</strong> Growing concern for environmental impact among luxury consumers</li>
+                        <li><strong>Multigenerational Travel:</strong> Increasing popularity of family gatherings spanning multiple generations</li>
+                        <li><strong>Bleisure Travel:</strong> Blending of business and leisure travel, especially for high-end corporate events</li>
+                    </ul>
+                    
+                    <h3>Innovative Revenue Models</h3>
+                    <div class="plan-content">
+                        <p>Azure Yacht Group will revolutionize the charter industry through two innovative business approaches that create sustainable competitive advantages and enhanced revenue streams:</p>
+                        
+                        <h4>Membership Subscription Model</h4>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Implementation</th>
+                                    <th>Business Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Tiered Membership Structure</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Azure Sapphire: $25,000/year (5 charter days)</li>
+                                            <li>Azure Diamond: $60,000/year (15 charter days)</li>
+                                            <li>Azure Elite: $120,000/year (35 charter days)</li>
+                                        </ul>
+                                    </td>
+                                    <td>Guaranteed recurring revenue base regardless of seasonal fluctuations; projected to account for 30% of total revenue by Year 3</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Member Benefits</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Guaranteed yacht availability</li>
+                                            <li>Priority booking windows</li>
+                                            <li>Vessel category upgrades</li>
+                                            <li>Exclusive events access</li>
+                                            <li>Concierge services</li>
+                                        </ul>
+                                    </td>
+                                    <td>Creates defensible competitive position, increases customer loyalty, reduces marketing costs through retention</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Implementation Timeline</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Month 3: Program design finalization</li>
+                                            <li>Month 4: Soft launch with founder members</li>
+                                            <li>Month 6: Full program rollout</li>
+                                        </ul>
+                                    </td>
+                                    <td>Rapid time-to-revenue with minimal capital investment requirements compared to traditional model</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Financial Projection</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Year 1: 15-20 members ($750K revenue)</li>
+                                            <li>Year 2: 30-40 members ($1.8M revenue)</li>
+                                            <li>Year 3: 50-60 members ($3.0M revenue)</li>
+                                        </ul>
+                                    </td>
+                                    <td>60% gross margin on membership fees with predictable utilization planning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h4>AI-Powered Dynamic Pricing System</h4>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Implementation</th>
+                                    <th>Business Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Real-Time Rate Optimization</strong></td>
+                                    <td>Proprietary algorithm adjusting charter rates based on 15+ variables including seasonal demand, weather patterns, booking window, vessel availability, and competitor pricing</td>
+                                    <td>Projected 18-23% increase in revenue per available charter day; optimizes fleet utilization during traditionally lower-demand periods</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Personalized Pricing</strong></td>
+                                    <td>Customer behavior analysis to create tailored package offerings and incentives based on past booking patterns and preferences</td>
+                                    <td>15% increase in upsell conversion rates; higher average transaction value</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Demand Forecasting</strong></td>
+                                    <td>Machine learning models to predict booking patterns 6-12 months in advance, guiding fleet composition and marketing efforts</td>
+                                    <td>Enables strategic planning for vessel acquisition and partner agreements; reduces marketing spend through targeted campaigns</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Implementation Timeline</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>Month 2: Basic seasonality-based pricing</li>
+                                            <li>Month 6: Integration of real-time competitor data</li>
+                                            <li>Month 12: Full AI-powered system deployment</li>
+                                        </ul>
+                                    </td>
+                                    <td>Phased approach allows for testing and refinement while delivering immediate benefit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h4>Combined Business Impact</h4>
+                        <p>The integration of these two innovative models creates powerful synergies:</p>
+                        <ul>
+                            <li><strong>Revenue Stability:</strong> Subscription model provides predictable baseline revenue while dynamic pricing maximizes yield on remaining inventory</li>
+                            <li><strong>Competitive Differentiation:</strong> Unique value proposition separates Azure Yacht Group from traditional charter operators</li>
+                            <li><strong>Enhanced Customer Experience:</strong> Members receive guaranteed availability and premium service while non-members benefit from more transparent, value-based pricing</li>
+                            <li><strong>Data Advantage:</strong> Both systems generate valuable customer and market data that continuously improves our service offerings and operational efficiency</li>
+                            <li><strong>Scalable Growth:</strong> These models can be expanded to new markets with minimal additional investment, creating a platform for rapid geographic expansion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SWOT Analysis -->
+            <div class="plan-section">
+                <h2 class="section-title">4. SWOT Analysis</h2>
+                <div class="plan-content">
+                    <div class="swot-analysis">
+                        <div class="swot-box strengths">
+                            <h3><i class="fas fa-shield-alt"></i> Strengths</h3>
+                            <ul>
+                                <li>Experienced management team with established industry connections</li>
+                                <li>Innovative digital platform for seamless booking and charter management</li>
+                                <li>Exclusive partnerships with top yacht owners and shipyards</li>
+                                <li>Strong focus on crew quality and training</li>
+                                <li>Comprehensive destination expertise and local connections</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-box weaknesses">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Weaknesses</h3>
+                            <ul>
+                                <li>Limited brand recognition as a new market entrant</li>
+                                <li>Initial fleet size smaller than established competitors</li>
+                                <li>High capital requirements for owned fleet expansion</li>
+                                <li>Seasonal demand fluctuations affecting cash flow</li>
+                                <li>Dependency on quality of partner yachts in network model</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-box opportunities">
+                            <h3><i class="fas fa-lightbulb"></i> Opportunities</h3>
+                            <ul>
+                                <li>Growing interest in experiential luxury travel post-pandemic</li>
+                                <li>Expanding market of younger affluent clients seeking unique experiences</li>
+                                <li>Increased demand for private, secure vacation options</li>
+                                <li>Emerging yachting destinations opening new markets</li>
+                                <li>Integration of sustainable practices as market differentiator</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="swot-box threats">
+                            <h3><i class="fas fa-bolt"></i> Threats</h3>
+                            <ul>
+                                <li>Economic downturns affecting luxury travel spending</li>
+                                <li>Increasing regulations in popular yachting destinations</li>
+                                <li>Low barriers to entry for new competitors</li>
+                                <li>Climate change affecting traditional yachting seasons</li>
+                                <li>Geopolitical instability in key regions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services & Offerings -->
+            <div class="plan-section">
+                <h2 class="section-title">5. Services & Offerings</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group will provide a comprehensive range of charter services designed to meet the diverse needs of our clientele:</p>
+                    
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Service Category</th>
+                                <th>Description</th>
+                                <th>Revenue Model</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Crewed Yacht Charters</strong></td>
+                                <td>Luxury motor and sailing yachts from 30-90m with professional crew, tailored itineraries, and premium amenities</td>
+                                <td>15-20% commission on charter fee</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bareboat Charters</strong></td>
+                                <td>Self-skippered yacht rentals for qualified clients with comprehensive briefings and 24/7 support</td>
+                                <td>20-25% commission on charter fee</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Event Charters</strong></td>
+                                <td>Corporate events, celebrations, and promotional functions with full event planning services</td>
+                                <td>15% commission plus 20% on additional services</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Concierge Services</strong></td>
+                                <td>Premium add-ons including helicopter transfers, restaurant reservations, exclusive shore excursions, and personal shopping</td>
+                                <td>25-30% markup on service costs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Yacht Management</strong></td>
+                                <td>Comprehensive management services for yacht owners including charter marketing, crew recruitment, and maintenance</td>
+                                <td>5-10% of annual yacht operating budget</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Yacht Sales</strong></td>
+                                <td>Brokerage services for clients looking to purchase or sell luxury yachts</td>
+                                <td>5% commission on sale price</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Fleet Strategy</h3>
+                    <p>Our fleet will combine partner yachts meeting our strict quality standards, with a phased approach to direct ownership:</p>
+                    <ul>
+                        <li><strong>Year 1:</strong> Partner network of 15-18 vetted yachts, zero direct ownership, focus on capital preservation</li>
+                        <li><strong>Year 2:</strong> Expansion to 22-26 partner vessels with 1-2 managed/equity yachts through lease-to-own arrangements</li>
+                        <li><strong>Year 3:</strong> Fleet of 30-35 yachts including 3-5 company-owned or equity-share vessels</li>
+                        <li><strong>Quality Control:</strong> Rigorous inspection and crew evaluation process for all partner vessels</li>
+                        <li><strong>Innovation:</strong> Focus on eco-friendly vessels with cutting-edge amenities and technology</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Marketing Strategy -->
+            <div class="plan-section">
+                <h2 class="section-title">6. Marketing Strategy</h2>
+                <div class="plan-content">
+                    <p>Our marketing strategy is designed to establish Azure Yacht Group as the premier provider of integrated yacht charter and event services, targeting high-net-worth individuals and corporate clients:</p>
+                    
+                    <h3>Brand Positioning</h3>
+                    <p>Azure Yacht Group will be positioned as the ultimate curator of exceptional experiences both on water and land. Our brand will emphasize:</p>
+                    <ul>
+                        <li><strong>Integrated Expertise:</strong> Unique ability to deliver seamless experiences across yacht charters and land-based events</li>
+                        <li><strong>Personalized Service:</strong> Bespoke experiences tailored to individual client preferences</li>
+                        <li><strong>Exceptional Quality:</strong> Premium service standards at every touchpoint</li>
+                        <li><strong>Insider Knowledge:</strong> Deep expertise in destinations, yachts, and event production</li>
+                        <li><strong>Innovative Approach:</strong> Creative solutions that elevate the traditional charter and event experience</li>
+                    </ul>
+                    
+                    <h3>Digital Marketing</h3>
+                    <ul>
+                        <li><strong>Website Optimization:</strong> User-friendly, visually stunning website with separate but integrated sections for yacht charters and event services, featuring virtual tours, streamlined booking processes, and compelling content</li>
+                        <li><strong>SEO Strategy:</strong> Comprehensive SEO focused on luxury yacht charters, premium event planning, and specific destination keywords</li>
+                        <li><strong>Content Marketing:</strong> Regular publication of high-quality blogs, guides, and visual content showcasing both yacht experiences and exclusive events</li>
+                        <li><strong>Social Media:</strong> Strategic presence on Instagram, Facebook, LinkedIn, and Pinterest with content highlighting both yacht charters and luxury events</li>
+                        <li><strong>Email Marketing:</strong> Personalized email campaigns targeting both yacht enthusiasts and event planners</li>
+                        <li><strong>Paid Advertising:</strong> Targeted PPC campaigns on Google, social media platforms, and luxury websites</li>
+                    </ul>
+                    
+                    <h3>Traditional Marketing</h3>
+                    <ul>
+                        <li><strong>Print Advertising:</strong> Placements in luxury lifestyle magazines, yacht publications, and high-end event planning guides</li>
+                        <li><strong>PR Strategy:</strong> Media relations focusing on both yacht industry publications and luxury lifestyle media</li>
+                        <li><strong>Industry Events:</strong> Presence at yacht shows, luxury travel expos, and premium event planning conferences</li>
+                        <li><strong>Direct Mail:</strong> Personalized outreach to UHNWI database with premium print materials</li>
+                    </ul>
+                    
+                    <h3>Partnership Development</h3>
+                    <ul>
+                        <li><strong>Luxury Hospitality:</strong> Partnerships with 5-star hotels, resorts, and restaurant groups</li>
+                        <li><strong>Concierge Services:</strong> Relationships with high-end concierge companies and membership clubs</li>
+                        <li><strong>Travel Advisors:</strong> Network of luxury travel advisors and agencies</li>
+                        <li><strong>Complementary Service Providers:</strong> Alliances with premium transportation, catering, entertainment, and event production companies</li>
+                        <li><strong>Yacht Owners & Brokers:</strong> Relationships with yacht owners, management companies, and brokers</li>
+                    </ul>
+                    
+                    <h3>Customer Acquisition Channels</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Channel</th>
+                                <th>Target Audience</th>
+                                <th>Estimated Acquisition Cost</th>
+                                <th>Projected Contribution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Broker Network</td>
+                                <td>HNWIs seeking yacht charters</td>
+                                <td>15-20% commission</td>
+                                <td>25% of yacht clients</td>
+                            </tr>
+                            <tr>
+                                <td>Direct Digital Marketing</td>
+                                <td>Self-directed luxury seekers</td>
+                                <td>$800-1,200 per client</td>
+                                <td>30% of all clients</td>
+                            </tr>
+                            <tr>
+                                <td>Partnerships</td>
+                                <td>Clients of luxury hotels and concierges</td>
+                                <td>10-15% referral fee</td>
+                                <td>20% of all clients</td>
+                            </tr>
+                            <tr>
+                                <td>Event Planners</td>
+                                <td>Corporate clients and celebration planners</td>
+                                <td>12-18% commission</td>
+                                <td>15% of event clients</td>
+                            </tr>
+                            <tr>
+                                <td>Industry Events</td>
+                                <td>Yacht enthusiasts and event professionals</td>
+                                <td>$1,500-2,500 per client</td>
+                                <td>10% of all clients</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Marketing Calendar Highlights (First Year)</h3>
+                    <ul>
+                        <li><strong>Month 1:</strong> Website launch, initial SEO implementation, social media profiles establishment</li>
+                        <li><strong>Month 2:</strong> First digital marketing campaign, broker relationship development, initial PR outreach</li>
+                        <li><strong>Month 3:</strong> Launch of content marketing program, development of partnership program</li>
+                        <li><strong>Month 4:</strong> First luxury event sponsorship, expansion of digital advertising</li>
+                        <li><strong>Month 5:</strong> Development of case studies featuring initial charters and events, launch of referral program</li>
+                        <li><strong>Month 6:</strong> First targeted direct mail campaign, expanded PR initiatives</li>
+                        <li><strong>Months 7-12:</strong> Participation in major yacht shows and luxury expos, implementation of retargeting campaigns, enhanced partnership initiatives</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Financial Projections -->
+            <div class="plan-section">
+                <h2 class="section-title">7. Financial Projections</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group will implement a phased investment approach, beginning with an initial investment of $120,000 to establish the foundation of our business in the Miami/Fort Lauderdale area. Additional funding rounds will be secured as we expand operations, with a total projected investment of $2.4 million over the first three years. Financial projections indicate:</p>
+                    
+                    <div class="financial-projections">
+                        <h3>Financial Projections</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Financial Metric</th>
+                                    <th>Year 1</th>
+                                    <th>Year 2</th>
+                                    <th>Year 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total Revenue</td>
+                                    <td>$1.5M</td>
+                                    <td>$2.8M</td>
+                                    <td>$5.8M</td>
+                                </tr>
+                                <tr>
+                                    <td>Yacht Charter Revenue</td>
+                                    <td>$0.9M (60%)</td>
+                                    <td>$1.7M (60%)</td>
+                                    <td>$3.5M (60%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Event Services Revenue</td>
+                                    <td>$0.6M (40%)</td>
+                                    <td>$1.1M (40%)</td>
+                                    <td>$2.3M (40%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Membership Revenue (% of Yacht)</td>
+                                    <td>$0.75M (50%)</td>
+                                    <td>$1.8M (65%)</td>
+                                    <td>$3.0M (85%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Operating Expenses</td>
+                                    <td>$1.35M</td>
+                                    <td>$2.3M</td>
+                                    <td>$4.5M</td>
+                                </tr>
+                                <tr>
+                                    <td>EBITDA</td>
+                                    <td>$0.15M</td>
+                                    <td>$0.5M</td>
+                                    <td>$1.3M</td>
+                                </tr>
+                                <tr>
+                                    <td>EBITDA Margin</td>
+                                    <td>10%</td>
+                                    <td>18%</td>
+                                    <td>22%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fleet Size (Total)</td>
+                                    <td>15-18 vessels</td>
+                                    <td>22-26 vessels</td>
+                                    <td>30-35 vessels</td>
+                                </tr>
+                                <tr>
+                                    <td>Owned/Equity Vessels</td>
+                                    <td>0</td>
+                                    <td>1-2</td>
+                                    <td>3-5</td>
+                                </tr>
+                                <tr>
+                                    <td>Partner Vessels</td>
+                                    <td>15-18</td>
+                                    <td>20-24</td>
+                                    <td>27-30</td>
+                                </tr>
+                                <tr>
+                                    <td>Event Services Projects</td>
+                                    <td>20-25</td>
+                                    <td>35-45</td>
+                                    <td>60-75</td>
+                                </tr>
+                                <tr>
+                                    <td>Yacht: Partner Vessel Revenue (%)</td>
+                                    <td>100%</td>
+                                    <td>85%</td>
+                                    <td>70%</td>
+                                </tr>
+                                <tr>
+                                    <td>Yacht: Owned/Managed Revenue (%)</td>
+                                    <td>0%</td>
+                                    <td>15%</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>Avg. Margin: Partner Vessels</td>
+                                    <td>16%</td>
+                                    <td>18%</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Avg. Margin: Owned/Managed</td>
+                                    <td>N/A</td>
+                                    <td>38%</td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>Avg. Margin: Event Services</td>
+                                    <td>24%</td>
+                                    <td>28%</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>Fleet Investment (Cumulative)</td>
+                                    <td>$0</td>
+                                    <td>$150K-$250K</td>
+                                    <td>$450K-$650K</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Revenue Breakdown by Service Category (Year 3)</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Service Category</th>
+                                    <th>Revenue Percentage</th>
+                                    <th>Revenue Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Yacht Charter Services</td>
+                                    <td>60%</td>
+                                    <td>$3.5M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Crewed Charters</td>
+                                    <td>38%</td>
+                                    <td>$2.2M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Day Charters</td>
+                                    <td>10%</td>
+                                    <td>$0.6M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Corporate Yacht Events</td>
+                                    <td>8%</td>
+                                    <td>$0.5M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Bareboat Charters</td>
+                                    <td>4%</td>
+                                    <td>$0.2M</td>
+                                </tr>
+                                <tr>
+                                    <td>Event Planning Services</td>
+                                    <td>40%</td>
+                                    <td>$2.3M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Corporate Events</td>
+                                    <td>15%</td>
+                                    <td>$0.9M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Private Celebrations</td>
+                                    <td>12%</td>
+                                    <td>$0.7M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Destination Weddings</td>
+                                    <td>8%</td>
+                                    <td>$0.4M</td>
+                                </tr>
+                                <tr>
+                                    <td>- Brand Activations</td>
+                                    <td>5%</td>
+                                    <td>$0.3M</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Combined Booking Metrics</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Yacht Charters</th>
+                                    <th>Avg. Charter Value</th>
+                                    <th>Events Planned</th>
+                                    <th>Avg. Event Value</th>
+                                    <th>Service Categories Active</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Month 1</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>None - Setup phase</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 2</td>
+                                    <td>1-2</td>
+                                    <td>$3,500</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>Day charters only</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 3</td>
+                                    <td>3-4</td>
+                                    <td>$4,000</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>Day charters only</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 4</td>
+                                    <td>4-5</td>
+                                    <td>$4,500</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>Day charters, Membership (soft launch)</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 5-6</td>
+                                    <td>8-10</td>
+                                    <td>$5,200</td>
+                                    <td>0</td>
+                                    <td>$0</td>
+                                    <td>Day charters, Membership, Crewed charters</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 7-9</td>
+                                    <td>12-15</td>
+                                    <td>$6,500</td>
+                                    <td>1-2</td>
+                                    <td>$14,500</td>
+                                    <td>All yacht services, Corporate events</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 10-12</td>
+                                    <td>10-12</td>
+                                    <td>$8,500</td>
+                                    <td>2</td>
+                                    <td>$18,000</td>
+                                    <td>All yacht services, Corporate & private events</td>
+                                </tr>
+                                <tr>
+                                    <td>Year 1 (monthly avg)</td>
+                                    <td>8</td>
+                                    <td>$6,200</td>
+                                    <td>1</td>
+                                    <td>$16,000</td>
+                                    <td>All core services established</td>
+                                </tr>
+                                <tr>
+                                    <td>Year 2 (monthly avg)</td>
+                                    <td>15-18</td>
+                                    <td>$7,500</td>
+                                    <td>3-4</td>
+                                    <td>$22,000</td>
+                                    <td>Full service range + Brand activations</td>
+                                </tr>
+                                <tr>
+                                    <td>Year 3 (monthly avg)</td>
+                                    <td>22-25</td>
+                                    <td>$8,800</td>
+                                    <td>5-6</td>
+                                    <td>$28,000</td>
+                                    <td>Complete service offering across all markets</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><em>Note: Month 1 shows zero revenue as this period is dedicated to business establishment, team building, and infrastructure setup. Booking metrics reflect conservative estimates with seasonal variation typical in the yacht charter industry.</em></p>
+
+                        <h3>Cash Flow Overview (First 18 Months)</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Cash Inflow</th>
+                                    <th>Cash Outflow</th>
+                                    <th>Net Cash Flow</th>
+                                    <th>Fleet Investment</th>
+                                    <th>Ending Cash Position</th>
+                                    <th>Key Investments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Initial Investment</td>
+                                    <td>$120,000</td>
+                                    <td>$0</td>
+                                    <td>$120,000</td>
+                                    <td>$0</td>
+                                    <td>$120,000</td>
+                                    <td>Company formation</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 1</td>
+                                    <td>$0</td>
+                                    <td>$32,000</td>
+                                    <td>-$32,000</td>
+                                    <td>$0</td>
+                                    <td>$88,000</td>
+                                    <td>Core team (3), office setup, website initiation</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 2</td>
+                                    <td>$12,000</td>
+                                    <td>$38,000</td>
+                                    <td>-$26,000</td>
+                                    <td>$0</td>
+                                    <td>$62,000</td>
+                                    <td>Team expansion (5), website launch, initial marketing</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 3</td>
+                                    <td>$28,000</td>
+                                    <td>$42,000</td>
+                                    <td>-$14,000</td>
+                                    <td>$0</td>
+                                    <td>$48,000</td>
+                                    <td>Membership model development, accounting system</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 4</td>
+                                    <td>$45,000</td>
+                                    <td>$44,000</td>
+                                    <td>$1,000</td>
+                                    <td>$0</td>
+                                    <td>$49,000</td>
+                                    <td>Charter specialist hire, pricing system development</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 5</td>
+                                    <td>$68,000</td>
+                                    <td>$52,000</td>
+                                    <td>$16,000</td>
+                                    <td>$0</td>
+                                    <td>$65,000</td>
+                                    <td>Finance manager hire, full membership model rollout</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 6</td>
+                                    <td>$82,000</td>
+                                    <td>$62,000</td>
+                                    <td>$20,000</td>
+                                    <td>$0</td>
+                                    <td>$85,000</td>
+                                    <td>Crewed charter service launch, enhanced marketing</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 7</td>
+                                    <td>$95,000</td>
+                                    <td>$75,000</td>
+                                    <td>$20,000</td>
+                                    <td>$0</td>
+                                    <td>$105,000</td>
+                                    <td>Operations manager hire, corporate event service preparation</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 8</td>
+                                    <td>$110,000</td>
+                                    <td>$80,000</td>
+                                    <td>$30,000</td>
+                                    <td>$0</td>
+                                    <td>$135,000</td>
+                                    <td>Yacht inspector hire, first corporate events</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 9</td>
+                                    <td>$125,000</td>
+                                    <td>$85,000</td>
+                                    <td>$40,000</td>
+                                    <td>$0</td>
+                                    <td>$175,000</td>
+                                    <td>Event specialists (2), pricing system upgrades</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 10</td>
+                                    <td>$130,000</td>
+                                    <td>$95,000</td>
+                                    <td>$35,000</td>
+                                    <td>$0</td>
+                                    <td>$210,000</td>
+                                    <td>Destination expert hire, bareboat charter launch</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 11</td>
+                                    <td>$115,000</td>
+                                    <td>$98,000</td>
+                                    <td>$17,000</td>
+                                    <td>$0</td>
+                                    <td>$227,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 12</td>
+                                    <td>$125,000</td>
+                                    <td>$105,000</td>
+                                    <td>$20,000</td>
+                                    <td>$0</td>
+                                    <td>$247,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 13-15 (Q5)</td>
+                                    <td>$410,000</td>
+                                    <td>$330,000</td>
+                                    <td>$80,000</td>
+                                    <td>$50,000</td>
+                                    <td>$277,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Month 16-18 (Q6)</td>
+                                    <td>$520,000</td>
+                                    <td>$380,000</td>
+                                    <td>$140,000</td>
+                                    <td>$95,000</td>
+                                    <td>$322,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><em>Note: This cash flow projection demonstrates our phased approach to business growth, with careful alignment between service introduction, staffing, and financial resources. Each service category is only introduced when we have the team, systems, and financial stability to support it. Fleet investments are deliberately delayed until Year 2 when we have established sufficient cash reserves and proven our operating model.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implementation Plan -->
+            <div class="plan-section">
+                <h2 class="section-title">8. Implementation Plan</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group will execute a realistic implementation strategy to establish operations with a one-month setup period before generating initial revenue:</p>
+                    
+                    <h3>Phase 1: Establishment (Month 1)</h3>
+                    <ul>
+                        <li><strong>Week 1-2:</strong> Complete legal formation of the company, secure initial operating capital of $120,000, finalize business plan, identify headquarters location in Miami/Fort Lauderdale area</li>
+                        <li><strong>Week 3-4:</strong> Begin recruiting core team members (CEO, Charter Director, Marketing Director), initiate development of website and booking platform, establish initial vendor relationships, develop branding materials</li>
+                        <li><strong>Entire Month:</strong> Zero revenue expected as focus is on building infrastructure, team, and business foundation</li>
+                    </ul>
+                    
+                    <h3>Phase 2: Initial Revenue Generation (Months 2-4)</h3>
+                    <ul>
+                        <li><strong>Month 2:</strong> Complete initial team hiring (add Senior Charter Broker, Digital Marketing Specialist), launch website with basic functionality, establish initial partner yacht network (8-10 vessels), implement CRM system, begin limited digital marketing, conduct yacht inspections, develop basic service packages for day charters only</li>
+                        <li><strong>Month 3:</strong> Launch comprehensive booking functionality, secure first charter bookings for day charters only, expand partner yacht network, implement accounting systems, begin outreach to travel advisors. Design Membership Subscription Model with planned Month 4 soft launch.</li>
+                        <li><strong>Month 4:</strong> Achieve first positive cash flow month, expand marketing efforts, establish relationships with luxury concierge services, refine operational processes based on initial bookings. Soft launch Membership Subscription Model with founder members. Begin basic pricing optimization system.</li>
+                    </ul>
+                    
+                    <h3>Phase 3: Expansion (Months 5-9)</h3>
+                    <ul>
+                        <li><strong>Month 5-6:</strong> Hire Finance Manager, increase booking volume for both day charters and crewed charters, expand team, enhance digital presence, implement customer feedback systems. Full rollout of Membership Subscription Model. Introduce corporate yacht events as a service category.</li>
+                        <li><strong>Month 7-9:</strong> Hire Operations Manager and Yacht Inspector, begin event services with initial focus on corporate events, form strategic partnerships with luxury brands and exclusive venues, develop more sophisticated marketing campaigns. Integrate real-time competitor data into pricing system.</li>
+                    </ul>
+                    
+                    <h3>Phase 4: Stabilization (Months 10-12)</h3>
+                    <ul>
+                        <li><strong>Month 10-12:</strong> Hire Destination Expert, expand event services to include private celebrations, optimize operations for efficiency, refine service offerings based on market feedback, prepare for year two expansion, evaluate fleet management opportunities. Implement bareboat charter offerings for qualified clients.</li>
+                    </ul>
+                    
+                    <h3>Phase 5: Advanced Growth (Year 2, Q1-Q2)</h3>
+                    <ul>
+                        <li><strong>Focus:</strong> Regional expansion, first managed yacht acquisition, destination wedding services, continued membership growth</li>
+                        <li><strong>Key Hires:</strong> Client Concierge team (2-3 staff), additional charter brokers for regional markets</li>
+                        <li><strong>Service Expansion:</strong> Full-scale luxury event planning, brand activation events, expanded fleet of 22-26 vessels</li>
+                    </ul>
+                    
+                    <h3>Realistic Revenue Timeline</h3>
+                    <p>Our approach acknowledges the realities of business establishment in the luxury services sector:</p>
+                    <ul>
+                        <li><strong>Month 1:</strong> Zero revenue as focus is exclusively on setup and establishment</li>
+                        <li><strong>Months 2-3:</strong> Minimal revenue primarily from early adopters and network connections</li>
+                        <li><strong>Month 4:</strong> First month of positive cash flow as marketing begins to generate results</li>
+                        <li><strong>Months 5-9:</strong> Steady growth in booking volume and average transaction value</li>
+                        <li><strong>Months 10-12:</strong> Established reputation beginning to drive repeat business and referrals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Initial Investment Allocation -->
+            <div class="plan-section">
+                <h2 class="section-title">9. Initial Investment Allocation</h2>
+                <div class="plan-content">
+                    <p>The initial investment of $120,000 will be strategically allocated to establish a solid foundation for Azure Yacht Group during the critical first four months of operation. This careful deployment of capital prioritizes essential infrastructure, talent acquisition, and marketing initiatives while maintaining sufficient operational reserves.</p>
+                    
+                    <h3>Initial $120,000 Investment Allocation</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Percentage</th>
+                                <th>Key Components</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Core Team Salaries</td>
+                                <td>$52,000</td>
+                                <td>43.3%</td>
+                                <td>CEO, Charter Director, Marketing Director, Senior Charter Broker, Digital Marketing Specialist</td>
+                            </tr>
+                            <tr>
+                                <td>Office Setup & Operations</td>
+                                <td>$22,000</td>
+                                <td>18.3%</td>
+                                <td>
+                                    <ul>
+                                        <li>Office lease (Miami/Fort Lauderdale): $8,000</li>
+                                        <li>Furniture & decor: $6,500</li>
+                                        <li>Technology infrastructure: $4,500</li>
+                                        <li>Communication systems: $1,500</li>
+                                        <li>Office branding: $1,500</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Technology & Systems</td>
+                                <td>$18,500</td>
+                                <td>15.4%</td>
+                                <td>
+                                    <ul>
+                                        <li>Website development: $8,500</li>
+                                        <li>Booking platform: $4,000</li>
+                                        <li>CRM implementation: $3,500</li>
+                                        <li>Accounting software: $2,500</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Marketing & Brand Development</td>
+                                <td>$14,500</td>
+                                <td>12.1%</td>
+                                <td>
+                                    <ul>
+                                        <li>Brand identity development: $3,500</li>
+                                        <li>Marketing materials: $2,500</li>
+                                        <li>Digital marketing campaigns: $4,500</li>
+                                        <li>Industry networking events: $3,000</li>
+                                        <li>PR initiatives: $1,000</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Legal & Administrative</td>
+                                <td>$8,000</td>
+                                <td>6.7%</td>
+                                <td>
+                                    <ul>
+                                        <li>Company formation: $2,500</li>
+                                        <li>Licenses & permits: $1,500</li>
+                                        <li>Contract templates: $2,000</li>
+                                        <li>Insurance policies: $2,000</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cash Reserve</td>
+                                <td>$5,000</td>
+                                <td>4.2%</td>
+                                <td>Emergency fund, unexpected expenses</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Month-by-Month Expenditure Timeline</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Expense Category</th>
+                                <th>Month 1</th>
+                                <th>Month 2</th>
+                                <th>Month 3</th>
+                                <th>Month 4</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Core Team Salaries</td>
+                                <td>$10,000</td>
+                                <td>$13,000</td>
+                                <td>$14,000</td>
+                                <td>$15,000</td>
+                                <td>$52,000</td>
+                            </tr>
+                            <tr>
+                                <td>Office Setup & Operations</td>
+                                <td>$16,000</td>
+                                <td>$2,000</td>
+                                <td>$2,000</td>
+                                <td>$2,000</td>
+                                <td>$22,000</td>
+                            </tr>
+                            <tr>
+                                <td>Technology & Systems</td>
+                                <td>$2,500</td>
+                                <td>$9,000</td>
+                                <td>$5,000</td>
+                                <td>$2,000</td>
+                                <td>$18,500</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing & Brand Development</td>
+                                <td>$2,000</td>
+                                <td>$3,500</td>
+                                <td>$4,500</td>
+                                <td>$4,500</td>
+                                <td>$14,500</td>
+                            </tr>
+                            <tr>
+                                <td>Legal & Administrative</td>
+                                <td>$6,500</td>
+                                <td>$500</td>
+                                <td>$500</td>
+                                <td>$500</td>
+                                <td>$8,000</td>
+                            </tr>
+                            <tr>
+                                <td>Cash Reserve Allocation</td>
+                                <td>$5,000</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly Total</strong></td>
+                                <td><strong>$32,000</strong></td>
+                                <td><strong>$28,000</strong></td>
+                                <td><strong>$26,000</strong></td>
+                                <td><strong>$24,000</strong></td>
+                                <td><strong>$120,000</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Key Investment Milestones</h3>
+                    <ul>
+                        <li><strong>End of Month 1:</strong> Company legally established, headquarters secured, core team of 3 hired, website development initiated, branding completed</li>
+                        <li><strong>End of Month 2:</strong> Team expanded to 5 members, website launched with basic functionality, CRM implemented, first yacht inspections completed</li>
+                        <li><strong>End of Month 3:</strong> Booking platform fully operational, accounting systems in place, initial charter revenue beginning to flow, membership model designed</li>
+                        <li><strong>End of Month 4:</strong> First profitable month achieved, revenue streams diversifying, marketing campaigns optimized, membership model soft launch</li>
+                    </ul>
+                    
+                    <p>This strategic allocation of the initial investment is designed to maximize capital efficiency while establishing the essential foundation for Azure Yacht Group's growth. The investment prioritizes building the team, systems, and market presence needed to begin generating revenue by Month 2, with positive cash flow achieved by Month 4.</p>
+                </div>
+            </div>
+
+            <!-- Fleet & Event Venue Strategy -->
+            <div class="plan-section">
+                <h2 class="section-title">10. Yacht Fleet & Event Venue Strategy</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group will implement a strategic, capital-efficient approach to building both our charter fleet and event venue network, focusing on organic growth that minimizes initial investment while maximizing operational capacity and revenue potential:</p>
+                    
+                    <h3>Yacht Fleet Strategy</h3>
+                    
+                    <h4>Phase 1: Partner Network Development (Months 1-6)</h4>
+                    <ul>
+                        <li><strong>Initial Approach:</strong> Focus 100% of capital on operations rather than asset acquisition</li>
+                        <li><strong>Partner Agreements:</strong> Secure 12-15 partner yacht agreements with favorable commission terms (18-22%)</li>
+                        <li><strong>Quality Control:</strong> Implement rigorous quality standards and inspection processes</li>
+                        <li><strong>Strategic Selection:</strong> Target vessels with gaps in charter calendars that we can fill</li>
+                        <li><strong>Day Charter Focus:</strong> Emphasize 40-60ft motor yachts for the lucrative day charter market in South Florida</li>
+                    </ul>
+                    
+                    <h4>Phase 2: Revenue-Based Expansion (Months 7-18)</h4>
+                    <ul>
+                        <li><strong>First Managed Vessel:</strong> Secure lease-to-own agreement on first yacht (45-55ft) using booking revenue</li>
+                        <li><strong>Utilization Focus:</strong> Target 55%+ utilization rate on managed vessels</li>
+                        <li><strong>Reinvestment Strategy:</strong> Allocate 30% of yacht charter profits to fleet development fund</li>
+                        <li><strong>Fractional Ownership:</strong> Secure 25-35% stake in 1-2 vessels through strategic partnerships</li>
+                    </ul>
+                    
+                    <h4>Phase 3: Innovative Ownership Models (Months 19-36)</h4>
+                    <ul>
+                        <li><strong>Syndication Program:</strong> Create investment opportunities for 6-8 investors per yacht</li>
+                        <li><strong>Charter-Back Program:</strong> Develop program where new owners place yachts in our fleet</li>
+                        <li><strong>Guaranteed Returns:</strong> Structure management contracts with minimum annual return guarantees</li>
+                    </ul>
+                    
+                    <h3>Event Venue Strategy</h3>
+                    
+                    <h4>Phase 1: Partnership Network (Months 1-6)</h4>
+                    <ul>
+                        <li><strong>Venue Relationships:</strong> Establish partnerships with 8-10 premium venues in South Florida</li>
+                        <li><strong>Preferred Vendor Status:</strong> Secure preferred vendor arrangements with negotiated rates</li>
+                        <li><strong>Venue Categories:</strong> Focus on waterfront properties, exclusive estates, luxury hotels, and unique event spaces</li>
+                        <li><strong>Seasonal Planning:</strong> Develop relationships with venues that complement seasonal yacht charter demand</li>
+                    </ul>
+                    
+                    <h4>Phase 2: Expansion and Exclusivity (Months 7-18)</h4>
+                    <ul>
+                        <li><strong>Exclusive Arrangements:</strong> Secure 2-3 exclusive venue relationships with premium properties</li>
+                        <li><strong>Extended Network:</strong> Expand venue partnerships to 15-20 locations across South Florida</li>
+                        <li><strong>Pop-Up Capabilities:</strong> Develop capacity for creating temporary event environments in unique locations</li>
+                        <li><strong>Venue Integration:</strong> Create seamless yacht-to-venue experiences for integrated events</li>
+                    </ul>
+                    
+                    <h4>Phase 3: Potential Venue Investment (Months 19-36)</h4>
+                    <ul>
+                        <li><strong>Flagship Location:</strong> Evaluate opportunity for company-operated event venue in prime location</li>
+                        <li><strong>Management Contracts:</strong> Pursue management agreements for exclusive event spaces</li>
+                        <li><strong>Regional Expansion:</strong> Establish venue relationships in secondary markets (Newport, Caribbean)</li>
+                    </ul>
+                    
+                    <h3>Combined Resource Strategy</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Timeframe</th>
+                                <th>Yacht Fleet</th>
+                                <th>Event Venues</th>
+                                <th>Equipment & Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Months 1-6</td>
+                                <td>12-15 partner vessels</td>
+                                <td>8-10 partner venues</td>
+                                <td>Minimal owned equipment, vendor relationships for rentals</td>
+                            </tr>
+                            <tr>
+                                <td>Months 7-12</td>
+                                <td>18-22 vessels (1 owned/managed)</td>
+                                <td>12-15 venues (2-3 exclusive)</td>
+                                <td>Core owned equipment for frequent requirements</td>
+                            </tr>
+                            <tr>
+                                <td>Year 2</td>
+                                <td>25-30 vessels (2-3 owned/equity)</td>
+                                <td>15-20 venues (3-5 exclusive)</td>
+                                <td>Expanded inventory of specialty equipment</td>
+                            </tr>
+                            <tr>
+                                <td>Year 3</td>
+                                <td>35-40 vessels (4-6 owned/equity)</td>
+                                <td>20-25 venues (5-7 exclusive, 1 managed)</td>
+                                <td>Comprehensive equipment inventory for most event needs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Financial Implications</h3>
+                    <p>This strategic approach to fleet and venue resources enables Azure Yacht Group to:</p>
+                    <ul>
+                        <li><strong>Minimize Initial Capital Requirements:</strong> Focus on partnership revenue in early stages</li>
+                        <li><strong>Diverse Revenue Streams:</strong> Balance between yacht commissions, event planning fees, and owned asset revenue</li>
+                        <li><strong>Seasonal Balance:</strong> Leverage complementary seasonal patterns between yacht charters and events</li>
+                        <li><strong>Cross-Selling Opportunities:</strong> Maximize client value through integrated service offerings</li>
+                        <li><strong>Risk Mitigation:</strong> Limit exposure to single market fluctuations through service diversification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Personnel Development Plan -->
+            <div class="plan-section">
+                <h2 class="section-title">11. Personnel Development Plan</h2>
+                <div class="plan-content">
+                    <p>Our human capital strategy is critical to Azure Yacht Group's success. We will implement a phased approach to team building, starting with core expertise and expanding strategically as operations grow:</p>
+                    
+                    <h3>Team Growth Timeline</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Timeframe</th>
+                                <th>Team Size</th>
+                                <th>Key Additions</th>
+                                <th>Primary Service Focus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Foundation</td>
+                                <td>Month 1</td>
+                                <td>3 staff</td>
+                                <td>CEO/Founder, Charter Director, Marketing Director</td>
+                                <td>Setup - No services offered</td>
+                            </tr>
+                            <tr>
+                                <td>Initial Launch</td>
+                                <td>Month 2-3</td>
+                                <td>5 staff</td>
+                                <td>Senior Charter Broker, Digital Marketing Specialist</td>
+                                <td>Day charter services only</td>
+                            </tr>
+                            <tr>
+                                <td>Early Growth</td>
+                                <td>Month 4-6</td>
+                                <td>8 staff</td>
+                                <td>Finance Manager, Charter Specialist, Admin Support</td>
+                                <td>Day charters, Membership Model, Crewed charters</td>
+                            </tr>
+                            <tr>
+                                <td>Expansion</td>
+                                <td>Month 7-9</td>
+                                <td>12 staff</td>
+                                <td>Operations Manager, Yacht Inspector, Event Specialists (2)</td>
+                                <td>All yacht services, Corporate events</td>
+                            </tr>
+                            <tr>
+                                <td>Stabilization</td>
+                                <td>Month 10-12</td>
+                                <td>14 staff</td>
+                                <td>Destination Expert, Additional Event Specialist</td>
+                                <td>Full service range including private celebrations</td>
+                            </tr>
+                            <tr>
+                                <td>Growth Phase I</td>
+                                <td>Year 2, Q1-Q2</td>
+                                <td>22 staff</td>
+                                <td>Client Concierge team, Regional Market Specialists, Event Team expansion</td>
+                                <td>Full yacht and event services, Brand activations</td>
+                            </tr>
+                            <tr>
+                                <td>Growth Phase II</td>
+                                <td>Year 2, Q3-Q4</td>
+                                <td>28 staff</td>
+                                <td>Fleet Managers, Expanded sales team, Dedicated Membership Managers</td>
+                                <td>Managed vessels, Expanded memberships</td>
+                            </tr>
+                            <tr>
+                                <td>Maturity</td>
+                                <td>Year 3</td>
+                                <td>35 staff</td>
+                                <td>Management layer, Specialized roles, Office teams in satellite locations</td>
+                                <td>Complete service range across all categories</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Key Roles & Responsibilities</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Responsibilities</th>
+                                <th>Required Experience</th>
+                                <th>Implementation Phase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>CEO/Founder</strong></td>
+                                <td>Strategic direction, investor relations, high-level partnerships, company vision, organizational leadership</td>
+                                <td>10+ years in luxury hospitality/yachting, entrepreneurial background, proven leadership</td>
+                                <td>Foundation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Charter Director</strong></td>
+                                <td>Oversee charter operations, fleet partnerships, charter negotiations, client experience standards, broker network development</td>
+                                <td>7+ years as charter broker, extensive network, destination expertise</td>
+                                <td>Foundation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Senior Charter Broker</strong></td>
+                                <td>Client relationship management, yacht matching, itinerary development, booking process management, upselling ancillary services</td>
+                                <td>5+ years direct charter sales, proven sales record, network of UHNWI clients</td>
+                                <td>Foundation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Marketing Director</strong></td>
+                                <td>Brand strategy, digital campaigns, content creation, PR coordination, marketing analytics, competitor research</td>
+                                <td>7+ years in luxury marketing, digital expertise, content strategy experience</td>
+                                <td>Foundation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Finance Manager</strong></td>
+                                <td>Financial projections, accounting oversight, cash flow management, vendor relationships, payment processing</td>
+                                <td>5+ years financial management, preferably with experience in travel/hospitality</td>
+                                <td>Expansion I</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Operations Manager</strong></td>
+                                <td>Logistics coordination, crew management, quality control, operational procedures, supplier management</td>
+                                <td>5+ years operations in yachting or luxury travel, problem-solving skills</td>
+                                <td>Expansion II</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Yacht Inspector</strong></td>
+                                <td>Technical assessments, compliance verification, quality standards enforcement, detailed documentation, crew evaluation</td>
+                                <td>Former captain or engineer with 5+ years experience, technical expertise</td>
+                                <td>Expansion II</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Destination Expert</strong></td>
+                                <td>Itinerary creation, local partner relationships, destination guides, experience curation, local regulations expertise</td>
+                                <td>3+ years as a charter planner or in destination management</td>
+                                <td>Expansion II</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Client Concierge</strong></td>
+                                <td>Personalized service delivery, client preference management, experience enhancements, VIP arrangements, special requests</td>
+                                <td>3+ years in luxury hospitality concierge services</td>
+                                <td>Growth</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Digital Marketing Specialist</strong></td>
+                                <td>SEO/SEM management, social media campaigns, email marketing, analytics, website optimization</td>
+                                <td>3+ years digital marketing for luxury brands</td>
+                                <td>Expansion I</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Training & Development</h3>
+                    <p>Azure Yacht Group will implement a comprehensive development program to ensure our team delivers exceptional service:</p>
+                    <ul>
+                        <li><strong>Onboarding Program:</strong> Intensive 2-week immersion in company culture, services, and processes</li>
+                        <li><strong>Yacht Familiarization:</strong> Regular vessel inspections and familiarization trips for all client-facing staff</li>
+                        <li><strong>Destination Training:</strong> Quarterly destination deep-dives with local partners to enhance regional expertise</li>
+                        <li><strong>Technical Certifications:</strong> Industry-specific qualifications including MYBA membership for brokers</li>
+                        <li><strong>Leadership Development:</strong> Management training for team leaders to enhance organizational capabilities</li>
+                        <li><strong>Client Service Excellence:</strong> Ongoing training in luxury service standards and high-net-worth client preferences</li>
+                    </ul>
+                    
+                    <h3>Performance Management</h3>
+                    <p>Our team performance will be measured through:</p>
+                    <ul>
+                        <li><strong>Individual KPIs:</strong> Role-specific metrics aligned with business objectives</li>
+                        <li><strong>Client Feedback:</strong> Direct client satisfaction ratings after each charter experience</li>
+                        <li><strong>Quarterly Reviews:</strong> Performance assessments with development planning</li>
+                        <li><strong>Team Incentives:</strong> Performance-based bonuses linked to company growth and client satisfaction</li>
+                        <li><strong>Career Progression:</strong> Clear advancement paths within the organization as we expand</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Legal Framework -->
+            <div class="plan-section">
+                <h2 class="section-title">12. Legal Framework</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group will establish a robust legal framework to protect the company, its investors, clients, and partners while ensuring full compliance with all applicable regulations in the luxury charter and event industries.</p>
+                    
+                    <h3>Corporate Structure</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Structure</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Primary Entity</td>
+                                <td>Delaware LLC</td>
+                                <td>Favorable legal protection, flexibility for investment, pass-through taxation, established legal precedent</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Entity</td>
+                                <td>Florida LLC (wholly-owned subsidiary)</td>
+                                <td>Local operation requirements, maritime law compliance, venue-specific licensing</td>
+                            </tr>
+                            <tr>
+                                <td>Future Expansion</td>
+                                <td>Single-member LLCs for each regional market</td>
+                                <td>Risk isolation, local regulatory compliance, simplified accounting</td>
+                            </tr>
+                            <tr>
+                                <td>Governance</td>
+                                <td>Member-managed initially, transitioning to manager-managed</td>
+                                <td>Efficient decision-making with appropriate oversight as organization grows</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Key Legal Documents</h3>
+                    <ul>
+                        <li><strong>Operating Agreement:</strong> Comprehensive document defining member rights, profit distribution, management structure, and exit provisions</li>
+                        <li><strong>Founder Agreements:</strong> Clear delineation of founder responsibilities, vesting schedules, IP assignment, and non-compete clauses</li>
+                        <li><strong>Investment Documents:</strong> Subscription agreements, convertible notes, or SAFE agreements depending on investor preference</li>
+                        <li><strong>Employment Agreements:</strong> Customized contracts for all staff with appropriate confidentiality, IP assignment, and non-solicitation clauses</li>
+                        <li><strong>Partner Agreements:</strong> Well-structured contracts with yacht owners outlining commission structure, quality standards, and liability allocations</li>
+                    </ul>
+                    
+                    <h3>Industry-Specific Regulatory Compliance</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Regulatory Area</th>
+                                <th>Required Licenses/Compliance</th>
+                                <th>Implementation Plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maritime Regulations</td>
+                                <td>
+                                    <ul>
+                                        <li>Coast Guard compliance</li>
+                                        <li>Maritime charter licensing</li>
+                                        <li>International water regulations</li>
+                                    </ul>
+                                </td>
+                                <td>Partner only with fully compliant vessels, maintain documentation library, quarterly compliance reviews</td>
+                            </tr>
+                            <tr>
+                                <td>Event Management</td>
+                                <td>
+                                    <ul>
+                                        <li>Event planner licensing</li>
+                                        <li>Venue permits</li>
+                                        <li>Food & beverage compliance</li>
+                                    </ul>
+                                </td>
+                                <td>Dedicated compliance manager, permitting process for each event, vendor verification system</td>
+                            </tr>
+                            <tr>
+                                <td>Insurance Requirements</td>
+                                <td>
+                                    <ul>
+                                        <li>Commercial liability ($5M minimum)</li>
+                                        <li>Maritime insurance</li>
+                                        <li>Event cancellation coverage</li>
+                                        <li>Professional liability</li>
+                                    </ul>
+                                </td>
+                                <td>Comprehensive insurance package, annual review with specialized broker, compliance verification for all partners</td>
+                            </tr>
+                            <tr>
+                                <td>Financial Regulations</td>
+                                <td>
+                                    <ul>
+                                        <li>Payment processing compliance</li>
+                                        <li>International transaction regulations</li>
+                                        <li>Tax reporting</li>
+                                    </ul>
+                                </td>
+                                <td>Secure merchant services provider, documented payment processes, quarterly financial compliance review</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Client Contracts & Risk Management</h3>
+                    <p>Our client contract framework is designed to provide clear expectations while managing risk appropriately:</p>
+                    <ul>
+                        <li><strong>Charter Agreements:</strong> Comprehensive contracts detailing all terms, conditions, cancellation policies, and liability limitations</li>
+                        <li><strong>Event Service Contracts:</strong> Detailed scope of work, payment terms, timeline deliverables, and change order protocols</li>
+                        <li><strong>Deposit Structure:</strong> 25% booking deposit, 50% due 90 days prior, remaining 25% due 30 days prior to service</li>
+                        <li><strong>Force Majeure:</strong> Clear provisions for weather events, mechanical failures, and other unforeseeable circumstances</li>
+                        <li><strong>Insurance Requirements:</strong> Specified coverage required for clients for certain charter/event types</li>
+                        <li><strong>Waiver System:</strong> Digital liability waiver process for all on-water activities</li>
+                    </ul>
+                    
+                    <h3>Intellectual Property Protection</h3>
+                    <p>We will implement a comprehensive IP protection strategy including:</p>
+                    <ul>
+                        <li><strong>Trademark Registration:</strong> "Azure Yacht Group" name and logo, service marks for key offerings</li>
+                        <li><strong>Copyright Protection:</strong> Website content, marketing materials, proprietary processes</li>
+                        <li><strong>Trade Secret Protection:</strong> Vendor relationships, client lists, proprietary sourcing methodologies</li>
+                        <li><strong>Technology IP:</strong> Custom booking platform, client management system, service delivery processes</li>
+                    </ul>
+                    
+                    <h3>Data Privacy & Security</h3>
+                    <p>Given the high-net-worth clientele, data security is paramount:</p>
+                    <ul>
+                        <li><strong>Privacy Policy:</strong> Comprehensive policy covering all data collection, usage, storage, and sharing</li>
+                        <li><strong>GDPR Compliance:</strong> Full compliance with international data protection standards</li>
+                        <li><strong>Data Security:</strong> Encrypted storage, secure payment processing, data access controls</li>
+                        <li><strong>Third-Party Agreements:</strong> Strong data protection clauses in all vendor and partner contracts</li>
+                        <li><strong>Breach Protocol:</strong> Defined response plan for any data security incidents</li>
+                    </ul>
+                    
+                    <h3>Legal Counsel & Advisors</h3>
+                    <p>We will establish relationships with specialized legal counsel in the following areas:</p>
+                    <ul>
+                        <li><strong>Corporate/Securities Attorney:</strong> Structure, investment, governance (firm commitment in place)</li>
+                        <li><strong>Maritime Law Specialist:</strong> Charter agreements, maritime regulations (consultation basis)</li>
+                        <li><strong>Employment Law:</strong> HR policies, contractor agreements (engagement planned for Month 2)</li>
+                        <li><strong>IP Attorney:</strong> Trademark, copyright protection (engagement planned for Month 3)</li>
+                    </ul>
+                    
+                    <h3>Implementation Timeline</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Timeframe</th>
+                                <th>Legal Framework Milestones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pre-Launch</td>
+                                <td>
+                                    <ul>
+                                        <li>Entity formation (Delaware LLC)</li>
+                                        <li>Operating Agreement completion</li>
+                                        <li>Founder agreements execution</li>
+                                        <li>Initial trademark application</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Month 1-2</td>
+                                <td>
+                                    <ul>
+                                        <li>Operating entity formation (Florida LLC)</li>
+                                        <li>Initial insurance policies secured</li>
+                                        <li>Standard client contract templates developed</li>
+                                        <li>Partner agreement templates finalized</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Month 3-6</td>
+                                <td>
+                                    <ul>
+                                        <li>Employee handbook and HR policies completed</li>
+                                        <li>Complete regulatory compliance checklist</li>
+                                        <li>Full insurance package implementation</li>
+                                        <li>Privacy policy and data security protocols finalized</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Month 7-12</td>
+                                <td>
+                                    <ul>
+                                        <li>Contract management system implementation</li>
+                                        <li>Regulatory compliance audit</li>
+                                        <li>International expansion legal research</li>
+                                        <li>IP portfolio development</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Investment Opportunity -->
+            <div class="plan-section">
+                <h2 class="section-title">13. Investment Opportunity</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group offers a compelling investment opportunity for partners seeking exposure to the luxury yacht charter and premium event services market. Our capital-efficient model, dual revenue streams, and strategic implementation plan create an attractive risk-return profile.</p>
+                    
+                    <h3>Investment Structure</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Investment Round</th>
+                                <th>Amount</th>
+                                <th>Equity Offered</th>
+                                <th>Timing</th>
+                                <th>Use of Funds</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Seed Round</td>
+                                <td>$120,000</td>
+                                <td>20%</td>
+                                <td>Immediate</td>
+                                <td>Business establishment, team building, initial marketing, technology platform</td>
+                            </tr>
+                            <tr>
+                                <td>Series A</td>
+                                <td>$300,000-$500,000</td>
+                                <td>15%</td>
+                                <td>Month 12-18</td>
+                                <td>Fleet acquisition, market expansion, team growth, technology enhancement</td>
+                            </tr>
+                            <tr>
+                                <td>Series B</td>
+                                <td>$1M-$1.5M</td>
+                                <td>12%</td>
+                                <td>Month 24-30</td>
+                                <td>Strategic acquisition, international expansion, significant fleet growth</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Ownership Structure</h3>
+                    <p>The initial investment of $120,000 will secure 20% equity in Azure Yacht Group, providing early stage investors with significant upside potential as the company scales. The ownership structure will be:</p>
+                    <ul>
+                        <li><strong>Founding Team:</strong> 70% equity</li>
+                        <li><strong>Seed Investor(s):</strong> 20% equity</li>
+                        <li><strong>Employee Option Pool:</strong> 10% equity (vesting over 4 years)</li>
+                    </ul>
+                    
+                    <h3>Return on Investment Projections</h3>
+                    <table class="service-table">
+                        <thead>
+                            <tr>
+                                <th>Timeline</th>
+                                <th>Revenue</th>
+                                <th>Company Valuation</th>
+                                <th>Value of Initial $120K (20%)</th>
+                                <th>ROI Multiple</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Year 1</td>
+                                <td>$1.5M</td>
+                                <td>$1.2M</td>
+                                <td>$240K</td>
+                                <td>2.0x</td>
+                            </tr>
+                            <tr>
+                                <td>Year 3</td>
+                                <td>$5.8M</td>
+                                <td>$4.6M</td>
+                                <td>$920K</td>
+                                <td>7.7x</td>
+                            </tr>
+                            <tr>
+                                <td>Year 5</td>
+                                <td>$12M</td>
+                                <td>$10.8M</td>
+                                <td>$2.16M</td>
+                                <td>18.0x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><em>Note: Company valuation is estimated at 0.8-0.9x annual revenue, which is conservative for the luxury services sector where similar businesses command 1.2-1.5x multiples. These projections are based on our financial model and industry benchmarks.</em></p>
+                    
+                    <h3>Investment Protection Mechanisms</h3>
+                    <ul>
+                        <li><strong>Board Representation:</strong> Seed investors receiving 20% equity will be entitled to board observer rights and quarterly financial reviews</li>
+                        <li><strong>Preferred Equity Structure:</strong> 1x liquidation preference ensures investors receive their capital back before common shareholders</li>
+                        <li><strong>Anti-Dilution Protection:</strong> Down-round protection to safeguard early investor interests</li>
+                        <li><strong>Information Rights:</strong> Monthly financial reports and quarterly business updates</li>
+                        <li><strong>Key Investment Milestones:</strong> Clearly defined performance metrics and reporting schedule</li>
+                    </ul>
+                    
+                    <h3>Exit Strategy Options</h3>
+                    <p>We anticipate multiple potential exit opportunities for investors within a 5-7 year timeframe:</p>
+                    <ol>
+                        <li><strong>Strategic Acquisition:</strong> Sale to a larger luxury travel group, hospitality company, or yacht management firm seeking to expand their service offerings (primary exit strategy)</li>
+                        <li><strong>Private Equity Sale:</strong> Secondary sale to a private equity firm specializing in luxury hospitality and lifestyle brands</li>
+                        <li><strong>Management Buyback:</strong> Option for founding team to repurchase investor shares based on agreed-upon valuation formula</li>
+                        <li><strong>Dividend Structure:</strong> After reaching profitability milestones in Year 3, implementing a dividend structure that returns 30-40% of profits to shareholders</li>
+                    </ol>
+                    
+                    <h3>Risk Mitigation Strategy for Investors</h3>
+                    <ul>
+                        <li><strong>Asset-Light Model:</strong> Initial focus on partner vessels minimizes capital risk while building revenue streams</li>
+                        <li><strong>Diversified Revenue:</strong> Dual focus on yacht charters and event services provides protection against market fluctuations</li>
+                        <li><strong>Realistic Financial Projections:</strong> Conservative growth assumptions with cushioned cash flow management</li>
+                        <li><strong>Experienced Management:</strong> Leadership team with proven track record in luxury hospitality and event management</li>
+                        <li><strong>Clear Performance Metrics:</strong> Transparent KPIs with quarterly investor updates and performance reviews</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="plan-section">
+                <h2 class="section-title">14. Conclusion</h2>
+                <div class="plan-content">
+                    <p>Azure Yacht Group is positioned to capitalize on the growing demand for luxury yacht charter experiences by offering exceptional service, a curated fleet, and deep destination expertise. By focusing on our core competitive advantages and executing our strategic plan, we project strong financial performance and the establishment of a premium brand in the global yacht charter market.</p>
+                    <p>The combination of our experienced leadership team, innovative approach to service delivery, and sustainable business practices provides a strong foundation for long-term success. We invite potential investors and partners to join us on this journey to redefine excellence in luxury yacht charters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating language switcher -->
+    <div class="floating-language-switch">
+        <a href="business-plan.html" class="lang-active">EN</a>
+        <div class="lang-separator"></div>
+        <a href="business-plan-ru.html">RU</a>
+    </div>
+
+    <script>
+        // Add custom "contains" function to handle text search in elements
+        Element.prototype.contains = function(text) {
+            return this.textContent.includes(text);
+        };
+        
+        // Helper function to get the next element of a certain type
+        function getNextElementUntil(startElement, targetTag) {
+            let currentElement = startElement;
+            while (currentElement.nextElementSibling) {
+                currentElement = currentElement.nextElementSibling;
+                if (currentElement.tagName.toLowerCase() === targetTag.toLowerCase()) {
+                    return currentElement;
+                }
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>
