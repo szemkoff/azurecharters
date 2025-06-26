@@ -1,3 +1,8 @@
+---
+title: Partner Referral Simple Solutions
+sidebar_label: Partner Referral Simple Solutions
+---
+
 # Simple Partner Referral Solutions (No Webhooks Required)
 
 ## Overview
