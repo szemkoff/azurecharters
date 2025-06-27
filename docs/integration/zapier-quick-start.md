@@ -1,0 +1,205 @@
+# Zapier Free Plan Quick Start for Azure Yacht Group
+
+## 🚀 **Get Your Referral System Running in 30 Minutes**
+
+**Perfect choice!** Zapier's free plan gives you everything you need to start tracking referrals immediately. Here's your streamlined setup guide.
+
+---
+
+## ✅ **30-Minute Implementation Checklist**
+
+### **Step 1: Google Sheets Setup (10 minutes)**
+
+1. **Create new Google Sheet:** [Go to sheets.google.com](https://sheets.google.com)
+2. **Name it:** "Azure Yacht Group - Referrals"
+3. **Create 4 tabs:** Partners | Referrals | Monthly Summary | Settings
+
+**Copy-paste these headers:**
+
+**Partners Tab (Row 1):**
+```
+Partner ID | Name | Email | Phone | Status | Join Date | Zelle Info | Referral Code | Total Referrals | Total Earned | Last Payment | Notes
+```
+
+**Referrals Tab (Row 1):**
+```
+Date | Customer | Customer Email | Partner Code | Retail Price | Your Revenue | Commission | Status | Charter Date | Payment Date | Payment Ref | Notes
+```
+
+**Add this formula in Commission column (H2):**
+```
+=IF(G2="","",IF(G2<=300,100,IF(G2<=500,150,IF(G2<=800,200,300))))
+```
+
+### **Step 2: Zapier Automations (15 minutes)**
+
+**You get 5 free automations - use 3 for referrals:**
+
+#### **Zap 1: Log New Referrals**
+- **Trigger:** Trello → Card moved to "Proposal"
+- **Action:** Google Sheets → Add row to Referrals tab
+- **Filter:** Card description contains "PARTNER:"
+
+#### **Zap 2: Notify Partners**
+- **Trigger:** Google Sheets → New row in Referrals
+- **Action:** Gmail → Send notification email
+
+#### **Zap 3: Update Revenue**
+- **Trigger:** Trello → Card moved to "Completed"
+- **Action:** Google Sheets → Update commission status
+
+### **Step 3: Trello Card Format (5 minutes)**
+
+**Use this exact format in card descriptions:**
+```
+PARTNER: AZURE-JOHN
+CUSTOMER: john.doe@email.com
+RETAIL: 5000
+REVENUE: 300
+CHARTER: 2/15/2025
+
+Additional notes...
+```
+
+---
+
+## 🎯 **Your Free Plan Limits & Strategy**
+
+### **What You Get FREE:**
+- ✅ **100 tasks/month** (≈30 referrals)
+- ✅ **5 automations** (3 for referrals + 2 spare)
+- ✅ **15-minute intervals** (fast enough for referrals)
+- ✅ **Single-step Zaps** (perfect for this setup)
+
+### **Smart Usage Strategy:**
+- **Primary focus:** High-value yacht charter referrals
+- **Track carefully:** ~30 referrals/month = $15K-45K potential revenue
+- **Upgrade trigger:** When you hit 80 tasks consistently
+
+### **Cost vs. Revenue:**
+- **Your investment:** $0/month
+- **Conservative estimate:** 30 referrals × $1,000 avg commission = $30,000/month
+- **ROI:** Infinite (free plan) 
+
+---
+
+## 📊 **Monthly Workflow (20 minutes/month)**
+
+### **Week 1-3: Daily (2 minutes)**
+1. Move Trello cards with PARTNER format
+2. Verify automations fired correctly
+3. Check partner emails were sent
+
+### **Month-end (15 minutes)**
+1. **Export commission report** from Google Sheets
+2. **Process Zelle payments** to partners
+3. **Update "Last Payment" column**
+4. **Send monthly partner summary**
+
+---
+
+## 🔧 **Pro Tips for Free Plan Success**
+
+### **Maximize Your 100 Tasks:**
+- **Use filters wisely** - Only trigger on cards with "PARTNER:"
+- **Combine actions** - One Zap does multiple sheet updates
+- **Manual backup** - Keep secondary tracking method
+
+### **Scale Efficiently:**
+- **Start selective** - Only track referrals over $3,000
+- **Quality over quantity** - Focus on high-value partners
+- **Monitor usage** - Zapier shows task consumption
+
+### **Upgrade Indicators:**
+- **Hitting 80+ tasks consistently**
+- **Need for multi-step Zaps**
+- **Want faster than 15-minute intervals**
+
+---
+
+## 📈 **Growth Path with Zapier**
+
+### **Current: Free Plan**
+- 30 referrals/month capacity
+- Perfect for testing and initial growth
+
+### **Next: Starter Plan ($19.99/month)**
+- 750 tasks/month = 250+ referrals
+- Multi-step Zaps for complex workflows
+- 2-minute intervals
+
+### **Future: Professional Plan ($49/month)**
+- Unlimited basic features
+- Premium apps integration
+- Advanced formatting
+
+---
+
+## 🎯 **Why This Beats Premium Solutions (For Now)**
+
+### **Zapier Free vs. $400/month Referral Rock:**
+- ✅ **$0 vs $400/month** - Save $4,800 annually
+- ✅ **Same core functionality** - Track, notify, pay
+- ✅ **100% customizable** - Build exactly what you need
+- ✅ **No vendor lock-in** - Your data stays yours
+
+### **When to Consider Upgrading:**
+- Consistently processing 80+ referrals/month
+- Need advanced fraud detection
+- Want professional partner portals
+- Require white-label branding
+
+---
+
+## 🚀 **Ready to Launch?**
+
+### **Today's Action Items:**
+1. **Set up Google Sheets** (10 minutes)
+2. **Create 3 Zapier automations** (15 minutes)
+3. **Test with dummy data** (5 minutes)
+4. **Add 3-5 initial partners** to spreadsheet
+
+### **This Week:**
+1. **Invite first 10 partners** with referral codes
+2. **Create partner onboarding email template**
+3. **Test full workflow** with real Trello card
+
+### **This Month:**
+1. **Track performance** - aim for 10-15 referrals
+2. **Optimize commission structure** based on results
+3. **Expand to 20-30 partner network**
+
+---
+
+## 📞 **Need Help?**
+
+**Quick Questions:** Check the [full Zapier implementation guide](zapier-implementation-guide.md)
+
+**Technical Issues:** 
+- Zapier has excellent help docs
+- Google Sheets support is comprehensive
+- Community forums for troubleshooting
+
+**Strategy Questions:** 
+- Monitor your metrics monthly
+- A/B test commission amounts
+- Survey partners for feedback
+
+---
+
+## 🎉 **Bottom Line**
+
+You're making a smart choice! Starting with Zapier's free plan lets you:
+
+- **Validate the referral model** without upfront costs
+- **Learn what works** before investing in premium tools
+- **Scale gradually** as revenue grows
+- **Keep 100% of early profits** to reinvest
+
+**Your potential with just the free plan:** $30,000+ monthly referral revenue for $0 investment.
+
+**Get started now** - your first referral partner could be booking a charter this week!
+
+---
+
+**Next:** Follow the [complete Zapier implementation guide](zapier-implementation-guide.md) for detailed setup instructions. 
