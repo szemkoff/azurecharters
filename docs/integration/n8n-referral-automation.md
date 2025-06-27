@@ -30,22 +30,71 @@ Complete automation solution using n8n (open-source alternative to Zapier) for A
 - **Zelle** - Payment processing
 
 ### Hosting Options
-1. **n8n Cloud** - $20/month, fully managed
-2. **Self-hosted** - Free, requires server setup
-3. **DigitalOcean Droplet** - $5/month + n8n free
+
+#### Free Options (Recommended for Getting Started)
+1. **Oracle Cloud Always Free Tier** - FREE forever, 24GB RAM ARM instance
+2. **Railway** - $5 monthly usage credits (free for light usage)
+3. **Render** - Free tier for web services with limitations
+4. **AWS Free Tier** - 12 months free EC2 instance
+5. **Fly.io** - $5 monthly allowance (effectively free for small apps)
+6. **IBM Cloud Lite** - Free tier for Docker apps
+7. **Coolify** - Self-hosted PaaS (free on your own server)
+
+#### Paid Options
+8. **n8n Cloud** - $20/month, fully managed
+9. **Sliplane** - €9/month, one-click deployment
+10. **DigitalOcean** - $5/month VPS
+11. **Hetzner** - €3.79/month VPS (Europe)
 
 ---
 
 ## 📋 Phase 1: n8n Setup (15 minutes)
 
-### Option A: n8n Cloud (Recommended)
+### Option A: Oracle Cloud Always Free (Recommended - FREE Forever)
 
-1. **Sign up at [n8n.cloud](https://n8n.cloud)**
-2. **Choose Starter plan** ($20/month)
-3. **Create new workflow**
-4. **Connect integrations** (Google Sheets, Trello, HubSpot, Gmail)
+**Why Oracle Cloud?**
+- ✅ **Truly free forever** (not a trial)
+- ✅ **24GB RAM + 4 ARM CPUs** (more than enough for n8n)
+- ✅ **200GB storage** included
+- ✅ **No credit card required** after initial verification
+- ✅ **Professional-grade infrastructure**
 
-### Option B: Self-Hosted (Advanced)
+**Setup Steps:**
+1. **Sign up at [Oracle Cloud](https://cloud.oracle.com/)**
+2. **Create Compute Instance** (ARM-based VM)
+3. **Install Docker** and configure firewall
+4. **Deploy n8n** with persistent storage
+5. **Configure SSL** with Let's Encrypt
+
+**Detailed Tutorial:** [Complete Oracle Cloud n8n Setup Guide](https://github.com/that-one-tom/n8n-on-oracle-vm)
+
+### Option B: Railway (Easiest Setup - $5 Monthly Credits)
+
+**Perfect for beginners:**
+1. **Sign up at [Railway](https://railway.app)**
+2. **Deploy from template** (one-click n8n deployment)
+3. **Get instant URL** - no configuration needed
+4. **$5 monthly credits** covers most automation needs
+
+**Setup Time:** 5 minutes
+
+### Option C: Render (Free Tier with Limitations)
+
+**Good for testing:**
+1. **Sign up at [Render](https://render.com)**
+2. **Create Web Service** from Docker
+3. **Use image:** `n8nio/n8n:latest`
+4. **Free tier** with sleep after inactivity
+
+### Option D: AWS Free Tier (12 Months Free)
+
+**For AWS users:**
+1. **Launch EC2 t2.micro** instance
+2. **Install Docker** and configure security groups
+3. **Deploy n8n** with EBS storage
+4. **Free for 12 months** (750 hours/month)
+
+### Option E: Self-Hosted Local (Development)
 
 ```bash
 # Install n8n locally
@@ -57,17 +106,13 @@ n8n start
 # Access at http://localhost:5678
 ```
 
-### Option C: DigitalOcean Deployment
+### Option F: Coolify (Self-Hosted PaaS)
 
-```bash
-# Create droplet with n8n pre-installed
-# Or use Docker:
-docker run -it --rm \
-  --name n8n \
-  -p 5678:5678 \
-  -v ~/.n8n:/home/node/.n8n \
-  n8nio/n8n
-```
+**If you have your own server:**
+1. **Install Coolify** on your VPS
+2. **Deploy n8n** through Coolify dashboard
+3. **Automatic SSL** and domain management
+4. **Heroku-like experience** on your hardware
 
 ---
 
@@ -401,19 +446,182 @@ const migrateZapierData = async () => {
 
 ## 💰 Cost Comparison
 
-### Zapier vs n8n
+### Complete Hosting Cost Analysis
 
-| Feature | Zapier Free | Zapier Paid | n8n Cloud | n8n Self-Hosted |
-|---------|-------------|-------------|-----------|-----------------|
-| **Workflows** | 5 | 20+ | Unlimited | Unlimited |
-| **Tasks/Month** | 100 | 750+ | Unlimited | Unlimited |
-| **Cost** | $0 | $19.99+ | $20 | $5 (server) |
-| **Advanced Logic** | Limited | Limited | Full | Full |
-| **Custom Code** | No | Limited | Yes | Yes |
-| **Error Handling** | Basic | Basic | Advanced | Advanced |
-| **Self-Hosted** | No | No | No | Yes |
+| **Platform** | **Monthly Cost** | **Setup Time** | **Resources** | **Limitations** | **Best For** |
+|--------------|------------------|----------------|---------------|-----------------|--------------|
+| **Oracle Cloud Free** | **$0 Forever** | 30 min | 24GB RAM, 4 ARM CPUs, 200GB | None | **Production use** |
+| **Railway** | **$0-5** | 5 min | 2GB RAM, 2 vCPU | $5 usage credits | **Quick prototypes** |
+| **Render** | **$0** | 10 min | 512MB RAM | Sleeps when inactive | **Testing/demos** |
+| **AWS Free Tier** | **$0** (12 months) | 20 min | 1GB RAM, 1 vCPU | 12-month limit | **Learning AWS** |
+| **Fly.io** | **$0-5** | 15 min | 256MB RAM | $5 monthly allowance | **Global edge** |
+| **IBM Cloud Lite** | **$0** | 25 min | 1GB RAM | Limited resources | **IBM ecosystem** |
+| **Coolify** | **$0** (+ server) | 45 min | Depends on server | Need own server | **Self-hosted PaaS** |
+| **Sliplane** | **€9** | 5 min | 2GB RAM, 2 vCPU | Paid only | **Managed simplicity** |
+| **n8n Cloud** | **$20** | 2 min | Managed | Vendor lock-in | **Zero maintenance** |
+| **DigitalOcean** | **$5** | 25 min | 1GB RAM, 1 vCPU | Manual setup | **Traditional VPS** |
+| **Hetzner** | **€3.79** | 30 min | 4GB RAM, 2 vCPU | EU-focused | **Best price/performance** |
 
-**Recommendation:** n8n Cloud ($20/month) for best balance of features and convenience.
+### Zapier vs n8n Cost Breakdown
+
+| **Usage Level** | **Zapier Cost** | **n8n (Oracle Free)** | **n8n (Railway)** | **Savings** |
+|-----------------|-----------------|----------------------|-------------------|-------------|
+| **100 tasks/month** | $0 (free) | **$0** | **$0** | Equal |
+| **750 tasks/month** | $19.99 | **$0** | **$0-5** | **$15-20/month** |
+| **2000 tasks/month** | $49 | **$0** | **$0-5** | **$44-49/month** |
+| **10,000 tasks/month** | $99+ | **$0** | **$0-5** | **$94-99/month** |
+| **50,000 tasks/month** | $299+ | **$0** | **$0-5** | **$294-299/month** |
+
+**Annual Savings with Oracle Cloud Free:** **$180-3,588** compared to Zapier
+
+**Recommendation:** 
+- **Start with Oracle Cloud Always Free** for maximum value
+- **Use Railway** for fastest setup if you prefer managed hosting
+- **Upgrade to n8n Cloud** only if you need enterprise support
+
+---
+
+## 🆓 Quick Start: Oracle Cloud Free Setup (30 minutes)
+
+### Why Oracle Cloud Always Free is the Best Choice
+
+**Unbeatable Value:**
+- ✅ **$3,588 annual value** completely free
+- ✅ **24GB RAM + 4 ARM CPUs** (more powerful than $20/month n8n Cloud)
+- ✅ **200GB storage** + 10TB monthly bandwidth
+- ✅ **No time limits** - free forever, not a trial
+- ✅ **Enterprise-grade infrastructure** with 99.95% uptime SLA
+
+### Step-by-Step Setup Guide
+
+#### 1. Create Oracle Cloud Account (5 minutes)
+```bash
+# Visit: https://cloud.oracle.com/
+# Click "Start for free"
+# Complete registration (credit card for verification only - not charged)
+# Verify email and phone
+```
+
+#### 2. Create Compute Instance (10 minutes)
+```bash
+# In Oracle Cloud Console:
+# 1. Go to Compute → Instances
+# 2. Click "Create Instance"
+# 3. Choose "Always Free Eligible" shape
+# 4. Select Ubuntu 22.04 (ARM-based)
+# 5. Download SSH private key
+# 6. Create instance
+```
+
+#### 3. Configure Security (5 minutes)
+```bash
+# Add ingress rules to Security List:
+# - Port 80 (HTTP): 0.0.0.0/0
+# - Port 443 (HTTPS): 0.0.0.0/0
+# - Port 5678 (n8n): 0.0.0.0/0 (temporary)
+```
+
+#### 4. Install n8n with Docker (10 minutes)
+```bash
+# SSH into your instance
+ssh -i private_key.pem ubuntu@your_instance_ip
+
+# Update system
+sudo apt update && sudo apt upgrade -y
+
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+
+# Install Docker Compose
+sudo apt install docker-compose -y
+
+# Create n8n directory
+mkdir n8n-docker && cd n8n-docker
+
+# Create docker-compose.yml
+cat > docker-compose.yml << 'EOF'
+version: '3.8'
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=your_instance_ip
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://your_instance_ip:5678/
+    volumes:
+      - n8n_data:/home/node/.n8n
+volumes:
+  n8n_data:
+EOF
+
+# Start n8n
+docker-compose up -d
+
+# Check status
+docker-compose ps
+```
+
+#### 5. Access Your n8n Instance
+```bash
+# Open browser to: http://your_instance_ip:5678
+# Create admin account
+# Start building workflows!
+```
+
+### Optional: Add SSL with Let's Encrypt (15 minutes)
+```bash
+# Install Nginx and Certbot
+sudo apt install nginx certbot python3-certbot-nginx -y
+
+# Configure Nginx reverse proxy
+sudo tee /etc/nginx/sites-available/n8n << 'EOF'
+server {
+    listen 80;
+    server_name your_domain.com;
+    
+    location / {
+        proxy_pass http://localhost:5678;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+EOF
+
+# Enable site and get SSL
+sudo ln -s /etc/nginx/sites-available/n8n /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+sudo certbot --nginx -d your_domain.com
+```
+
+### Troubleshooting Common Issues
+
+**Can't connect to instance:**
+- Check Security List allows port 5678
+- Verify instance public IP
+- Ensure Ubuntu firewall allows traffic: `sudo ufw allow 5678`
+
+**n8n won't start:**
+- Check Docker logs: `docker-compose logs n8n`
+- Verify disk space: `df -h`
+- Restart services: `docker-compose restart`
+
+**Out of Oracle Cloud capacity:**
+- Try different availability domains
+- Consider different regions
+- Oracle occasionally adds capacity
 
 ---
 
