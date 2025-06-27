@@ -103,6 +103,7 @@ const sidebars = {
       items: [
         'integration/referral-system-overview',
         'integration/zapier-implementation-guide',
+        'integration/n8n-referral-automation',
         'integration/hubspot-referral-integration',
         'integration/google-sheets-filtered-views-setup',
         'integration/partner-application',
