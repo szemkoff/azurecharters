@@ -19,10 +19,11 @@ Create professional forms that integrate seamlessly with your Google Sheets-HubS
 - **Recommended Solution:** Google Forms (FREE)
 - **Setup Guide:** [Partner Application Form Setup](/docs/integration/partner-application-form-setup)
 
-### **2. Customer Inquiry Form**
+### **2. Customer Inquiry Form** ⭐ **PRIMARY PRIORITY**
 - **Purpose:** Capture yacht charter leads from website
-- **Integration:** HubSpot CRM + Trello automation
-- **Recommended Solution:** HubSpot Forms (FREE)
+- **Integration:** HubSpot embedded in Tilda + partner tracking via URL parameters
+- **Recommended Solution:** HubSpot Forms embedded in Tilda (FREE)
+- **Setup Guide:** [Customer Inquiry Form Setup](/docs/integration/customer-inquiry-form-setup)
 
 ### **3. Referral Submission Form**
 - **Purpose:** Partners submit referrals directly
@@ -92,10 +93,11 @@ Create professional forms that integrate seamlessly with your Google Sheets-HubS
 - **Result:** Professional partner application process
 - **Guide:** [Partner Application Form Setup](/docs/integration/partner-application-form-setup)
 
-### **Phase 2: Customer Inquiry (Week 1)**
-- **Setup:** HubSpot Forms + Trello integration
-- **Time:** 10 minutes
-- **Result:** Lead capture with automatic CRM entry
+### **Phase 2: Customer Inquiry (Week 1)** ⭐ **TOP PRIORITY**
+- **Setup:** HubSpot Forms embedded in Tilda + partner tracking + Zapier automation
+- **Time:** 15 minutes
+- **Result:** Professional lead capture with partner attribution and automated workflows
+- **Guide:** [Customer Inquiry Form Setup](/docs/integration/customer-inquiry-form-setup)
 
 ### **Phase 3: Referral Submission (Week 2)**
 - **Setup:** Google Forms + Zapier + Trello

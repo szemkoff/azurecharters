@@ -106,6 +106,7 @@ const sidebars = {
         'integration/hubspot-referral-integration',
         'integration/google-sheets-filtered-views-setup',
         'integration/forms-overview',
+        'integration/customer-inquiry-form-setup',
         'integration/partner-application',
         'integration/partner-application-form-setup',
         'integration/partner-booklet',
