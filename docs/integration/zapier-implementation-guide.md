@@ -156,14 +156,14 @@ B1: Referrals     D1: Total Paid       F1: Pending Amount    H1: Total Expenses
 - **Spreadsheet:** Azure Yacht Group - Referral System
 - **Worksheet:** Referrals
 - **Mapping:**
-  - Referral ID: `REF-{{zap_meta_human_now_date}}`
-  - Date: `{{date}}`
-  - Customer: `{{card_name}}`
+  - Referral ID: `REF-\{\{zap_meta_human_now_date\}\}`
+  - Date: `\{\{date\}\}`
+  - Customer: `\{\{card_name\}\}`
   - Partner Code: Extract from card description
   - Retail Price: Extract from card description  
   - Your Revenue: Extract from card description
   - Status: "Pending"
-  - Trello Card ID: `{{card_id}}`
+  - Trello Card ID: `\{\{card_id\}\}`
   - Created By: "Zapier"
 
 **Filter:** Only if card description contains "PARTNER:"
@@ -176,17 +176,17 @@ B1: Referrals     D1: Total Paid       F1: Pending Amount    H1: Total Expenses
 
 **Action:** Gmail - Send Email
 - **To:** Partner email (lookup from Partners tab)
-- **Subject:** "New Referral Logged - {{Customer Name}}"
+- **Subject:** "New Referral Logged - \{\{Customer Name\}\}"
 - **Body:**
 ```
-Hi {{Partner Name}},
+Hi \{\{Partner Name\}\},
 
 Great news! Your referral has been logged in our system.
 
 🎯 REFERRAL DETAILS
-Customer: {{Customer Name}}
-Referral ID: {{Referral ID}}
-Commission: ${{Commission}}
+Customer: \{\{Customer Name\}\}
+Referral ID: \{\{Referral ID\}\}
+Commission: $\{\{Commission\}\}
 Status: Pending
 
 📊 TRACK YOUR PROGRESS
