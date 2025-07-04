@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-integration/forms-overview" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">Forms Overview | Azure Yacht Group Framework</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurecharters/docs/integration/forms-overview"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Forms Overview | Azure Yacht Group Framework"><meta data-rh="true" name="description" content="🎯 Overview"><meta data-rh="true" property="og:description" content="🎯 Overview"><link data-rh="true" rel="icon" href="/azurecharters/img/azure_corp_mark_black.png"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurecharters/docs/integration/forms-overview"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/integration/forms-overview" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/integration/forms-overview" hreflang="x-default"><link rel="stylesheet" href="/azurecharters/assets/css/styles.4de2acbe.css">
+<script src="/azurecharters/assets/js/runtime~main.437e2efd.js" defer="defer"></script>
+<script src="/azurecharters/assets/js/main.56c94e45.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/azurecharters/"><div class="navbar__logo"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Azure Yacht Group</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurecharters/docs/getting-started">Framework</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/intro">Introduction to the Charter Framework</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/framework-overview">Framework Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/business-model">Business Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/technology-stack">Technology Stack</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/website-architecture/overview">Website Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/legal-framework/">Legal Framework</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/website-content/">Website Content</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/development/cursor-integration">Development</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/tilda-api/overview">Tilda API</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/azurecharters/docs/integration/referral-system-overview">Referral System</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/referral-system-overview">System Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/zapier-implementation-guide">Zapier Setup Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/hubspot-referral-integration">HubSpot Referral Integration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup">Partner Dashboard Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurecharters/docs/integration/forms-overview">Forms Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/partner-application">Partner Application Form Template</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/partner-application-form-setup">Application Form Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/partner-booklet">Azure Yacht Group - Referral Partner Booklet</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/partner-agreement">Azure Yacht Group - Referral Partner Agreement</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/resources/templates">Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/azurecharters/docs/PROJECT_PLAN">Project Status</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a href="https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md" target="_blank" rel="noopener noreferrer" class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false">External Documentation</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurecharters/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Referral System</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Forms Overview</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Forms for Azure Yacht Group</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-overview">🎯 Overview<a href="#-overview" class="hash-link" aria-label="Direct link to 🎯 Overview" title="Direct link to 🎯 Overview">​</a></h2>
+<p>Create professional forms that integrate seamlessly with your Google Sheets-HubSpot-Trello-Zapier referral system. This guide covers all form types you need and the best solutions for each.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-form-types-needed">📋 <strong>Form Types Needed</strong><a href="#-form-types-needed" class="hash-link" aria-label="Direct link to -form-types-needed" title="Direct link to -form-types-needed">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-partner-application-form"><strong>1. Partner Application Form</strong><a href="#1-partner-application-form" class="hash-link" aria-label="Direct link to 1-partner-application-form" title="Direct link to 1-partner-application-form">​</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Collect partner applications for referral program</li>
+<li><strong>Integration:</strong> Google Sheets + Zapier automation</li>
+<li><strong>Recommended Solution:</strong> Google Forms (FREE)</li>
+<li><strong>Setup Guide:</strong> <a href="/azurecharters/docs/integration/partner-application-form-setup">Partner Application Form Setup</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-customer-inquiry-form"><strong>2. Customer Inquiry Form</strong><a href="#2-customer-inquiry-form" class="hash-link" aria-label="Direct link to 2-customer-inquiry-form" title="Direct link to 2-customer-inquiry-form">​</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Capture yacht charter leads from website</li>
+<li><strong>Integration:</strong> HubSpot CRM + Trello automation</li>
+<li><strong>Recommended Solution:</strong> HubSpot Forms (FREE)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-referral-submission-form"><strong>3. Referral Submission Form</strong><a href="#3-referral-submission-form" class="hash-link" aria-label="Direct link to 3-referral-submission-form" title="Direct link to 3-referral-submission-form">​</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Partners submit referrals directly</li>
+<li><strong>Integration:</strong> Google Sheets + Trello card creation</li>
+<li><strong>Recommended Solution:</strong> Google Forms (FREE)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-quote-request-form"><strong>4. Quote Request Form</strong><a href="#4-quote-request-form" class="hash-link" aria-label="Direct link to 4-quote-request-form" title="Direct link to 4-quote-request-form">​</a></h3>
+<ul>
+<li><strong>Purpose:</strong> Detailed charter requirements from customers</li>
+<li><strong>Integration:</strong> HubSpot + Trello with full customer data</li>
+<li><strong>Recommended Solution:</strong> HubSpot Forms (FREE)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-recommended-form-solutions">🚀 <strong>Recommended Form Solutions</strong><a href="#-recommended-form-solutions" class="hash-link" aria-label="Direct link to -recommended-form-solutions" title="Direct link to -recommended-form-solutions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-forms-primary-choice"><strong>Google Forms (Primary Choice)</strong><a href="#google-forms-primary-choice" class="hash-link" aria-label="Direct link to google-forms-primary-choice" title="Direct link to google-forms-primary-choice">​</a></h3>
+<p><strong>Best for:</strong> Partner applications, referral submissions, internal forms</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>✅ <strong>Completely FREE</strong> - No monthly costs</li>
+<li>✅ <strong>Native Google Sheets integration</strong> - Automatic data collection</li>
+<li>✅ <strong>Professional appearance</strong> - Clean, mobile-friendly design</li>
+<li>✅ <strong>Advanced features</strong> - Conditional logic, file uploads, validation</li>
+<li>✅ <strong>Zapier integration</strong> - Trigger automations when forms are submitted</li>
+<li>✅ <strong>Easy customization</strong> - Themes, branding, custom confirmation messages</li>
+</ul>
+<p><strong>Perfect Integration:</strong></p>
+<ul>
+<li>Form responses → Google Sheets → Zapier → Email notifications</li>
+<li>Automatic partner onboarding workflow</li>
+<li>Seamless data collection for your existing system</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hubspot-forms-secondary-choice"><strong>HubSpot Forms (Secondary Choice)</strong><a href="#hubspot-forms-secondary-choice" class="hash-link" aria-label="Direct link to hubspot-forms-secondary-choice" title="Direct link to hubspot-forms-secondary-choice">​</a></h3>
+<p><strong>Best for:</strong> Customer lead generation, quote requests, CRM integration</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>✅ <strong>Included in HubSpot Free</strong> - No additional cost</li>
+<li>✅ <strong>Native CRM integration</strong> - Contacts automatically created</li>
+<li>✅ <strong>Lead scoring</strong> - Automatic qualification based on form responses</li>
+<li>✅ <strong>Professional templates</strong> - Pre-designed form layouts</li>
+<li>✅ <strong>Advanced tracking</strong> - Form analytics and conversion tracking</li>
+<li>✅ <strong>Progressive profiling</strong> - Collect more data over time</li>
+</ul>
+<p><strong>Perfect Integration:</strong></p>
+<ul>
+<li>Form submissions → HubSpot contacts → Lead scoring → Trello cards</li>
+<li>Automated follow-up sequences</li>
+<li>Professional customer relationship management</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tilda-forms-website-integration"><strong>Tilda Forms (Website Integration)</strong><a href="#tilda-forms-website-integration" class="hash-link" aria-label="Direct link to tilda-forms-website-integration" title="Direct link to tilda-forms-website-integration">​</a></h3>
+<p><strong>Best for:</strong> Forms embedded directly in your website</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>✅ <strong>Seamless website integration</strong> - Matches your site design perfectly</li>
+<li>✅ <strong>Professional appearance</strong> - Consistent branding throughout</li>
+<li>✅ <strong>Mobile optimized</strong> - Works perfectly on all devices</li>
+<li>✅ <strong>Integration options</strong> - Can connect to Google Sheets or HubSpot</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-form-implementation-plan">📊 <strong>Form Implementation Plan</strong><a href="#-form-implementation-plan" class="hash-link" aria-label="Direct link to -form-implementation-plan" title="Direct link to -form-implementation-plan">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-1-partner-application-week-1"><strong>Phase 1: Partner Application (Week 1)</strong><a href="#phase-1-partner-application-week-1" class="hash-link" aria-label="Direct link to phase-1-partner-application-week-1" title="Direct link to phase-1-partner-application-week-1">​</a></h3>
+<ul>
+<li><strong>Setup:</strong> Google Forms + Google Sheets + Zapier</li>
+<li><strong>Time:</strong> 15 minutes</li>
+<li><strong>Result:</strong> Professional partner application process</li>
+<li><strong>Guide:</strong> <a href="/azurecharters/docs/integration/partner-application-form-setup">Partner Application Form Setup</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-2-customer-inquiry-week-1"><strong>Phase 2: Customer Inquiry (Week 1)</strong><a href="#phase-2-customer-inquiry-week-1" class="hash-link" aria-label="Direct link to phase-2-customer-inquiry-week-1" title="Direct link to phase-2-customer-inquiry-week-1">​</a></h3>
+<ul>
+<li><strong>Setup:</strong> HubSpot Forms + Trello integration</li>
+<li><strong>Time:</strong> 10 minutes</li>
+<li><strong>Result:</strong> Lead capture with automatic CRM entry</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-3-referral-submission-week-2"><strong>Phase 3: Referral Submission (Week 2)</strong><a href="#phase-3-referral-submission-week-2" class="hash-link" aria-label="Direct link to phase-3-referral-submission-week-2" title="Direct link to phase-3-referral-submission-week-2">​</a></h3>
+<ul>
+<li><strong>Setup:</strong> Google Forms + Zapier + Trello</li>
+<li><strong>Time:</strong> 10 minutes</li>
+<li><strong>Result:</strong> Partners can submit referrals directly</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="phase-4-quote-request-week-2"><strong>Phase 4: Quote Request (Week 2)</strong><a href="#phase-4-quote-request-week-2" class="hash-link" aria-label="Direct link to phase-4-quote-request-week-2" title="Direct link to phase-4-quote-request-week-2">​</a></h3>
+<ul>
+<li><strong>Setup:</strong> HubSpot Forms + Advanced workflows</li>
+<li><strong>Time:</strong> 15 minutes</li>
+<li><strong>Result:</strong> Detailed customer requirements collection</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-quick-setup-guides">🔧 <strong>Quick Setup Guides</strong><a href="#-quick-setup-guides" class="hash-link" aria-label="Direct link to -quick-setup-guides" title="Direct link to -quick-setup-guides">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customer-inquiry-form-hubspot"><strong>Customer Inquiry Form (HubSpot)</strong><a href="#customer-inquiry-form-hubspot" class="hash-link" aria-label="Direct link to customer-inquiry-form-hubspot" title="Direct link to customer-inquiry-form-hubspot">​</a></h3>
+<p><strong>Setup Time:</strong> 10 minutes</p>
+<ol>
+<li><strong>Go to HubSpot → Marketing → Forms</strong></li>
+<li><strong>Create new form:</strong> &quot;Yacht Charter Inquiry&quot;</li>
+<li><strong>Add fields:</strong>
+<ul>
+<li>Name (required)</li>
+<li>Email (required)</li>
+<li>Phone (required)</li>
+<li>Charter Date (date picker)</li>
+<li>Group Size (number)</li>
+<li>Budget Range (dropdown)</li>
+<li>Special Requirements (textarea)</li>
+</ul>
+</li>
+<li><strong>Set up automation:</strong>
+<ul>
+<li>Create contact in HubSpot</li>
+<li>Send notification email</li>
+<li>Create Trello card via Zapier</li>
+</ul>
+</li>
+<li><strong>Embed on website</strong></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="referral-submission-form-google-forms"><strong>Referral Submission Form (Google Forms)</strong><a href="#referral-submission-form-google-forms" class="hash-link" aria-label="Direct link to referral-submission-form-google-forms" title="Direct link to referral-submission-form-google-forms">​</a></h3>
+<p><strong>Setup Time:</strong> 10 minutes</p>
+<ol>
+<li><strong>Create Google Form:</strong> &quot;Submit a Referral&quot;</li>
+<li><strong>Add fields:</strong>
+<ul>
+<li>Your Partner Code (required)</li>
+<li>Customer Name (required)</li>
+<li>Customer Email (required)</li>
+<li>Customer Phone (required)</li>
+<li>Charter Interest (dropdown)</li>
+<li>Budget Range (dropdown)</li>
+<li>Notes (textarea)</li>
+</ul>
+</li>
+<li><strong>Connect to Google Sheets</strong></li>
+<li><strong>Set up Zapier automation:</strong>
+<ul>
+<li>Create Trello card</li>
+<li>Send confirmation email</li>
+<li>Update referral tracking</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quote-request-form-hubspot"><strong>Quote Request Form (HubSpot)</strong><a href="#quote-request-form-hubspot" class="hash-link" aria-label="Direct link to quote-request-form-hubspot" title="Direct link to quote-request-form-hubspot">​</a></h3>
+<p><strong>Setup Time:</strong> 15 minutes</p>
+<ol>
+<li><strong>Create HubSpot form:</strong> &quot;Request Charter Quote&quot;</li>
+<li><strong>Add comprehensive fields:</strong>
+<ul>
+<li>Contact information</li>
+<li>Charter details (dates, duration, destination)</li>
+<li>Group information (size, age ranges, special needs)</li>
+<li>Yacht preferences (size, amenities, style)</li>
+<li>Budget and payment preferences</li>
+<li>Special requirements</li>
+</ul>
+</li>
+<li><strong>Set up advanced workflows:</strong>
+<ul>
+<li>Lead scoring based on budget/group size</li>
+<li>Automated follow-up sequences</li>
+<li>Internal notifications with priority levels</li>
+<li>Trello card creation with full details</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-form-design-best-practices">🎨 <strong>Form Design Best Practices</strong><a href="#-form-design-best-practices" class="hash-link" aria-label="Direct link to -form-design-best-practices" title="Direct link to -form-design-best-practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="visual-design"><strong>Visual Design</strong><a href="#visual-design" class="hash-link" aria-label="Direct link to visual-design" title="Direct link to visual-design">​</a></h3>
+<ul>
+<li><strong>Consistent branding</strong> - Use Azure Yacht Group colors and fonts</li>
+<li><strong>Professional imagery</strong> - Yacht photos as headers/backgrounds</li>
+<li><strong>Mobile-first design</strong> - Ensure perfect mobile experience</li>
+<li><strong>Progress indicators</strong> - Show completion progress on long forms</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-experience"><strong>User Experience</strong><a href="#user-experience" class="hash-link" aria-label="Direct link to user-experience" title="Direct link to user-experience">​</a></h3>
+<ul>
+<li><strong>Logical flow</strong> - Group related questions together</li>
+<li><strong>Clear labels</strong> - Use descriptive field names</li>
+<li><strong>Help text</strong> - Provide examples and guidance</li>
+<li><strong>Error handling</strong> - Clear validation messages</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conversion-optimization"><strong>Conversion Optimization</strong><a href="#conversion-optimization" class="hash-link" aria-label="Direct link to conversion-optimization" title="Direct link to conversion-optimization">​</a></h3>
+<ul>
+<li><strong>Minimal required fields</strong> - Only ask for essential information</li>
+<li><strong>Smart defaults</strong> - Pre-populate when possible</li>
+<li><strong>Social proof</strong> - Include testimonials or partner logos</li>
+<li><strong>Clear value proposition</strong> - Explain benefits of submitting</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-form-analytics--tracking">📈 <strong>Form Analytics &amp; Tracking</strong><a href="#-form-analytics--tracking" class="hash-link" aria-label="Direct link to -form-analytics--tracking" title="Direct link to -form-analytics--tracking">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-forms-analytics"><strong>Google Forms Analytics</strong><a href="#google-forms-analytics" class="hash-link" aria-label="Direct link to google-forms-analytics" title="Direct link to google-forms-analytics">​</a></h3>
+<ul>
+<li><strong>Response summary</strong> - Built-in analytics dashboard</li>
+<li><strong>Response trends</strong> - Track submissions over time</li>
+<li><strong>Individual responses</strong> - Review each submission</li>
+<li><strong>Export data</strong> - Download responses for analysis</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hubspot-form-analytics"><strong>HubSpot Form Analytics</strong><a href="#hubspot-form-analytics" class="hash-link" aria-label="Direct link to hubspot-form-analytics" title="Direct link to hubspot-form-analytics">​</a></h3>
+<ul>
+<li><strong>Conversion rates</strong> - Track form performance</li>
+<li><strong>Traffic sources</strong> - See where visitors come from</li>
+<li><strong>A/B testing</strong> - Test different form versions</li>
+<li><strong>Attribution reporting</strong> - Connect forms to revenue</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-metrics-to-track"><strong>Key Metrics to Track</strong><a href="#key-metrics-to-track" class="hash-link" aria-label="Direct link to key-metrics-to-track" title="Direct link to key-metrics-to-track">​</a></h3>
+<ul>
+<li><strong>Form completion rate</strong> - Percentage who complete after starting</li>
+<li><strong>Source attribution</strong> - Which marketing channels drive submissions</li>
+<li><strong>Quality scores</strong> - Rate of qualified leads from each form</li>
+<li><strong>Time to conversion</strong> - How long from form to booking</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-integration-workflows">🔄 <strong>Integration Workflows</strong><a href="#-integration-workflows" class="hash-link" aria-label="Direct link to -integration-workflows" title="Direct link to -integration-workflows">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="partner-application-workflow"><strong>Partner Application Workflow</strong><a href="#partner-application-workflow" class="hash-link" aria-label="Direct link to partner-application-workflow" title="Direct link to partner-application-workflow">​</a></h3>
+<ol>
+<li><strong>Google Form submission</strong> → Google Sheets</li>
+<li><strong>Zapier trigger</strong> → Email notification</li>
+<li><strong>Manual review</strong> → Approval/rejection decision</li>
+<li><strong>Approved partners</strong> → Add to main referral system</li>
+<li><strong>Welcome package</strong> → Dashboard access + materials</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customer-inquiry-workflow"><strong>Customer Inquiry Workflow</strong><a href="#customer-inquiry-workflow" class="hash-link" aria-label="Direct link to customer-inquiry-workflow" title="Direct link to customer-inquiry-workflow">​</a></h3>
+<ol>
+<li><strong>HubSpot form submission</strong> → Contact created</li>
+<li><strong>Lead scoring</strong> → Automatic qualification</li>
+<li><strong>Zapier trigger</strong> → Trello card creation</li>
+<li><strong>Automated follow-up</strong> → Email sequence begins</li>
+<li><strong>Sales team notification</strong> → Personal outreach</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="referral-submission-workflow"><strong>Referral Submission Workflow</strong><a href="#referral-submission-workflow" class="hash-link" aria-label="Direct link to referral-submission-workflow" title="Direct link to referral-submission-workflow">​</a></h3>
+<ol>
+<li><strong>Google Form submission</strong> → Referral tracking sheet</li>
+<li><strong>Zapier trigger</strong> → Trello card creation</li>
+<li><strong>Partner notification</strong> → Confirmation email</li>
+<li><strong>Commission calculation</strong> → Automatic formula</li>
+<li><strong>Status updates</strong> → Real-time dashboard updates</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-cost-comparison">💰 <strong>Cost Comparison</strong><a href="#-cost-comparison" class="hash-link" aria-label="Direct link to -cost-comparison" title="Direct link to -cost-comparison">​</a></h2>
+<table><thead><tr><th>Solution</th><th>Monthly Cost</th><th>Features</th><th>Best For</th></tr></thead><tbody><tr><td><strong>Google Forms</strong></td><td><strong>FREE</strong></td><td>Unlimited forms, basic analytics</td><td>Partner applications, internal forms</td></tr><tr><td><strong>HubSpot Forms</strong></td><td><strong>FREE</strong></td><td>CRM integration, lead scoring, automation</td><td>Customer lead generation</td></tr><tr><td><strong>Tilda Forms</strong></td><td><strong>Included</strong></td><td>Website integration, design matching</td><td>Embedded website forms</td></tr><tr><td><strong>Typeform</strong></td><td>$25+</td><td>Advanced design, conversational flow</td><td>Premium customer experience</td></tr><tr><td><strong>JotForm</strong></td><td>$24+</td><td>Advanced features, payment integration</td><td>Complex forms with payments</td></tr></tbody></table>
+<p><strong>Recommendation:</strong> Stick with Google Forms + HubSpot Forms for zero monthly costs and perfect integration with your existing system.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-getting-started">🚀 <strong>Getting Started</strong><a href="#-getting-started" class="hash-link" aria-label="Direct link to -getting-started" title="Direct link to -getting-started">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="this-week"><strong>This Week:</strong><a href="#this-week" class="hash-link" aria-label="Direct link to this-week" title="Direct link to this-week">​</a></h3>
+<ol>
+<li><strong>Set up partner application form</strong> using Google Forms</li>
+<li><strong>Create customer inquiry form</strong> in HubSpot</li>
+<li><strong>Test both forms</strong> with sample data</li>
+<li><strong>Set up Zapier automations</strong></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-week"><strong>Next Week:</strong><a href="#next-week" class="hash-link" aria-label="Direct link to next-week" title="Direct link to next-week">​</a></h3>
+<ol>
+<li><strong>Add referral submission form</strong></li>
+<li><strong>Create quote request form</strong></li>
+<li><strong>Embed forms on website</strong></li>
+<li><strong>Launch partner recruitment campaign</strong></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ongoing"><strong>Ongoing:</strong><a href="#ongoing" class="hash-link" aria-label="Direct link to ongoing" title="Direct link to ongoing">​</a></h3>
+<ol>
+<li><strong>Monitor form analytics</strong> monthly</li>
+<li><strong>Optimize based on performance</strong></li>
+<li><strong>A/B test different versions</strong></li>
+<li><strong>Collect feedback from users</strong></li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-support--resources">📞 <strong>Support &amp; Resources</strong><a href="#-support--resources" class="hash-link" aria-label="Direct link to -support--resources" title="Direct link to -support--resources">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-forms-help"><strong>Google Forms Help</strong><a href="#google-forms-help" class="hash-link" aria-label="Direct link to google-forms-help" title="Direct link to google-forms-help">​</a></h3>
+<ul>
+<li><a href="https://support.google.com/forms" target="_blank" rel="noopener noreferrer">Google Forms Help Center</a></li>
+<li><a href="https://support.google.com/forms/answer/6281888" target="_blank" rel="noopener noreferrer">Form customization guide</a></li>
+<li><a href="https://zapier.com/apps/google-forms/integrations" target="_blank" rel="noopener noreferrer">Zapier Google Forms integration</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hubspot-forms-help"><strong>HubSpot Forms Help</strong><a href="#hubspot-forms-help" class="hash-link" aria-label="Direct link to hubspot-forms-help" title="Direct link to hubspot-forms-help">​</a></h3>
+<ul>
+<li><a href="https://knowledge.hubspot.com/forms" target="_blank" rel="noopener noreferrer">HubSpot Forms documentation</a></li>
+<li><a href="https://blog.hubspot.com/marketing/form-optimization-guide" target="_blank" rel="noopener noreferrer">Form optimization guide</a></li>
+<li><a href="https://zapier.com/apps/hubspot/integrations" target="_blank" rel="noopener noreferrer">HubSpot-Zapier integration</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-resources"><strong>Design Resources</strong><a href="#design-resources" class="hash-link" aria-label="Direct link to design-resources" title="Direct link to design-resources">​</a></h3>
+<ul>
+<li><a href="/azurecharters/docs/resources/templates">Azure Yacht Group brand guidelines</a></li>
+<li><a href="https://blog.hubspot.com/marketing/form-design-best-practices" target="_blank" rel="noopener noreferrer">Form design best practices</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ux/input/forms" target="_blank" rel="noopener noreferrer">Mobile form optimization</a></li>
+</ul>
+<p>Your forms are now ready to capture leads, applications, and referrals while integrating seamlessly with your Google Sheets-HubSpot-Trello-Zapier system! 🎯</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/integration/forms-overview.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Partner Dashboard Setup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/partner-application"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Partner Application Form Template</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-overview" class="table-of-contents__link toc-highlight">🎯 Overview</a></li><li><a href="#-form-types-needed" class="table-of-contents__link toc-highlight">📋 <strong>Form Types Needed</strong></a><ul><li><a href="#1-partner-application-form" class="table-of-contents__link toc-highlight"><strong>1. Partner Application Form</strong></a></li><li><a href="#2-customer-inquiry-form" class="table-of-contents__link toc-highlight"><strong>2. Customer Inquiry Form</strong></a></li><li><a href="#3-referral-submission-form" class="table-of-contents__link toc-highlight"><strong>3. Referral Submission Form</strong></a></li><li><a href="#4-quote-request-form" class="table-of-contents__link toc-highlight"><strong>4. Quote Request Form</strong></a></li></ul></li><li><a href="#-recommended-form-solutions" class="table-of-contents__link toc-highlight">🚀 <strong>Recommended Form Solutions</strong></a><ul><li><a href="#google-forms-primary-choice" class="table-of-contents__link toc-highlight"><strong>Google Forms (Primary Choice)</strong></a></li><li><a href="#hubspot-forms-secondary-choice" class="table-of-contents__link toc-highlight"><strong>HubSpot Forms (Secondary Choice)</strong></a></li><li><a href="#tilda-forms-website-integration" class="table-of-contents__link toc-highlight"><strong>Tilda Forms (Website Integration)</strong></a></li></ul></li><li><a href="#-form-implementation-plan" class="table-of-contents__link toc-highlight">📊 <strong>Form Implementation Plan</strong></a><ul><li><a href="#phase-1-partner-application-week-1" class="table-of-contents__link toc-highlight"><strong>Phase 1: Partner Application (Week 1)</strong></a></li><li><a href="#phase-2-customer-inquiry-week-1" class="table-of-contents__link toc-highlight"><strong>Phase 2: Customer Inquiry (Week 1)</strong></a></li><li><a href="#phase-3-referral-submission-week-2" class="table-of-contents__link toc-highlight"><strong>Phase 3: Referral Submission (Week 2)</strong></a></li><li><a href="#phase-4-quote-request-week-2" class="table-of-contents__link toc-highlight"><strong>Phase 4: Quote Request (Week 2)</strong></a></li></ul></li><li><a href="#-quick-setup-guides" class="table-of-contents__link toc-highlight">🔧 <strong>Quick Setup Guides</strong></a><ul><li><a href="#customer-inquiry-form-hubspot" class="table-of-contents__link toc-highlight"><strong>Customer Inquiry Form (HubSpot)</strong></a></li><li><a href="#referral-submission-form-google-forms" class="table-of-contents__link toc-highlight"><strong>Referral Submission Form (Google Forms)</strong></a></li><li><a href="#quote-request-form-hubspot" class="table-of-contents__link toc-highlight"><strong>Quote Request Form (HubSpot)</strong></a></li></ul></li><li><a href="#-form-design-best-practices" class="table-of-contents__link toc-highlight">🎨 <strong>Form Design Best Practices</strong></a><ul><li><a href="#visual-design" class="table-of-contents__link toc-highlight"><strong>Visual Design</strong></a></li><li><a href="#user-experience" class="table-of-contents__link toc-highlight"><strong>User Experience</strong></a></li><li><a href="#conversion-optimization" class="table-of-contents__link toc-highlight"><strong>Conversion Optimization</strong></a></li></ul></li><li><a href="#-form-analytics--tracking" class="table-of-contents__link toc-highlight">📈 <strong>Form Analytics &amp; Tracking</strong></a><ul><li><a href="#google-forms-analytics" class="table-of-contents__link toc-highlight"><strong>Google Forms Analytics</strong></a></li><li><a href="#hubspot-form-analytics" class="table-of-contents__link toc-highlight"><strong>HubSpot Form Analytics</strong></a></li><li><a href="#key-metrics-to-track" class="table-of-contents__link toc-highlight"><strong>Key Metrics to Track</strong></a></li></ul></li><li><a href="#-integration-workflows" class="table-of-contents__link toc-highlight">🔄 <strong>Integration Workflows</strong></a><ul><li><a href="#partner-application-workflow" class="table-of-contents__link toc-highlight"><strong>Partner Application Workflow</strong></a></li><li><a href="#customer-inquiry-workflow" class="table-of-contents__link toc-highlight"><strong>Customer Inquiry Workflow</strong></a></li><li><a href="#referral-submission-workflow" class="table-of-contents__link toc-highlight"><strong>Referral Submission Workflow</strong></a></li></ul></li><li><a href="#-cost-comparison" class="table-of-contents__link toc-highlight">💰 <strong>Cost Comparison</strong></a></li><li><a href="#-getting-started" class="table-of-contents__link toc-highlight">🚀 <strong>Getting Started</strong></a><ul><li><a href="#this-week" class="table-of-contents__link toc-highlight"><strong>This Week:</strong></a></li><li><a href="#next-week" class="table-of-contents__link toc-highlight"><strong>Next Week:</strong></a></li><li><a href="#ongoing" class="table-of-contents__link toc-highlight"><strong>Ongoing:</strong></a></li></ul></li><li><a href="#-support--resources" class="table-of-contents__link toc-highlight">📞 <strong>Support &amp; Resources</strong></a><ul><li><a href="#google-forms-help" class="table-of-contents__link toc-highlight"><strong>Google Forms Help</strong></a></li><li><a href="#hubspot-forms-help" class="table-of-contents__link toc-highlight"><strong>HubSpot Forms Help</strong></a></li><li><a href="#design-resources" class="table-of-contents__link toc-highlight"><strong>Design Resources</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
