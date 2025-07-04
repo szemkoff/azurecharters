@@ -7,12 +7,13 @@ sidebar_label: System Overview
 
 ## 🎯 System Overview
 
-Our referral system rewards partners for bringing quality yacht charter leads with complete transparency and automated tracking. Built entirely on free tools with zero monthly costs.
+Our referral system rewards partners for bringing quality yacht charter leads with complete transparency and automated tracking. Built entirely on the Google Sheets-HubSpot-Trello-Zapier stack with zero monthly costs.
 
 **Key Features:**
 - ✅ **$100-300 commission per booking**
 - ✅ **Real-time partner dashboards** via Google Sheets filtered views
 - ✅ **Automated tracking** integrated with your Trello workflow
+- ✅ **HubSpot CRM integration** for professional lead management
 - ✅ **Monthly Zelle payments** with full transparency
 - ✅ **Zero monthly costs** - scales to 100+ partners
 
@@ -37,7 +38,7 @@ Our hybrid commission model based on your actual revenue:
 ### Technology Stack
 
 **Complete System Components:**
-- **Zapier** - 5 automations, 100 tasks/month
+- **Zapier** - 5 automations, 100 tasks/month (3 for partner tracking + 2 for HubSpot)
 - **Google Sheets** - Partner dashboards, filtered views & financial tracking
 - **Trello** - Lead management integration
 - **HubSpot** - CRM integration, lead scoring, automated follow-up sequences
@@ -52,60 +53,29 @@ Partner referrals automatically integrate with your existing HubSpot CRM for uni
 **Personal Dashboard Access:**
 Each partner gets a personalized Google Sheets link showing only their data:
 - Real-time referral status updates
-- Commission calculations and payment tracking
-- Performance metrics and history
-- Mobile-friendly access from any device
+- Commission calculations
+- Payment history
+- Performance metrics
 
-**Sample Partner View:**
-```
-John's Referral Dashboard
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Partner Experience:**
+- Instant email notifications when referrals are logged
+- Live dashboard updates via filtered Google Sheets views
+- Monthly payment summaries
+- Complete transparency into the referral process
 
-📈 PERFORMANCE SUMMARY
-Total Referrals: 8
-Total Earned: $1,250
-This Month: $450
-Pending Payments: $350
+## 🔄 Automated Workflow
 
-📋 RECENT REFERRALS
-Date      Customer      Status       Revenue   Commission   Payment
-1/28/25   Mike Smith    Qualified    $800      $200         Pending
-1/22/25   Jane Doe      Active       $500      $150         Pending  
-1/15/25   Bob Wilson    Paid         $300      $100         ✅ 2/1/25
-```
+### Step-by-Step Process
 
-## 🔄 Workflow Integration
-
-### System Flow Diagram
-
-```mermaid
-graph TD
-    A["🎯 Partner Submits Referral"] --> B["📝 Create Trello Card<br/>PARTNER: CODE<br/>RETAIL: Amount<br/>REVENUE: Your Cut"]
-    
-    B --> C["📋 Move to 'Proposal'"]
-    C --> D["⚡ Zapier: Log to Sheets<br/>Calculate commission"]
-    C --> E["⚡ Zapier: Create HubSpot contact<br/>CRM integration"]
-    
-    D --> F["📊 Google Sheets Dashboard<br/>Real-time partner tracking"]
-    E --> G["🤖 HubSpot: Lead scoring<br/>Automated client follow-up"]
-    
-    F --> H["📧 Partner notification<br/>'Referral logged - $X commission'"]
-    
-    B --> I["📋 Move to 'Completed'"]
-    I --> J["💰 Monthly Zelle payment<br/>Update payment status"]
-    
-    style A fill:#e1f5fe
-    style F fill:#f3e5f5
-    style G fill:#fff3e0
-```
-
-### Current Trello Process
-Your existing workflow remains unchanged:
-**New Lead** → **Proposal** ⚡*Auto-trigger* → **Review** → **Scheduled** → **Follow up** → **Completed**
-
-### Automated Processing
-1. **Partner submits referral** - Via email template or direct contact
-2. **Create Trello card** - Add referral data (PARTNER: CODE, RETAIL: Amount, REVENUE: Your Cut)
+1. **Partner sends referral** - Customer mentions partner code during booking
+2. **Create Trello card** - Add card with standardized format:
+   ```
+   PARTNER: AZURE-JOHN
+   CUSTOMER: john.doe@email.com
+   RETAIL: 5000
+   REVENUE: 300
+   CHARTER: 2/15/2025
+   ```
 3. **Move to "Proposal"** - Triggers dual automation:
    - **Zapier → Google Sheets**: Logs referral data, calculates commission
    - **Zapier → HubSpot**: Creates contact record, triggers lead scoring
@@ -135,10 +105,11 @@ Your existing workflow remains unchanged:
 
 ### Quick Start Setup
 
-**Complete Implementation (45 minutes total):**
-1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (25 minutes) - Partner tracking system
+**Complete Implementation (30 minutes total):**
+1. **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** (30 minutes) - Complete partner tracking system
 2. **[HubSpot Integration Guide](/docs/integration/hubspot-referral-integration)** (20 minutes) - CRM integration
-3. **[Create partner materials](/docs/integration/partner-application)** (10 minutes) - Partner onboarding
+3. **[Google Sheets Filtered Views Setup](/docs/integration/google-sheets-filtered-views-setup)** (15 minutes) - Partner dashboards
+4. **[Create partner materials](/docs/integration/partner-application)** (10 minutes) - Partner onboarding
 
 ### Partner Onboarding
 1. **Partner applies** using application form
@@ -165,13 +136,13 @@ Your existing workflow remains unchanged:
 
 ### Essential Setup Guides
 - **[Zapier Implementation Guide](/docs/integration/zapier-implementation-guide)** - Complete automation setup
-- **[Partner Dashboard Setup](/docs/integration/google-sheets-filtered-views-setup)** - Google Sheets configuration
+- **[Google Sheets Filtered Views Setup](/docs/integration/google-sheets-filtered-views-setup)** - Partner dashboard configuration
+- **[HubSpot Integration Guide](/docs/integration/hubspot-referral-integration)** - CRM integration
+
+### Partner Materials
 - **[Partner Application](/docs/integration/partner-application)** - Partner onboarding form
 - **[Partner Agreement](/docs/integration/partner-agreement)** - Legal framework and terms
 - **[Partner Booklet](/docs/integration/partner-booklet)** - Marketing materials for partners
-
-### System Integration Guides
-- **[HubSpot Integration](/docs/integration/hubspot-referral-integration)** - Connect referral system to your existing HubSpot CRM
 
 ### System Management
 - Monthly commission processing workflow
@@ -179,4 +150,19 @@ Your existing workflow remains unchanged:
 - Quality control and fraud prevention
 - System scaling and growth planning
 
-This referral system provides professional-grade partner management while maintaining zero monthly costs and requiring minimal maintenance time. The filtered views approach ensures partners have complete transparency while keeping your data secure and centralized. 
+## 🔧 System Advantages
+
+### Why This Solution Works
+- **Zero Monthly Costs** - Built entirely on free tiers
+- **Professional Integration** - HubSpot CRM for lead management
+- **Complete Automation** - Minimal manual intervention required
+- **Scalable Architecture** - Handles growth from 5 to 100+ partners
+- **Partner Transparency** - Real-time dashboards and notifications
+- **Data Ownership** - Your data stays in your systems
+
+### Upgrade Path
+- **Current:** Free plan supports 30 referrals/month
+- **Growth:** Zapier Starter ($19.99/month) supports 250+ referrals/month
+- **Enterprise:** Professional tools available when needed
+
+This referral system provides professional-grade partner management while maintaining zero monthly costs and requiring minimal maintenance time. The Google Sheets filtered views approach ensures partners have complete transparency while keeping your data secure and centralized. 
