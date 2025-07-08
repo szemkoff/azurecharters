@@ -3,171 +3,435 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">HubSpot Properties Setup Guide - Azure Yacht Group | Azure Yacht Group Framework</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="HubSpot Properties Setup Guide - Azure Yacht Group | Azure Yacht Group Framework"><meta data-rh="true" name="description" content="Prerequisites"><meta data-rh="true" property="og:description" content="Prerequisites"><link data-rh="true" rel="icon" href="/azurecharters/img/azure_corp_mark_black.png"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"HubSpot Properties Setup Guide - Azure Yacht Group","item":"https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"}]}</script><link rel="stylesheet" href="/azurecharters/assets/css/styles.d7fc2d79.css">
-<script src="/azurecharters/assets/js/runtime~main.d8cd7bc3.js" defer="defer"></script>
+<title data-rh="true">HubSpot Properties Manual Setup | Azure Yacht Group Framework</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="HubSpot Properties Manual Setup | Azure Yacht Group Framework"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/azurecharters/img/azure_corp_mark_black.png"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"HubSpot Properties","item":"https://szemkoff.github.io/azurecharters/docs/hubspot-properties-setup"}]}</script><link rel="stylesheet" href="/azurecharters/assets/css/styles.d7fc2d79.css">
+<script src="/azurecharters/assets/js/runtime~main.626dea79.js" defer="defer"></script>
 <script src="/azurecharters/assets/js/main.283ac6a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
 <symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/azurecharters/"><div class="navbar__logo"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Azure Yacht Group</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurecharters/docs/getting-started">Framework</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/intro">Introduction to the Charter Framework</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/framework-overview">Framework Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/business-model">Business Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/technology-stack">Technology Stack</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/website-architecture/overview">Website Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/legal-framework/">Legal Framework</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/website-content/">Website Content</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/development/cursor-integration">Development</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/tilda-api/overview">Tilda API</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/azurecharters/docs/integration/referral-system-overview">Referral System</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/referral-system-overview">System Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/system-architecture">System Architecture</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/azurecharters/docs/integration/zapier-implementation-guide">System Setup</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/zapier-implementation-guide">Zapier Setup Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurecharters/docs/hubspot-properties-setup">HubSpot Properties Setup Guide - Azure Yacht Group</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/hubspot-referral-integration">HubSpot Referral Integration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup">Partner Dashboard Setup</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/azurecharters/docs/integration/forms-overview">Forms &amp; Applications</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/azurecharters/docs/integration/partner-application">Partner Materials</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/resources/templates">Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/PROJECT_PLAN">Project Status</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a href="https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md" target="_blank" rel="noopener noreferrer" class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false">External Documentation</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurecharters/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Referral System</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">System Setup</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">HubSpot Properties Setup Guide - Azure Yacht Group</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>HubSpot Properties Setup Guide - Azure Yacht Group</h1></header>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
-<ol>
-<li><strong>HubSpot Account</strong> with API access</li>
-<li><strong>Node.js</strong> version 18 or higher</li>
-<li><strong>HubSpot API Key</strong> with property creation permissions</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="quick-setup-5-minutes">Quick Setup (5 minutes)<a href="#quick-setup-5-minutes" class="hash-link" aria-label="Direct link to Quick Setup (5 minutes)" title="Direct link to Quick Setup (5 minutes)">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-install-dependencies">Step 1: Install Dependencies<a href="#step-1-install-dependencies" class="hash-link" aria-label="Direct link to Step 1: Install Dependencies" title="Direct link to Step 1: Install Dependencies">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-configure-environment-variables">Step 2: Configure Environment Variables<a href="#step-2-configure-environment-variables" class="hash-link" aria-label="Direct link to Step 2: Configure Environment Variables" title="Direct link to Step 2: Configure Environment Variables">​</a></h3>
-<p>Create a <code>.env</code> file in your project root:</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># HubSpot API Configuration</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">HUBSPOT_API_KEY=your_hubspot_api_key_here</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">HUBSPOT_PORTAL_ID=your_hubspot_portal_id_here</span><br></span></code></pre></div></div>
-<p><strong>How to get your credentials:</strong></p>
-<ol>
-<li><strong>API Key</strong>: HubSpot → Settings → Integrations → API key</li>
-<li><strong>Portal ID</strong>: Found in your HubSpot URL or Settings → Account Setup → Account Information</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-run-property-setup">Step 3: Run Property Setup<a href="#step-3-run-property-setup" class="hash-link" aria-label="Direct link to Step 3: Run Property Setup" title="Direct link to Step 3: Run Property Setup">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm run setup-hubspot</span><br></span></code></pre></div></div>
-<p>This will create all 58 custom properties across 11 property groups.</p>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-property-reference-tables">Complete Property Reference Tables<a href="#complete-property-reference-tables" class="hash-link" aria-label="Direct link to Complete Property Reference Tables" title="Direct link to Complete Property Reference Tables">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact-properties-35-total">Contact Properties (35 total)<a href="#contact-properties-35-total" class="hash-link" aria-label="Direct link to Contact Properties (35 total)" title="Direct link to Contact Properties (35 total)">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-charter-information-group-7-properties">1. Charter Information Group (7 properties)<a href="#1-charter-information-group-7-properties" class="hash-link" aria-label="Direct link to 1. Charter Information Group (7 properties)" title="Direct link to 1. Charter Information Group (7 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>yacht_charter_interest</code></td><td>Yacht Charter Interest</td><td>Dropdown</td><td>Sailing Yacht, Motor Yacht, Catamaran, Superyacht, Luxury Yacht, Sport Fishing, Other</td><td>Type of yacht client is interested in</td></tr><tr><td><code>charter_budget_range</code></td><td>Charter Budget Range</td><td>Dropdown</td><td>Under $10,000, $10,000-$25,000, $25,000-$50,000, $50,000-$100,000, $100,000-$250,000, $250,000+, Flexible</td><td>Client&#x27;s budget range for charter</td></tr><tr><td><code>charter_date_preference</code></td><td>Charter Date Preference</td><td>Date</td><td>-</td><td>Preferred charter start date</td></tr><tr><td><code>group_size</code></td><td>Group Size</td><td>Number</td><td>-</td><td>Number of guests for charter</td></tr><tr><td><code>charter_duration</code></td><td>Charter Duration</td><td>Dropdown</td><td>1-3 days, 4-7 days, 1-2 weeks, 2-3 weeks, 1 month+, Flexible</td><td>Length of charter desired</td></tr><tr><td><code>charter_destination</code></td><td>Charter Destination</td><td>Dropdown</td><td>Caribbean, Mediterranean, South Pacific, Atlantic Coast, Gulf Coast, Great Lakes, Other</td><td>Preferred charter destination</td></tr><tr><td><code>special_requirements</code></td><td>Special Requirements</td><td>Text Area</td><td>-</td><td>Any special needs or requests</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-communication-preferences-group-2-properties">2. Communication Preferences Group (2 properties)<a href="#2-communication-preferences-group-2-properties" class="hash-link" aria-label="Direct link to 2. Communication Preferences Group (2 properties)" title="Direct link to 2. Communication Preferences Group (2 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>preferred_contact_method</code></td><td>Preferred Contact Method</td><td>Dropdown</td><td>Email, Phone, Text/SMS, WhatsApp, Video Call</td><td>How client prefers to be contacted</td></tr><tr><td><code>best_time_to_contact</code></td><td>Best Time to Contact</td><td>Dropdown</td><td>Morning (9-12), Afternoon (12-5), Evening (5-8), Weekend, Anytime</td><td>When client prefers to be contacted</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-partner-tracking-group-3-properties">3. Partner Tracking Group (3 properties)<a href="#3-partner-tracking-group-3-properties" class="hash-link" aria-label="Direct link to 3. Partner Tracking Group (3 properties)" title="Direct link to 3. Partner Tracking Group (3 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>referral_partner_id</code></td><td>Referral Partner ID</td><td>Text</td><td>-</td><td>Unique identifier for referring partner</td></tr><tr><td><code>referral_partner_name</code></td><td>Referral Partner Name</td><td>Text</td><td>-</td><td>Name of the referring partner</td></tr><tr><td><code>is_referral_lead</code></td><td>Is Referral Lead</td><td>Checkbox</td><td>-</td><td>Whether this lead came from a partner</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-form-tracking-group-3-properties">4. Form Tracking Group (3 properties)<a href="#4-form-tracking-group-3-properties" class="hash-link" aria-label="Direct link to 4. Form Tracking Group (3 properties)" title="Direct link to 4. Form Tracking Group (3 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>form_submission_date</code></td><td>Form Submission Date</td><td>DateTime</td><td>-</td><td>When the form was submitted</td></tr><tr><td><code>form_name</code></td><td>Form Name</td><td>Text</td><td>-</td><td>Name of the form submitted</td></tr><tr><td><code>form_url</code></td><td>Form URL</td><td>Text</td><td>-</td><td>URL where form was submitted</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-partner-management-group-8-properties">5. Partner Management Group (8 properties)<a href="#5-partner-management-group-8-properties" class="hash-link" aria-label="Direct link to 5. Partner Management Group (8 properties)" title="Direct link to 5. Partner Management Group (8 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>partner_status</code></td><td>Partner Status</td><td>Dropdown</td><td>Active, Inactive, Pending, Suspended, Terminated</td><td>Current partnership status</td></tr><tr><td><code>partner_type</code></td><td>Partner Type</td><td>Dropdown</td><td>Broker, Agent, Concierge, Hotel, Travel Agency, Other</td><td>Type of partner</td></tr><tr><td><code>partner_id</code></td><td>Partner ID</td><td>Text</td><td>-</td><td>Unique partner identifier</td></tr><tr><td><code>partner_tier</code></td><td>Partner Tier</td><td>Dropdown</td><td>Bronze, Silver, Gold, Platinum, VIP</td><td>Partner tier level</td></tr><tr><td><code>partner_onboarding_date</code></td><td>Partner Onboarding Date</td><td>Date</td><td>-</td><td>When partner was onboarded</td></tr><tr><td><code>partner_agreement_signed</code></td><td>Partner Agreement Signed</td><td>Checkbox</td><td>-</td><td>Whether agreement is signed</td></tr><tr><td><code>marketing_materials_sent</code></td><td>Marketing Materials Sent</td><td>Checkbox</td><td>-</td><td>Whether materials were provided</td></tr><tr><td><code>partner_training_completed</code></td><td>Partner Training Completed</td><td>Checkbox</td><td>-</td><td>Whether training is complete</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="6-partner-information-group-4-properties">6. Partner Information Group (4 properties)<a href="#6-partner-information-group-4-properties" class="hash-link" aria-label="Direct link to 6. Partner Information Group (4 properties)" title="Direct link to 6. Partner Information Group (4 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>business_type</code></td><td>Business Type</td><td>Dropdown</td><td>Travel Agency, Hotel/Resort, Concierge Service, Yacht Broker, Other</td><td>Type of partner business</td></tr><tr><td><code>years_in_business</code></td><td>Years in Business</td><td>Number</td><td>-</td><td>How long partner has been in business</td></tr><tr><td><code>business_size</code></td><td>Business Size</td><td>Dropdown</td><td>Solo, 2-10 employees, 11-50 employees, 51-200 employees, 200+ employees</td><td>Size of partner business</td></tr><tr><td><code>primary_markets_served</code></td><td>Primary Markets Served</td><td>Text</td><td>-</td><td>Geographic markets partner serves</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="7-partner-performance-group-6-properties">7. Partner Performance Group (6 properties)<a href="#7-partner-performance-group-6-properties" class="hash-link" aria-label="Direct link to 7. Partner Performance Group (6 properties)" title="Direct link to 7. Partner Performance Group (6 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>client_budget_range</code></td><td>Client Budget Range</td><td>Dropdown</td><td>Under $10,000, $10,000-$25,000, $25,000-$50,000, $50,000-$100,000, $100,000-$250,000, $250,000+, Mixed</td><td>Typical client budget range</td></tr><tr><td><code>expected_referrals_yearly</code></td><td>Expected Referrals Yearly</td><td>Number</td><td>-</td><td>Expected number of referrals per year</td></tr><tr><td><code>actual_referrals_yearly</code></td><td>Actual Referrals Yearly</td><td>Number</td><td>-</td><td>Actual referrals provided this year</td></tr><tr><td><code>total_revenue_generated</code></td><td>Total Revenue Generated</td><td>Number</td><td>-</td><td>Total revenue from this partner</td></tr><tr><td><code>commission_rate</code></td><td>Commission Rate</td><td>Number</td><td>-</td><td>Commission percentage for partner</td></tr><tr><td><code>last_referral_date</code></td><td>Last Referral Date</td><td>Date</td><td>-</td><td>Date of most recent referral</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="8-referral-tracking-group-8-properties">8. Referral Tracking Group (8 properties)<a href="#8-referral-tracking-group-8-properties" class="hash-link" aria-label="Direct link to 8. Referral Tracking Group (8 properties)" title="Direct link to 8. Referral Tracking Group (8 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>referral_partner_id</code></td><td>Referral Partner ID</td><td>Text</td><td>-</td><td>ID of referring partner</td></tr><tr><td><code>referral_source_partner</code></td><td>Referral Source Partner</td><td>Text</td><td>-</td><td>Name of referring partner</td></tr><tr><td><code>is_referral_lead</code></td><td>Is Referral Lead</td><td>Checkbox</td><td>-</td><td>Whether this is a referral</td></tr><tr><td><code>referral_date</code></td><td>Referral Date</td><td>Date</td><td>-</td><td>Date referral was made</td></tr><tr><td><code>referral_status</code></td><td>Referral Status</td><td>Dropdown</td><td>New, Contacted, Qualified, Converted, Closed Won, Closed Lost</td><td>Status of referral</td></tr><tr><td><code>referral_commission_amount</code></td><td>Referral Commission Amount</td><td>Number</td><td>-</td><td>Commission amount owed</td></tr><tr><td><code>referral_commission_paid</code></td><td>Referral Commission Paid</td><td>Checkbox</td><td>-</td><td>Whether commission was paid</td></tr><tr><td><code>referral_commission_date</code></td><td>Referral Commission Date</td><td>Date</td><td>-</td><td>Date commission was paid</td></tr></tbody></table>
-<hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deal-properties-12-total">Deal Properties (12 total)<a href="#deal-properties-12-total" class="hash-link" aria-label="Direct link to Deal Properties (12 total)" title="Direct link to Deal Properties (12 total)">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1-charter-details-group-6-properties">1. Charter Details Group (6 properties)<a href="#1-charter-details-group-6-properties" class="hash-link" aria-label="Direct link to 1. Charter Details Group (6 properties)" title="Direct link to 1. Charter Details Group (6 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>yacht_model_requested</code></td><td>Yacht Model Requested</td><td>Text</td><td>-</td><td>Specific yacht model requested</td></tr><tr><td><code>charter_start_date</code></td><td>Charter Start Date</td><td>Date</td><td>-</td><td>Planned charter start date</td></tr><tr><td><code>charter_group_size</code></td><td>Charter Group Size</td><td>Number</td><td>-</td><td>Number of guests</td></tr><tr><td><code>charter_duration_days</code></td><td>Charter Duration (Days)</td><td>Number</td><td>-</td><td>Length of charter in days</td></tr><tr><td><code>charter_destination</code></td><td>Charter Destination</td><td>Dropdown</td><td>Caribbean, Mediterranean, South Pacific, Atlantic Coast, Gulf Coast, Great Lakes, Other</td><td>Charter destination</td></tr><tr><td><code>charter_special_requirements</code></td><td>Charter Special Requirements</td><td>Text Area</td><td>-</td><td>Special requirements for charter</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2-deal-source-group-3-properties">2. Deal Source Group (3 properties)<a href="#2-deal-source-group-3-properties" class="hash-link" aria-label="Direct link to 2. Deal Source Group (3 properties)" title="Direct link to 2. Deal Source Group (3 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>deal_source</code></td><td>Deal Source</td><td>Dropdown</td><td>Website, Referral Partner, Direct Inquiry, Trade Show, Social Media, Advertising, Other</td><td>How deal was generated</td></tr><tr><td><code>deal_source_detail</code></td><td>Deal Source Detail</td><td>Text</td><td>-</td><td>Additional source information</td></tr><tr><td><code>referral_partner_deal</code></td><td>Referral Partner Deal</td><td>Text</td><td>-</td><td>Partner who referred this deal</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-deal-management-group-2-properties">3. Deal Management Group (2 properties)<a href="#3-deal-management-group-2-properties" class="hash-link" aria-label="Direct link to 3. Deal Management Group (2 properties)" title="Direct link to 3. Deal Management Group (2 properties)">​</a></h4>
-<table><thead><tr><th>Property Name</th><th>Label</th><th>Field Type</th><th>Options</th><th>Description</th></tr></thead><tbody><tr><td><code>deal_priority</code></td><td>Deal Priority</td><td>Dropdown</td><td>Low, Medium, High, Urgent</td><td>Priority level of deal</td></tr><tr><td><code>deal_type</code></td><td>Deal Type</td><td>Dropdown</td><td>Charter, Brokerage, Management, Other</td><td>Type of deal</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="property-groups-structure">Property Groups Structure<a href="#property-groups-structure" class="hash-link" aria-label="Direct link to Property Groups Structure" title="Direct link to Property Groups Structure">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact-object-groups">Contact Object Groups:<a href="#contact-object-groups" class="hash-link" aria-label="Direct link to Contact Object Groups:" title="Direct link to Contact Object Groups:">​</a></h3>
-<ol>
-<li><strong>Charter Information</strong> - Core charter preferences and requirements</li>
-<li><strong>Communication Preferences</strong> - How and when to contact</li>
-<li><strong>Partner Tracking</strong> - Referral partner attribution</li>
-<li><strong>Form Tracking</strong> - Form submission metadata</li>
-<li><strong>Partner Management</strong> - Partner status and onboarding</li>
-<li><strong>Partner Information</strong> - Business details and characteristics</li>
-<li><strong>Partner Performance</strong> - Metrics and performance tracking</li>
-<li><strong>Referral Tracking</strong> - Commission and referral status</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deal-object-groups">Deal Object Groups:<a href="#deal-object-groups" class="hash-link" aria-label="Direct link to Deal Object Groups:" title="Direct link to Deal Object Groups:">​</a></h3>
-<ol>
-<li><strong>Charter Details</strong> - Specific booking information</li>
-<li><strong>Deal Source</strong> - Lead source and attribution</li>
-<li><strong>Deal Management</strong> - Priority and classification</li>
-</ol>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="manual-setup-instructions">Manual Setup Instructions<a href="#manual-setup-instructions" class="hash-link" aria-label="Direct link to Manual Setup Instructions" title="Direct link to Manual Setup Instructions">​</a></h2>
-<p>If you prefer to create properties manually:</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-create-property-groups">Step 1: Create Property Groups<a href="#step-1-create-property-groups" class="hash-link" aria-label="Direct link to Step 1: Create Property Groups" title="Direct link to Step 1: Create Property Groups">​</a></h3>
-<ol>
-<li>Go to <strong>HubSpot → Settings → Properties</strong></li>
-<li>Select <strong>Contact properties</strong> or <strong>Deal properties</strong></li>
-<li>Click <strong>Create group</strong></li>
-<li>Add each group from the tables above</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-create-individual-properties">Step 2: Create Individual Properties<a href="#step-2-create-individual-properties" class="hash-link" aria-label="Direct link to Step 2: Create Individual Properties" title="Direct link to Step 2: Create Individual Properties">​</a></h3>
-<p>For each property in the tables:</p>
-<ol>
-<li>Click <strong>Create property</strong></li>
-<li>Enter the <strong>Property Name</strong> (internal name)</li>
-<li>Enter the <strong>Label</strong> (display name)</li>
-<li>Select the <strong>Field Type</strong></li>
-<li>Add <strong>Options</strong> (for dropdown fields)</li>
-<li>Assign to the appropriate <strong>Property Group</strong></li>
-<li>Save the property</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-configure-field-settings">Step 3: Configure Field Settings<a href="#step-3-configure-field-settings" class="hash-link" aria-label="Direct link to Step 3: Configure Field Settings" title="Direct link to Step 3: Configure Field Settings">​</a></h3>
-<p>For each property, configure:</p>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/azurecharters/"><div class="navbar__logo"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/azurecharters/img/azure_corp_mark_black.png" alt="Azure Yacht Group Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Azure Yacht Group</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/azurecharters/docs/getting-started">Framework</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/intro">Introduction to the Charter Framework</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/framework-overview">Framework Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/business-model">Business Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/azurecharters/docs/technology-stack">Technology Stack</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/website-architecture/overview">Website Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/legal-framework/">Legal Framework</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/website-content/">Website Content</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/development/cursor-integration">Development</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/tilda-api/overview">Tilda API</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/azurecharters/docs/integration/referral-system-overview">Referral System</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/referral-system-overview">System Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/system-architecture">System Architecture</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/azurecharters/docs/integration/zapier-implementation-guide">System Setup</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/zapier-implementation-guide">Zapier Setup Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/azurecharters/docs/hubspot-properties-setup">HubSpot Properties</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/hubspot-referral-integration">HubSpot Referral Integration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup">Partner Dashboard Setup</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/azurecharters/docs/integration/forms-overview">Forms &amp; Applications</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/azurecharters/docs/integration/partner-application">Partner Materials</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/resources/templates">Resources</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/azurecharters/docs/PROJECT_PLAN">Project Status</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a href="https://szemkoff.github.io/azurecharters/tilda-api/docs/API_SETUP_GUIDE.md" target="_blank" rel="noopener noreferrer" class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false">External Documentation</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/azurecharters/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Referral System</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">System Setup</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">HubSpot Properties</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>HubSpot Properties Manual Setup Guide</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>This guide walks you through manually creating custom properties in HubSpot for Azure Yacht Group&#x27;s referral system. <strong>No API or coding required</strong> - everything is done through HubSpot&#x27;s interface.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-manual-setup">Why Manual Setup?<a href="#why-manual-setup" class="hash-link" aria-label="Direct link to Why Manual Setup?" title="Direct link to Why Manual Setup?">​</a></h2>
 <ul>
-<li><strong>Required/Optional</strong> status</li>
-<li><strong>Display order</strong> within group</li>
-<li><strong>Help text</strong> for users</li>
-<li><strong>Permissions</strong> (who can view/edit)</li>
+<li>✅ <strong>No API required</strong> - Use HubSpot&#x27;s built-in interface</li>
+<li>✅ <strong>One-time setup</strong> - Takes 15-20 minutes total</li>
+<li>✅ <strong>Free tier compatible</strong> - Works with HubSpot&#x27;s free plan</li>
+<li>✅ <strong>Visual interface</strong> - Easier to understand and modify</li>
+<li>✅ <strong>Immediate results</strong> - Properties available instantly</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<ul>
+<li>HubSpot account (free tier works)</li>
+<li>Admin access to HubSpot settings</li>
+<li>15-20 minutes of time</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="verification-checklist">Verification Checklist<a href="#verification-checklist" class="hash-link" aria-label="Direct link to Verification Checklist" title="Direct link to Verification Checklist">​</a></h2>
-<p>After setup, verify:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-access-properties-settings">Step 1: Access Properties Settings<a href="#step-1-access-properties-settings" class="hash-link" aria-label="Direct link to Step 1: Access Properties Settings" title="Direct link to Step 1: Access Properties Settings">​</a></h2>
+<ol>
+<li><strong>Log into HubSpot</strong> → Go to your HubSpot account</li>
+<li><strong>Navigate to Settings</strong> → Click the gear icon (⚙️) in the top right</li>
+<li><strong>Go to Properties</strong> → In the left sidebar: Data Management → Properties</li>
+<li><strong>Select Object Type</strong> → Choose &quot;Contact properties&quot; to start</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-create-contact-properties">Step 2: Create Contact Properties<a href="#step-2-create-contact-properties" class="hash-link" aria-label="Direct link to Step 2: Create Contact Properties" title="Direct link to Step 2: Create Contact Properties">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charter-information-group">Charter Information Group<a href="#charter-information-group" class="hash-link" aria-label="Direct link to Charter Information Group" title="Direct link to Charter Information Group">​</a></h3>
+<p>First, create a new property group for better organization:</p>
+<ol>
+<li><strong>Click &quot;Create property group&quot;</strong></li>
+<li><strong>Group name:</strong> <code>Charter Information</code></li>
+<li><strong>Save</strong></li>
+</ol>
+<p>Now create these properties in the Charter Information group:</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-1-yacht-charter-interest">Property 1: Yacht Charter Interest<a href="#property-1-yacht-charter-interest" class="hash-link" aria-label="Direct link to Property 1: Yacht Charter Interest" title="Direct link to Property 1: Yacht Charter Interest">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Yacht Charter Interest</code></li>
+<li><strong>Internal name:</strong> <code>yacht_charter_interest</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Motor Yacht</li>
+<li>Sailing Yacht</li>
+<li>Catamaran</li>
+<li>Luxury Yacht</li>
+<li>Sport Yacht</li>
+<li>Expedition Yacht</li>
+<li>Not Sure</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-2-charter-budget-range">Property 2: Charter Budget Range<a href="#property-2-charter-budget-range" class="hash-link" aria-label="Direct link to Property 2: Charter Budget Range" title="Direct link to Property 2: Charter Budget Range">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Budget Range</code></li>
+<li><strong>Internal name:</strong> <code>charter_budget_range</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>$3,000 - $5,000</li>
+<li>$5,000 - $10,000</li>
+<li>$10,000 - $20,000</li>
+<li>$20,000 - $50,000</li>
+<li>$50,000+</li>
+<li>I need help determining budget</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-3-preferred-charter-date">Property 3: Preferred Charter Date<a href="#property-3-preferred-charter-date" class="hash-link" aria-label="Direct link to Property 3: Preferred Charter Date" title="Direct link to Property 3: Preferred Charter Date">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Preferred Charter Date</code></li>
+<li><strong>Internal name:</strong> <code>charter_date_preference</code></li>
+<li><strong>Field type:</strong> <code>Date picker</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-4-group-size">Property 4: Group Size<a href="#property-4-group-size" class="hash-link" aria-label="Direct link to Property 4: Group Size" title="Direct link to Property 4: Group Size">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Group Size</code></li>
+<li><strong>Internal name:</strong> <code>group_size</code></li>
+<li><strong>Field type:</strong> <code>Number</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-5-charter-duration">Property 5: Charter Duration<a href="#property-5-charter-duration" class="hash-link" aria-label="Direct link to Property 5: Charter Duration" title="Direct link to Property 5: Charter Duration">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Duration (Days)</code></li>
+<li><strong>Internal name:</strong> <code>charter_duration</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Half Day (4 hours)</li>
+<li>Full Day (8 hours)</li>
+<li>2-3 Days</li>
+<li>1 Week</li>
+<li>2 Weeks</li>
+<li>1 Month+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-6-charter-destination">Property 6: Charter Destination<a href="#property-6-charter-destination" class="hash-link" aria-label="Direct link to Property 6: Charter Destination" title="Direct link to Property 6: Charter Destination">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Destination</code></li>
+<li><strong>Internal name:</strong> <code>charter_destination</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-7-special-requirements">Property 7: Special Requirements<a href="#property-7-special-requirements" class="hash-link" aria-label="Direct link to Property 7: Special Requirements" title="Direct link to Property 7: Special Requirements">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Special Requirements</code></li>
+<li><strong>Internal name:</strong> <code>special_requirements</code></li>
+<li><strong>Field type:</strong> <code>Multi-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Information</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="partner-management-group">Partner Management Group<a href="#partner-management-group" class="hash-link" aria-label="Direct link to Partner Management Group" title="Direct link to Partner Management Group">​</a></h3>
+<p>Create a new property group: <code>Partner Management</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-8-referral-partner">Property 8: Referral Partner<a href="#property-8-referral-partner" class="hash-link" aria-label="Direct link to Property 8: Referral Partner" title="Direct link to Property 8: Referral Partner">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Referral Partner</code></li>
+<li><strong>Internal name:</strong> <code>referral_partner</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Partner Management</code></li>
+<li><strong>Description:</strong> <code>Partner code from referral URL</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-9-partner-status">Property 9: Partner Status<a href="#property-9-partner-status" class="hash-link" aria-label="Direct link to Property 9: Partner Status" title="Direct link to Property 9: Partner Status">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Partner Status</code></li>
+<li><strong>Internal name:</strong> <code>partner_status</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Partner Management</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Applied</li>
+<li>Under Review</li>
+<li>Approved</li>
+<li>Active</li>
+<li>Inactive</li>
+<li>Suspended</li>
+<li>Terminated</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-10-partner-type">Property 10: Partner Type<a href="#property-10-partner-type" class="hash-link" aria-label="Direct link to Property 10: Partner Type" title="Direct link to Property 10: Partner Type">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Partner Type</code></li>
+<li><strong>Internal name:</strong> <code>partner_type</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Partner Management</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Travel Advisor</li>
+<li>Concierge Service</li>
+<li>Event Planner</li>
+<li>Wealth Manager</li>
+<li>Real Estate Agent</li>
+<li>Hotel/Resort</li>
+<li>Corporate Services</li>
+<li>Other</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-11-partner-tier">Property 11: Partner Tier<a href="#property-11-partner-tier" class="hash-link" aria-label="Direct link to Property 11: Partner Tier" title="Direct link to Property 11: Partner Tier">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Partner Tier</code></li>
+<li><strong>Internal name:</strong> <code>partner_tier</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Partner Management</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Bronze</li>
+<li>Silver</li>
+<li>Gold</li>
+<li>Platinum</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="communication-preferences-group">Communication Preferences Group<a href="#communication-preferences-group" class="hash-link" aria-label="Direct link to Communication Preferences Group" title="Direct link to Communication Preferences Group">​</a></h3>
+<p>Create a new property group: <code>Communication Preferences</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-12-preferred-contact-method">Property 12: Preferred Contact Method<a href="#property-12-preferred-contact-method" class="hash-link" aria-label="Direct link to Property 12: Preferred Contact Method" title="Direct link to Property 12: Preferred Contact Method">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Preferred Contact Method</code></li>
+<li><strong>Internal name:</strong> <code>preferred_contact_method</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Communication Preferences</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Email</li>
+<li>Phone</li>
+<li>Text/SMS</li>
+<li>WhatsApp</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-13-best-time-to-contact">Property 13: Best Time to Contact<a href="#property-13-best-time-to-contact" class="hash-link" aria-label="Direct link to Property 13: Best Time to Contact" title="Direct link to Property 13: Best Time to Contact">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Best Time to Contact</code></li>
+<li><strong>Internal name:</strong> <code>best_time_to_contact</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Communication Preferences</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Morning (9 AM - 12 PM)</li>
+<li>Afternoon (12 PM - 5 PM)</li>
+<li>Evening (5 PM - 8 PM)</li>
+<li>Anytime</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-create-deal-properties">Step 3: Create Deal Properties<a href="#step-3-create-deal-properties" class="hash-link" aria-label="Direct link to Step 3: Create Deal Properties" title="Direct link to Step 3: Create Deal Properties">​</a></h2>
+<ol>
+<li><strong>Switch to Deal Properties</strong> → Click &quot;Deal properties&quot; in the dropdown</li>
+<li><strong>Create property group:</strong> <code>Charter Details</code></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charter-details-group">Charter Details Group<a href="#charter-details-group" class="hash-link" aria-label="Direct link to Charter Details Group" title="Direct link to Charter Details Group">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-1-yacht-model-requested">Property 1: Yacht Model Requested<a href="#property-1-yacht-model-requested" class="hash-link" aria-label="Direct link to Property 1: Yacht Model Requested" title="Direct link to Property 1: Yacht Model Requested">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Yacht Model Requested</code></li>
+<li><strong>Internal name:</strong> <code>yacht_model_requested</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-2-charter-start-date">Property 2: Charter Start Date<a href="#property-2-charter-start-date" class="hash-link" aria-label="Direct link to Property 2: Charter Start Date" title="Direct link to Property 2: Charter Start Date">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Start Date</code></li>
+<li><strong>Internal name:</strong> <code>charter_start_date</code></li>
+<li><strong>Field type:</strong> <code>Date picker</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-3-charter-group-size">Property 3: Charter Group Size<a href="#property-3-charter-group-size" class="hash-link" aria-label="Direct link to Property 3: Charter Group Size" title="Direct link to Property 3: Charter Group Size">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Group Size</code></li>
+<li><strong>Internal name:</strong> <code>charter_group_size</code></li>
+<li><strong>Field type:</strong> <code>Number</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-4-charter-duration-days">Property 4: Charter Duration Days<a href="#property-4-charter-duration-days" class="hash-link" aria-label="Direct link to Property 4: Charter Duration Days" title="Direct link to Property 4: Charter Duration Days">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Duration (Days)</code></li>
+<li><strong>Internal name:</strong> <code>charter_duration_days</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-5-charter-destination">Property 5: Charter Destination<a href="#property-5-charter-destination" class="hash-link" aria-label="Direct link to Property 5: Charter Destination" title="Direct link to Property 5: Charter Destination">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Destination</code></li>
+<li><strong>Internal name:</strong> <code>charter_destination</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-6-charter-special-requirements">Property 6: Charter Special Requirements<a href="#property-6-charter-special-requirements" class="hash-link" aria-label="Direct link to Property 6: Charter Special Requirements" title="Direct link to Property 6: Charter Special Requirements">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Charter Special Requirements</code></li>
+<li><strong>Internal name:</strong> <code>charter_special_requirements</code></li>
+<li><strong>Field type:</strong> <code>Multi-line text</code></li>
+<li><strong>Property group:</strong> <code>Charter Details</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deal-source-group">Deal Source Group<a href="#deal-source-group" class="hash-link" aria-label="Direct link to Deal Source Group" title="Direct link to Deal Source Group">​</a></h3>
+<p>Create a new property group: <code>Deal Source</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-7-deal-source">Property 7: Deal Source<a href="#property-7-deal-source" class="hash-link" aria-label="Direct link to Property 7: Deal Source" title="Direct link to Property 7: Deal Source">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Deal Source</code></li>
+<li><strong>Internal name:</strong> <code>deal_source</code></li>
+<li><strong>Field type:</strong> <code>Dropdown select</code></li>
+<li><strong>Property group:</strong> <code>Deal Source</code></li>
+<li><strong>Options:</strong>
+<ul>
+<li>Website Form</li>
+<li>Phone Call</li>
+<li>Email Inquiry</li>
+<li>Social Media</li>
+<li>Partner Referral</li>
+<li>Trade Show</li>
+<li>Other</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-8-referral-partner-deal">Property 8: Referral Partner (Deal)<a href="#property-8-referral-partner-deal" class="hash-link" aria-label="Direct link to Property 8: Referral Partner (Deal)" title="Direct link to Property 8: Referral Partner (Deal)">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Referral Partner</code></li>
+<li><strong>Internal name:</strong> <code>referral_partner_deal</code></li>
+<li><strong>Field type:</strong> <code>Single-line text</code></li>
+<li><strong>Property group:</strong> <code>Deal Source</code></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="property-9-lead-quality-score">Property 9: Lead Quality Score<a href="#property-9-lead-quality-score" class="hash-link" aria-label="Direct link to Property 9: Lead Quality Score" title="Direct link to Property 9: Lead Quality Score">​</a></h4>
+<ul>
+<li><strong>Label:</strong> <code>Lead Quality Score</code></li>
+<li><strong>Internal name:</strong> <code>lead_quality_score</code></li>
+<li><strong>Field type:</strong> <code>Number</code></li>
+<li><strong>Property group:</strong> <code>Deal Source</code></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-verification-checklist">Step 4: Verification Checklist<a href="#step-4-verification-checklist" class="hash-link" aria-label="Direct link to Step 4: Verification Checklist" title="Direct link to Step 4: Verification Checklist">​</a></h2>
+<p>After creating all properties, verify:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contact-properties-">Contact Properties ✅<a href="#contact-properties-" class="hash-link" aria-label="Direct link to Contact Properties ✅" title="Direct link to Contact Properties ✅">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All 35 contact properties created</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All 12 deal properties created</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All 11 property groups created</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Dropdown options match exactly</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Field types are correct</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Properties are assigned to correct groups</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test form submission populates properties</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Partner referral tracking works</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Commission tracking functions properly</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Yacht Charter Interest (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Budget Range (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Preferred Charter Date (date)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Group Size (number)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Duration (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Destination (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Special Requirements (textarea)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Referral Partner (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Partner Status (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Partner Type (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Partner Tier (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Preferred Contact Method (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Best Time to Contact (dropdown)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deal-properties-">Deal Properties ✅<a href="#deal-properties-" class="hash-link" aria-label="Direct link to Deal Properties ✅" title="Direct link to Deal Properties ✅">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Yacht Model Requested (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Start Date (date)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Group Size (number)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Duration Days (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Destination (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Charter Special Requirements (textarea)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Deal Source (dropdown)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Referral Partner (text)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Lead Quality Score (number)</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-testing">Integration Testing<a href="#integration-testing" class="hash-link" aria-label="Direct link to Integration Testing" title="Direct link to Integration Testing">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-contact-creation">Test Contact Creation<a href="#test-contact-creation" class="hash-link" aria-label="Direct link to Test Contact Creation" title="Direct link to Test Contact Creation">​</a></h3>
-<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// Test contact with charter interest</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> testContact </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">yacht_charter_interest</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Motor Yacht&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">charter_budget_range</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;$50,000-$100,000&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">group_size</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">6</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">charter_destination</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Caribbean&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">preferred_contact_method</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Email&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-deal-creation">Test Deal Creation<a href="#test-deal-creation" class="hash-link" aria-label="Direct link to Test Deal Creation" title="Direct link to Test Deal Creation">​</a></h3>
-<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// Test deal with charter details</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> testDeal </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">yacht_model_requested</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Sunseeker 68&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">charter_start_date</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;2025-07-15&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">charter_group_size</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">8</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">charter_duration_days</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">7</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">deal_source</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Referral Partner&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token literal-property property" style="color:#36acaa">deal_priority</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;High&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-using-properties-in-forms">Step 5: Using Properties in Forms<a href="#step-5-using-properties-in-forms" class="hash-link" aria-label="Direct link to Step 5: Using Properties in Forms" title="Direct link to Step 5: Using Properties in Forms">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="form-field-mapping">Form Field Mapping<a href="#form-field-mapping" class="hash-link" aria-label="Direct link to Form Field Mapping" title="Direct link to Form Field Mapping">​</a></h3>
+<p>When creating HubSpot forms, map these fields:</p>
+<p><strong>Customer Inquiry Form:</strong></p>
+<ul>
+<li>Email → Email (default)</li>
+<li>First Name → First Name (default)</li>
+<li>Last Name → Last Name (default)</li>
+<li>Phone → Phone Number (default)</li>
+<li>Charter Date → Preferred Charter Date</li>
+<li>Group Size → Group Size</li>
+<li>Budget → Charter Budget Range</li>
+<li>Yacht Type → Yacht Charter Interest</li>
+<li>Destination → Charter Destination</li>
+<li>Special Requirements → Special Requirements</li>
+<li>Partner Code → Referral Partner (hidden field)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="url-parameter-tracking">URL Parameter Tracking<a href="#url-parameter-tracking" class="hash-link" aria-label="Direct link to URL Parameter Tracking" title="Direct link to URL Parameter Tracking">​</a></h3>
+<p>For partner referral tracking, use:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://azureyachtgroup.com/charter-inquiry?partner=AZURE-JOHN</span><br></span></code></pre></div></div>
+<p>The form will automatically capture <code>AZURE-JOHN</code> in the Referral Partner field.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-reporting-setup">Step 6: Reporting Setup<a href="#step-6-reporting-setup" class="hash-link" aria-label="Direct link to Step 6: Reporting Setup" title="Direct link to Step 6: Reporting Setup">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="partner-performance-report">Partner Performance Report<a href="#partner-performance-report" class="hash-link" aria-label="Direct link to Partner Performance Report" title="Direct link to Partner Performance Report">​</a></h3>
+<ol>
+<li><strong>Go to Reports</strong> → Reports → Create custom report</li>
+<li><strong>Data source:</strong> Contacts</li>
+<li><strong>Filters:</strong>
+<ul>
+<li>Referral Partner is known</li>
+<li>Create date: Last 30 days</li>
+</ul>
+</li>
+<li><strong>Breakdown by:</strong> Referral Partner</li>
+<li><strong>Metrics:</strong>
+<ul>
+<li>Total contacts</li>
+<li>Deals created</li>
+<li>Deals won</li>
+<li>Total deal value</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charter-pipeline-report">Charter Pipeline Report<a href="#charter-pipeline-report" class="hash-link" aria-label="Direct link to Charter Pipeline Report" title="Direct link to Charter Pipeline Report">​</a></h3>
+<ol>
+<li><strong>Data source:</strong> Deals</li>
+<li><strong>Filters:</strong> Deal Source = &quot;Partner Referral&quot;</li>
+<li><strong>Breakdown by:</strong> Deal stage</li>
+<li><strong>Metrics:</strong>
+<ul>
+<li>Total deals</li>
+<li>Average deal value</li>
+<li>Win rate</li>
+<li>Average close time</li>
+</ul>
+</li>
+</ol>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues">​</a></h3>
-<p><strong>&quot;Property already exists&quot;</strong></p>
+<p><strong>Property not showing in forms:</strong></p>
 <ul>
-<li>Skip existing properties - this is normal</li>
-<li>Check property names for typos</li>
+<li>Check property is set to &quot;Show in forms&quot;</li>
+<li>Verify property group is active</li>
+<li>Clear browser cache and refresh</li>
 </ul>
-<p><strong>&quot;Invalid field type&quot;</strong></p>
+<p><strong>Dropdown options not saving:</strong></p>
 <ul>
-<li>Verify field types match HubSpot standards</li>
-<li>Check dropdown options format</li>
+<li>Ensure no special characters in options</li>
+<li>Keep option labels under 100 characters</li>
+<li>Save property before adding more options</li>
 </ul>
-<p><strong>&quot;Permission denied&quot;</strong></p>
+<p><strong>Partner tracking not working:</strong></p>
 <ul>
-<li>Ensure API key has property creation permissions</li>
-<li>Check HubSpot account limits</li>
+<li>Verify URL parameter format: <code>?partner=CODE</code></li>
+<li>Check form field mapping</li>
+<li>Ensure hidden field is configured correctly</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="property-limits">Property Limits<a href="#property-limits" class="hash-link" aria-label="Direct link to Property Limits" title="Direct link to Property Limits">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="support-resources">Support Resources<a href="#support-resources" class="hash-link" aria-label="Direct link to Support Resources" title="Direct link to Support Resources">​</a></h3>
 <ul>
-<li><strong>Free HubSpot</strong>: 1,000 contact properties</li>
-<li><strong>Paid HubSpot</strong>: 10,000+ contact properties</li>
-<li><strong>Deal Properties</strong>: Generally unlimited</li>
+<li><strong>HubSpot Academy:</strong> Free training courses</li>
+<li><strong>HubSpot Community:</strong> User forums and discussions</li>
+<li><strong>HubSpot Support:</strong> Free tier includes email support</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p><strong>Total Setup Time:</strong> 15-20 minutes
+<strong>Properties Created:</strong> 22 total (13 contact + 9 deal)
+<strong>API Required:</strong> None
+<strong>Cost:</strong> $0 (works with free HubSpot tier)</p>
+<p>This manual setup provides all the functionality needed for Azure Yacht Group&#x27;s referral system without requiring any API integration or coding. The properties integrate seamlessly with HubSpot forms, Zapier automations, and reporting tools.</p>
+<p><strong>Next Steps:</strong></p>
 <ol>
-<li><strong>Update Forms</strong>: Use new property names in customer inquiry forms</li>
-<li><strong>Configure Zapier</strong>: Map new properties in automation workflows</li>
-<li><strong>Set Permissions</strong>: Configure property access for different user roles</li>
-<li><strong>Train Team</strong>: Educate team on new property structure</li>
-<li><strong>Monitor Usage</strong>: Track property utilization and data quality</li>
-</ol>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a href="#support" class="hash-link" aria-label="Direct link to Support" title="Direct link to Support">​</a></h2>
-<p>For technical support:</p>
-<ol>
-<li>Check console output for specific error messages</li>
-<li>Verify HubSpot account permissions</li>
-<li>Test with a single property first</li>
-<li>Contact HubSpot support for API issues</li>
-</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/hubspot-properties-setup.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/integration/zapier-implementation-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Zapier Setup Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/hubspot-referral-integration"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">HubSpot Referral Integration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#quick-setup-5-minutes" class="table-of-contents__link toc-highlight">Quick Setup (5 minutes)</a><ul><li><a href="#step-1-install-dependencies" class="table-of-contents__link toc-highlight">Step 1: Install Dependencies</a></li><li><a href="#step-2-configure-environment-variables" class="table-of-contents__link toc-highlight">Step 2: Configure Environment Variables</a></li><li><a href="#step-3-run-property-setup" class="table-of-contents__link toc-highlight">Step 3: Run Property Setup</a></li></ul></li><li><a href="#complete-property-reference-tables" class="table-of-contents__link toc-highlight">Complete Property Reference Tables</a><ul><li><a href="#contact-properties-35-total" class="table-of-contents__link toc-highlight">Contact Properties (35 total)</a></li><li><a href="#deal-properties-12-total" class="table-of-contents__link toc-highlight">Deal Properties (12 total)</a></li></ul></li><li><a href="#property-groups-structure" class="table-of-contents__link toc-highlight">Property Groups Structure</a><ul><li><a href="#contact-object-groups" class="table-of-contents__link toc-highlight">Contact Object Groups:</a></li><li><a href="#deal-object-groups" class="table-of-contents__link toc-highlight">Deal Object Groups:</a></li></ul></li><li><a href="#manual-setup-instructions" class="table-of-contents__link toc-highlight">Manual Setup Instructions</a><ul><li><a href="#step-1-create-property-groups" class="table-of-contents__link toc-highlight">Step 1: Create Property Groups</a></li><li><a href="#step-2-create-individual-properties" class="table-of-contents__link toc-highlight">Step 2: Create Individual Properties</a></li><li><a href="#step-3-configure-field-settings" class="table-of-contents__link toc-highlight">Step 3: Configure Field Settings</a></li></ul></li><li><a href="#verification-checklist" class="table-of-contents__link toc-highlight">Verification Checklist</a></li><li><a href="#integration-testing" class="table-of-contents__link toc-highlight">Integration Testing</a><ul><li><a href="#test-contact-creation" class="table-of-contents__link toc-highlight">Test Contact Creation</a></li><li><a href="#test-deal-creation" class="table-of-contents__link toc-highlight">Test Deal Creation</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a></li><li><a href="#property-limits" class="table-of-contents__link toc-highlight">Property Limits</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li><li><a href="#support" class="table-of-contents__link toc-highlight">Support</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
+<li>✅ Complete property setup (this guide)</li>
+<li>→ <a href="/azurecharters/docs/integration/customer-inquiry-form-setup">Set up HubSpot forms</a></li>
+<li>→ <a href="/azurecharters/docs/integration/zapier-implementation-guide">Configure Zapier automations</a></li>
+<li>→ <a href="/azurecharters/docs/integration/google-sheets-filtered-views-setup">Create partner dashboards</a></li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/hubspot-properties-setup.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/integration/zapier-implementation-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Zapier Setup Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/hubspot-referral-integration"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">HubSpot Referral Integration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#why-manual-setup" class="table-of-contents__link toc-highlight">Why Manual Setup?</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#step-1-access-properties-settings" class="table-of-contents__link toc-highlight">Step 1: Access Properties Settings</a></li><li><a href="#step-2-create-contact-properties" class="table-of-contents__link toc-highlight">Step 2: Create Contact Properties</a><ul><li><a href="#charter-information-group" class="table-of-contents__link toc-highlight">Charter Information Group</a></li><li><a href="#partner-management-group" class="table-of-contents__link toc-highlight">Partner Management Group</a></li><li><a href="#communication-preferences-group" class="table-of-contents__link toc-highlight">Communication Preferences Group</a></li></ul></li><li><a href="#step-3-create-deal-properties" class="table-of-contents__link toc-highlight">Step 3: Create Deal Properties</a><ul><li><a href="#charter-details-group" class="table-of-contents__link toc-highlight">Charter Details Group</a></li><li><a href="#deal-source-group" class="table-of-contents__link toc-highlight">Deal Source Group</a></li></ul></li><li><a href="#step-4-verification-checklist" class="table-of-contents__link toc-highlight">Step 4: Verification Checklist</a><ul><li><a href="#contact-properties-" class="table-of-contents__link toc-highlight">Contact Properties ✅</a></li><li><a href="#deal-properties-" class="table-of-contents__link toc-highlight">Deal Properties ✅</a></li></ul></li><li><a href="#step-5-using-properties-in-forms" class="table-of-contents__link toc-highlight">Step 5: Using Properties in Forms</a><ul><li><a href="#form-field-mapping" class="table-of-contents__link toc-highlight">Form Field Mapping</a></li><li><a href="#url-parameter-tracking" class="table-of-contents__link toc-highlight">URL Parameter Tracking</a></li></ul></li><li><a href="#step-6-reporting-setup" class="table-of-contents__link toc-highlight">Step 6: Reporting Setup</a><ul><li><a href="#partner-performance-report" class="table-of-contents__link toc-highlight">Partner Performance Report</a></li><li><a href="#charter-pipeline-report" class="table-of-contents__link toc-highlight">Charter Pipeline Report</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a></li><li><a href="#support-resources" class="table-of-contents__link toc-highlight">Support Resources</a></li></ul></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
