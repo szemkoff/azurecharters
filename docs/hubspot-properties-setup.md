@@ -1,255 +1,357 @@
-# HubSpot Properties Setup Guide - Azure Yacht Group
+---
+title: HubSpot Properties Manual Setup
+sidebar_label: HubSpot Properties
+---
+
+# HubSpot Properties Manual Setup Guide
+
+## Overview
+
+This guide walks you through manually creating custom properties in HubSpot for Azure Yacht Group's referral system. **No API or coding required** - everything is done through HubSpot's interface.
+
+## Why Manual Setup?
+
+- ✅ **No API required** - Use HubSpot's built-in interface
+- ✅ **One-time setup** - Takes 15-20 minutes total
+- ✅ **Free tier compatible** - Works with HubSpot's free plan
+- ✅ **Visual interface** - Easier to understand and modify
+- ✅ **Immediate results** - Properties available instantly
 
 ## Prerequisites
 
-1. **HubSpot Account** with API access
-2. **Node.js** version 18 or higher
-3. **HubSpot API Key** with property creation permissions
+- HubSpot account (free tier works)
+- Admin access to HubSpot settings
+- 15-20 minutes of time
 
-## Quick Setup (5 minutes)
+---
 
-### Step 1: Install Dependencies
+## Step 1: Access Properties Settings
 
-```bash
-npm install
+1. **Log into HubSpot** → Go to your HubSpot account
+2. **Navigate to Settings** → Click the gear icon (⚙️) in the top right
+3. **Go to Properties** → In the left sidebar: Data Management → Properties
+4. **Select Object Type** → Choose "Contact properties" to start
+
+---
+
+## Step 2: Create Contact Properties
+
+### Charter Information Group
+
+First, create a new property group for better organization:
+
+1. **Click "Create property group"**
+2. **Group name:** `Charter Information`
+3. **Save**
+
+Now create these properties in the Charter Information group:
+
+#### Property 1: Yacht Charter Interest
+- **Label:** `Yacht Charter Interest`
+- **Internal name:** `yacht_charter_interest`
+- **Field type:** `Dropdown select`
+- **Property group:** `Charter Information`
+- **Options:**
+  - Motor Yacht
+  - Sailing Yacht
+  - Catamaran
+  - Luxury Yacht
+  - Sport Yacht
+  - Expedition Yacht
+  - Not Sure
+
+#### Property 2: Charter Budget Range
+- **Label:** `Charter Budget Range`
+- **Internal name:** `charter_budget_range`
+- **Field type:** `Dropdown select`
+- **Property group:** `Charter Information`
+- **Options:**
+  - $3,000 - $5,000
+  - $5,000 - $10,000
+  - $10,000 - $20,000
+  - $20,000 - $50,000
+  - $50,000+
+  - I need help determining budget
+
+#### Property 3: Preferred Charter Date
+- **Label:** `Preferred Charter Date`
+- **Internal name:** `charter_date_preference`
+- **Field type:** `Date picker`
+- **Property group:** `Charter Information`
+
+#### Property 4: Group Size
+- **Label:** `Group Size`
+- **Internal name:** `group_size`
+- **Field type:** `Number`
+- **Property group:** `Charter Information`
+
+#### Property 5: Charter Duration
+- **Label:** `Charter Duration (Days)`
+- **Internal name:** `charter_duration`
+- **Field type:** `Dropdown select`
+- **Property group:** `Charter Information`
+- **Options:**
+  - Half Day (4 hours)
+  - Full Day (8 hours)
+  - 2-3 Days
+  - 1 Week
+  - 2 Weeks
+  - 1 Month+
+
+#### Property 6: Charter Destination
+- **Label:** `Charter Destination`
+- **Internal name:** `charter_destination`
+- **Field type:** `Single-line text`
+- **Property group:** `Charter Information`
+
+#### Property 7: Special Requirements
+- **Label:** `Special Requirements`
+- **Internal name:** `special_requirements`
+- **Field type:** `Multi-line text`
+- **Property group:** `Charter Information`
+
+### Partner Management Group
+
+Create a new property group: `Partner Management`
+
+#### Property 8: Referral Partner
+- **Label:** `Referral Partner`
+- **Internal name:** `referral_partner`
+- **Field type:** `Single-line text`
+- **Property group:** `Partner Management`
+- **Description:** `Partner code from referral URL`
+
+#### Property 9: Partner Status
+- **Label:** `Partner Status`
+- **Internal name:** `partner_status`
+- **Field type:** `Dropdown select`
+- **Property group:** `Partner Management`
+- **Options:**
+  - Applied
+  - Under Review
+  - Approved
+  - Active
+  - Inactive
+  - Suspended
+  - Terminated
+
+#### Property 10: Partner Type
+- **Label:** `Partner Type`
+- **Internal name:** `partner_type`
+- **Field type:** `Dropdown select`
+- **Property group:** `Partner Management`
+- **Options:**
+  - Travel Advisor
+  - Concierge Service
+  - Event Planner
+  - Wealth Manager
+  - Real Estate Agent
+  - Hotel/Resort
+  - Corporate Services
+  - Other
+
+#### Property 11: Partner Tier
+- **Label:** `Partner Tier`
+- **Internal name:** `partner_tier`
+- **Field type:** `Dropdown select`
+- **Property group:** `Partner Management`
+- **Options:**
+  - Bronze
+  - Silver
+  - Gold
+  - Platinum
+
+### Communication Preferences Group
+
+Create a new property group: `Communication Preferences`
+
+#### Property 12: Preferred Contact Method
+- **Label:** `Preferred Contact Method`
+- **Internal name:** `preferred_contact_method`
+- **Field type:** `Dropdown select`
+- **Property group:** `Communication Preferences`
+- **Options:**
+  - Email
+  - Phone
+  - Text/SMS
+  - WhatsApp
+
+#### Property 13: Best Time to Contact
+- **Label:** `Best Time to Contact`
+- **Internal name:** `best_time_to_contact`
+- **Field type:** `Dropdown select`
+- **Property group:** `Communication Preferences`
+- **Options:**
+  - Morning (9 AM - 12 PM)
+  - Afternoon (12 PM - 5 PM)
+  - Evening (5 PM - 8 PM)
+  - Anytime
+
+---
+
+## Step 3: Create Deal Properties
+
+1. **Switch to Deal Properties** → Click "Deal properties" in the dropdown
+2. **Create property group:** `Charter Details`
+
+### Charter Details Group
+
+#### Property 1: Yacht Model Requested
+- **Label:** `Yacht Model Requested`
+- **Internal name:** `yacht_model_requested`
+- **Field type:** `Single-line text`
+- **Property group:** `Charter Details`
+
+#### Property 2: Charter Start Date
+- **Label:** `Charter Start Date`
+- **Internal name:** `charter_start_date`
+- **Field type:** `Date picker`
+- **Property group:** `Charter Details`
+
+#### Property 3: Charter Group Size
+- **Label:** `Charter Group Size`
+- **Internal name:** `charter_group_size`
+- **Field type:** `Number`
+- **Property group:** `Charter Details`
+
+#### Property 4: Charter Duration Days
+- **Label:** `Charter Duration (Days)`
+- **Internal name:** `charter_duration_days`
+- **Field type:** `Single-line text`
+- **Property group:** `Charter Details`
+
+#### Property 5: Charter Destination
+- **Label:** `Charter Destination`
+- **Internal name:** `charter_destination`
+- **Field type:** `Single-line text`
+- **Property group:** `Charter Details`
+
+#### Property 6: Charter Special Requirements
+- **Label:** `Charter Special Requirements`
+- **Internal name:** `charter_special_requirements`
+- **Field type:** `Multi-line text`
+- **Property group:** `Charter Details`
+
+### Deal Source Group
+
+Create a new property group: `Deal Source`
+
+#### Property 7: Deal Source
+- **Label:** `Deal Source`
+- **Internal name:** `deal_source`
+- **Field type:** `Dropdown select`
+- **Property group:** `Deal Source`
+- **Options:**
+  - Website Form
+  - Phone Call
+  - Email Inquiry
+  - Social Media
+  - Partner Referral
+  - Trade Show
+  - Other
+
+#### Property 8: Referral Partner (Deal)
+- **Label:** `Referral Partner`
+- **Internal name:** `referral_partner_deal`
+- **Field type:** `Single-line text`
+- **Property group:** `Deal Source`
+
+#### Property 9: Lead Quality Score
+- **Label:** `Lead Quality Score`
+- **Internal name:** `lead_quality_score`
+- **Field type:** `Number`
+- **Property group:** `Deal Source`
+
+---
+
+## Step 4: Verification Checklist
+
+After creating all properties, verify:
+
+### Contact Properties ✅
+- [ ] Yacht Charter Interest (dropdown)
+- [ ] Charter Budget Range (dropdown)
+- [ ] Preferred Charter Date (date)
+- [ ] Group Size (number)
+- [ ] Charter Duration (dropdown)
+- [ ] Charter Destination (text)
+- [ ] Special Requirements (textarea)
+- [ ] Referral Partner (text)
+- [ ] Partner Status (dropdown)
+- [ ] Partner Type (dropdown)
+- [ ] Partner Tier (dropdown)
+- [ ] Preferred Contact Method (dropdown)
+- [ ] Best Time to Contact (dropdown)
+
+### Deal Properties ✅
+- [ ] Yacht Model Requested (text)
+- [ ] Charter Start Date (date)
+- [ ] Charter Group Size (number)
+- [ ] Charter Duration Days (text)
+- [ ] Charter Destination (text)
+- [ ] Charter Special Requirements (textarea)
+- [ ] Deal Source (dropdown)
+- [ ] Referral Partner (text)
+- [ ] Lead Quality Score (number)
+
+---
+
+## Step 5: Using Properties in Forms
+
+### Form Field Mapping
+
+When creating HubSpot forms, map these fields:
+
+**Customer Inquiry Form:**
+- Email → Email (default)
+- First Name → First Name (default)
+- Last Name → Last Name (default)
+- Phone → Phone Number (default)
+- Charter Date → Preferred Charter Date
+- Group Size → Group Size
+- Budget → Charter Budget Range
+- Yacht Type → Yacht Charter Interest
+- Destination → Charter Destination
+- Special Requirements → Special Requirements
+- Partner Code → Referral Partner (hidden field)
+
+### URL Parameter Tracking
+
+For partner referral tracking, use:
+```
+https://azureyachtgroup.com/charter-inquiry?partner=AZURE-JOHN
 ```
 
-### Step 2: Configure Environment Variables
-
-Create a `.env` file in your project root:
-
-```bash
-# HubSpot API Configuration
-HUBSPOT_API_KEY=your_hubspot_api_key_here
-HUBSPOT_PORTAL_ID=your_hubspot_portal_id_here
-```
-
-**How to get your credentials:**
-
-1. **API Key**: HubSpot → Settings → Integrations → API key
-2. **Portal ID**: Found in your HubSpot URL or Settings → Account Setup → Account Information
-
-### Step 3: Run Property Setup
-
-```bash
-npm run setup-hubspot
-```
-
-This will create all 58 custom properties across 11 property groups.
+The form will automatically capture `AZURE-JOHN` in the Referral Partner field.
 
 ---
 
-## Complete Property Reference Tables
+## Step 6: Reporting Setup
 
-### Contact Properties (35 total)
+### Partner Performance Report
 
-#### 1. Charter Information Group (7 properties)
+1. **Go to Reports** → Reports → Create custom report
+2. **Data source:** Contacts
+3. **Filters:** 
+   - Referral Partner is known
+   - Create date: Last 30 days
+4. **Breakdown by:** Referral Partner
+5. **Metrics:** 
+   - Total contacts
+   - Deals created
+   - Deals won
+   - Total deal value
 
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `yacht_charter_interest` | Yacht Charter Interest | Dropdown | Sailing Yacht, Motor Yacht, Catamaran, Superyacht, Luxury Yacht, Sport Fishing, Other | Type of yacht client is interested in |
-| `charter_budget_range` | Charter Budget Range | Dropdown | Under $10,000, $10,000-$25,000, $25,000-$50,000, $50,000-$100,000, $100,000-$250,000, $250,000+, Flexible | Client's budget range for charter |
-| `charter_date_preference` | Charter Date Preference | Date | - | Preferred charter start date |
-| `group_size` | Group Size | Number | - | Number of guests for charter |
-| `charter_duration` | Charter Duration | Dropdown | 1-3 days, 4-7 days, 1-2 weeks, 2-3 weeks, 1 month+, Flexible | Length of charter desired |
-| `charter_destination` | Charter Destination | Dropdown | Caribbean, Mediterranean, South Pacific, Atlantic Coast, Gulf Coast, Great Lakes, Other | Preferred charter destination |
-| `special_requirements` | Special Requirements | Text Area | - | Any special needs or requests |
+### Charter Pipeline Report
 
-#### 2. Communication Preferences Group (2 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `preferred_contact_method` | Preferred Contact Method | Dropdown | Email, Phone, Text/SMS, WhatsApp, Video Call | How client prefers to be contacted |
-| `best_time_to_contact` | Best Time to Contact | Dropdown | Morning (9-12), Afternoon (12-5), Evening (5-8), Weekend, Anytime | When client prefers to be contacted |
-
-#### 3. Partner Tracking Group (3 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `referral_partner_id` | Referral Partner ID | Text | - | Unique identifier for referring partner |
-| `referral_partner_name` | Referral Partner Name | Text | - | Name of the referring partner |
-| `is_referral_lead` | Is Referral Lead | Checkbox | - | Whether this lead came from a partner |
-
-#### 4. Form Tracking Group (3 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `form_submission_date` | Form Submission Date | DateTime | - | When the form was submitted |
-| `form_name` | Form Name | Text | - | Name of the form submitted |
-| `form_url` | Form URL | Text | - | URL where form was submitted |
-
-#### 5. Partner Management Group (8 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `partner_status` | Partner Status | Dropdown | Active, Inactive, Pending, Suspended, Terminated | Current partnership status |
-| `partner_type` | Partner Type | Dropdown | Broker, Agent, Concierge, Hotel, Travel Agency, Other | Type of partner |
-| `partner_id` | Partner ID | Text | - | Unique partner identifier |
-| `partner_tier` | Partner Tier | Dropdown | Bronze, Silver, Gold, Platinum, VIP | Partner tier level |
-| `partner_onboarding_date` | Partner Onboarding Date | Date | - | When partner was onboarded |
-| `partner_agreement_signed` | Partner Agreement Signed | Checkbox | - | Whether agreement is signed |
-| `marketing_materials_sent` | Marketing Materials Sent | Checkbox | - | Whether materials were provided |
-| `partner_training_completed` | Partner Training Completed | Checkbox | - | Whether training is complete |
-
-#### 6. Partner Information Group (4 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `business_type` | Business Type | Dropdown | Travel Agency, Hotel/Resort, Concierge Service, Yacht Broker, Other | Type of partner business |
-| `years_in_business` | Years in Business | Number | - | How long partner has been in business |
-| `business_size` | Business Size | Dropdown | Solo, 2-10 employees, 11-50 employees, 51-200 employees, 200+ employees | Size of partner business |
-| `primary_markets_served` | Primary Markets Served | Text | - | Geographic markets partner serves |
-
-#### 7. Partner Performance Group (6 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `client_budget_range` | Client Budget Range | Dropdown | Under $10,000, $10,000-$25,000, $25,000-$50,000, $50,000-$100,000, $100,000-$250,000, $250,000+, Mixed | Typical client budget range |
-| `expected_referrals_yearly` | Expected Referrals Yearly | Number | - | Expected number of referrals per year |
-| `actual_referrals_yearly` | Actual Referrals Yearly | Number | - | Actual referrals provided this year |
-| `total_revenue_generated` | Total Revenue Generated | Number | - | Total revenue from this partner |
-| `commission_rate` | Commission Rate | Number | - | Commission percentage for partner |
-| `last_referral_date` | Last Referral Date | Date | - | Date of most recent referral |
-
-#### 8. Referral Tracking Group (8 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `referral_partner_id` | Referral Partner ID | Text | - | ID of referring partner |
-| `referral_source_partner` | Referral Source Partner | Text | - | Name of referring partner |
-| `is_referral_lead` | Is Referral Lead | Checkbox | - | Whether this is a referral |
-| `referral_date` | Referral Date | Date | - | Date referral was made |
-| `referral_status` | Referral Status | Dropdown | New, Contacted, Qualified, Converted, Closed Won, Closed Lost | Status of referral |
-| `referral_commission_amount` | Referral Commission Amount | Number | - | Commission amount owed |
-| `referral_commission_paid` | Referral Commission Paid | Checkbox | - | Whether commission was paid |
-| `referral_commission_date` | Referral Commission Date | Date | - | Date commission was paid |
-
----
-
-### Deal Properties (12 total)
-
-#### 1. Charter Details Group (6 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `yacht_model_requested` | Yacht Model Requested | Text | - | Specific yacht model requested |
-| `charter_start_date` | Charter Start Date | Date | - | Planned charter start date |
-| `charter_group_size` | Charter Group Size | Number | - | Number of guests |
-| `charter_duration_days` | Charter Duration (Days) | Number | - | Length of charter in days |
-| `charter_destination` | Charter Destination | Dropdown | Caribbean, Mediterranean, South Pacific, Atlantic Coast, Gulf Coast, Great Lakes, Other | Charter destination |
-| `charter_special_requirements` | Charter Special Requirements | Text Area | - | Special requirements for charter |
-
-#### 2. Deal Source Group (3 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `deal_source` | Deal Source | Dropdown | Website, Referral Partner, Direct Inquiry, Trade Show, Social Media, Advertising, Other | How deal was generated |
-| `deal_source_detail` | Deal Source Detail | Text | - | Additional source information |
-| `referral_partner_deal` | Referral Partner Deal | Text | - | Partner who referred this deal |
-
-#### 3. Deal Management Group (2 properties)
-
-| Property Name | Label | Field Type | Options | Description |
-|---------------|-------|------------|---------|-------------|
-| `deal_priority` | Deal Priority | Dropdown | Low, Medium, High, Urgent | Priority level of deal |
-| `deal_type` | Deal Type | Dropdown | Charter, Brokerage, Management, Other | Type of deal |
-
----
-
-## Property Groups Structure
-
-### Contact Object Groups:
-1. **Charter Information** - Core charter preferences and requirements
-2. **Communication Preferences** - How and when to contact
-3. **Partner Tracking** - Referral partner attribution
-4. **Form Tracking** - Form submission metadata
-5. **Partner Management** - Partner status and onboarding
-6. **Partner Information** - Business details and characteristics
-7. **Partner Performance** - Metrics and performance tracking
-8. **Referral Tracking** - Commission and referral status
-
-### Deal Object Groups:
-1. **Charter Details** - Specific booking information
-2. **Deal Source** - Lead source and attribution
-3. **Deal Management** - Priority and classification
-
----
-
-## Manual Setup Instructions
-
-If you prefer to create properties manually:
-
-### Step 1: Create Property Groups
-
-1. Go to **HubSpot → Settings → Properties**
-2. Select **Contact properties** or **Deal properties**
-3. Click **Create group**
-4. Add each group from the tables above
-
-### Step 2: Create Individual Properties
-
-For each property in the tables:
-
-1. Click **Create property**
-2. Enter the **Property Name** (internal name)
-3. Enter the **Label** (display name)
-4. Select the **Field Type**
-5. Add **Options** (for dropdown fields)
-6. Assign to the appropriate **Property Group**
-7. Save the property
-
-### Step 3: Configure Field Settings
-
-For each property, configure:
-- **Required/Optional** status
-- **Display order** within group
-- **Help text** for users
-- **Permissions** (who can view/edit)
-
----
-
-## Verification Checklist
-
-After setup, verify:
-
-- [ ] All 35 contact properties created
-- [ ] All 12 deal properties created
-- [ ] All 11 property groups created
-- [ ] Dropdown options match exactly
-- [ ] Field types are correct
-- [ ] Properties are assigned to correct groups
-- [ ] Test form submission populates properties
-- [ ] Partner referral tracking works
-- [ ] Commission tracking functions properly
-
----
-
-## Integration Testing
-
-### Test Contact Creation
-```javascript
-// Test contact with charter interest
-const testContact = {
-  yacht_charter_interest: "Motor Yacht",
-  charter_budget_range: "$50,000-$100,000",
-  group_size: 6,
-  charter_destination: "Caribbean",
-  preferred_contact_method: "Email"
-};
-```
-
-### Test Deal Creation
-```javascript
-// Test deal with charter details
-const testDeal = {
-  yacht_model_requested: "Sunseeker 68",
-  charter_start_date: "2025-07-15",
-  charter_group_size: 8,
-  charter_duration_days: 7,
-  deal_source: "Referral Partner",
-  deal_priority: "High"
-};
-```
+1. **Data source:** Deals
+2. **Filters:** Deal Source = "Partner Referral"
+3. **Breakdown by:** Deal stage
+4. **Metrics:** 
+   - Total deals
+   - Average deal value
+   - Win rate
+   - Average close time
 
 ---
 
@@ -257,40 +359,40 @@ const testDeal = {
 
 ### Common Issues
 
-**"Property already exists"**
-- Skip existing properties - this is normal
-- Check property names for typos
+**Property not showing in forms:**
+- Check property is set to "Show in forms"
+- Verify property group is active
+- Clear browser cache and refresh
 
-**"Invalid field type"**
-- Verify field types match HubSpot standards
-- Check dropdown options format
+**Dropdown options not saving:**
+- Ensure no special characters in options
+- Keep option labels under 100 characters
+- Save property before adding more options
 
-**"Permission denied"**
-- Ensure API key has property creation permissions
-- Check HubSpot account limits
+**Partner tracking not working:**
+- Verify URL parameter format: `?partner=CODE`
+- Check form field mapping
+- Ensure hidden field is configured correctly
 
-### Property Limits
+### Support Resources
 
-- **Free HubSpot**: 1,000 contact properties
-- **Paid HubSpot**: 10,000+ contact properties
-- **Deal Properties**: Generally unlimited
-
----
-
-## Next Steps
-
-1. **Update Forms**: Use new property names in customer inquiry forms
-2. **Configure Zapier**: Map new properties in automation workflows
-3. **Set Permissions**: Configure property access for different user roles
-4. **Train Team**: Educate team on new property structure
-5. **Monitor Usage**: Track property utilization and data quality
+- **HubSpot Academy:** Free training courses
+- **HubSpot Community:** User forums and discussions
+- **HubSpot Support:** Free tier includes email support
 
 ---
 
-## Support
+## Summary
 
-For technical support:
-1. Check console output for specific error messages
-2. Verify HubSpot account permissions
-3. Test with a single property first
-4. Contact HubSpot support for API issues 
+**Total Setup Time:** 15-20 minutes
+**Properties Created:** 22 total (13 contact + 9 deal)
+**API Required:** None
+**Cost:** $0 (works with free HubSpot tier)
+
+This manual setup provides all the functionality needed for Azure Yacht Group's referral system without requiring any API integration or coding. The properties integrate seamlessly with HubSpot forms, Zapier automations, and reporting tools.
+
+**Next Steps:**
+1. ✅ Complete property setup (this guide)
+2. → [Set up HubSpot forms](/docs/integration/customer-inquiry-form-setup)
+3. → [Configure Zapier automations](/docs/integration/zapier-implementation-guide)
+4. → [Create partner dashboards](/docs/integration/google-sheets-filtered-views-setup) 

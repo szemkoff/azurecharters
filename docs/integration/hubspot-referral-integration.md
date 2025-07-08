@@ -29,23 +29,25 @@ graph TD
 
 ## Implementation Timeline
 
-**Total Time: 20 minutes**
-- HubSpot setup: 10 minutes
-- Zapier integration: 10 minutes
+**Total Time: 35 minutes**
+- HubSpot properties setup: 15 minutes (manual)
+- HubSpot pipeline setup: 5 minutes
+- Zapier integration: 15 minutes
 
-## Step 1: HubSpot Account Setup (5 minutes)
+## Step 1: HubSpot Account Setup (15 minutes)
 
 ### 1.1 Configure Custom Properties
 
-Navigate to Settings → Properties → Contacts and create:
+**Complete the [HubSpot Properties Manual Setup Guide](/docs/hubspot-properties-setup)** to create all required properties.
 
-```
-Referral Source Partner: Single-line text
-Referral Commission Tier: Dropdown (Tier 1: $100, Tier 2: $200, Tier 3: $300)
-Yacht Type Interest: Dropdown (Luxury Charter, Bareboat, Catamaran, Motor Yacht)
-Charter Budget Range: Dropdown (<$5K, $5-15K, $15-30K, $30K+)
-Partner Performance Score: Number (0-100)
-```
+**Quick Reference - Key Properties:**
+- `referral_partner` - Partner code from referral URL
+- `yacht_charter_interest` - Type of yacht customer wants
+- `charter_budget_range` - Customer's budget range
+- `group_size` - Number of charter guests
+- `charter_date_preference` - Preferred charter date
+
+**No API or coding required** - all done through HubSpot's interface.
 
 ### 1.2 Create Lead Status Pipeline
 

@@ -13,32 +13,35 @@ The Azure Yacht Group referral system is built on a modern, scalable architectur
 
 ```mermaid
 graph TD
-    A[Partner Referral] --> B[Trello Board]
-    B --> C[Zapier Automation #1-3]
-    B --> D[Zapier Automation #4-5]
-    C --> E[Google Sheets Dashboard]
-    D --> F[HubSpot CRM]
-    E --> G[Partner Payments]
-    F --> H[Automated Follow-up]
-    F --> I[Lead Scoring]
-    F --> J[Partner Analytics]
+    A[Partner Referral] --> B[Customer fills HubSpot form]
+    B --> C[HubSpot stores contact]
+    C --> D[Zapier detects new contact]
+    D --> E[Creates Trello card]
+    D --> F[Updates Google Sheets]
+    E --> G[Trello workflow management]
+    F --> H[Partner dashboard updates]
+    C --> I[HubSpot automated workflows]
+    I --> J[Customer follow-up emails]
+    I --> K[Partner notifications]
+    H --> L[Monthly partner payments]
 ```
 
 ## 🔄 Data Flow Architecture
 
 ### Primary Data Flow
-1. **Partner Referral** → Customer contacts Azure Yacht Group with partner code
-2. **Trello Board** → Lead is logged as Trello card with standardized format
-3. **Zapier Automation #1-3** → Processes Trello data for partner tracking
-4. **Zapier Automation #4-5** → Syncs lead data to HubSpot CRM
-5. **Google Sheets Dashboard** → Real-time partner commission tracking
-6. **HubSpot CRM** → Professional lead management and automation
+1. **Partner Referral** → Customer clicks partner referral link with tracking code
+2. **HubSpot Form** → Customer fills inquiry form (partner code captured automatically)
+3. **HubSpot Contact** → Lead stored with partner attribution and charter details
+4. **Zapier Automation** → Detects new HubSpot contact and processes data
+5. **Trello Card** → Lead created in workflow board with partner tracking
+6. **Google Sheets** → Real-time partner commission tracking and dashboard updates
+7. **HubSpot Workflows** → Automated customer follow-up and partner notifications
 
 ### Secondary Processes
 - **Partner Payments** → Monthly Zelle transfers based on Google Sheets data
-- **Automated Follow-up** → HubSpot sequences for lead nurturing
-- **Lead Scoring** → HubSpot scoring based on partner quality and lead value
-- **Partner Analytics** → Performance tracking and optimization
+- **Customer Nurturing** → HubSpot email sequences for lead conversion
+- **Partner Analytics** → Performance tracking and commission reporting
+- **Workflow Management** → Trello-based charter booking process
 
 ## 🛠️ Technology Stack
 
@@ -52,10 +55,10 @@ graph TD
 - **Cost**: Free (unlimited personal boards)
 
 #### **Zapier** - Automation Engine
-- **Purpose**: Connects Trello, Google Sheets, and HubSpot
-- **Automations**: 5 total (3 for partner tracking, 2 for HubSpot sync)
-- **Capacity**: 100 tasks/month on free plan
-- **Triggers**: Trello card movements, Google Sheets updates
+- **Purpose**: Connects HubSpot, Trello, and Google Sheets
+- **Automations**: 3 total (1 for contact processing, 1 for Trello sync, 1 for Google Sheets)
+- **Capacity**: 100 tasks/month on free plan (≈30 referrals)
+- **Triggers**: HubSpot form submissions, Trello card movements
 - **Cost**: Free for up to 100 tasks/month
 
 #### **Google Sheets** - Partner Dashboard
@@ -67,10 +70,12 @@ graph TD
 
 #### **HubSpot CRM** - Customer Management
 - **Purpose**: Professional lead management and customer relationship tracking
-- **Features**: Contact management, deal pipeline, automated sequences
-- **Integration**: Receives all leads with partner attribution
-- **Automation**: Lead scoring, follow-up sequences, analytics
+- **Setup**: Manual property configuration (15 minutes one-time setup)
+- **Features**: Contact management, deal pipeline, automated workflows
+- **Integration**: Receives leads via embedded forms with partner tracking
+- **Automation**: Email sequences, lead scoring, partner notifications
 - **Cost**: Free for up to 1,000 contacts
+- **API Required**: None - uses forms and Zapier connectors
 
 #### **Gmail** - Communication Hub
 - **Purpose**: Automated partner notifications and customer communication
@@ -110,20 +115,21 @@ Payment Ref | Notes
 
 ### Automation Logic
 
+#### **Partner Attribution**
+```
+HubSpot Form URL:
+https://azureyachtgroup.com/charter-inquiry?partner=AZURE-JOHN
+
+Form automatically captures:
+- Partner code: AZURE-JOHN
+- Customer details: Name, email, phone
+- Charter preferences: Date, budget, yacht type
+```
+
 #### **Commission Calculation**
 ```javascript
 // Automated formula in Google Sheets
 =IF(G2="","",IF(G2<=300,100,IF(G2<=500,150,IF(G2<=800,200,300))))
-```
-
-#### **Partner Attribution**
-```
-Trello Card Format:
-PARTNER: AZURE-JOHN
-CUSTOMER: john.doe@email.com  
-RETAIL: 5000
-REVENUE: 300
-CHARTER: 2/15/2025
 ```
 
 ## 🔐 Security & Access Control
@@ -183,10 +189,11 @@ CHARTER: 2/15/2025
 - **Notifications**: Partner dashboard updates
 
 ### Zapier → HubSpot Integration
-- **Contact Creation**: New customer records with partner attribution
-- **Deal Pipeline**: Automated deal creation and stage management
-- **Lead Scoring**: Partner quality and lead value assessment
-- **Automation**: Follow-up sequences and nurturing campaigns
+- **Trigger**: New contact created in HubSpot (from form submission)
+- **Contact Data**: Customer details with partner attribution automatically captured
+- **Deal Creation**: Automated deal pipeline entry with charter details
+- **Workflow Triggers**: HubSpot workflows activated for follow-up sequences
+- **Partner Tracking**: Referral partner code preserved throughout process
 
 ### Google Sheets → Partner Dashboard
 - **Filtered Views**: Personalized partner data access
