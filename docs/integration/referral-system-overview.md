@@ -35,18 +35,19 @@ Our hybrid commission model based on your actual revenue:
 
 ## 🏗️ System Architecture
 
-### Technology Stack
+Our referral system uses a modern, integrated architecture that connects multiple platforms seamlessly:
 
-**Complete System Components:**
-- **Zapier** - 5 automations, 100 tasks/month (3 for partner tracking + 2 for HubSpot)
-- **Google Sheets** - Partner dashboards, filtered views & financial tracking
-- **Trello** - Lead management integration
-- **HubSpot** - CRM integration, lead scoring, automated follow-up sequences
+**Partner Referral → Trello Board → Zapier Automations → Google Sheets Dashboard & HubSpot CRM**
+
+For complete technical details, architecture diagrams, and data flow documentation, see our [System Architecture Guide](/docs/integration/system-architecture).
+
+**Key Integration Points:**
+- **Trello** - Central lead management and workflow
+- **Zapier** - 5 automations connecting all platforms  
+- **Google Sheets** - Real-time partner dashboards and commission tracking
+- **HubSpot CRM** - Professional customer management and automated follow-up
 - **Gmail** - Automated partner notifications
-- **Zelle** - Commission payments
-
-**System Integration:**
-Partner referrals automatically integrate with your existing HubSpot CRM for unified contact management and professional client follow-up. See [HubSpot Integration Guide](/docs/integration/hubspot-referral-integration) for setup details.
+- **Zelle** - Monthly commission payments
 
 ### How Partners Track Commissions
 

@@ -102,16 +102,35 @@ const sidebars = {
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
-        'hubspot-properties-setup',
-        'integration/zapier-implementation-guide',
-        'integration/hubspot-referral-integration',
-        'integration/google-sheets-filtered-views-setup',
-        'integration/forms-overview',
-        'integration/customer-inquiry-form-setup',
-        'integration/partner-application',
-        'integration/partner-application-form-setup',
-        'integration/partner-booklet',
-        'integration/partner-agreement',
+        'integration/system-architecture',
+        {
+          type: 'category',
+          label: 'System Setup',
+          items: [
+            'integration/zapier-implementation-guide',
+            'hubspot-properties-setup',
+            'integration/hubspot-referral-integration',
+            'integration/google-sheets-filtered-views-setup',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Forms & Applications',
+          items: [
+            'integration/forms-overview',
+            'integration/customer-inquiry-form-setup',
+            'integration/partner-application-form-setup',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Partner Materials',
+          items: [
+            'integration/partner-application',
+            'integration/partner-booklet',
+            'integration/partner-agreement',
+          ],
+        },
       ],
     },
     {
