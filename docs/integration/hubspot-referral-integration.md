@@ -6,19 +6,38 @@ Complete CRM integration for Azure Yacht Group's referral system using HubSpot F
 
 This integration enhances the core referral system by adding professional CRM capabilities, automated follow-up sequences, and comprehensive partner performance analytics - all while maintaining the $0/month cost structure using HubSpot's free tier.
 
-## System Architecture
+## HubSpot Workflow Architecture
 
 ```mermaid
 graph TD
-    A[Partner Referral] --> B[Trello Board]
-    B --> C[Zapier Automation #1-3]
-    C --> D[Google Sheets Dashboard]
-    B --> E[Zapier Automation #4-5]
-    E --> F[HubSpot CRM]
-    F --> G[Automated Follow-up]
-    F --> H[Lead Scoring]
-    F --> I[Partner Analytics]
-    D --> J[Partner Payments]
+    A[Contact Created in HubSpot] --> B{Has Referral Partner?}
+    B -->|Yes| C[Enroll in Referral Workflow]
+    B -->|No| D[Enroll in Standard Workflow]
+    
+    C --> E[Day 0: Welcome Email]
+    C --> F[Create Deal in Referral Pipeline]
+    
+    E --> G[Day 1: Internal Sales Notification]
+    G --> H[Day 3: Yacht Options Email]
+    H --> I[Day 7: Personal Outreach Reminder]
+    I --> J[Day 14: Special Offer Email]
+    J --> K[Day 30: Partner Performance Update]
+    
+    F --> L{Deal Stage Changed?}
+    L -->|Qualified Lead| M[Notify Partner: Lead Qualified]
+    L -->|Booking Confirmed| N[Notify Partner: Commission Earned]
+    L -->|Closed Lost| O[Notify Partner: Follow-up Opportunity]
+    
+    N --> P[Update Partner Performance Score]
+    P --> Q[Log Commission in Google Sheets]
+    
+    classDef hubspot fill:#ff6b35,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef workflow fill:#4ecdc4,color:#ffffff,stroke:#333,stroke-width:1px;
+    classDef partner fill:#45b7d1,color:#ffffff,stroke:#333,stroke-width:1px;
+    
+    class A,B,F,L hubspot;
+    class C,D,E,G,H,I,J,K workflow;
+    class M,N,O,P,Q partner;
 ```
 
 ## Prerequisites
