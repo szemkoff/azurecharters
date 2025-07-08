@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">HubSpot Referral Integration | Azure Yacht Group Framework</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://szemkoff.github.io/azurecharters/img/azure-yacht-social-card.jpg"><meta data-rh="true" property="og:url" content="https://szemkoff.github.io/azurecharters/docs/integration/hubspot-referral-integration"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="HubSpot Referral Integration | Azure Yacht Group Framework"><meta data-rh="true" name="description" content="Complete CRM integration for Azure Yacht Group&#x27;s referral system using HubSpot Free tier with automated workflows and partner tracking."><meta data-rh="true" property="og:description" content="Complete CRM integration for Azure Yacht Group&#x27;s referral system using HubSpot Free tier with automated workflows and partner tracking."><link data-rh="true" rel="icon" href="/azurecharters/img/azure_corp_mark_black.png"><link data-rh="true" rel="canonical" href="https://szemkoff.github.io/azurecharters/docs/integration/hubspot-referral-integration"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/integration/hubspot-referral-integration" hreflang="en"><link data-rh="true" rel="alternate" href="https://szemkoff.github.io/azurecharters/docs/integration/hubspot-referral-integration" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"HubSpot Referral Integration","item":"https://szemkoff.github.io/azurecharters/docs/integration/hubspot-referral-integration"}]}</script><link rel="stylesheet" href="/azurecharters/assets/css/styles.d7fc2d79.css">
-<script src="/azurecharters/assets/js/runtime~main.11a866ad.js" defer="defer"></script>
+<script src="/azurecharters/assets/js/runtime~main.4cb148cc.js" defer="defer"></script>
 <script src="/azurecharters/assets/js/main.1c6cb479.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,6 +51,7 @@
 <li>Label: <code>Yacht Charter Interest</code></li>
 <li>Internal name: <code>yacht_charter_interest</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Type of yacht the customer is interested in chartering</code></li>
 <li>Options: Motor Yacht, Sailing Yacht, Catamaran, Luxury Yacht, Sport Yacht, Expedition Yacht, Not Sure</li>
 </ul>
 </li>
@@ -60,6 +61,7 @@
 <li>Label: <code>Charter Budget Range</code></li>
 <li>Internal name: <code>charter_budget_range</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Customer&#x27;s budget range for yacht charter (total charter cost)</code></li>
 <li>Options: $3,000-$5,000, $5,000-$10,000, $10,000-$20,000, $20,000-$50,000, $50,000+, I need help determining budget</li>
 </ul>
 </li>
@@ -69,6 +71,7 @@
 <li>Label: <code>Preferred Charter Date</code></li>
 <li>Internal name: <code>charter_date_preference</code></li>
 <li>Field type: <code>Date picker</code></li>
+<li>Description: <code>Customer&#x27;s preferred start date for yacht charter</code></li>
 </ul>
 </li>
 <li>
@@ -77,6 +80,7 @@
 <li>Label: <code>Group Size</code></li>
 <li>Internal name: <code>group_size</code></li>
 <li>Field type: <code>Number</code></li>
+<li>Description: <code>Total number of guests for the charter (including customer)</code></li>
 </ul>
 </li>
 <li>
@@ -85,6 +89,7 @@
 <li>Label: <code>Charter Duration (Days)</code></li>
 <li>Internal name: <code>charter_duration</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Length of time customer wants to charter the yacht</code></li>
 <li>Options: Half Day (4 hours), Full Day (8 hours), 2-3 Days, 1 Week, 2 Weeks, 1 Month+</li>
 </ul>
 </li>
@@ -94,6 +99,7 @@
 <li>Label: <code>Charter Destination</code></li>
 <li>Internal name: <code>charter_destination</code></li>
 <li>Field type: <code>Single-line text</code></li>
+<li>Description: <code>Preferred location/region for yacht charter (e.g., Caribbean, Mediterranean)</code></li>
 </ul>
 </li>
 <li>
@@ -102,6 +108,7 @@
 <li>Label: <code>Special Requirements</code></li>
 <li>Internal name: <code>special_requirements</code></li>
 <li>Field type: <code>Multi-line text</code></li>
+<li>Description: <code>Any special requests, accessibility needs, or preferences for the charter</code></li>
 </ul>
 </li>
 </ol>
@@ -123,6 +130,7 @@
 <li>Label: <code>Partner Status</code></li>
 <li>Internal name: <code>partner_status</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Current status of the referral partner in our program</code></li>
 <li>Options: Applied, Under Review, Approved, Active, Inactive, Suspended, Terminated</li>
 </ul>
 </li>
@@ -132,6 +140,7 @@
 <li>Label: <code>Partner Type</code></li>
 <li>Internal name: <code>partner_type</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Type of business or role of the referral partner</code></li>
 <li>Options: Travel Advisor, Concierge Service, Event Planner, Wealth Manager, Real Estate Agent, Hotel/Resort, Corporate Services, Other</li>
 </ul>
 </li>
@@ -145,6 +154,7 @@
 <li>Label: <code>Preferred Contact Method</code></li>
 <li>Internal name: <code>preferred_contact_method</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Customer&#x27;s preferred way to be contacted by our team</code></li>
 <li>Options: Email, Phone, Text/SMS, WhatsApp</li>
 </ul>
 </li>
@@ -154,6 +164,7 @@
 <li>Label: <code>Best Time to Contact</code></li>
 <li>Internal name: <code>best_time_to_contact</code></li>
 <li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>Customer&#x27;s preferred time of day for contact</code></li>
 <li>Options: Morning (9 AM-12 PM), Afternoon (12 PM-5 PM), Evening (5 PM-8 PM), Anytime</li>
 </ul>
 </li>
@@ -161,18 +172,73 @@
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-deal-properties">Create Deal Properties<a href="#create-deal-properties" class="hash-link" aria-label="Direct link to Create Deal Properties" title="Direct link to Create Deal Properties">​</a></h4>
 <p>Switch to &quot;Deal properties&quot; and create property group: <code>Charter Details</code></p>
 <ol>
-<li><strong>Yacht Model Requested</strong> (Single-line text)</li>
-<li><strong>Charter Start Date</strong> (Date picker)</li>
-<li><strong>Charter Group Size</strong> (Number)</li>
-<li><strong>Charter Duration Days</strong> (Single-line text)</li>
-<li><strong>Charter Destination</strong> (Single-line text)</li>
-<li><strong>Charter Special Requirements</strong> (Multi-line text)</li>
+<li>
+<p><strong>Yacht Model Requested</strong> (Single-line text)</p>
+<ul>
+<li>Field type: <code>Single-line text</code></li>
+<li>Description: <code>Specific yacht model or name requested by customer</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Charter Start Date</strong> (Date picker)</p>
+<ul>
+<li>Field type: <code>Date picker</code></li>
+<li>Description: <code>Confirmed start date for the yacht charter</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Charter Group Size</strong> (Number)</p>
+<ul>
+<li>Field type: <code>Number</code></li>
+<li>Description: <code>Final number of guests for the charter</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Charter Duration Days</strong> (Single-line text)</p>
+<ul>
+<li>Field type: <code>Single-line text</code></li>
+<li>Description: <code>Confirmed duration of charter in days</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Charter Destination</strong> (Single-line text)</p>
+<ul>
+<li>Field type: <code>Single-line text</code></li>
+<li>Description: <code>Confirmed destination/location for the charter</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Charter Special Requirements</strong> (Multi-line text)</p>
+<ul>
+<li>Field type: <code>Multi-line text</code></li>
+<li>Description: <code>Special requests or requirements for this specific charter deal</code></li>
+</ul>
+</li>
 </ol>
 <p>Create property group: <code>Deal Source</code></p>
 <ol start="7">
-<li><strong>Deal Source</strong> (Dropdown: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other)</li>
-<li><strong>Referral Partner</strong> (Single-line text)</li>
-<li><strong>Lead Quality Score</strong> (Number)</li>
+<li>
+<p><strong>Deal Source</strong> (Dropdown: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other)</p>
+<ul>
+<li>Field type: <code>Dropdown select</code></li>
+<li>Description: <code>How this lead/deal was generated</code></li>
+<li>Options: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other</li>
+</ul>
+</li>
+<li>
+<p><strong>Referral Partner</strong> (Single-line text)</p>
+<ul>
+<li>Field type: <code>Single-line text</code></li>
+<li>Description: <code>Partner code of the referring partner for this deal</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Lead Quality Score</strong> (Number)</p>
+<ul>
+<li>Field type: <code>Number</code></li>
+<li>Description: <code>Scoring from 1-10 based on lead qualification criteria</code></li>
+</ul>
+</li>
 </ol>
 <p><strong>Properties Setup Complete!</strong> Total: 22 properties (13 contact + 9 deal)</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-create-lead-status-pipeline">1.2 Create Lead Status Pipeline<a href="#12-create-lead-status-pipeline" class="hash-link" aria-label="Direct link to 1.2 Create Lead Status Pipeline" title="Direct link to 1.2 Create Lead Status Pipeline">​</a></h3>
@@ -235,109 +301,6 @@
 <p>Create custom report in HubSpot:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Report Type: Custom Report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Primary Data Source: Contacts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Secondary Data Source: Deals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Filters:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Referral Source Partner is known</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Create date: Last 30 days</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Metrics:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Total referrals by partner</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Conversion rate by partner</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Average deal value by partner</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Commission earned by partner</span><br></span></code></pre></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="62-referral-pipeline-report">6.2 Referral Pipeline Report<a href="#62-referral-pipeline-report" class="hash-link" aria-label="Direct link to 6.2 Referral Pipeline Report" title="Direct link to 6.2 Referral Pipeline Report">​</a></h3>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Report Type: Deal Report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Pipeline: Referral Pipeline</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Breakdown by:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Deal stage</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Referral source partner</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Yacht type interest</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Budget range</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Metrics:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Total deals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Won deals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Average close time</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Total revenue</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-partner-notification-system-3-minutes">Step 7: Partner Notification System (3 minutes)<a href="#step-7-partner-notification-system-3-minutes" class="hash-link" aria-label="Direct link to Step 7: Partner Notification System (3 minutes)" title="Direct link to Step 7: Partner Notification System (3 minutes)">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="71-automated-partner-updates">7.1 Automated Partner Updates<a href="#71-automated-partner-updates" class="hash-link" aria-label="Direct link to 7.1 Automated Partner Updates" title="Direct link to 7.1 Automated Partner Updates">​</a></h3>
-<p>Create workflow for partner notifications:</p>
-<p><strong>Triggers:</strong></p>
-<ul>
-<li>Deal moves to &quot;Qualified Lead&quot; → Email partner: Lead is qualified</li>
-<li>Deal moves to &quot;Booking Confirmed&quot; → Email partner: Commission earned</li>
-<li>Deal moves to &quot;Closed Lost&quot; → Email partner: Follow-up opportunity</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="72-monthly-partner-reports">7.2 Monthly Partner Reports<a href="#72-monthly-partner-reports" class="hash-link" aria-label="Direct link to 7.2 Monthly Partner Reports" title="Direct link to 7.2 Monthly Partner Reports">​</a></h3>
-<p>Automated monthly email to partners with:</p>
-<ul>
-<li>Total referrals sent</li>
-<li>Conversion rate</li>
-<li>Commissions earned</li>
-<li>Top performing referral types</li>
-<li>Upcoming opportunities</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-checklist">Testing Checklist<a href="#testing-checklist" class="hash-link" aria-label="Direct link to Testing Checklist" title="Direct link to Testing Checklist">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pre-launch-testing">Pre-Launch Testing<a href="#pre-launch-testing" class="hash-link" aria-label="Direct link to Pre-Launch Testing" title="Direct link to Pre-Launch Testing">​</a></h3>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test referral from Trello → HubSpot contact creation</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify deal creation from new contacts</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test email workflow sequences</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Confirm partner notifications</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Validate reporting accuracy</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check Google Sheets synchronization</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="post-launch-monitoring">Post-Launch Monitoring<a href="#post-launch-monitoring" class="hash-link" aria-label="Direct link to Post-Launch Monitoring" title="Direct link to Post-Launch Monitoring">​</a></h3>
-<p><strong>Week 1:</strong></p>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitor automation success rates</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Review email open/click rates</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check partner feedback</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify commission calculations</li>
-</ul>
-<p><strong>Monthly:</strong></p>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Analyze conversion rates by partner</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Review email template performance</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Update partner performance scores</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Optimize workflow timing</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues">​</a></h3>
-<p><strong>Contact not created in HubSpot:</strong></p>
-<ul>
-<li>Check Trello card format matches expected structure</li>
-<li>Verify Zapier field mapping</li>
-<li>Confirm HubSpot API limits</li>
-</ul>
-<p><strong>Emails not sending:</strong></p>
-<ul>
-<li>Check workflow enrollment criteria</li>
-<li>Verify email template approval status</li>
-<li>Confirm contact has valid email address</li>
-</ul>
-<p><strong>Deals not creating:</strong></p>
-<ul>
-<li>Verify contact has required custom properties</li>
-<li>Check deal pipeline permissions</li>
-<li>Confirm Zapier connection to HubSpot</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="support-resources">Support Resources<a href="#support-resources" class="hash-link" aria-label="Direct link to Support Resources" title="Direct link to Support Resources">​</a></h3>
-<ul>
-<li>HubSpot Academy: Free CRM training</li>
-<li>Zapier Help Center: Integration guides</li>
-<li>Azure Yacht Group documentation: System overview</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="roi-metrics">ROI Metrics<a href="#roi-metrics" class="hash-link" aria-label="Direct link to ROI Metrics" title="Direct link to ROI Metrics">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="expected-improvements">Expected Improvements<a href="#expected-improvements" class="hash-link" aria-label="Direct link to Expected Improvements" title="Direct link to Expected Improvements">​</a></h3>
-<p><strong>Conversion Rate:</strong> 15-25% increase through automated follow-up
-<strong>Partner Satisfaction:</strong> 90%+ through transparent tracking
-<strong>Processing Time:</strong> 80% reduction in manual tasks
-<strong>Lead Response Time:</strong> Sub-1-hour automated responses</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="success-metrics">Success Metrics<a href="#success-metrics" class="hash-link" aria-label="Direct link to Success Metrics" title="Direct link to Success Metrics">​</a></h3>
-<p><strong>Month 1 Targets:</strong></p>
-<ul>
-<li>50+ referrals processed through HubSpot</li>
-<li>85%+ automation success rate</li>
-<li>20%+ conversion rate improvement</li>
-<li>5+ active referring partners</li>
-</ul>
-<p><strong>Quarterly Goals:</strong></p>
-<ul>
-<li>200+ referrals processed</li>
-<li>30%+ conversion rate</li>
-<li>$50,000+ in charter bookings from referrals</li>
-<li>15+ active partner network</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
-<ol>
-<li><strong>Complete Implementation</strong> (20 minutes total)</li>
-<li><strong>Train Team</strong> on HubSpot workflows (30 minutes)</li>
-<li><strong>Launch Partner Onboarding</strong> using new system</li>
-<li><strong>Monitor Performance</strong> for first 30 days</li>
-<li><strong>Optimize Based on Data</strong> collected</li>
-</ol>
-<hr>
-<p><strong>Implementation Status:</strong> ✅ Ready for deployment
-<strong>Cost:</strong> $0/month (HubSpot Free + Zapier Free)
-<strong>Maintenance:</strong> 15 minutes/week monitoring
-<strong>Expected ROI:</strong> 300%+ within 90 days</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/integration/hubspot-referral-integration.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/integration/zapier-implementation-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Zapier Setup Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Partner Dashboard Setup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#hubspot-workflow-architecture" class="table-of-contents__link toc-highlight">HubSpot Workflow Architecture</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#implementation-timeline" class="table-of-contents__link toc-highlight">Implementation Timeline</a></li><li><a href="#step-1-hubspot-account-setup-15-minutes" class="table-of-contents__link toc-highlight">Step 1: HubSpot Account Setup (15 minutes)</a><ul><li><a href="#11-configure-custom-properties" class="table-of-contents__link toc-highlight">1.1 Configure Custom Properties</a></li><li><a href="#12-create-lead-status-pipeline" class="table-of-contents__link toc-highlight">1.2 Create Lead Status Pipeline</a></li></ul></li><li><a href="#step-2-zapier-automation-4---contact-creation-8-minutes" class="table-of-contents__link toc-highlight">Step 2: Zapier Automation #4 - Contact Creation (8 minutes)</a><ul><li><a href="#21-create-new-zap" class="table-of-contents__link toc-highlight">2.1 Create New Zap</a></li><li><a href="#22-field-mapping" class="table-of-contents__link toc-highlight">2.2 Field Mapping</a></li><li><a href="#23-test-and-activate" class="table-of-contents__link toc-highlight">2.3 Test and Activate</a></li></ul></li><li><a href="#step-3-zapier-automation-5---deal-creation-7-minutes" class="table-of-contents__link toc-highlight">Step 3: Zapier Automation #5 - Deal Creation (7 minutes)</a><ul><li><a href="#31-create-new-zap" class="table-of-contents__link toc-highlight">3.1 Create New Zap</a></li><li><a href="#32-deal-configuration" class="table-of-contents__link toc-highlight">3.2 Deal Configuration</a></li></ul></li><li><a href="#step-4-hubspot-workflow-automation-5-minutes" class="table-of-contents__link toc-highlight">Step 4: HubSpot Workflow Automation (5 minutes)</a><ul><li><a href="#41-create-referral-follow-up-workflow" class="table-of-contents__link toc-highlight">4.1 Create Referral Follow-up Workflow</a></li><li><a href="#42-partner-performance-tracking" class="table-of-contents__link toc-highlight">4.2 Partner Performance Tracking</a></li></ul></li><li><a href="#step-5-email-templates-10-minutes" class="table-of-contents__link toc-highlight">Step 5: Email Templates (10 minutes)</a><ul><li><a href="#51-welcome-email-template" class="table-of-contents__link toc-highlight">5.1 Welcome Email Template</a></li><li><a href="#52-follow-up-email-templates" class="table-of-contents__link toc-highlight">5.2 Follow-up Email Templates</a></li></ul></li><li><a href="#step-6-reporting-dashboard-5-minutes" class="table-of-contents__link toc-highlight">Step 6: Reporting Dashboard (5 minutes)</a><ul><li><a href="#61-partner-performance-report" class="table-of-contents__link toc-highlight">6.1 Partner Performance Report</a></li><li><a href="#62-referral-pipeline-report" class="table-of-contents__link toc-highlight">6.2 Referral Pipeline Report</a></li></ul></li><li><a href="#step-7-partner-notification-system-3-minutes" class="table-of-contents__link toc-highlight">Step 7: Partner Notification System (3 minutes)</a><ul><li><a href="#71-automated-partner-updates" class="table-of-contents__link toc-highlight">7.1 Automated Partner Updates</a></li><li><a href="#72-monthly-partner-reports" class="table-of-contents__link toc-highlight">7.2 Monthly Partner Reports</a></li></ul></li><li><a href="#testing-checklist" class="table-of-contents__link toc-highlight">Testing Checklist</a><ul><li><a href="#pre-launch-testing" class="table-of-contents__link toc-highlight">Pre-Launch Testing</a></li><li><a href="#post-launch-monitoring" class="table-of-contents__link toc-highlight">Post-Launch Monitoring</a></li></ul></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a></li><li><a href="#support-resources" class="table-of-contents__link toc-highlight">Support Resources</a></li></ul></li><li><a href="#roi-metrics" class="table-of-contents__link toc-highlight">ROI Metrics</a><ul><li><a href="#expected-improvements" class="table-of-contents__link toc-highlight">Expected Improvements</a></li><li><a href="#success-metrics" class="table-of-contents__link toc-highlight">Success Metrics</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Report Type: Deal Report</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Pipeline: Referral Pipeline</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Breakdown by:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Deal stage</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Referral source partner</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Yacht type interest</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Budget range</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Metrics:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Total deals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Won deals</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Average close time</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Total revenue</span><br></span></code></pre></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/szemkoff/azurecharters/tree/main/docs/integration/hubspot-referral-integration.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/azurecharters/docs/integration/zapier-implementation-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Zapier Setup Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/azurecharters/docs/integration/google-sheets-filtered-views-setup"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Partner Dashboard Setup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#hubspot-workflow-architecture" class="table-of-contents__link toc-highlight">HubSpot Workflow Architecture</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#implementation-timeline" class="table-of-contents__link toc-highlight">Implementation Timeline</a></li><li><a href="#step-1-hubspot-account-setup-15-minutes" class="table-of-contents__link toc-highlight">Step 1: HubSpot Account Setup (15 minutes)</a><ul><li><a href="#11-configure-custom-properties" class="table-of-contents__link toc-highlight">1.1 Configure Custom Properties</a></li><li><a href="#12-create-lead-status-pipeline" class="table-of-contents__link toc-highlight">1.2 Create Lead Status Pipeline</a></li></ul></li><li><a href="#step-2-zapier-automation-4---contact-creation-8-minutes" class="table-of-contents__link toc-highlight">Step 2: Zapier Automation #4 - Contact Creation (8 minutes)</a><ul><li><a href="#21-create-new-zap" class="table-of-contents__link toc-highlight">2.1 Create New Zap</a></li><li><a href="#22-field-mapping" class="table-of-contents__link toc-highlight">2.2 Field Mapping</a></li><li><a href="#23-test-and-activate" class="table-of-contents__link toc-highlight">2.3 Test and Activate</a></li></ul></li><li><a href="#step-3-zapier-automation-5---deal-creation-7-minutes" class="table-of-contents__link toc-highlight">Step 3: Zapier Automation #5 - Deal Creation (7 minutes)</a><ul><li><a href="#31-create-new-zap" class="table-of-contents__link toc-highlight">3.1 Create New Zap</a></li><li><a href="#32-deal-configuration" class="table-of-contents__link toc-highlight">3.2 Deal Configuration</a></li></ul></li><li><a href="#step-4-hubspot-workflow-automation-5-minutes" class="table-of-contents__link toc-highlight">Step 4: HubSpot Workflow Automation (5 minutes)</a><ul><li><a href="#41-create-referral-follow-up-workflow" class="table-of-contents__link toc-highlight">4.1 Create Referral Follow-up Workflow</a></li><li><a href="#42-partner-performance-tracking" class="table-of-contents__link toc-highlight">4.2 Partner Performance Tracking</a></li></ul></li><li><a href="#step-5-email-templates-10-minutes" class="table-of-contents__link toc-highlight">Step 5: Email Templates (10 minutes)</a><ul><li><a href="#51-welcome-email-template" class="table-of-contents__link toc-highlight">5.1 Welcome Email Template</a></li><li><a href="#52-follow-up-email-templates" class="table-of-contents__link toc-highlight">5.2 Follow-up Email Templates</a></li></ul></li><li><a href="#step-6-reporting-dashboard-5-minutes" class="table-of-contents__link toc-highlight">Step 6: Reporting Dashboard (5 minutes)</a><ul><li><a href="#61-partner-performance-report" class="table-of-contents__link toc-highlight">6.1 Partner Performance Report</a></li><li><a href="#62-referral-pipeline-report" class="table-of-contents__link toc-highlight">6.2 Referral Pipeline Report</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/intro">Framework</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/website-architecture/tilda-integration">Tilda Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/azurecharters/docs/client-funnel/overview">Client Funnel</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/azure-yacht-group" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discord.gg/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/azureyachtgroup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/szemkoff/azurecharters" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Azure Yacht Group. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
