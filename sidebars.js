@@ -102,7 +102,6 @@ const sidebars = {
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
-        'integration/system-architecture',
         {
           type: 'category',
           label: 'System Setup',
