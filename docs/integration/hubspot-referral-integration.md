@@ -77,39 +77,46 @@ First, create a property group: Click "Create property group" → Name: `Charter
    - Label: `Yacht Charter Interest`
    - Internal name: `yacht_charter_interest`
    - Field type: `Dropdown select`
+   - Description: `Type of yacht the customer is interested in chartering`
    - Options: Motor Yacht, Sailing Yacht, Catamaran, Luxury Yacht, Sport Yacht, Expedition Yacht, Not Sure
 
 2. **Charter Budget Range**
    - Label: `Charter Budget Range`
    - Internal name: `charter_budget_range`
    - Field type: `Dropdown select`
+   - Description: `Customer's budget range for yacht charter (total charter cost)`
    - Options: $3,000-$5,000, $5,000-$10,000, $10,000-$20,000, $20,000-$50,000, $50,000+, I need help determining budget
 
 3. **Preferred Charter Date**
    - Label: `Preferred Charter Date`
    - Internal name: `charter_date_preference`
    - Field type: `Date picker`
+   - Description: `Customer's preferred start date for yacht charter`
 
 4. **Group Size**
    - Label: `Group Size`
    - Internal name: `group_size`
    - Field type: `Number`
+   - Description: `Total number of guests for the charter (including customer)`
 
 5. **Charter Duration**
    - Label: `Charter Duration (Days)`
    - Internal name: `charter_duration`
    - Field type: `Dropdown select`
+   - Description: `Length of time customer wants to charter the yacht`
    - Options: Half Day (4 hours), Full Day (8 hours), 2-3 Days, 1 Week, 2 Weeks, 1 Month+
 
 6. **Charter Destination**
    - Label: `Charter Destination`
    - Internal name: `charter_destination`
    - Field type: `Single-line text`
+   - Description: `Preferred location/region for yacht charter (e.g., Caribbean, Mediterranean)`
 
 7. **Special Requirements**
    - Label: `Special Requirements`
    - Internal name: `special_requirements`
    - Field type: `Multi-line text`
+   - Description: `Any special requests, accessibility needs, or preferences for the charter`
 
 **Partner Management Group:**
 
@@ -125,12 +132,14 @@ Create property group: `Partner Management`
    - Label: `Partner Status`
    - Internal name: `partner_status`
    - Field type: `Dropdown select`
+   - Description: `Current status of the referral partner in our program`
    - Options: Applied, Under Review, Approved, Active, Inactive, Suspended, Terminated
 
 10. **Partner Type**
     - Label: `Partner Type`
     - Internal name: `partner_type`
     - Field type: `Dropdown select`
+    - Description: `Type of business or role of the referral partner`
     - Options: Travel Advisor, Concierge Service, Event Planner, Wealth Manager, Real Estate Agent, Hotel/Resort, Corporate Services, Other
 
 **Communication Preferences Group:**
@@ -141,12 +150,14 @@ Create property group: `Communication Preferences`
     - Label: `Preferred Contact Method`
     - Internal name: `preferred_contact_method`
     - Field type: `Dropdown select`
+    - Description: `Customer's preferred way to be contacted by our team`
     - Options: Email, Phone, Text/SMS, WhatsApp
 
 12. **Best Time to Contact**
     - Label: `Best Time to Contact`
     - Internal name: `best_time_to_contact`
     - Field type: `Dropdown select`
+    - Description: `Customer's preferred time of day for contact`
     - Options: Morning (9 AM-12 PM), Afternoon (12 PM-5 PM), Evening (5 PM-8 PM), Anytime
 
 #### Create Deal Properties
@@ -154,17 +165,43 @@ Create property group: `Communication Preferences`
 Switch to "Deal properties" and create property group: `Charter Details`
 
 1. **Yacht Model Requested** (Single-line text)
+   - Field type: `Single-line text`
+   - Description: `Specific yacht model or name requested by customer`
+
 2. **Charter Start Date** (Date picker)
+   - Field type: `Date picker`
+   - Description: `Confirmed start date for the yacht charter`
+
 3. **Charter Group Size** (Number)
+   - Field type: `Number`
+   - Description: `Final number of guests for the charter`
+
 4. **Charter Duration Days** (Single-line text)
+   - Field type: `Single-line text`
+   - Description: `Confirmed duration of charter in days`
+
 5. **Charter Destination** (Single-line text)
+   - Field type: `Single-line text`
+   - Description: `Confirmed destination/location for the charter`
+
 6. **Charter Special Requirements** (Multi-line text)
+   - Field type: `Multi-line text`
+   - Description: `Special requests or requirements for this specific charter deal`
 
 Create property group: `Deal Source`
 
 7. **Deal Source** (Dropdown: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other)
+   - Field type: `Dropdown select`
+   - Description: `How this lead/deal was generated`
+   - Options: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other
+
 8. **Referral Partner** (Single-line text)
+   - Field type: `Single-line text`
+   - Description: `Partner code of the referring partner for this deal`
+
 9. **Lead Quality Score** (Number)
+   - Field type: `Number`
+   - Description: `Scoring from 1-10 based on lead qualification criteria`
 
 **Properties Setup Complete!** Total: 22 properties (13 contact + 9 deal)
 
@@ -329,111 +366,3 @@ Metrics:
 - Average close time
 - Total revenue
 ```
-
-## Step 7: Partner Notification System (3 minutes)
-
-### 7.1 Automated Partner Updates
-
-Create workflow for partner notifications:
-
-**Triggers:**
-- Deal moves to "Qualified Lead" → Email partner: Lead is qualified
-- Deal moves to "Booking Confirmed" → Email partner: Commission earned
-- Deal moves to "Closed Lost" → Email partner: Follow-up opportunity
-
-### 7.2 Monthly Partner Reports
-
-Automated monthly email to partners with:
-- Total referrals sent
-- Conversion rate
-- Commissions earned
-- Top performing referral types
-- Upcoming opportunities
-
-## Testing Checklist
-
-### Pre-Launch Testing
-
-- [ ] Test referral from Trello → HubSpot contact creation
-- [ ] Verify deal creation from new contacts
-- [ ] Test email workflow sequences
-- [ ] Confirm partner notifications
-- [ ] Validate reporting accuracy
-- [ ] Check Google Sheets synchronization
-
-### Post-Launch Monitoring
-
-**Week 1:**
-- [ ] Monitor automation success rates
-- [ ] Review email open/click rates
-- [ ] Check partner feedback
-- [ ] Verify commission calculations
-
-**Monthly:**
-- [ ] Analyze conversion rates by partner
-- [ ] Review email template performance
-- [ ] Update partner performance scores
-- [ ] Optimize workflow timing
-
-## Troubleshooting
-
-### Common Issues
-
-**Contact not created in HubSpot:**
-- Check Trello card format matches expected structure
-- Verify Zapier field mapping
-- Confirm HubSpot API limits
-
-**Emails not sending:**
-- Check workflow enrollment criteria
-- Verify email template approval status
-- Confirm contact has valid email address
-
-**Deals not creating:**
-- Verify contact has required custom properties
-- Check deal pipeline permissions
-- Confirm Zapier connection to HubSpot
-
-### Support Resources
-
-- HubSpot Academy: Free CRM training
-- Zapier Help Center: Integration guides
-- Azure Yacht Group documentation: System overview
-
-## ROI Metrics
-
-### Expected Improvements
-
-**Conversion Rate:** 15-25% increase through automated follow-up
-**Partner Satisfaction:** 90%+ through transparent tracking
-**Processing Time:** 80% reduction in manual tasks
-**Lead Response Time:** Sub-1-hour automated responses
-
-### Success Metrics
-
-**Month 1 Targets:**
-- 50+ referrals processed through HubSpot
-- 85%+ automation success rate
-- 20%+ conversion rate improvement
-- 5+ active referring partners
-
-**Quarterly Goals:**
-- 200+ referrals processed
-- 30%+ conversion rate
-- $50,000+ in charter bookings from referrals
-- 15+ active partner network
-
-## Next Steps
-
-1. **Complete Implementation** (20 minutes total)
-2. **Train Team** on HubSpot workflows (30 minutes)
-3. **Launch Partner Onboarding** using new system
-4. **Monitor Performance** for first 30 days
-5. **Optimize Based on Data** collected
-
----
-
-**Implementation Status:** ✅ Ready for deployment
-**Cost:** $0/month (HubSpot Free + Zapier Free)
-**Maintenance:** 15 minutes/week monitoring
-**Expected ROI:** 300%+ within 90 days 
