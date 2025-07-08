@@ -102,6 +102,7 @@ const sidebars = {
       label: 'Referral System',
       items: [
         'integration/referral-system-overview',
+        'hubspot-properties-setup',
         'integration/zapier-implementation-guide',
         'integration/hubspot-referral-integration',
         'integration/google-sheets-filtered-views-setup',
