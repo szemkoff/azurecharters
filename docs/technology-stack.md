@@ -88,7 +88,7 @@ flowchart TD
 3. Workflow setup for automated follow-up
 4. Zapier integration for Trello and Google Sheets sync
 
-See [HubSpot Properties Setup Guide](/docs/hubspot-properties-setup) for complete implementation details.
+See [HubSpot Integration Guide](/docs/integration/hubspot-referral-integration) for complete implementation details.
 
 ### 3. Partner Management System
 

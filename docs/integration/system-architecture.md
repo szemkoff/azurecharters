@@ -111,7 +111,7 @@ Payment Ref | Notes
 - Lead source tracking
 - Commission calculation data
 - Performance metrics
-- See [HubSpot Properties Setup](/docs/hubspot-properties-setup) for complete details
+- See [HubSpot Integration Guide](/docs/integration/hubspot-referral-integration) for complete details
 
 ### Automation Logic
 

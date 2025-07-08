@@ -57,16 +57,116 @@ graph TD
 
 ### 1.1 Configure Custom Properties
 
-**Complete the [HubSpot Properties Manual Setup Guide](/docs/hubspot-properties-setup)** to create all required properties.
+**Manual Property Setup (No API Required)**
 
-**Quick Reference - Key Properties:**
-- `referral_partner` - Partner code from referral URL
-- `yacht_charter_interest` - Type of yacht customer wants
-- `charter_budget_range` - Customer's budget range
-- `group_size` - Number of charter guests
-- `charter_date_preference` - Preferred charter date
+Navigate to HubSpot Settings → Properties to create custom properties for charter tracking and partner management.
 
-**No API or coding required** - all done through HubSpot's interface.
+#### Access Properties Settings
+1. **Log into HubSpot** → Go to your HubSpot account
+2. **Navigate to Settings** → Click the gear icon (⚙️) in the top right
+3. **Go to Properties** → In the left sidebar: Data Management → Properties
+4. **Select Object Type** → Choose "Contact properties" to start
+
+#### Create Contact Properties
+
+**Charter Information Group:**
+
+First, create a property group: Click "Create property group" → Name: `Charter Information`
+
+1. **Yacht Charter Interest**
+   - Label: `Yacht Charter Interest`
+   - Internal name: `yacht_charter_interest`
+   - Field type: `Dropdown select`
+   - Options: Motor Yacht, Sailing Yacht, Catamaran, Luxury Yacht, Sport Yacht, Expedition Yacht, Not Sure
+
+2. **Charter Budget Range**
+   - Label: `Charter Budget Range`
+   - Internal name: `charter_budget_range`
+   - Field type: `Dropdown select`
+   - Options: $3,000-$5,000, $5,000-$10,000, $10,000-$20,000, $20,000-$50,000, $50,000+, I need help determining budget
+
+3. **Preferred Charter Date**
+   - Label: `Preferred Charter Date`
+   - Internal name: `charter_date_preference`
+   - Field type: `Date picker`
+
+4. **Group Size**
+   - Label: `Group Size`
+   - Internal name: `group_size`
+   - Field type: `Number`
+
+5. **Charter Duration**
+   - Label: `Charter Duration (Days)`
+   - Internal name: `charter_duration`
+   - Field type: `Dropdown select`
+   - Options: Half Day (4 hours), Full Day (8 hours), 2-3 Days, 1 Week, 2 Weeks, 1 Month+
+
+6. **Charter Destination**
+   - Label: `Charter Destination`
+   - Internal name: `charter_destination`
+   - Field type: `Single-line text`
+
+7. **Special Requirements**
+   - Label: `Special Requirements`
+   - Internal name: `special_requirements`
+   - Field type: `Multi-line text`
+
+**Partner Management Group:**
+
+Create property group: `Partner Management`
+
+8. **Referral Partner**
+   - Label: `Referral Partner`
+   - Internal name: `referral_partner`
+   - Field type: `Single-line text`
+   - Description: `Partner code from referral URL`
+
+9. **Partner Status**
+   - Label: `Partner Status`
+   - Internal name: `partner_status`
+   - Field type: `Dropdown select`
+   - Options: Applied, Under Review, Approved, Active, Inactive, Suspended, Terminated
+
+10. **Partner Type**
+    - Label: `Partner Type`
+    - Internal name: `partner_type`
+    - Field type: `Dropdown select`
+    - Options: Travel Advisor, Concierge Service, Event Planner, Wealth Manager, Real Estate Agent, Hotel/Resort, Corporate Services, Other
+
+**Communication Preferences Group:**
+
+Create property group: `Communication Preferences`
+
+11. **Preferred Contact Method**
+    - Label: `Preferred Contact Method`
+    - Internal name: `preferred_contact_method`
+    - Field type: `Dropdown select`
+    - Options: Email, Phone, Text/SMS, WhatsApp
+
+12. **Best Time to Contact**
+    - Label: `Best Time to Contact`
+    - Internal name: `best_time_to_contact`
+    - Field type: `Dropdown select`
+    - Options: Morning (9 AM-12 PM), Afternoon (12 PM-5 PM), Evening (5 PM-8 PM), Anytime
+
+#### Create Deal Properties
+
+Switch to "Deal properties" and create property group: `Charter Details`
+
+1. **Yacht Model Requested** (Single-line text)
+2. **Charter Start Date** (Date picker)
+3. **Charter Group Size** (Number)
+4. **Charter Duration Days** (Single-line text)
+5. **Charter Destination** (Single-line text)
+6. **Charter Special Requirements** (Multi-line text)
+
+Create property group: `Deal Source`
+
+7. **Deal Source** (Dropdown: Website Form, Phone Call, Email Inquiry, Social Media, Partner Referral, Trade Show, Other)
+8. **Referral Partner** (Single-line text)
+9. **Lead Quality Score** (Number)
+
+**Properties Setup Complete!** Total: 22 properties (13 contact + 9 deal)
 
 ### 1.2 Create Lead Status Pipeline
 

@@ -108,7 +108,6 @@ const sidebars = {
           label: 'System Setup',
           items: [
             'integration/zapier-implementation-guide',
-            'hubspot-properties-setup',
             'integration/hubspot-referral-integration',
             'integration/google-sheets-filtered-views-setup',
           ],
