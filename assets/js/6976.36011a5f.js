@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkazure_yacht_group=self.webpackChunkazure_yacht_group||[]).push([[6976],{6976:(e,a,r)=>{r.d(a,{createPieServices:()=>u.f});var u=r(8187);r(9089)}}]);

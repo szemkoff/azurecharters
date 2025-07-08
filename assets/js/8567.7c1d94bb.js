@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkazure_yacht_group=self.webpackChunkazure_yacht_group||[]).push([[8567],{8567:(e,r,c)=>{c.d(r,{createArchitectureServices:()=>u.S});var u=c(3333);c(9089)}}]);

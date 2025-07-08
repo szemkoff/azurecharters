@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkazure_yacht_group=self.webpackChunkazure_yacht_group||[]).push([[5607],{5607:(e,a,r)=>{r.d(a,{createInfoServices:()=>u.v});var u=r(3613);r(9089)}}]);
