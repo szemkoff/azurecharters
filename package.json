@@ -18,14 +18,15 @@
   "dependencies": {
     "@docusaurus/core": "^3.0.0",
     "@docusaurus/preset-classic": "^3.0.0",
+    "@docusaurus/theme-mermaid": "^3.8.1",
+    "@hubspot/api-client": "^11.2.0",
     "@mdx-js/react": "^3.0.0",
+    "axios": "^1.10.0",
     "clsx": "^2.0.0",
+    "dotenv": "^16.6.1",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@hubspot/api-client": "^11.2.0",
-    "dotenv": "^16.6.1",
-    "axios": "^1.10.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.0.0",
