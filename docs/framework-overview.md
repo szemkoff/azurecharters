@@ -208,15 +208,15 @@ The partner/referral system creates scalable lead generation through commission-
 ```mermaid
 %%{init: {'theme': 'neutral'}}%%
 flowchart TD
-    A["Partner Submits Referral"] --> B["Trello Card Created"]
-    B --> C["Move to 'Proposal' Stage"]
-    C --> D1["Zapier: Log to Google Sheets"]
-    C --> D2["Zapier: Create HubSpot Contact"]
+    A["Partner Referral Link"] --> B["Customer Fills HubSpot Form"]
+    B --> C["HubSpot Stores Contact"]
+    C --> D1["Zapier: Create Trello Card"]
+    C --> D2["Zapier: Update Google Sheets"]
     
-    D1 --> E["Google Sheets Calculates Commission"]
+    D2 --> E["Google Sheets Calculates Commission"]
     E --> F["Automated Partner Notification"]
     
-    B --> G["Move to 'Completed' Stage"]
+    D1 --> G["Trello: Move to 'Completed' Stage"]
     G --> H["Zapier: Log Revenue"]
     H --> I["Monthly Commission Payment"]
     
@@ -231,18 +231,24 @@ flowchart TD
     classDef data fill:#00A36C,color:#ffffff,stroke:#333,stroke-width:1px;
     classDef partner fill:#9370DB,color:#ffffff,stroke:#333,stroke-width:1px;
     
-    class A,B,G primary;
-    class C,D1,D2,F,H automation;
+    class A,B,C primary;
+    class D1,D2,F,H automation;
     class E,J,K,L,M data;
     class I partner;
 ```
 
 **Key Components:**
-- **Trello**: Lead management and stage tracking
-- **Zapier**: Automated workflow triggers and data synchronization
+- **HubSpot Forms**: Lead capture with partner attribution via URL parameters
+- **Zapier**: 3 automated workflows for data synchronization
 - **Google Sheets**: Commission calculations and partner dashboards
-- **HubSpot**: Professional lead scoring and follow-up (optional)
+- **Trello**: Lead management and stage tracking
 - **Zelle**: Instant commission payments
+
+**Integration Method:**
+- Manual HubSpot property setup (15 minutes one-time)
+- Form-based lead capture with partner tracking
+- No API required - uses native platform features
+- Zapier connectors for automation
 
 **Commission Structure:**
 - $100-300 per booking based on revenue

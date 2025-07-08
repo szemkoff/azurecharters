@@ -65,19 +65,30 @@ flowchart TD
 [HubSpot](https://www.hubspot.com/) manages all customer relationships, from initial inquiry through booking and follow-up.
 
 **Key Features Used:**
-- Contact database with lead scoring
+- Contact database with custom properties for yacht preferences
 - Deal pipeline for charter bookings
-- Email marketing automation
-- Form integration with Tilda
+- Email marketing automation and workflows
+- Form integration with website (embed code)
 - Task management for charter operations
-- Custom properties for yacht preferences
+- Partner referral tracking
 - Reporting and analytics
 
 **Implementation Notes:**
-- Custom deal stages match the charter booking process
-- Automated sequences for follow-up communications
-- Custom properties track client preferences
-- Reports track conversion rates and revenue
+- **Setup Method**: Manual property configuration (15 minutes one-time setup)
+- **Integration**: Form-based lead capture with partner attribution
+- **Custom Properties**: 22 properties for charter details and partner tracking
+- **Automation**: Email sequences and partner notifications via workflows
+- **Partner Tracking**: URL parameter capture for referral attribution
+- **API Required**: None - uses native forms and Zapier connectors
+- **Cost**: Free for up to 1,000 contacts
+
+**Setup Process:**
+1. Manual property creation via HubSpot interface
+2. Form creation with partner tracking fields
+3. Workflow setup for automated follow-up
+4. Zapier integration for Trello and Google Sheets sync
+
+See [HubSpot Properties Setup Guide](/docs/hubspot-properties-setup) for complete implementation details.
 
 ### 3. Partner Management System
 
@@ -87,11 +98,18 @@ A complete partner/referral system built on free automation tools for scalable c
 [Zapier](https://zapier.com/) automates referral tracking and partner communications.
 
 **Key Features Used:**
-- Trello to Google Sheets automation
-- Google Sheets to Gmail notifications
-- HubSpot CRM integration (optional)
-- Commission calculations
+- HubSpot to Trello automation (contact → card creation)
+- HubSpot to Google Sheets automation (referral tracking)
+- Gmail notifications for partner updates
+- Automated commission calculations
 - Partner notification workflows
+
+**Implementation Notes:**
+- **Automations**: 3 total (simplified from 5)
+- **Triggers**: HubSpot form submissions, Trello card movements
+- **Capacity**: 100 tasks/month on free plan (≈30 referrals)
+- **Cost**: Free for up to 100 tasks/month
+- **Upgrade Path**: Zapier Starter ($19.99/month) for 750 tasks
 
 #### 3.2 Google Sheets (Partner Dashboards)
 [Google Sheets](https://sheets.google.com) provides real-time partner tracking and financial management.
@@ -195,10 +213,10 @@ The technologies integrate at several key points:
 2. **HubSpot → Tilda**: Marketing data informs website content
 
 **Partner System Integrations:**
-3. **Trello → Zapier**: Card movements trigger automation workflows
-4. **Zapier → Google Sheets**: Automated referral logging and commission calculations
-5. **Google Sheets → Gmail**: Partner notifications and updates
-6. **Zapier → HubSpot**: Optional CRM integration for lead scoring and follow-up
+3. **HubSpot → Zapier**: Form submissions trigger automation workflows
+4. **Zapier → Trello**: Automated lead card creation with partner attribution
+5. **Zapier → Google Sheets**: Automated referral logging and commission calculations
+6. **Google Sheets → Gmail**: Partner notifications and updates
 
 **Business Operations:**
 7. **Google Sheets → Zelle**: Manual commission payment processing
