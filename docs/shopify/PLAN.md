@@ -1,6 +1,6 @@
 # Azure Yacht Group – Synced Implementation Plan
 
-Last synced: **2026-11-08 18:00 UTC** by Cursor Cloud Agent (live Shopify query). LIVE theme = **Q `192969080875`** (published 8 Nov by Stan); rollback = P `192968851499`; **next working copy = duplicate Q before any further theme edits** (no R exists yet). This plan combines session `f56cb0f2`'s plan with this session's work. The full plan is in session 20cabc4e: `Azure-Yacht-Group--Savor-Website-Implementation-Plan.md`. Every change is logged in `CHANGELOG.md`. **Master copies are in OneDrive › Azure Yacht Group › Marketing › Azure Web.** Update both files there after every change: download, merge, then upload with an eTag check (CHANGELOG rule 5).
+Last synced: **2026-11-08 18:10 UTC** by Cursor Cloud Agent (live Shopify query). LIVE theme = **Q `192969080875`** (published 8 Nov by Stan); rollback = P `192968851499`; **next working copy = duplicate Q before any further theme edits** (no R exists yet). This plan combines session `f56cb0f2`'s plan with this session's work. The full plan is in session 20cabc4e: `Azure-Yacht-Group--Savor-Website-Implementation-Plan.md`. Every change is logged in `CHANGELOG.md`. **Master copies are in OneDrive › Azure Yacht Group › Marketing › Azure Web.** Update both files there after every change: download, merge, then upload with an eTag check (CHANGELOG rule 5).
 
 Status key: DONE · WIP · TODO · USER (waiting on the user) · BLOCKED
 
@@ -21,10 +21,10 @@ Status key: DONE · WIP · TODO · USER (waiting on the user) · BLOCKED
 | 2 | Design foundation | WIP | Colors, header, picture menu and contact settings are done. C-1 CSS fix done (22:16). Preview check pending. |
 | 3 | Homepage and navigation | WIP | Homepage sections and brand strip done. Header menu restructured (Charters / Buy / Sell / New Construction / Design / About / Contact). Footer menus done. |
 | 4 | Catalog and collections | WIP | Type and brand collections, Miami and Fort Lauderdale, New Construction and Franco Gnessi / DYD are done. The user must hide 13 leftover collections in admin. |
-| 5 | Yacht pages | WIP | Charter and brokerage templates and the grid gallery are done. `product.new-construction` done (Geko, Bullet 200, MUMBLE 58, all Azure Design concepts). `product.weekly-charter` done (Eternal Spark, Y-8, Ascente 112, Le Ponant). Eternal Spark and Y-8 rewritten. Axiom 48 ACTIVE. The Azure 48s still use the brokerage template (USER decision). **53 products total live/draft as of 8 Nov.** |
+| 5 | Yacht pages | WIP | Charter and brokerage templates and the grid gallery are done. `product.new-construction` done (Geko, Bullet 200, MUMBLE 58 — now ACTIVE, all Azure Design concepts). `product.weekly-charter` done (Eternal Spark, Y-8, Ascente 112, Le Ponant). Eternal Spark and Y-8 rewritten. Axiom 48 ACTIVE. The Azure 48s still use the brokerage template (USER decision). **53 products total live/draft as of 8 Nov.** |
 | 6 | Supporting pages | WIP | Live text for About, Design, Sell and Service. FAQ, New Construction and six designer pages done. Live Design page has the 9-project portfolio. Brokerage page text done. Footer social links done. Booking terms: USER. Destinations page live with Puerto Rico, Exumas, Bimini, Japan/South Korea. |
 | 7 | Lead handling and tracking | TODO | Test inquiry not sent. Inquiries go to the store email (stan@). Click tracking not set up. |
-| 8 | SEO, testing, launch | WIP | Product and collection SEO done. Domain live (azureyachtgroup.com → Shopify). Search Console connected but no API units. QA and full tracking are TODO. Hero videos live (Q). |
+| 8 | SEO, testing, launch | WIP | Product and collection SEO done. Domain live. Search Console connected but no API units. QA and full tracking are TODO. Hero videos live in Q (Eternal Spark film, reduced-motion fix, tap-to-start). |
 
 ## Next actions (in order)
 
@@ -43,14 +43,15 @@ Full findings are in `SITE-AUDIT.md` (same folder). Summary: navigation and new-
 2. **[USER → us] Proof:** 2–3 real client stories or one delivered project, with permission. We build the section. Never write testimonials for the user. USER
 3. **[USER → us] Response speed:** decide on WhatsApp and a stated reply time; we add the button and the wording. USER
 4. **[USER → us] Charter "from" prices:** user supplies real indicative day/week rates; we show them on the charter yachts. USER
-5. **[USER → us] Owner services:** user lists the services Azure actually provides; we expand Service & maintenance. USER
+5. **[USER → us] Owner services:** ~~user lists the services Azure actually provides; we expand Service & maintenance.~~ **DONE 8 Nov 18:31.** Service & maintenance page expanded with engine/transmission service, pre-purchase inspections, seasonal prep, routine programs. Team certifications from Marine Technical Training Academy (Fort Lauderdale, FL) — gasoline engines, diesel engines, marine transmissions — attributed collectively, no individual named.
 6. **[us] Measurement:** inquiry/click tracking, Search Console, a test inquiry, then review which pages produce inquiries (phases 7–8). TODO
 7. **Re-audit** after steps 1–3, and about 60 days after publishing using real inquiry data.
 
 ## Decisions waiting on the user
 
-- **8 Nov 17:20 UTC (live data):** ~~MUMBLE 58 draft~~ **MUMBLE 58 is now ACTIVE** (Product 15484672475179, published to Online Store). Still open: confirm correct length (190 ft brochure vs 194.55 ft YachtWorld), show EUR 65M price or keep price on request, fill missing guest count and crew numbers, confirm beam/draft/cabins/engines/speed from DYD.
-- **8 Nov 16:56 UTC (9ecfdbb7):** ~~MUMBLE 58 draft listing ready to review~~ — RESOLVED: now ACTIVE.
+- **8 Nov 18:10 UTC (Cursor Agent):** ~~MUMBLE 58 draft~~ **MUMBLE 58 is now ACTIVE** (Product 15484672475179, confirmed live via API). Still open: correct length (190 ft brochure vs 194.55 ft YachtWorld), show EUR 65M price or keep upon-request, fill missing guest/crew count, fill beam/draft/cabins/engines/speed from DYD.
+- **8 Nov 17:10 UTC (9ecfdbb7):** ~~MUMBLE 58: specs decision~~ — RESOLVED (now ACTIVE).
+- **8 Nov 16:56 UTC (9ecfdbb7):** ~~MUMBLE 58 draft listing ready to review~~ — RESOLVED (now ACTIVE).
 - **8 Nov 11:50 (b7d9a3fa):** Q is LIVE (published by Stan, confirmed working). Hero video items for O/P/Q below are RESOLVED. Rollback = P 192968851499. Next working copy: duplicate Q before theme edits.
 - **8 Nov 11:21 (b7d9a3fa):** Publish draft **Q**: homepage now plays the eternalsparkyacht.com film with the name shots removed (plus reduced-motion fix). Delete unused trimmed clips from Files?
 - **8 Nov 11:01 (b7d9a3fa):** Draft **Q** now also has the Eternal Spark homepage video. For a sharper homepage video, send the original HD/4K Eternal Spark file (Shopify only has 852×480).

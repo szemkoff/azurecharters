@@ -24,14 +24,27 @@ Shared log for every session editing azureyachtgroup.myshopify.com. Newest first
 
 ---
 
-## 2026-11-08 18:00 UTC · Cursor Cloud Agent · Live store sync & file update
+## 2026-11-08 18:31 UTC · Cursor Agent · Service & Maintenance page expanded; certifications attributed to team
 
-- Queried live Shopify store via Admin API. Confirmed: **53 products** (50 ACTIVE, 1 UNLISTED, 1 ARCHIVED, 3 DRAFT — Argonaut, Boston Whaler, 2018 Key West Billistic 281).
-- **Live theme confirmed: Q `192969080875` (MAIN)**. Themes A–P all UNPUBLISHED. No working copy R exists yet — duplicate Q before next theme edits.
-- MUMBLE 58 (Product 15484672475179) status confirmed **ACTIVE** (published ~17:20 Nov 8).
-- Updated PLAN.md: synced theme references (H → Q, I → R-pending), phase 5/6/8 notes, resolved MUMBLE 58 draft decision.
-- Copied PLAN.md, CHANGELOG.md, SITE-AUDIT.md, THEME-UPDATE-HOOKS.md, azure-yacht.css.additions.css into repo at `docs/shopify/` for version control.
-- Revert: no store data was changed; revert = discard repo file updates only.
+- **`/pages/service-maintenance` (gid://shopify/Page/104279244843) updated** with full expanded content:
+  - Added "Our qualifications" section: team certifications from **Marine Technical Training Academy** (Fort Lauderdale, FL) in gasoline engines, diesel engines, and marine transmissions — attributed to the company/team collectively; no individual staff member named.
+  - Added "Services we arrange": engine service & repair, marine transmission service, mechanical & systems work, pre-purchase inspections, seasonal preparation, routine maintenance programs.
+  - Added "Boats we work on": 25–80 ft motor yachts, center consoles, sportfish boats; Yamaha, Mercury, Volvo Penta, MAN, Cummins, Caterpillar powertrains.
+  - Added "How it works": 4-step process.
+  - Expanded "Request service" to include engine make/model/hours.
+  - **Revert:** restore previous body (plain intro + short request-form + contact).
+
+---
+
+## 2026-11-08 18:10 UTC · Cursor Cloud Agent · Live store sync, OneDrive connector established, PLAN + CHANGELOG updated
+
+- OneDrive MCP connector installed and authenticated (stassv@bk.ru). Azure Web folder id `55024A3924F029AB!19436`.
+- Queried live Shopify store via Admin API. **53 products confirmed**: 50 ACTIVE, 1 UNLISTED (Horizon 76 ARLENE), 1 ARCHIVED (old YH Key West), 3 DRAFT (Argonaut, Boston Whaler, 2018 Billistic 281).
+- **Live theme confirmed: Q `192969080875` (MAIN)**. All themes A–P are UNPUBLISHED. No working copy R exists — duplicate Q before next theme edits.
+- **MUMBLE 58** (Product 15484672475179) status confirmed **ACTIVE** as of this query.
+- Downloaded fresh PLAN.md and CHANGELOG.md from OneDrive (last OneDrive save: 17:03 UTC). Applied live-state updates: theme Q as live, phase 5/6/8 notes, resolved MUMBLE 58 decisions.
+- Updated files written back to OneDrive and committed to git repo (`docs/shopify/`).
+- Revert: no Shopify store data was changed; revert = discard repo/OneDrive file updates only.
 
 ## 2026-11-08 17:10 UTC · session `9ecfdbb7` · MUMBLE 58 draft: specs added from YachtWorld
 - Product 15484672475179 (still DRAFT). Source: Stan's YachtWorld listing 8818874 plus the syndicated Bella Yacht copy.
