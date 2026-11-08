@@ -45,9 +45,12 @@ Themes are labeled alphabetically as working copies are created. **Never edit th
 | A through G            | various      | Archived                                    |
 | H                      | 192895877163 | Archived (was live)                         |
 | Q                      | 192969080875 | **CURRENT LIVE** (published by Stan, Nov 8) |
+| R                      | 192975667243 | Working copy (service page corrections, Nov 8 20:03 UTC) |
 
 
 Working copies are always duplicated from the current live theme before editing. Publish only with **explicit user approval**.
+
+**New section in R:** `sections/azure-brand-logos.liquid` — logo grid with `image_picker` blocks; reusable on any page.
 
 ### Custom theme files (azure-prefixed)
 
@@ -78,6 +81,7 @@ All Azure customisations live in files with the `azure-` prefix. These survive S
 | `page.charters.json`       | /pages/charters — charter fleet hub                                |
 | `page.design.json`         | /pages/design — design portfolio + team                            |
 | `page.brokerage.json`      | /pages/brokerage — brokerage hub                                   |
+| `page.service.json`        | /pages/service-maintenance — Yacht Service & Maintenance           |
 | `collection.franco-gnessi` | Franco Gnessi / DYD collection page                                |
 | `charter`                  | Destination charter products (Puerto Rico, Exumas, etc.)           |
 

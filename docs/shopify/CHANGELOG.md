@@ -24,6 +24,58 @@ Shared log for every session editing azureyachtgroup.myshopify.com. Newest first
 
 ---
 
+## 2026-11-08 20:03 UTC · Cursor Agent · Service page corrected: real images, real brand logos, unique copy, removed size refs
+
+**Theme R (`gid://shopify/OnlineStoreTheme/192975667243`) — not yet published**
+
+**Files changed in theme R:**
+- `sections/azure-brand-logos.liquid` — NEW custom section (logo grid with image_picker blocks, heading, eyebrow, footnote)
+- `templates/page.service.json` — full rewrite with all owner corrections
+
+**Shopify Files uploaded (12 files):**
+- `azure-service-hero.jpg` (CDN: `cdn.shopify.com/.../azure-service-hero.jpg`) — Unsplash hero image, 2400×1800
+- `azure-service-marine.jpg` (CDN: `cdn.shopify.com/.../azure-service-marine.jpg`) — Unsplash marine section image, 1800×1196
+- `azure-brand-volvo-penta.svg` — Official wordmark SVG (Wikimedia Commons)
+- `azure-brand-cummins.svg` — Official logo SVG (Wikimedia Commons)
+- `azure-brand-garmin.svg` — Official logo SVG (Wikimedia Commons)
+- `azure-brand-caterpillar.svg` — Official logo SVG (Wikimedia Commons)
+- `azure-brand-zf.svg` — Official logo SVG (Wikimedia Commons)
+- `azure-brand-victron.png` — Official logo PNG (victronenergy.com)
+- `azure-brand-westerbeke.gif` — Official logo GIF (westerbeke.com)
+- `azure-brand-yanmar.svg` — Accurate SVG wordmark (created)
+- `azure-brand-dometic.svg` — Accurate SVG wordmark (created)
+- `azure-brand-fischer-panda.svg` — Accurate SVG wordmark (created)
+
+**All corrections applied to `page.service.json`:**
+
+1. **Images appear** — hero uses `shopify://shop_images/azure-service-hero.jpg` (real CDN image); pain-point section uses `shopify://shop_images/azure-service-marine.jpg`
+2. **Brand logos are real images** — `azure-brand-logos` section with 10 `image_picker` blocks, each referencing a real `cdn.shopify.com` image file
+3. **No size references** — removed "40–90 ft", "40 to 100 feet", "yachts we service" language entirely
+4. **Duplicate CTAs removed** — only 2 CTAs remain: hero "Get a Service Quote" (#inquiry) + inquiry form heading "Book a Service Call"
+5. **Unique copy per section** — no phrase repeated across sections:
+   - Stats: 500+ Jobs Completed · Same Week First Visit · 24 hr Quote Turnaround · 100% Tested Before We Leave
+   - Pain point: breakdown narrative (new, fresh copy)
+   - Services accordion: scope listing (unchanged detail, new header framing)
+   - Process steps: renamed steps — Tell Us What's Wrong → On-Site Diagnosis → Fixed and Signed Off
+   - Promise/features: Root Cause, Not Band-Aids · Every Visit, Written Up · Quoted Before We Touch It · Fast Response, South Florida
+   - Brands: Equipment We Know (logo grid)
+   - Inquiry: Book a Service Call (new heading)
+6. **Section headings all distinct:**
+   - Hero: "Your Yacht. Running Perfect."
+   - Stats: (numbers only, no heading)
+   - Pain point: "The Breakdown That Ruins Everything"
+   - Services: "Every System. Every Job." (eyebrow: What We Fix)
+   - Process: "Three Steps. No Surprises." (eyebrow: How It Works)
+   - Promise: "What You Can Expect" (eyebrow: Our Standards)
+   - Brands: "Equipment We Know" (eyebrow: Partner Brands)
+   - Inquiry: "Book a Service Call"
+
+**Preview:** `https://yra0nf-ec.myshopify.com/pages/service-maintenance?preview_theme_id=192975667243`
+
+**Revert:** Restore the previous `page.service.json` from theme Q (`gid://shopify/OnlineStoreTheme/192969080875`) or the CHANGELOG entry for 2026-11-08 18:31. Delete the 12 uploaded files from Shopify Files if desired.
+
+---
+
 ## 2026-11-08 18:31 UTC · Cursor Agent · Service & Maintenance page expanded; certifications attributed to team
 
 - **`/pages/service-maintenance` (gid://shopify/Page/104279244843) updated** with full expanded content:
