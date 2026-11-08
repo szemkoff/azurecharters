@@ -24,6 +24,15 @@ Shared log for every session editing azureyachtgroup.myshopify.com. Newest first
 
 ---
 
+## 2026-11-08 18:00 UTC · Cursor Cloud Agent · Live store sync & file update
+
+- Queried live Shopify store via Admin API. Confirmed: **53 products** (50 ACTIVE, 1 UNLISTED, 1 ARCHIVED, 3 DRAFT — Argonaut, Boston Whaler, 2018 Key West Billistic 281).
+- **Live theme confirmed: Q `192969080875` (MAIN)**. Themes A–P all UNPUBLISHED. No working copy R exists yet — duplicate Q before next theme edits.
+- MUMBLE 58 (Product 15484672475179) status confirmed **ACTIVE** (published ~17:20 Nov 8).
+- Updated PLAN.md: synced theme references (H → Q, I → R-pending), phase 5/6/8 notes, resolved MUMBLE 58 draft decision.
+- Copied PLAN.md, CHANGELOG.md, SITE-AUDIT.md, THEME-UPDATE-HOOKS.md, azure-yacht.css.additions.css into repo at `docs/shopify/` for version control.
+- Revert: no store data was changed; revert = discard repo file updates only.
+
 ## 2026-11-08 17:10 UTC · session `9ecfdbb7` · MUMBLE 58 draft: specs added from YachtWorld
 - Product 15484672475179 (still DRAFT). Source: Stan's YachtWorld listing 8818874 plus the syndicated Bella Yacht copy.
 - Set yacht_specs: beam 38 ft (37.96), draft 9 ft (8.99), hull Steel, engine "Diesel – engines to be selected by buyer", max 20 kn, cruise 16 kn, cabins 7, year 2026, home port Fort Lauderdale, Florida. Category: hull material Steel, fuel Diesel.

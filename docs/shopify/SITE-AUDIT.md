@@ -1,6 +1,7 @@
 # Azure Yacht Group – Site Effectiveness Audit
 
-Date: 2026-11-07 · session `b7d9a3fa` · Scope: working copy H (`192895877163`, preview `?preview_theme_id=192895877163`) and live store data.
+Date: 2026-11-07 · session `b7d9a3fa` · Scope: working copy H (`192895877163`).  
+**Updated: 2026-11-08 18:00 UTC** · Cursor Cloud Agent · Live theme is now **Q `192969080875`** (published 8 Nov). All gaps below reflect status as of that update.
 Question asked: how well will the site help people solve their yachting problems, and turn them into inquiries?
 Method: review of the pages, menus and templates built in this project. This is a qualitative review. No traffic or conversion data was used, and no ranking outcome is promised.
 
@@ -35,12 +36,12 @@ The site is good at answering "what can I do and who can help me". It is weaker 
 
 | # | Action | Owner | Status |
 |---|---|---|---|
-| 1 | Publish working copy H in Shopify admin | USER | DONE 7 Nov (verified live) |
-| 2 | Provide 2–3 real client stories or one delivered project (short quotes are fine, with permission). We build the section. | USER → us | USER |
-| 3 | Decide on WhatsApp and a reply-time promise; we add the button and the wording | USER → us | USER |
-| 4 | Provide indicative charter rates; we show "from" prices on the charter yachts | USER → us | USER |
-| 5 | List the owner services Azure actually provides (maintenance, refit, management, crew, etc.); we expand the Service page | USER → us | USER |
-| 6 | Set up inquiry and click tracking plus Search Console, send a test inquiry, then review which pages lead to inquiries | us (needs user access where required) | TODO |
+| 1 | Publish working copy H in Shopify admin | USER | ~~DONE 7 Nov~~ → **Q now live 8 Nov** |
+| 2 | Provide 2–3 real client stories or one delivered project (short quotes are fine, with permission). We build the section. | USER → us | **USER — still open** |
+| 3 | Decide on WhatsApp and a reply-time promise; we add the button and the wording | USER → us | **USER — still open** |
+| 4 | Provide indicative charter rates; we show "from" prices on the charter yachts | USER → us | **USER — still open** |
+| 5 | List the owner services Azure actually provides (maintenance, refit, management, crew, etc.); we expand the Service page | USER → us | **USER — still open** |
+| 6 | Set up inquiry and click tracking plus Search Console, send a test inquiry, then review which pages lead to inquiries | us (needs user access where required) | **TODO** |
 
 ## Re-audit
 
